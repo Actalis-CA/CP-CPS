@@ -6,5 +6,5 @@ This is a combined CP/CPS document relevant to the issuance and management of th
 * Code Signing certificates
 * S/MIME certificates
 
-For S/MIME certificates only, there is a separate CP document here.
+For S/MIME certificates only, there is a separate CP document [here](/CP/SMIME.md).
   
