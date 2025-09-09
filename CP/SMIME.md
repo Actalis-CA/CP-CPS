@@ -310,8 +310,7 @@ For **IV** and **SV** certificates, the Applicant’s identity shall be verified
 
 In order to collect these data, any of the methods described in §3.2.4.1 of the [SMBR] can be employed, depending on the certificate request channel and other factors. Normally, Actalis requires the Applicant to show a government‐issued physical identity document bearing the holder’s photo, such as passport or identity card. Other kinds of IDs are not accepted.
 
-For physical ID document validation, Actalis may apply automated techniques and/or manual pro-
-cesses that involve accessing authoritative sources to verify the authenticity of ID documents, depending on the certificate request channel and other factors. In particular circumstances, Actalis may perform individual identity validation based on a qualified digital signature [eIDAS] compliant of the Applicant placed on a certificate application form.
+For physical ID document validation, Actalis may apply automated techniques and/or manual processes that involve accessing authoritative sources to verify the authenticity of ID documents, depending on the certificate request channel and other factors. In particular circumstances, Actalis may perform individual identity validation based on a qualified digital signature [eIDAS] compliant of the Applicant placed on a certificate application form.
 
 Organizations enabled to act as Enterprise RAs are allowed to use their own records as evidence of individual identity verification, subject to the provisions of the related agreement with Actalis.
 
