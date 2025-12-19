@@ -407,7 +407,7 @@ Legal representative: Massimiliano Carollo (Chief Executive Officer)
 VAT Reg. No. and Tax Code: 03358520967
 Telephone (switchboard): +39 0575 050.
 DUNS number: 440 - 489 - 735
-ISO Object Identifier (OID): 1.3.
+ISO Object Identifier (OID): 1.3.159
 Company web site: http://www.actalis.it
 Company e-mail address: info@actalis.it
 ```
@@ -3122,5 +3122,6 @@ The CA guarantees the following minimum service levels:
 |Certificate issuing time|max 5 working days in 95% of all cases|annual|
 |Time for certificate revocation (when requested on-line)|max 2 minutes in 95% of all cases|annual|
 |Time for certificate revocation (when requested by e-mail, ordinary mail or fax)|max 6 hours in 95% of all cases|annual|
+
 
 
