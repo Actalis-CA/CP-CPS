@@ -66,7 +66,7 @@ Distribution: PUBLIC
 |11 March 2025|5.17|1.4.2, 3.2.2.1, 3.2.2.9, 4.5, 4.7 4.8, 4.9.1.1, 7.2|Integration about applicable standards, integration of par 3.2.2.1, introduction of MPIC, restructured par. 4.5, 4.8, 4.9 and 7.2 for better accordance with RFC-3647, added details on revocation reasons|AS, NP|
 |18 June 2025|5.18|1.3.1.2, 3.2.2.4, 4.9.3, 6.1.5, 6.2.1, 6.2.7|Removal of SubCA Actalis Client Authentication CA G1, removal of domain validation method BR#3.2.2.4.2 (email to domain contact), provision for mass revocation scenarios, additions about key pair generations and key sizes, specification regarding cryptographic module certification, correction of typos.|AS, NP|
 |27 November 2025|5.19|4.2.2, 4.9.9, 4.10.1, 5.2, 5.4.1, 5.7.1, 6.7|Minor amendment to paragraph 4.2.2, Addi-tion regarding the OCSP protocol, Specifica-tion on CRL partitioning, Added detail con-cerning the asset inventory, Specification regarding firewall configuration tracking, Added requirements for the man-agement of mass revocation |AS, NP|
-|18 December 2025|1.3, 6.3.2, 7.1.2|Additions to the PKI infrastructure with the introduction of new RootCA and SubCA cer-tificates |AS, BS, NP|
+|18 December 2025|5.20|1.3, 6.3.2, 7.1.2|Additions to the PKI infrastructure with the introduction of new RootCA and SubCA cer-tificates |AS, BS, NP|
 ## Table of Contents
 
 - 1. INTRODUCTION
@@ -3122,3 +3122,4 @@ The CA guarantees the following minimum service levels:
 |Certificate issuing time|max 5 working days in 95% of all cases|annual|
 |Time for certificate revocation (when requested on-line)|max 2 minutes in 95% of all cases|annual|
 |Time for certificate revocation (when requested by e-mail, ordinary mail or fax)|max 6 hours in 95% of all cases|annual|
+
