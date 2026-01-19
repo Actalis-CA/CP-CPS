@@ -15,9 +15,9 @@
 |**1.2**| 07/10/2019|AS |§1.3 Clarified that email can only be validated by the CA. <br>§1.7 Updated reference for OCSP protocol. <br>§3.1 Clarifications on the EE naming rules. <br>§3.2 Modified headings for better clarity.<br> §4.2 Clarifications on certificate revocation. §7.2 Updated profile of intermediate CA. <br>§7.3 Updated profile of EE certificate.|
 |**2.0**|07/11/2023| AS | Document restructuring for better alignment with RFC3647. <br>§1.3.2 and §4.1.2: Added provisions for Enterprise RAs. General document update for compliance with CABF Baseline Requirements for S/MIME Certificates. 
 |**2.1** |28/08/2024| AS |Correction of typos. <br>§ 1.6 Updated acronyms for CAA records. <br>§ 1.7 Updated references for CAA records. § 4.1 and § 4.2 Updated for compliance with CABF Requirements regarding CAA record processing. <br>§7.2 Updated with details on reasonCodes.
-|**2.2**| 07/03/2025| NP, AS | Restructured the CP in accordance with RFC 3647; <br>$2.3 pecification regarding the frequency of CP updating; <br>$4.2.2 Integration about CAA Record checks before issuance.
-|**3.0**| 10/07/2025| NP, AS| Merger of the two previous separate S/MIME CPs into a single S/MIME covering all types of Actalis S/MIME certs. <br>$7.1 Updating certs’ profile to multipurpose generation.
-|**3.1**| 15/01/2026| BS, NP, AS| $1.3, $7.1 Updates to the PKI infrastructure with the addition of new RootCA and SubCA certificates
+|**2.2**| 07/03/2025| NP, AS | Restructured the CP in accordance with RFC 3647; <br>§2.3 pecification regarding the frequency of CP updating; <br>§4.2.2 Integration about CAA Record checks before issuance.
+|**3.0**| 10/07/2025| NP, AS| Merger of the two previous separate S/MIME CPs into a single S/MIME covering all types of Actalis S/MIME certs. <br>§7.1 Updating certs’ profile to multipurpose generation.
+|**3.1**| 15/01/2026| BS, NP, AS| §1.3, §7.1 Updates to the PKI infrastructure with the addition of new RootCA and SubCA certificates
 
 
 ## 1 INTRODUCTION CONTENTS
@@ -1632,3 +1632,4 @@ Please refer to [CPS].
 #### 9.16.1 Entire agreement
 
 Please refer to [CPS].
+
