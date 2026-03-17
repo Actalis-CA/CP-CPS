@@ -1804,7 +1804,7 @@ See section 6.2.1.
 
 See section 5.5
 
-#### 6.3.2 6.3.2	Operational Lifetime of Certificates and Keys
+#### 6.3.2 Operational Lifetime of Certificates and Keys
 
 Certificates and private keys shall have a _maximum_ operational period according to the following table:
 |Type|Priv. key usage period |Certificate validity period|
