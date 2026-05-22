@@ -1,0 +1,100 @@
+name: Convert Markdown to PDF
+
+on:
+  workflow_dispatch:
+    inputs:
+      markdown_file:
+        description: 'Path to the Markdown file to convert'
+        required: true
+        default: 'CPS/temp/CPS_TLS.md'
+        type: string
+      output_name:
+        description: 'Output PDF filename (without .pdf extension)'
+        required: true
+        default: 'CPS_TLS'
+        type: string
+      create_release:
+        description: 'Create a GitHub Release with the PDF'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+
+      - name: Verify Markdown file exists
+        run: |
+          if [ ! -f "${{ github.event.inputs.markdown_file }}" ]; then
+            echo "❌ File not found: ${{ github.event.inputs.markdown_file }}"
+            exit 1
+          fi
+          echo "✅ File found: ${{ github.event.inputs.markdown_file }}"
+
+      - name: Convert Markdown to PDF
+        run: |
+          pandoc "${{ github.event.inputs.markdown_file }}" \
+            -o "${{ github.event.inputs.output_name }}.pdf" \
+            --pdf-engine=pdflatex \
+            --toc \
+            --toc-depth=2 \
+            -V geometry:margin=1in \
+            -V fontsize=11pt \
+            -V mainfont="Liberation Serif" \
+            --standalone \
+            --metadata title="Actalis Certification Practice Statement"
+          
+          if [ -f "${{ github.event.inputs.output_name }}.pdf" ]; then
+            echo "✅ PDF conversion successful!"
+            ls -lh "${{ github.event.inputs.output_name }}.pdf"
+          else
+            echo "❌ PDF conversion failed!"
+            exit 1
+          fi
+
+      - name: Upload PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: "${{ github.event.inputs.output_name }}"
+          path: "${{ github.event.inputs.output_name }}.pdf"
+          retention-days: 30
+
+      - name: Create Release with PDF
+        if: github.event.inputs.create_release == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          files: "${{ github.event.inputs.output_name }}.pdf"
+          tag_name: "pdf-${{ github.event.inputs.output_name }}-${{ github.run_number }}"
+          body: |
+            🎉 PDF conversion completed!
+            
+            **Source:** `${{ github.event.inputs.markdown_file }}`
+            **Generated:** `${{ github.event.inputs.output_name }}.pdf`
+            
+            This PDF was automatically generated from the Markdown source using Pandoc.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print summary
+        run: |
+          echo "## 📊 Conversion Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ **Status:** Success" >> $GITHUB_STEP_SUMMARY
+          echo "📄 **Source:** \`${{ github.event.inputs.markdown_file }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "📦 **Output:** \`${{ github.event.inputs.output_name }}.pdf\`" >> $GITHUB_STEP_SUMMARY
+          echo "📥 **Download:** Check the Artifacts section" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ github.event.inputs.create_release }}" == "true" ]; then
+            echo "🏷️ **Release:** Created successfully" >> $GITHUB_STEP_SUMMARY
+          fi
