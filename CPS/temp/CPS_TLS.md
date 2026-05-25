@@ -369,11 +369,9 @@ The I&A procedures followed by Actalis comply with CAB Forum requirements. In pa
 
 ### 3.1.1 Types of names
 
-Certificates issued according to this CPS normally contain a non-null Distinguished Name (DN) compliant with the ITU-T X.500 standard (ISO/IEC 9594) in the Issuer field.
+Certificates issued according to this CPS contain Distinguished Names (DN) compliant with the ITU-T X.500 standard (ISO/IEC 9594) and [RFC 5280] in their Subject field. However, the Subject field _may be empty_ in Domain Validated (DV) certificates, since in these certificates Actalis only inserts the `commonName` attribute in the Subject field, but only if this is requested by the Applicant; in this case, the Subject Alternative Name (SAN) extension is marked as critical as per [RFC 5280]. In Organization Validated (OV) and Extended Validation (EV) certificates, instead, the Subject DN is always non-empty.
 
-As to the Subject field, this _may be empty_ in Domain Validated (DV) certificates, since in these certificates Actalis only inserts the `commonName` attribute in the Subject field, but only if this is requested by the Applicant; in this case, the Subject Alternative Name (SAN) extension is marked as critical as per [RFC 5280].
-
-Furthermore, all the requirements set forth in the [BR] and [EVGL] shall be met.
+In any case, all the requirements set forth in the [BR] and [EVGL] shall be met.
 
 In particular, all TLS Server certificates shall include entries in the Subject Alternative Name (SAN) extension, where each entry is either a Fully Qualified Domain Name (FQDN) or an IP address. However, IP addresses are not allowed in DV (Domain Validated) and EV (Extended Validation) TLS Server certificates.
 
