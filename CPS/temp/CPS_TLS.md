@@ -106,7 +106,7 @@ This CPS is published as a signed PDF document in order to ensure its origin and
 
 The Certification Authority (CA) is the trusted third party who issues the certificates and signs them with its own private key (CA key). Furthermore, the CA manages the status of the certificates.
 
-The Actalis PKI (Public Key Infrastructure) that the TLS Server and Code Signing certificate issuance and management service is based hierarchically upon is a two-level hierarchy, as shown in the following diagram:
+The Actalis PKI (Public Key Infrastructure), which the TLS Server certificate issuance and management service is based upon, is a two-level hierarchy, as shown in the following diagram:
 
 <p align="center">
    &nbsp;
@@ -230,7 +230,6 @@ The following table shows the **classes** and **policies** of certificates issue
 |EV| TLS Server EV (Extended Validation) | 1.3.159.1.17.1 |  [BR], [EVGL]  |
 |OV| TLS Server Wildcard OV (Organization Validated)  | 1.3.159.1.19.1|  [BR] |  |
 |OV| TLS Server OV (Organization Validated) | 1.3.159.1.20.1 | [BR] |  |
-|OV| Code Signing (Organization Validated) |  1.3.159.1.21.1| [BR] | 
 |DV| TLS Server DV (Domain Validated) |  1.3.159.1.22.1|[BR]  |  
 |DV| TLS Server Wildcard DV (Domain Validated) | 1.3.159.1.23.1 | [BR] | 
 
@@ -404,7 +403,7 @@ Actalis also publishes test web pages that allow Application Software Suppliers 
 
 This CPS and any associated documents are published on the CA web site each time they are updated.
 
-This CPS is reviewed and updated at least every year, also to ensure that it conforms to the latest versions of CAB Forum Requirements and Guidelines [BR], [CSBR] and [EVGL], and other applicable standards and regulations.
+This CPS is reviewed and updated at least every year, also to ensure that it conforms to the latest versions of CAB Forum Requirements [BR], Guidelines [EVGL], and other applicable standards and regulations.
 
 See also section 4.10.
 
@@ -416,7 +415,7 @@ Access to the repository in write-mode (e.g., for the publication of new or upda
 
 ## 3 IDENTIFICATION AND AUTHENTICATION (I&A)
 
-The I&A procedures followed by Actalis comply with CAB Forum requirements. In particular, for all classes of certificates issued under this CPS, the CA performs at least the mandatory checks provided in [BR] and [CSBR]. In addition, for EV certificates, the CA also performs at least the additional checks required by the [EVGL].
+The I&A procedures followed by Actalis comply with CAB Forum requirements. In particular, for all classes of certificates issued under this CPS, the CA performs at least the mandatory checks provided in [BR]. In addition, for EV certificates, the CA also performs at least the additional checks required by the [EVGL].
 
 ### 3.1 NAMING
 
@@ -426,7 +425,7 @@ Certificates issued according to this CPS normally contain a non-null Distinguis
 
 The Subject field may be _empty_ in DV (Domain Validated) certificates, e.g., when it cannot accommodate a very long FQDN (> 64 chars); in such a case, the Subject Alternative Name (SAN) extension is flagged as _critical_.
 
-Furthermore, all the requirements set forth in the [BR], [CSBR] and [EVGL] shall be met.
+Furthermore, all the requirements set forth in the [BR] and [EVGL] shall be met.
 
 In particular, all TLS Server certificates shall include entries in the Subject Alternative Name (SAN) extension, where each entry is either a Fully Qualified Domain Name (FQDN) or an IP address. However, IP addresses are not allowed in DV (Domain Validated) and EV (Extended Validation) TLS Server certificates.
 
@@ -448,7 +447,7 @@ Except for TLS Server certificates of class DV (Domain Validated), which by defi
 
 #### 3.1.4 Rules for interpreting various name forms
 
-All name forms shall be interpreted according to the ITU-T X.500 (ISO/IEC 9594) and the RFC 5820 standards, also taking into account CAB Forum’s Requirements [BR], [CSBR] and [EVGL] according to certificate type and class.
+All name forms shall be interpreted according to the ITU-T X.500 (ISO/IEC 9594) and the RFC 5820 standards, also taking into account CAB Forum’s Requirements [BR] and [EVGL], according to certificate type and class.
 
 #### 3.1.5 Uniqueness of names
 
@@ -468,7 +467,7 @@ The proof-of-possession, by the Applicant, of the private key corresponding to t
 
 ##### 3.2.2.1 Identity
 
-When the certificate is to include the name or address of an organization, the CA shall verify the identity and address of the organization, and that the address is the Applicant’s address of existence or operation. This verification is done in compliance with the CAB Forum’s requirements [BR], [CSBR] and [EVGL] according to certificate type and class.
+When the certificate is to include the name or address of an organization, the CA shall verify the identity and address of the organization, and that the address is the Applicant’s address of existence or operation. This verification is done in compliance with the CAB Forum’s requirements [BR] and [EVGL], according to certificate type and class.
 
 Actalis will normally query:
 
@@ -497,7 +496,7 @@ The information gathered by the CA include at least:
 - the Applicant organization general phone and/or fax number(s), if available
 - the Applicant organization general email address(es), if available
 
-As a rule, should the CA not be able to collect the above information by itself, the Applicant will be required to provide it to the CA, subject to the subsequent CA’s evaluation of the trustworthiness of the provided information in view of the minimal requirements set forth in the [BR], [CSBR], and [EVGL].
+As a rule, should the CA not be able to collect the above information by itself, the Applicant will be required to provide it to the CA, subject to the subsequent CA’s evaluation of the trustworthiness of the provided information in view of the minimal requirements set forth in the [BR] and [EVGL].
 
 For EV-class certificates, the CA shall also verify:
 
@@ -510,7 +509,7 @@ Actalis reserves the right to reject a certificate request in the event that it 
 
 ##### 3.2.2.2 DBA/Tradename
 
-If the Subject the certificate is to include a DBA or trade name (not applicable to DV-class TLS Server certificate), the CA shall verify the Applicant’s right to use the DBA/trade name with at least one of the criteria provided for in [BR], [CSBR] or [EVGL] according to certificate type and class.
+If the Subject the certificate is to include a DBA or trade name (not applicable to DV-class TLS Server certificate), the CA shall verify the Applicant’s right to use the DBA/trade name with at least one of the criteria provided for in [BR] or [EVGL], according to certificate type and class.
 
 ##### 3.2.2.3 Verification of country
 
@@ -582,7 +581,7 @@ In general, the CA does not verify the correctness of any information received f
 
 #### 3.2.5 Validation of authority
 
-For certificates containing Subject Identity Information, if the Applicant is an organization the CA shall use a Reliable Method of Communication to verify the authenticity of the Applicant Representative’s certificate request, in line with CAB Forum’s [BR], [CSBR] or [EVG} according to certificate type and class.
+For certificates containing Subject Identity Information, if the Applicant is an organization the CA shall use a Reliable Method of Communication to verify the authenticity of the Applicant Representative’s certificate request, in line with CAB Forum’s [BR] or [EVG}, according to certificate type and class.
 
 The CA may use the sources listed in section 3.2.2.1 to verify the Reliable Method of Communication.
 
@@ -611,7 +610,7 @@ Re-keying a certificate may routinely occur in two cases:
 - when a Subscriber wishes to replace an existing certificate with a new one (with same or different   details) containing a different key; or
 - when a Subscriber wishes to renew a certificate that is about to expire, that is, obtain a new certificate     with the same details of the one that is about to expire; in this case, the CA requires that the new     certificate contains a new key.
 
-In both cases, the CA may request the Subscriber to pass the same identification and authentication procedures used for the initial certificate issuance, depending on the age of the validation data used for the initial certificate issuance (in view of the requirements set forth in [BR], [CSBR] and [EVGL]) and on the request channel.
+In both cases, the CA may request the Subscriber to pass the same identification and authentication procedures used for the initial certificate issuance, depending on the age of the validation data used for the initial certificate issuance (in view of the requirements set forth in [BR] and [EVGL]), and on the request channel.
 
 #### 3.3.2 Identification and authentication for re-key after revocation
 
@@ -645,7 +644,7 @@ All the above steps are the responsibility of the Applicant, except for the Paym
 
 The order and the exact way in which these steps are carried out may vary, depending on chosen request channel, but all the steps have to be completed (with the possible exception of the payment which can be deferred, depending on the customer and the amount due, subject to approval by Actalis’ sales department) _before_ the certificate request is taken charge of by the CA.
 
-For DV and OV TLS Server certificates and Code Signing certificates, the following Applicant roles are required, as,defined in the [BR], and enforced within the enrollment process:
+For DV and OV TLS Server certificates, the following Applicant roles are required, as,defined in the [BR], and enforced within the enrollment process:
 
 - Applicant
 - Applicant Representative
@@ -702,9 +701,9 @@ The certificate application form must be accompanied or followed by a suitable C
 
 ### 4.2.1 Performing identification and authentication functions
 
-Upon receipt of a certificate application, all the verifications previously described (see chapter 3 and the previous sections of chapter 4) are performed either automatically, to the extent that is possible and allowed, and/or by a Validation Specialist when necessary or mandatory, in compliance with the [BR], [CSBR] and [EVGL] according to certificate type and class.
+Upon receipt of a certificate application, all the verifications previously described (see chapter 3 and the previous sections of chapter 4) are performed either automatically, to the extent that is possible and allowed, and/or by a Validation Specialist when necessary or mandatory, in compliance with the [BR] and [EVGL], according to certificate type and class.
 
-Depending of the age and applicability of the already available validation data, the CA may re-use previous validations (documents, data, etc.) for additional certificates to be issued to the same Applicant, to the extent that is permitted by the [BR], [CSBR] and [EVGL] according to certificate type and class.
+Depending of the age and applicability of the already available validation data, the CA may re-use previous validations (documents, data, etc.) for additional certificates to be issued to the same Applicant, to the extent that is permitted by the [BR] and [EVGL], according to certificate type and class.
 
 The CA also checks that the information contained in the CSR (e.g. Subject DN, FDQNs and/or IP addresses) are consistent with those supplied in the certificate application form and with the type of certificate requested, and rejects the request in case of conflicts or anomalies.
 
@@ -761,7 +760,7 @@ The Subscriber will normally be notified via email of the successful issuance of
 
 The CA intends the certificate as accepted after 30 days from the date of delivery, as attested by the date of the electronic mail message sent to the Subscriber, barring any notice to the contrary from the Subscriber.
 
-Public use of the certificate (i.e., its installation on a website with public access, publication on a public website of executable code signed by that certificate), even if temporary, shall in any case imply acceptance of the certificate by the Subscriber.
+Public use of the certificate (i.e., its installation on a website with public access), even if temporary, shall in any case imply acceptance of the certificate by the Subscriber.
 
 In the event that the certificate is issued with incorrect information in it due to incorrect completion of the application form by the requestor, the certificate must nonetheless be paid for.
 
@@ -989,7 +988,7 @@ OCSP responses related to the responder’s certificates have a validity interva
 
 Except for CAs that are technically constrained in line with section 7.1.5, the CA’s OCSP responders shall not respond with a "good" status when queried about a certificate or pre-certificates that has not been assigned a serial.
 
-The CA shall update the information provided via OCSP in compliance with the [BR] and [CSBR].
+The CA shall update the information provided via OCSP in compliance with the [BR].
 
 ### 4.9.10 On-line revocation checking requirements
 
@@ -1452,12 +1451,6 @@ Private Keys corresponding to CA Keys MUST be stored in accordance with [BR] sec
 
 For Private Keys corresponding to **SSL certificates** , the requirements in [BR] section 6.2 are applied.
 
-For Private Keys corresponding to **Code Signing certificates** , the following requirements are applied.
-
-Actalis normally issues Code Signing certificates only for private keys generated, stored and used through the **Actalis’ Code Signing Service** (see also section 6.2.7.3).
-
-At its own discretion, Actalis may in some circumstances issue Code Signing certificates on personal crypto-graphic devices (e.g., smartcards or similar) that comply at least with FIPS PUB 140 Level 3 (or higher), FIPS PUB 140-3 Level 3 (or higher), and/or Common Criteria EAL 4 or higher, or equivalent security criteria.
-
 #### 6.2.8 Method of activating private key
 
 CA private keys are only activated by authorized persons, using the mechanisms provided by the HSM manufacturer. Activation data and devices are protected from loss or disclosure to unauthorized people.
@@ -1570,11 +1563,6 @@ Actalis also complies with the requirements of the “Network and Certificate Sy
 
 The time reference used by Actalis, with which the CA processing systems are kept synchronized, is obtained from a high precision device that guarantees a difference of no more than one second with respect to UTC time.
 
-Actalis also operates a Time-Stamping Authority (TSA) intended for use in signing software when used in conjunction with Actalis Code Signing certificates. No guarantee is offered, and no liability will be accepted for any use of the Actalis TSA other than for signing software in combination with Code Signing certificates.
-
-The Actalis TSA service, compliant with RFC3161 and with the applicable requirements in [CSBR], is available at the following URL: [http://timestamp.actalis.com](http://timestamp.actalis.com)
-
-
 ## 7 CERTIFICATE, CRL AND OCSP PROFILES
 
 ### 7.1 CERTIFICATE PROFILE
@@ -1589,8 +1577,7 @@ All certificates shall be of type X.509 v3.
 
 #### 7.1.2 Certificate content and extensions
 
-All certificates conform to the [RFC 5280] public specification and to the CA/Browser Forum’s [BR], [CSBR] or
-[EVGL] according to certificate type and class.
+All certificates conform to the [RFC 5280] public specification and to the CA/Browser Forum’s [BR] or [EVGL], according to certificate type and class.
 
 ##### 7.1.2.1 Root CA Certificates
 
@@ -2178,11 +2165,11 @@ For **DV TLS Server** certificates, the following rules apply:
 - No other Subject DN attributes shall be present.
 - The Subject field may be empty in DV TLS Server certificates, e.g., when it cannot accommodate a very     long FQDN (longer that 64 characters).
 
-For **OV TLS Server and Code Signing certificates** , the following rules apply:
+For **OV TLS Server certificates** , the following rules apply:
 
 - The **_commonName_** (OID 2.5.4.3) attribute of the Subject DN:
-    - in an TLS Server certificate, must contain one single IP address or Fully Qualified Domain Name        (FQDN) among those contained in the SAN extension (see previous section);
-- The **_organizationName_** attribute (OID 2.5.4.10) of the Subject DN must contain the name or DBA     (Doing Business As) of the Subscriber. For an TLS Server certificate, it must be the entity that either    owns or controls all the FQDNs and/or IP addresses included in the certificate.
+    - in an TLS Server certificate, must contain one single IP address or Fully Qualified Domain Name (FQDN) among those contained in the SAN extension (see previous section);
+- The **_organizationName_** attribute (OID 2.5.4.10) of the Subject DN must contain the name or DBA (Doing Business As) of the Subscriber. For an TLS Server certificate, it must be the entity that either    owns or controls all the FQDNs and/or IP addresses included in the certificate.
 
 - The **_localityName_** attribute (OID 2.5.4.7) of the Subject DN must contain the name of the locality (e.g.,    city) where the Subscriber is located (main place of business).
 - The **_stateOrProvinceName_** attribute (OID 2.5.4.8) of the Subject DN must contain the name of the     province (for Italian organizations) or Region/State (for foreign organizations) where the Subscriber’s     principal place of business is located.
@@ -2290,7 +2277,7 @@ The internal auditor does not belong to the organizational structure that deals 
 
 ### 8.4 TOPICS COVERED BY ASSESSMENT
 
-External audits shall evaluate, based on the ETSI EN 319 411-1 and ETSI EN 319 411-2 norms, the compliance with the [BR], [CSBR] and [EVGL], and the proper operation of the CA as described in this CPS, including any Delegates Third Parties (DTPs) that are not "Enterprise RA", with the exception of any "technically constrained" subordinated CAs (see par. 1.3.1).
+External audits shall evaluate, based on the ETSI EN 319 411-1 and ETSI EN 319 411-2 norms, the compliance with the [BR] and [EVGL], and the proper operation of the CA as described in this CPS, including any Delegates Third Parties (DTPs) that are not "Enterprise RA", with the exception of any "technically constrained" subordinated CAs (see par. 1.3.1).
 
 Non-compliant DTPs cannot continue to perform the functions delegated to them until the non-conformities have been completely remediated.
 
@@ -2310,7 +2297,7 @@ The result of internal audits or second-party audits is communicated to the comp
 
 ### 8.7 SELF-AUDITS
 
-During the period in which the CA issues certificates, the CA shall monitor adherence to this CPS (and linked documents if any) and to the [BR], [CSBR] and [EVGL] requirements, and strictly control its service quality, by performing self-audits on at least a quarterly basis. Self-audits shall be carried out against a randomly selected sample of at least three percent of the certificates issued in the period beginning immediately after the last sample was taken, also using linting techniques and tools.
+During the period in which the CA issues certificates, the CA shall monitor adherence to this CPS (and linked documents if any) and to the [BR] and [EVGL] requirements, and strictly control its service quality, by performing self-audits on at least a quarterly basis. Self-audits shall be carried out against a randomly selected sample of at least three percent of the certificates issued in the period beginning immediately after the last sample was taken, also using linting techniques and tools.
 
 ## 9 OTHER BUSINESS AND LEGAL MATTERS
 
@@ -2446,13 +2433,11 @@ More specifically, Actalis represents and warrants to the Certificate Beneficiar
 
 - at the time of issuance, the CA followed the procedures described in this CPS for verifying that the Subject authorized the issuance of the Certificate and that the Applicant Representative was authorized to request the Certificate on behalf of the Applicant;
 - at the time of issuance, the CA followed the procedures described in this CPS for verifying the accuracy of all Subject information contained in the Certificate;
-- [for Code Signing certificates] at the time of issuance, the CA followed a procedure for reducing the likelihood that the information contained in the organizationalUnitName attribute of the Certificate’s Subject would be misleading;
 - if the Certificate contains Subject Identity Information, the CA verified the identity of the Applicant in     accordance with the procedures described in this CPS;
 - in the case of EV certificates, the CA has confirmed with the Incorporating or Registration Agency in the Subject’s Jurisdiction of incorporation or Registration that, as of the date the Certificate was issued, the Subject named in the Certificate legally exists as a valid organization or entity in the Jurisdiction of ncorporation or Registration;
 - if the CA and Subscriber are not affiliated, the Subscriber and CA are parties to a legally valid and enforceable Subscriber Agreement that satisfies the [BR] or the [EVGL] (depending on certificate class), or, if the CA and Subscriber are the same entity or are affiliated, the Applicant Representative acknowledged the Terms of Use;
 - the CA maintains a 24 x 7 publicly‐accessible Repository with current information regarding the status (valid or revoked) of all unexpired Certificates;
-- the CA will revoke the Certificate for any of the reasons specified in this CPS;
-- for Code Signing certificates, at the time of issuance the CA provided the Subscriber with documentation on how to securely store and prevent the misuse of private keys associated with the certificates.
+- the CA will revoke the Certificate for any of the reasons specified in this CPS.
 
 ### 9.6.2 RA Representations and Warranties
 
@@ -2473,9 +2458,6 @@ The Applicant represents and warrants to:
 - provide the CA with true, accurate and complete information at all times;
 - ensure confidentiality of secret codes (e.g. passwords) received from the CA;
 - take all reasonable measures to avoid compromise of its private keys;
-- in particular, for Code Signing key pairs:
-    - generate, store and use the key pairs within a hardware cryptographic device that meets or   exceed the requirements as defined in §6.2.11 of this CPS; and,
-    - keep the said hardware cryptographic device physically separate from the device (e.g. PC) that hosts the code signing function until a signing session is begun;
 - install and start using the certificate only after checking that it contains correct information;
 - use the certificate only in the ways and for the purposes provided for in this CPS;
 - never use its private keys, for no reason whatsoever, for issuing other certificates in turn;
@@ -2484,15 +2466,10 @@ The Applicant represents and warrants to:
 - immediately request revocation of a certificate in the event that any of the information contained in     the certificate (i.e. company name, web site address, etc.) is no longer valid;
 - immediately inform the CA, after issue and up to expiry or revocation of the certificate, of any changes     in the information supplied during the application phase;
 - respond within 24 hours to requests by the CA related to possible improper use of certificates or     possible key compromises;
-- upon revocation of their certificate(s), immediately stop using the revoked certificates, and:
-    - in the case of Code Signing certificates: immediately remove the signed software from the web sites on which it is published;
-    - in the case of TLS Server certificates: immediately remove the certificate from the servers on  which it is installed.
+- upon revocation of their certificate(s), immediately stop using the revoked certificates, and immediately remove the certificate from the servers on  which it is installed;
 - stop using certificates upon their expiration.
 
-Moreover, the Subscriber shall:
-
-- in case of Code Signing certificates: not sign malicious software (malware) and not describe the signed   software in a misleading way with respect to its real functionality and purpose;
-- in case of TLS Server certificates: install the certificate only on the servers that are accessible at the subjectAlternativeName(s) listed in the Certificate and operate those servers only in the ways allowed     by this CPS and for lawful purposes only.
+Moreover, the Subscriber shall install the certificate only on the servers that are accessible at the subjectAlternativeName(s) listed in the Certificate and operate those servers only in the ways allowed by this CPS and for lawful purposes only.
 
 Subscribers acknowledge and accept that the CA, if made aware that a Subscriber’s certificate is being used for unlawful purposes (e.g. phishing, Man-In-The-Middle attacks, distribution of malware, etc.) or for issuing other certificates, will revoke that Certificate immediately and without any notice.
 
