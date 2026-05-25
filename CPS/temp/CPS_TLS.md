@@ -209,7 +209,7 @@ The Customer, namely the individual or organization that purchases the certifica
 
 #### 1.3.4 Relying parties
 
-Relying Parties are recipients of a certificate who act on reliance on the information contained in the certificate. In the case of an TLS Server certificate, these are (for instance) the users of the relevant web site. For Code Signing certificates, these are typically the users of the signed software.
+Relying Parties are recipients of a certificate who act on reliance on the information contained in the certificate. In the case of an TLS Server certificate, these are (for instance) the users of the relevant web site(s).
 
 #### 1.3.5 Resellers
 
@@ -219,10 +219,7 @@ Certificates may also be provided through Resellers (business partners), which i
 
 #### 1.4.1 Appropriate certificate uses
 
-Certificates issued under this CPS may be used for the following purposes, depending on certificate type:
-
-- **TLS Server certificates** may be used to enable the TLS/SSL protocol on one or more servers.
-- **Code Signing certificates** may be used for validating digital signatures of executable code.
+Certificates issued under this CPS are meant to be used to enable the TLS protocol on one or more servers.
 
 A list of major platforms and browsers where certificates issued according to this CPS are trusted can be found on Actalis’ web site at the following URL: https://www.actalis.it/products/ssl-certificate.aspx. Applicants are supposed to review that list before requesting certificates.
 
@@ -279,10 +276,8 @@ Regardless of the communication channel used, the problem reporter must provide 
 
 - his/her full name;
 - description of the alleged problem;
-- enough information to identify the certificate in question, such as:
-    - for an TLS Server certificate: either the address of the web site where the certificate is installed,
-       or the certificate hostname, starting validity date, and serial number;
-    - for a Code Signing certificate: commonName (CN), starting validity date, and serial number.
+- enough information to identify the certificate in question, such as the address of the web site where the certificate is installed,
+       or the certificate hostname, starting validity date, and serial number.
 
 Such communications may be made in Italian or English; other languages are not handled.
 
@@ -651,8 +646,6 @@ The certificate enrollment process includes the following mandatory steps:
 
 All the above steps are the responsibility of the Applicant, except for the Payment which may possibly be made by another entity.
 
-In the case of Code Signing certificates, the generation of the Applicant’s key pair is performed by Actalis upon request, as part of the certificate enrollment process that applies in that case.
-
 The order and the exact way in which these steps are carried out may vary, depending on chosen request channel, but all the steps have to be completed (with the possible exception of the payment which can be deferred, depending on the customer and the amount due, subject to approval by Actalis’ sales department) _before_ the certificate request is taken charge of by the CA.
 
 For DV and OV TLS Server certificates and Code Signing certificates, the following Applicant roles are required, as,defined in the [BR], and enforced within the enrollment process:
@@ -757,9 +750,9 @@ If all the above checks are successful, the CA generates the certificate, stores
 
 All of the above operations are performed automatically for Subscriber certificates, normally.
 
-All TLS Server certificates issued after 30 April 2018 MUST be compliant with the applicable Certificate Transparency requirements according to [CT]. When an TLS Server certificate is to be issued, a precertificate is first generated and registered in a number of CT Logs according to the applicable browser vendors’ CT Policies (Google, Mozilla and Apple). Each CT Log returns a signed certificate timestamp (SCT) as a proof of inclusion. Then, the final certificate is generated wherein the SCTs are embedded as an extension (OID 1.3.6.1.4.1.11129.2.4.2).
+Actalis conforms to web browser's Certificate Transparency requirements for all TLS Server certificates, without exceptions, according to [CT]. When an TLS Server certificate is to be issued, a precertificate is first generated and registered in a number of CT Logs according to the applicable browser vendors’ CT Policies (Google, Mozilla and Apple). Each CT Log returns a signed certificate timestamp (SCT) as a proof of inclusion. Then, the final certificate is generated wherein the SCTs are embedded as an extension (OID 1.3.6.1.4.1.11129.2.4.2).
 
-In case of a Subordinate CA certificate, however, the certificate issuance requires a suitably authorized indi-vidual (i.e., the CA system operator, system officer, or PKI administrator) to deliberately issue a direct com-mand in order for the Root CA to perform the certificate signing operation.
+In case of a Subordinate CA certificate, however, the certificate issuance requires a suitably authorized individual (i.e., the CA system operator, system officer, or PKI administrator) to deliberately issue a direct command in order for the Root CA to perform the certificate signing operation.
 
 ### 4.3.2 Notification to subscriber by the CA of issuance of certificate
 
@@ -788,17 +781,11 @@ For all new TLS Server certificates, the CA submits the pre-certificate to at le
 
 ### 4.5.1 Subscriber private key and certificate usage
 
-The Subscriber shall use the private key:
-
-- (Code Signing certificates) to digitally sign their own executable code (e.g., PE files, Java applets, dynamic libraries, etc.) and/or code for which the Subscriber is responsible;
-- (TLS Server certificates) to activate the TLS/SSL protocol on their own servers, thereby allowing TLS server authentication and session encryption of the transactions with clients.
+The Subscriber shall use the private key to activate the TLS protocol on their own servers, thereby allowing TLS server authentication and session encryption of the transactions with clients.
 
 ### 4.5.2 Relying party public key and certificate usage
 
-The relying parties shall use the certificate to:
-
-- (Code Signing certificates) verify the integrity and origin of the executable code;
-- (TLS Server certificates) verify the identity of a server and (depending on certificate class) the organization which controls the server, as well as to exchange the “session key” safely with the server.
+The relying parties shall use the certificate to verify the identity of a server and (depending on certificate class) the organization which controls the server, as well as to exchange the “session key” safely with the server.
 
 See also paragraph 1.4.
 
@@ -1622,9 +1609,7 @@ The profile of the Root CA certificate is as follows:
 | Subject | CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L = Milano <br> C = IT |
 | SubjectPublicKeyInfo |  < RSA public key of 4096 bits> |
 | SignatureValue |  < Root CA signature> |
-
-| Extension  | Value|
-|--|--|
+| **Extension**  | **Value**|
 | Basic Constraints  | critical: CA=true |
 | AuthorityKeyIdentifier (AKI)  | <not included> |
 | SubjectKeyIdentifier (SKI) | 52:D8:88:3A:C8:9F:78:66:ED:89:F3:7B:38:70:94:C9:02:02:36:D0 |
