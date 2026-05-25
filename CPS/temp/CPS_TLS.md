@@ -69,9 +69,9 @@ Distribution: PUBLIC
 |29 March 2026|6.0|All|Refocused the document exclusively on the TLS certificate issuance and management service.|AS, FM, NP|
 
 
-## 1 INTRODUCTION
+# 1 INTRODUCTION
 
-### 1.1 Overview
+## 1.1 Overview
 
 Actalis S.p.A. , a company of the Aruba S.p.A. group, is a leading provider of certification services since 2002, accredited by AgID under the European Directive on Electronic Signatures, then under the European Regulation EU n.910/2014 (“eIDAS”). Actalis offers several types of certificates and related management services, as well as other trust services and solutions (www.actalis.it).
 
@@ -101,15 +101,15 @@ In the event of any inconsistency between this CPS and those documents, those do
 
 This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit  http://creativecommons.org/licenses/by-nd/4.0/](http://creativecommons.org/licenses/by-nd/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-### 1.2 DOCUMENT IDENTIFICATION
+## 1.2 DOCUMENT IDENTIFICATION
 
 This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as **CPS** ) applying to **TLS Server certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. This document is published on Actalis’ web site in two languages: Italian and English. In the event of any inconsistency between the two versions, the Italian version takes precedence.
 
 This CPS is published as a signed PDF document in order to ensure its origin and integrity.
 
-### 1.3 PKI PARTICIPANTS
+## 1.3 PKI PARTICIPANTS
 
-#### 1.3.1 Certification Authorities
+### 1.3.1 Certification Authorities
 
 The Certification Authority (CA) is the trusted third party who issues the certificates and signs them with its own private key (CA key). Furthermore, the CA manages the status of the certificates.
 
@@ -145,7 +145,7 @@ Company web site: http://www.actalis.it
 Company e-mail address: info@actalis.it
 ```
 
-##### 1.3.1.1 Root Certification Authorities
+#### 1.3.1.1 Root Certification Authorities
 
 As anticipated, the role of Root CA is played by Actalis. As of the date of revision of this present CPS, Actalis’ RootCA keys are those identified in the following table; for further details, see chapter 7.
 
@@ -155,7 +155,7 @@ As anticipated, the role of Root CA is played by Actalis. As of the date of revi
 |CN = Actalis TLS Server ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|30 22 bd d5 9a b5 d2 87 2f ff a6 7c a3 b5 4c 16 57 f0 ae 0c|28 February 2025|22 February 2050||
 |CN = Actalis TLS Server RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|e8 d3 0e 4d b1 76 41 22 80 19 4d 50 48 84 f2 2f 35 90 9d 8e|28 February 2025|22 February 2050||
 
-##### 1.3.1.2 Subordinate Certification Authorities
+#### 1.3.1.2 Subordinate Certification Authorities
 
 As of the date of revision of this CPS, the **Subordinate CAs run by Actalis** are those identified in the following table. For further details, see chapter 7.
 
@@ -176,14 +176,14 @@ Subordinate CA certificates can be issued to **external CAs** (i.e. not run by A
 
 SubCA certificates can be issued, under an Actalis Root CA, for **external CAs** (i.e., not managed by Actalis) upon signing a **contract** in which the operators of such SubCAs commit, among other things, to comply with the CAB Forum Baseline Requirements [BR]  and to undergo an **annual compliance audit** to the [BR] by an **independent and qualified auditor**, providing Actalis promptly with the annual compliance certificate issued by the auditor. In the absence of such certification, the SubCA certificate will be revoked. Actalis reserves the right to revoke the SubCA certificate even if the compliance certificate highlights serious issues, at Ac-talis' sole discretion.
 
-##### 1.3.1.3 Cross Certificates
+#### 1.3.1.3 Cross Certificates
 As of the review date of this CPS, the Actalis cross-certificates (cross-certification between the old and new Actalis Root CAs) are those identified below; for further details, see also Chapter 7.
 | Subject DN |  Subject Key ID |  notBefore|  notAfter |  
 |--|--|--|--|
 | CN = Actalis TLS Server ECC Root CA 2025 <br> O = Actalis S.p.A./03358520967 <br> L = Milan <br> C = IT |30 22 bd d5 9a b5 d2 87 2f ff a6 7c a3 b5 4c 16 57 f0 ae 0c|07 august 2025|   22 september 2030|  
 | CN = Actalis TLS Server RSA Root CA 2025 <br> O = Actalis S.p.A./03358520967 <br> L = Milan <br> C = IT |af 53 50 61 72 e9 72 04 31 41 db 0e 66 cf 75 3a f6 0e bf cf|07 august 2025|   22 september 2030| 
 
-#### 1.3.2 Registration Authorities
+### 1.3.2 Registration Authorities
 
 The Registration Authority (RA) is a person or an organization that is responsible for:
 
@@ -197,7 +197,7 @@ For DV and OV certificates only, the CA may delegate some RA tasks to Delegated 
 
 Organizations meeting the requirements for “Enterprise RAs” set forth in the [BR] may be enabled to operate as their own RA, limited to the domains and IP addresses they own or control.
 
-#### 1.3.3 Subscribers
+### 1.3.3 Subscribers
 
 Subscribers are those legal entities or individuals to whom Certificates are issued according to this CPS and who hold the private keys corresponding to their certificates. In particular:
 
@@ -211,17 +211,17 @@ Once the Certificate is issued, the Applicant is referred to as the **Subscriber
 
 The Customer, namely the individual or organization that purchases the certificate, is normally the Subscriber itself, but this is not a requirement (another entity may purchase the certificate on behalf of the Subscriber).
 
-#### 1.3.4 Relying parties
+### 1.3.4 Relying parties
 
 Relying Parties are recipients of a certificate who act on reliance on the information contained in the certificate. In the case of an TLS Server certificate, these are (for instance) the users of the relevant web site(s).
 
-#### 1.3.5 Resellers
+### 1.3.5 Resellers
 
 Certificates may also be provided through Resellers (business partners), which in certain cases may also play the role of Registration Authorities, depending on the agreements with the CA.
 
-### 1.4 CERTIFICATE USAGE
+## 1.4 CERTIFICATE USAGE
 
-#### 1.4.1 Appropriate certificate uses
+### 1.4.1 Appropriate certificate uses
 
 Certificates issued under this CPS are meant to be used to enable the TLS protocol on one or more servers.
 
@@ -244,7 +244,7 @@ The OID that identifies the certificate policy is contained in the _CertificateP
 
 In the case of _qualified_ certificates according to the eIDAS regulation (see par. 7.1), the CertificatePolicies extension also includes the relevant policy OID defined in ETSI EN 319 411-2.
 
-#### 1.4.2 Prohibited certificate uses
+### 1.4.2 Prohibited certificate uses
 
 Any use of the certificate other than provided for in section 1.4.1 is forbidden and may result, as soon as Actalis is made aware of it, in the revocation of the certificate (see also section 4.9.1).
 
@@ -258,13 +258,13 @@ Subscribers should not use certificates trusted for the web in contexts where th
 
 Subscribers and relying parties should keep in mind that any certificates _trusted_ by the browsers must comply with all requirements of all applicable browser _root policies_ , including the revocation periods recalled in section 4.9.1 of this CPS.
 
-### 1.5 POLICY ADMINISTRATION
+## 1.5 POLICY ADMINISTRATION
 
-#### 1.5.1 Organization administering the document
+### 1.5.1 Organization administering the document
 
 This CPS is developed, reviewed, published and updated by Actalis S.p.A.
 
-#### 1.5.2 Contact person
+### 1.5.2 Contact person
 
 For any enquiries about this CPS, please send e-mail to cps-admin@actalis.it.
 
@@ -294,15 +294,15 @@ If the reported problem does exist, the CA will decide on a case-by-case basis t
 
 Note: those who send unwanted messages (spam) will be prosecuted according to applicable laws.
 
-#### 1.5.3 Person determining CPS suitability for the policy
+### 1.5.3 Person determining CPS suitability for the policy
 
 This CPS is approved by Actalis’ CA services direction, after review by all internal stakeholders, taking into account the Requirements [BR] and Guidelines [EVGL], and the results and recommendations received from qualified auditors (see also section 8).
 
-#### 1.5.4 CPS approval procedures
+### 1.5.4 CPS approval procedures
 
 Approval of this CPS follows the procedures defined in the company’s Quality Management System. This CPS is reviewed and updated at least yearly, i.e., within 365 days since the last update.
 
-### 1.6 DEFINITIONS AND ACRONYMS
+## 1.6 DEFINITIONS AND ACRONYMS
 
 |Acronym|Definition|
 |-|-|
@@ -347,7 +347,7 @@ Approval of this CPS follows the procedures defined in the company’s Quality M
 
 Throughout this document, certain terms shall be interpreted according to the definitions provided in [BR] and [EVGL]. In particular (but not limited to) the following terms: Subscriber, Subject, Applicant, Applicant Representative, Affiliate, Certificate Requester, Certificate Approver, Contract Signer, Authorization Domain Name, Base Domain Name, Domain Contact, Domain Registrant, Enterprise RA, Internal Name, Reserved IP Address.
 
-### 1.7 NORMATIVE REFERENCES
+## 1.7 NORMATIVE REFERENCES
 
 [DLGS196] Legislative Decree n.196 of 30 June 2003 “Personal data protection code”, published in the Supplemento Ordinario n.123 of the Gazzetta Ufficiale n. 174 of 29 July 2003.
 
@@ -381,7 +381,7 @@ Throughout this document, certain terms shall be interpreted according to the de
 [CCADB] CCADB Policy - (https://www.ccadb.org/policy) 
 
 
-## 2 PUBLICATIONS AND REPOSITORY RESPONSIBILITIES
+# 2 PUBLICATIONS AND REPOSITORY RESPONSIBILITIES
 
 The term “repository” refers to a combination of on-line archives or registers containing information of public interest regarding the issuance and management of certificates described in this CPS.
 
