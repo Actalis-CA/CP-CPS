@@ -86,10 +86,10 @@ This document is the Actalis’ combined CP/CPS (hereinafter referred to only as
 Actalis conforms to the latest published versions of:
 *	CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org 
 *	web browsers´ root programs or policies, including (but not limited to)
--	Chrome Root Program
--	Apple Root Certificate Program
--	Mozilla Root Store Policy
--	Microsoft Root Program
+   -	Chrome Root Program
+   -	Apple Root Certificate Program
+   -	Mozilla Root Store Policy
+   -	Microsoft Root Program
 *	the CCADB Policy published at https://www.ccadb.org/policy 
 
 In the event of any inconsistency between this CPS and those documents, those documents take precedence.
