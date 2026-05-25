@@ -96,12 +96,9 @@ This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 I
 
 ### 1.2 DOCUMENT IDENTIFICATION
 
-This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as **CPS** ) applying to **TLS Server and Code Signing certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. This document is published on Actalis’ web site in two languages: Italian and English. In the event of any inconsistency between the two versions, the Italian version takes precedence.
-
-Actalis also issues other types of certificates (e.g., SSL Client, S/MIME) in compliance with policies described in separate documents. Those policies may refer to this CPS for all common aspects (e.g., infrastructure, organization, physical and operational security, etc.).
+This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as **CPS** ) applying to **TLS Server certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. This document is published on Actalis’ web site in two languages: Italian and English. In the event of any inconsistency between the two versions, the Italian version takes precedence.
 
 This CPS is published as a signed PDF document in order to ensure its origin and integrity.
-
 
 ### 1.3 PKI PARTICIPANTS
 
