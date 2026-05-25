@@ -71,7 +71,7 @@ Distribution: PUBLIC
 
 ## 1. INTRODUCTION
 
-### 1.1 OVERVIEW
+### 1.1. Overview
 
 **Actalis S.p.A.** , a company of the Aruba S.p.A. group, is a leading provider of certification services since 2002, accredited by AgID under the European Directive on Electronic Signatures, then under the European Regulation EU n.910/2014 (“eIDAS”). Actalis offers several types of certificates and related management services, as well as other trust services and solutions (www.actalis.it).
 
@@ -2624,6 +2624,9 @@ The CA guarantees the following minimum service levels:
 |Time for certificate revocation (when requested on-line)|max 2 minutes in 95% of all cases|annual|
 |Time for certificate revocation (when requested by e-mail, ordinary mail or fax)|max 6 hours in 95% of all cases|annual|
 
+# Appendix A - Change History
+
+Blah blah
 
 
 
