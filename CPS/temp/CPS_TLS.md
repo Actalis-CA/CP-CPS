@@ -246,7 +246,7 @@ Approval of this CPS follows the procedures defined in the company’s Quality M
 ## 1.6 DEFINITIONS AND ACRONYMS
 
 |Acronym|Definition|
-|-|-|
+|-------|----------|
 | AgID  |Agenzia per l’Italia Digitale (Agency for a Digital Italy) |
 | ARL  | Authority Revocation List |
 | CA  | Certification Authority |
@@ -326,7 +326,7 @@ Throughout this document, certain terms shall be interpreted according to the de
 
 The term “repository” refers to a combination of on-line archives or registers containing information of public interest regarding the issuance and management of certificates described in this CPS.
 
-### 2.1 REPOSITORIES
+## 2.1 REPOSITORIES
 
 The Actalis repository is published on:
 
@@ -335,7 +335,7 @@ The Actalis repository is published on:
 Actalis manages its repository and is directly responsible for it.
 The repository is normally accessible on a continuous basis (7x24).
 
-### 2.2 PUBLICATION OF INFORMATION
+## 2.2 PUBLICATION OF INFORMATION
 
 Actalis publishes at least the following documentation on its website:
 
@@ -347,7 +347,7 @@ Actalis publishes at least the following documentation on its website:
 
 Actalis also publishes test web pages that allow Application Software Suppliers to test their software with Subscriber certificates that chain up to Actalis’ publicly trusted Root CAs.
 
-### 2.3 TIME OR FREQUENCY OF PUBLICATIONS
+## 2.3 TIME OR FREQUENCY OF PUBLICATIONS
 
 This CPS and any associated documents are published on the CA web site each time they are updated.
 
@@ -361,13 +361,13 @@ Anyone can freely access the repository in read-only mode.
 
 Access to the repository in write-mode (e.g., for the publication of new or updated information) is only possible from workstations / servers directly connected to the repository’s local network, subject to authentication.
 
-## 3 IDENTIFICATION AND AUTHENTICATION (I&A)
+# 3 IDENTIFICATION AND AUTHENTICATION (I&A)
 
 The I&A procedures followed by Actalis comply with CAB Forum requirements. In particular, for all classes of certificates issued under this CPS, the CA performs at least the mandatory checks provided in [BR]. In addition, for EV certificates, the CA also performs at least the additional checks required by the [EVGL].
 
-### 3.1 NAMING
+## 3.1 NAMING
 
-#### 3.1.1 Types of names
+### 3.1.1 Types of names
 
 Certificates issued according to this CPS normally contain a non-null Distinguished Name (DN) compliant with the ITU-T X.500 standard (ISO/IEC 9594) in both the Subject and the Issuer fields.
 
@@ -377,43 +377,43 @@ Furthermore, all the requirements set forth in the [BR] and [EVGL] shall be met.
 
 In particular, all TLS Server certificates shall include entries in the Subject Alternative Name (SAN) extension, where each entry is either a Fully Qualified Domain Name (FQDN) or an IP address. However, IP addresses are not allowed in DV (Domain Validated) and EV (Extended Validation) TLS Server certificates.
 
-##### 3.1.1.1 Internal names and reserved IP addresses
+#### 3.1.1.1 Internal names and reserved IP addresses
 
 Internal Names and/or Reserved IP Addresses (see the respective definitions in [BR]) are not allowed.
 
-##### 3.1.1.2 Internationalized domain names (IDNs)
+#### 3.1.1.2 Internationalized domain names (IDNs)
 
 No stipulation.
 
-#### 3.1.2 Need for names to be meaningful
+### 3.1.2 Need for names to be meaningful
 
 Actalis inserts meaningful names in both the _subject_ and the _issuer_ fields of certificates, with the possible exception of the Subject field in DV certificates as previously noted.
 
-#### 3.1.3 Anonymity or pseudonymity of subscribers
+### 3.1.3 Anonymity or pseudonymity of subscribers
 
 Except for TLS Server certificates of class DV (Domain Validated), which by definition do not contain Subscriber identification information, in all other cases the certificate contains either the official (i.e. registered) name of the Subscriber or a verified DBA (Doing Business As) name.
 
-#### 3.1.4 Rules for interpreting various name forms
+### 3.1.4 Rules for interpreting various name forms
 
 All name forms shall be interpreted according to the ITU-T X.500 (ISO/IEC 9594) and the RFC 5820 standards, also taking into account CAB Forum’s Requirements [BR] and [EVGL], according to certificate type and class.
 
-#### 3.1.5 Uniqueness of names
+### 3.1.5 Uniqueness of names
 
 No stipulation.
 
-#### 3.1.6 Recognition, authentication, and role of trademarks
+### 3.1.6 Recognition, authentication, and role of trademarks
 
 Names that violate the intellectual property rights of others are not allowed into certificates. Actalis shall not be involved in any controversy whatsoever regarding the ownership of domain names, commercial names, commercial trademarks or services. Actalis reserves the right to reject the certificate application (or revoke an already issued certificate) in case of such a controversy.
 
-### 3.2 INITIAL IDENTITY VALIDATION
+## 3.2 INITIAL IDENTITY VALIDATION
 
-#### 3.2.1 Method to prove possession of private key
+### 3.2.1 Method to prove possession of private key
 
 The proof-of-possession, by the Applicant, of the private key corresponding to the requested certificate is based on the cryptographic verification of the CSR (Certificate Signing Request) sent to the CA. In fact, the Applicant must transmit its public key to the CA in the form of a CSR (Certificate Signing Request) in PKCS#10 format [RFC2314]. The CA shall verify that the digital signature in the CSR is valid.
 
-#### 3.2.2 Authentication of organization and domain identity
+### 3.2.2 Authentication of organization and domain identity
 
-##### 3.2.2.1 Identity
+#### 3.2.2.1 Identity
 
 When the certificate is to include the name or address of an organization, the CA shall verify the identity and address of the organization, and that the address is the Applicant’s address of existence or operation. This verification is done in compliance with the CAB Forum’s requirements [BR] and [EVGL], according to certificate type and class.
 
@@ -455,15 +455,15 @@ For the second item, Actalis will normally check that the Applicant has been in 
 
 Actalis reserves the right to reject a certificate request in the event that it encounters problematic situations (e.g., bankruptcy proceedings, disputes, insolvency, etc.) involving the Applicant or am Applicant Representative.
 
-##### 3.2.2.2 DBA/Tradename
+#### 3.2.2.2 DBA/Tradename
 
 If the Subject the certificate is to include a DBA or trade name (not applicable to DV-class TLS Server certificate), the CA shall verify the Applicant’s right to use the DBA/trade name with at least one of the criteria provided for in [BR] or [EVGL], according to certificate type and class.
 
-##### 3.2.2.3 Verification of country
+#### 3.2.2.3 Verification of country
 
 When the certificate Subject is to include a country code (not applicable to DV-class TLS Server certificates), the CA shall verify the country using one of the methods provided for in section 3.2.2. 3 of the [BR].
 
-##### 3.2.2.4 Validation of Domain Authorization or Control
+#### 3.2.2.4 Validation of Domain Authorization or Control
 
 Prior to issuing an **TLS Server** certificate, the CA shall verify that **each FQDN** to be included in the certificate **either is owned or controlled by the Applicant** or an affiliate thereof (e.g., parent or subsidiary). These checks (also referred to as Domain Control Validation or DCV) are done by one of the following methods:
 
@@ -480,7 +480,7 @@ In all cases, the DCV is done in full compliance with section 3.2.2.4 of the [BR
 
 The particular DCV method used for a given FQDN may depend on circumstances, on the certificate requestor’s preferences. The range of supported DCV methods may vary depending on the certificate request channel.
 
-##### 3.2.2.5 Authentication for an IP Address
+#### 3.2.2.5 Authentication for an IP Address
 
 Prior to issuing an **TLS Server** certificate, the CA shall verify that **all IP addresses** to be included in the certificate (excluding DV and EV certificates that may not contain IP addresses) **are controlled by the Applicant** or an affiliated thereof (e.g. holding or subsidiary). These checks are done by one of the following methods:
 
@@ -491,25 +491,25 @@ Prior to issuing an **TLS Server** certificate, the CA shall verify that **all I
 (§) Effective March 15, 2027, Actalis will not rely on this method anymore, and prior validations using this method and validation data gathered according to this method will not be used to issue Subscriber TLS Cer-tificates.
 
 
-##### 3.2.2.6 Wildcard Domain Validation
+### 3.2.2.6 Wildcard Domain Validation
 
 Prior to issuing an **TLS Server** certificate, if the certificate is to include a **wildcard FQDN** in the Subject common-Name (CN) or in the Subject Alternative Name extension, the CA shall determine if the wildcard character would fall within the label immediately to the left of a registry‐controlled or public suffix; in such a case, the CA shall reject the certificate request unless the Applicant proves its rightful control of the entire Domain Namespace.
 
 For this verification, Actalis consults the Public Suffix List published at https://publicsuffix.org/.
 
-##### 3.2.2.7 Data Source Accuracy
+#### 3.2.2.7 Data Source Accuracy
 
 Prior to using any data source as a Reliable Data Source, the CA shall evaluate the source for its reliability, accuracy, and resistance to alteration or falsification, according to section 3.2.2.7 of the [BR].
 
-##### 3.2.2.8 CAA Records
+#### 3.2.2.8 CAA Records
 
 As part of the issuance process, the CA shall check for a CAA record for each dNSName in the Subject Alternative Name extension of the certificate to be issued, according to the procedure in RFC 6844 and in section 3.2.2.8 of the [BR]. The CAs shall not issue the certificate unless either (1) the certificate request is consistent with the applicable CAA Resource Record set or (2) an exception applies. The CA’s CAA identifying domain is “ **actalis.it** ”.
 
-##### 3.2.2.9 Multi‑Perspective Issuance Corroboration
+#### 3.2.2.9 Multi‑Perspective Issuance Corroboration
 
 Starting from March 15, 2025, in order to improve protection against Border Gateway Protocol (BGP) attacks or hijacks, Actalis implement Multi‐Perspective Issuance Corroboration – using at least two (2) remote Network Perspectives – in compliance with section 3.2.2.9 of the [BR].
 
-#### 3.2.3 Authentication of individual identity
+### 3.2.3 Authentication of individual identity
 
 For certificates containing Subject Identity Information, if the Applicant is a natural person the CA shall verify theApplicant’s name, Applicant’s address, and the authenticity of the certificate request in compliance with section 3.2.2 of the [BR]. To that aim, Actalis will normally:
 
@@ -517,7 +517,7 @@ For certificates containing Subject Identity Information, if the Applicant is a 
 - verify the Applicant’s address using a form of identification that Actalis determines to be reliable, such     as a government ID, utility bill, or bank or credit card statement. Actalis may rely on the same government‐issued ID that was used to verify the Applicant’s name;
 - verify the certificate request with the Applicant using a reliable method of communication.
 
-#### 3.2.4 Non-verified subscriber information
+### 3.2.4 Non-verified subscriber information
 
 The CA does not verify the following Subscriber information:
 
@@ -527,7 +527,7 @@ The CA does not verify the following Subscriber information:
 
 In general, the CA does not verify the correctness of any information received from the Applicant that is not intended to be included in security-sensitive fields of the certificate and is not necessary for the issuance and subsequent management (e.g. revocation) of the certificate.
 
-#### 3.2.5 Validation of authority
+### 3.2.5 Validation of authority
 
 For certificates containing Subject Identity Information, if the Applicant is an organization the CA shall use a Reliable Method of Communication to verify the authenticity of the Applicant Representative’s certificate request, in line with CAB Forum’s [BR] or [EVG}, according to certificate type and class.
 
@@ -543,15 +543,15 @@ Actalis will normally use one the following validation methods:
 
 For EV certificates, the CA shall verify the Name, Title, and Authority (Agency) of Contract Signer and Certificate Approver according to section 11.8 of the [EVGL]. To the aim of this verification, Actalis will normally rely on a suitable representation from the Contract Signer, based on a template provided by Actalis, which must be signed according to section 4.1.2.
 
-#### 3.2.6 Criteria for interoperation
+### 3.2.6 Criteria for interoperation
 
 The CA shall disclose all cross certificates that identify the CA as the Subject, provided that the CA arranged for or accepted the establishment of the trust relationship.
 
 (^2) One such service is the Italian “Posta Elettronica Certificata” (PEC).
 
-### 3.3 IDENTIFICATION AND AUTHENTICATION FOR RE-KEY REQUESTS
+## 3.3 IDENTIFICATION AND AUTHENTICATION FOR RE-KEY REQUESTS
 
-#### 3.3.1 Identification and authentication for routine re-key
+### 3.3.1 Identification and authentication for routine re-key
 
 Re-keying a certificate may routinely occur in two cases:
 
@@ -560,11 +560,11 @@ Re-keying a certificate may routinely occur in two cases:
 
 In both cases, the CA may request the Subscriber to pass the same identification and authentication procedures used for the initial certificate issuance, depending on the age of the validation data used for the initial certificate issuance (in view of the requirements set forth in [BR] and [EVGL]), and on the request channel.
 
-#### 3.3.2 Identification and authentication for re-key after revocation
+### 3.3.2 Identification and authentication for re-key after revocation
 
 After a certificate has been revoked, the Subscriber wishing a new certificate must generate a new key pair and follow all the normal identification and authentication procedures as in the initial certificate issuance.
 
-### 3.4 IDENTIFICATION AND AUTHENTICATION FOR REVOCATION REQUESTS
+## 3.4 IDENTIFICATION AND AUTHENTICATION FOR REVOCATION REQUESTS
 
 See section 4.9.3.
 
