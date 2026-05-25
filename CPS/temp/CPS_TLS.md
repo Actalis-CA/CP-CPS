@@ -2,13 +2,13 @@
 
 ## TLS Server certificates
 
-#### Version: 5.21
+#### Version: 6.0
 
-#### Date: March 15, 2026
+#### Date: May 29, 2026
 
 Certification Practice Statement
 
-### SSL Server and Code Signing certificates
+### TLS Server certificates
 
 Approved by: Andrea Sassetti
 
@@ -86,10 +86,10 @@ This document is the Actalis’ combined CP/CPS (hereinafter referred to only as
 Actalis conforms to the latest published versions of:
 *	CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org 
 *	web browsers´ root programs or policies, including (but not limited to)
-**	Chrome Root Program
-**	Apple Root Certificate Program
-**	Mozilla Root Store Policy
-**	Microsoft Root Program
+-	Chrome Root Program
+-	Apple Root Certificate Program
+-	Mozilla Root Store Policy
+-	Microsoft Root Program
 *	the CCADB Policy published at https://www.ccadb.org/policy 
 
 In the event of any inconsistency between this CPS and those documents, those documents take precedence.
