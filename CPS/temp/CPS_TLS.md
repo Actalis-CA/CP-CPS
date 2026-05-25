@@ -369,9 +369,9 @@ The I&A procedures followed by Actalis comply with CAB Forum requirements. In pa
 
 ### 3.1.1 Types of names
 
-Certificates issued according to this CPS normally contain a non-null Distinguished Name (DN) compliant with the ITU-T X.500 standard (ISO/IEC 9594) in both the Subject and the Issuer fields.
+Certificates issued according to this CPS normally contain a non-null Distinguished Name (DN) compliant with the ITU-T X.500 standard (ISO/IEC 9594) in the Issuer field.
 
-The Subject field may be _empty_ in DV (Domain Validated) certificates, e.g., when it cannot accommodate a very long FQDN (> 64 chars); in such a case, the Subject Alternative Name (SAN) extension is flagged as _critical_.
+As to the Subject field, this _may be empty_ in Domain Validated (DV) certificates, since in these certificates Actalis only inserts the `commonName` attribute in the Subject field, but only if this is requested by the Applicant; in this case, the Subject Alternative Name (SAN) extension is marked as critical as per [RFC 5280].
 
 Furthermore, all the requirements set forth in the [BR] and [EVGL] shall be met.
 
