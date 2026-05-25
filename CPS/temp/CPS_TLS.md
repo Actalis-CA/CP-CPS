@@ -1,73 +1,14 @@
-# Certification Practice Statement
+**Certification Practice Statement**
 
-## TLS Server certificates
+**TLS Server certificates**
 
-#### Version: 6.0
-
-#### Date: May 29, 2026
-
-Certification Practice Statement
-
-### TLS Server certificates
-
+Version: 6.0
+Date: May 29, 2026
 Approved by: Andrea Sassetti
-
 Document Code: MODAC_A_ 66
-
 Distribution: PUBLIC
 
-
-### Change History
-
-| Date | Vers. | Paragraphs | Changes | Author |
-|-----------|-----------|-----------|-----------|-----------|
-|14 Dec. 2005|1|-|Initial release|FP|
-|24 June 2009|2|all|Complete review of document in accordance with RFC 3647|FP, AS|
-|19 Nov. 09|2.0.1|1.3.1|Changed name of President|AS|
-|13 May 2010|2.0.2|3.4|Removed sentence referring to private IP addresses in certificates (that is not allowed)|AS|
-|18 May 2010|2.0.3|4.2, 8.1, 8.2, 8.4, 8.5, 8.6, 9.5.2, 9.8|Clarifications and integrations related to RAs|AS|
-|18 May 2010|2.0.3|1.3.1|Updated Actalis’ address; corrected the given name of the President.|AS|
-|14 June 2011|2.0.4|1.3.1, 3.1, 4.1|Updated Actalis’ legal representative. Clarified I&A and pre-issuance checks for wildcard and multi-SAN certificates|AS|
-|28 Sep 2011|2.1.0|all|Transition to a 2-level CA hierarchy (Root CA, SubCA). Added details about management of CA keys. Clarified that twofactor authentication is required for all accounts allowing certificate issuance. Clarified that certificate serial numbers include at least 8 random bytes. SHA-256 used for certificate and CRL issuance. Updated minimum key lengths.|AS|
-|6 Nov 2013|2.2.3|all|Updated name of Actalis CEO in §1.3.1. New section 4.13 on certificate problem reporting. Modified §1.3.2 to cover Enterprise RAs. Addedd OV profiles in §1.4 and in chapter 7. Modified §3.1 for more clarity. Clarifications in §3.3 regarding checks. Clarifications on the use CNames in CRL and OCSP URLs.|AS|
-|13 Nov 2013|2.2.4|all|Updated name of Actalis CEO in §1.3.1. New section 4.13 on certificate problem reporting. Modified §1.3.2 to cover Enterprise RAs. Addedd OV profiles in §1.4 and in chapter 7. Modified §3.1 for more clarity. Clarifications in §3.3 regarding checks. Clarifications on the use CNames in CRL and OCSP URLs|AS|
-|14 Feb 2014|2.2.5|all|CAB Forum compliance made explicit at beginning of chapter 3. Clarification about IDNs.|AS|
-|03 Sep 2014|2.2.6|3.1.1, 4.13, 6.33|Clarified that hostnames are not allowed in Code Signing certificates. Added phone number for certificate problem reporting. Keys of 1024-bits are not allowed anymore.|AS|
-|20 Oct 2014|2.2.7|all|Added support of DV (Domain Validated) certificates. Added digital signature as a means to validate individual identities. Correction of typos and some clarifications|AS|
-|9 Dec 2014|2.3|all|Correction of typos.|AS|
-|13 Mar 2015|2.4|various|New section 1.3.5 (Resellers). Corrections and clarifications in §1.4 (Use of certificates), §4.1 (Certificate application), and §4.9.6 (Procedure for suspension and revocation).|AS|
-|26 Aug 2015|2.5|various|New §1.3.5 (Resellers). Corrections in §1.4 (Use of certificates), in §4.1 (Certificate application), and in 4.9.6 (Procedure for suspension and revocation). Clarifications on the URLs of CRL and OCSP services. Clarifications on support and assistance. Additional ways to validate domain control. Some paragraphs moved or renamed for better clarity. Dedicated SubCA for EV-class certificates. Addedd CAB Forum Policy OIDs to some EE certificate profiles.|AS|
-|22 March 2016|2.6|1.3.1, 4.13|Modified coversheet after organizational changes. Changed company address and phone numbers.|AS|
-|05 August 2016|2.7|1.4, 3.4|Clarification on .onion domains. Clarification on CAA Records.|AS|
-|06 October 2016|2.8|1.3, 7|Clarifications on CAs. Inclusion of cAIssuers in the AIA certificate extension. Dedicated SubCA for DV-class TLS Server certificates.|AS|
-|24 July 2017|2.9|1.7, 3.2, 4.3|Changed from ETSI 102 042 to 319 411-1 in References. CAA Records are now checked. For EV certs, handwritten signature allowed if authenticated by notary. Clarifications on validation of authority and on non-verified subscriber information.|AS|
-|28 Aug 2017|3.0|4.3, 7.3|Correction of typos. New paragraph 7.3 with OCSP profile.|AS|
-|22 Jan 2018|4.0|All|Restructuring and revision of the entire document for easier comparison with RFC 3647 and CABF Baseline Requirements. Clarified that certain types of certificates may be issued to individuals. Disclosure of a new Subordinate CA for OV certificates. Removed references to EV Code Signing certificate, not currently offered.|AS|
-|27 Apr 2018|4.1|3.1.1, 3.2.2.5, 4.3.1, 7.1.2.3|Clarified that DV- and EV-class TLS Server certificates may not contain IP addresses. Added mandatory Certificate Transparency for all classes of TLS Server certificates|AS|
-|23 Mag 2018|5.0|1.4, 1.5, 1.7, 4.6, 7.1.2.3, 5, 6, 8, 9|Expanded chapter 4 for better clarity. Revised chapters 5, 6, 8, 9 for alignment with other Actalis’ CPSes. Added QWACs (Qualified Web Authentication Certificates). Updated normative references|AS|
-|28 Feb 2019|5.1|1.3.1|New Legal representative|AS|
-|23 May 2019|5.2|1.3.1.2, 3.2.2.5, 4.9.1.1, 7.1.2.3, 7.1.4.2.1|Aligned with current version of [BR] and [EVGL]. Updated list of Subordinate CAs. Clarifications on certificate profiles. Correction of typos|AS|
-|29 Aug 2019|5.3|7.1|Added paragraph on applicability of Determinazione AgID n.121/2019|AS|
-|26 Sep 2019|5.4|4.9.1.1, 7.1.2.3|Clarification on the revocation by the CA in case of any non-compliance of certificates to the BR and/or the EVGL. Added support for ECC keys (P256/P384) in Subscriber certificates.|AS|
-|08 Oct 2019|5.5|7.1.2.2|Clarifications on EKU in SubCA certificates for compliance with the Mozilla Root Store Policy|AS|
-|22 Jan 2020|5.6|1.3.1.2, 1.5.2, 3.2.2.4, 4.2.2, 4.10.3, 4.12.1, 4.12.2, 4.13, 5.6.2, 6.2.3, 7.1.4.2, 7.1.2.3|Updated table of SubCAs. Clarifications in §3.2.2.4. Moved text of former §4.13 to §1.5.2 for compliance with the BR, then removed §4.13. Repeated in §4.2.2 that internal names are not allowed. Added §4.10.3, §4.12.1, and §4.12.2 for compliance with RFC3647. Revisions and corrections in some certificate profiles. Clarified that key escrow is not provided|AS|
-|15 Jul 2020|5.7|4.1.2, 4.9.5, 6.1.5, 6.3.2, 9.11|Update and specification of how to request the certificate. Details on the time for revocation. Accuracy on algorithms and key length of the Holders. Maximum validity of TLS Server certificates reduced to 398 days. Clarifications on assistance.|AS|
-|5 Oct 2020|5.8|1.3.1.2, 1.4.2, 3.2.2.4|Updated list of intermediate CAs. Added warning about ICA embedding and certificate pinning. Updated list of supported DCV methods (added ACME http-01)|AS|
-|22 Apr 2021|5.9|1.1, 1.7, 6.1.2, 6.1.3, 6.1.5, 6.2.1, 9.6.1, 9.6.3, 3.2.2.1|Inserted reference to Code Signing Baseline Requirements. Updates for Code Signing certificates. Inserted reference to list of approved incorporating agencies.|AS|
-|14 Jun 2021|5.10|3.2.2.4, 3.2.2.8 4.9.12|Alignment with Mozilla Root Policy. Adaptation to CABF Ballot SC45. Adaptation to CABF Ballot SC46. Specified how to report a compromised private key to the CA.|AS|
-|29 Apr 2022|5.11|3.2.2.1; 3.2.2.3; 7.1.4.2.1; 7.1.4.2.2|Identity validation update Alignment in chapter numbering Update of SAN and FQDN policies|AS|
-|10 Oct 2022|5.12|4.1.2 4.9.1.1|Update of the procedures for signing the request for EV certificates. Update of the circumstances for the revocation of a Subscriber Certificate|AS|
-|17 May 2023|5.13|1.3.1.2, 3.1, 4.1.2, 5.5.2, 6.1, 6.2, 6.8, 7.1.2, 7.1.3, 7.1.4, 7.2, 9.6.1|Correction of small typos. Updated the Subordinate Certification Authorities table. Removed references to the “organizationalUnitName” (OU) attribute. Added clarifications for Code Signing certificates’ enrollment process. Corrected the QWAC certificate profile. Clarified that Subject may be empty in DV SSL certificates. Changed requirements for private key protection and verification in the case of Code Signing certificates. Added information about Actalis’ TSA. Clarified usage of CRLReason in CRL entries. Updated algorithm object identifiers. Changed retention period for records archival.|AS|
-|16 May 2024|5.14|1.3.1.2, 1.6, 3.2.2.9, 3.2.5, 4.2.1, 6.2.7.4, 7.1, 7.1.2.2|Annual revision of the document. Subordinate CA ‘Actalis DV Server ACME CA G1’ added. Adaptation to BR 2.0.4 and EVGL 2.0.1. Correction of typos. Clarification of Code Signing certificates|AS, EDF|
-|09 July 2024|5.15|1.1, 2.1, 4.2.1, 4.10.1, 6.7, 7|Correction of typos and some clarifications.|AS, EDF|
-|15 Jan 2025|5.16|3.2.2.1, 3.2.2.4, 3.2.2.8, 4.3.1, 4.9.1, 4.9.9, 4.9.10, 5, 6.1.1,6.1.5 6.6.1, 7.2, 8.7.|Correction of internal protocol number of the document and typos. Integrations regarding the updating of the list of authoritative sources consulted by the CA. Removal of the use of the WHOIS protocol when authenticating domains. Supplements on CA’s revocation case. Introduction of pre-issuance and postissuance verifications of certificate conformity (linting). Restyling of sections 4.9.9 and 4.9.10. Additions about key pair generations and key sizes. Formatting changes in section 7.2. Revised public information on the CA's security measures|AS, NP|
-|11 March 2025|5.17|1.4.2, 3.2.2.1, 3.2.2.9, 4.5, 4.7 4.8, 4.9.1.1, 7.2|Integration about applicable standards, integration of par 3.2.2.1, introduction of MPIC, restructured par. 4.5, 4.8, 4.9 and 7.2 for better accordance with RFC-3647, added details on revocation reasons|AS, NP|
-|18 June 2025|5.18|1.3.1.2, 3.2.2.4, 4.9.3, 6.1.5, 6.2.1, 6.2.7|Removal of SubCA Actalis Client Authentication CA G1, removal of domain validation method BR#3.2.2.4.2 (email to domain contact), provision for mass revocation scenarios, additions about key pair generations and key sizes, specification regarding cryptographic module certification, correction of typos.|AS, NP|
-|27 November 2025|5.19|4.2.2, 4.9.9, 4.10.1, 5.2, 5.4.1, 5.7.1, 6.7|Minor amendment to paragraph 4.2.2, Addi-tion regarding the OCSP protocol, Specifica-tion on CRL partitioning, Added detail con-cerning the asset inventory, Specification regarding firewall configuration tracking, Added requirements for the man-agement of mass revocation |AS, NP|
-|18 December 2025|5.20|1.3, 6.3.2, 7.1.2|Additions to the PKI infrastructure with the introduction of new RootCA and SubCA certificates |AS, BS, NP|
-|15 March 2026|5.21|3.2.2.5, 4.2.2, 4.3.1, 6.3.2|Removal of reverse‐IP address lookup validation method, pre-issuance checks update, content integration, certificate validity period change, |AS, FM, NP|
-|29 March 2026|6.0|All|Refocused the document exclusively on the TLS certificate issuance and management service.|AS, FM, NP|
-
+---
 
 # 1 INTRODUCTION
 
@@ -2633,7 +2574,56 @@ The CA guarantees the following minimum service levels:
 
 # Appendix A - Change History
 
-Blah blah
+| Date | Vers. | Paragraphs | Changes | Author |
+|------|-------|------------|---------|--------|
+|14 Dec. 2005|1|-|Initial release|FP|
+|24 June 2009|2|all|Complete review of document in accordance with RFC 3647|FP, AS|
+|19 Nov. 09|2.0.1|1.3.1|Changed name of President|AS|
+|13 May 2010|2.0.2|3.4|Removed sentence referring to private IP addresses in certificates (that is not allowed)|AS|
+|18 May 2010|2.0.3|4.2, 8.1, 8.2, 8.4, 8.5, 8.6, 9.5.2, 9.8|Clarifications and integrations related to RAs|AS|
+|18 May 2010|2.0.3|1.3.1|Updated Actalis’ address; corrected the given name of the President.|AS|
+|14 June 2011|2.0.4|1.3.1, 3.1, 4.1|Updated Actalis’ legal representative. Clarified I&A and pre-issuance checks for wildcard and multi-SAN certificates|AS|
+|28 Sep 2011|2.1.0|all|Transition to a 2-level CA hierarchy (Root CA, SubCA). Added details about management of CA keys. Clarified that twofactor authentication is required for all accounts allowing certificate issuance. Clarified that certificate serial numbers include at least 8 random bytes. SHA-256 used for certificate and CRL issuance. Updated minimum key lengths.|AS|
+|6 Nov 2013|2.2.3|all|Updated name of Actalis CEO in §1.3.1. New section 4.13 on certificate problem reporting. Modified §1.3.2 to cover Enterprise RAs. Addedd OV profiles in §1.4 and in chapter 7. Modified §3.1 for more clarity. Clarifications in §3.3 regarding checks. Clarifications on the use CNames in CRL and OCSP URLs.|AS|
+|13 Nov 2013|2.2.4|all|Updated name of Actalis CEO in §1.3.1. New section 4.13 on certificate problem reporting. Modified §1.3.2 to cover Enterprise RAs. Addedd OV profiles in §1.4 and in chapter 7. Modified §3.1 for more clarity. Clarifications in §3.3 regarding checks. Clarifications on the use CNames in CRL and OCSP URLs|AS|
+|14 Feb 2014|2.2.5|all|CAB Forum compliance made explicit at beginning of chapter 3. Clarification about IDNs.|AS|
+|03 Sep 2014|2.2.6|3.1.1, 4.13, 6.33|Clarified that hostnames are not allowed in Code Signing certificates. Added phone number for certificate problem reporting. Keys of 1024-bits are not allowed anymore.|AS|
+|20 Oct 2014|2.2.7|all|Added support of DV (Domain Validated) certificates. Added digital signature as a means to validate individual identities. Correction of typos and some clarifications|AS|
+|9 Dec 2014|2.3|all|Correction of typos.|AS|
+|13 Mar 2015|2.4|various|New section 1.3.5 (Resellers). Corrections and clarifications in §1.4 (Use of certificates), §4.1 (Certificate application), and §4.9.6 (Procedure for suspension and revocation).|AS|
+|26 Aug 2015|2.5|various|New §1.3.5 (Resellers). Corrections in §1.4 (Use of certificates), in §4.1 (Certificate application), and in 4.9.6 (Procedure for suspension and revocation). Clarifications on the URLs of CRL and OCSP services. Clarifications on support and assistance. Additional ways to validate domain control. Some paragraphs moved or renamed for better clarity. Dedicated SubCA for EV-class certificates. Addedd CAB Forum Policy OIDs to some EE certificate profiles.|AS|
+|22 March 2016|2.6|1.3.1, 4.13|Modified coversheet after organizational changes. Changed company address and phone numbers.|AS|
+|05 August 2016|2.7|1.4, 3.4|Clarification on .onion domains. Clarification on CAA Records.|AS|
+|06 October 2016|2.8|1.3, 7|Clarifications on CAs. Inclusion of cAIssuers in the AIA certificate extension. Dedicated SubCA for DV-class TLS Server certificates.|AS|
+|24 July 2017|2.9|1.7, 3.2, 4.3|Changed from ETSI 102 042 to 319 411-1 in References. CAA Records are now checked. For EV certs, handwritten signature allowed if authenticated by notary. Clarifications on validation of authority and on non-verified subscriber information.|AS|
+|28 Aug 2017|3.0|4.3, 7.3|Correction of typos. New paragraph 7.3 with OCSP profile.|AS|
+|22 Jan 2018|4.0|All|Restructuring and revision of the entire document for easier comparison with RFC 3647 and CABF Baseline Requirements. Clarified that certain types of certificates may be issued to individuals. Disclosure of a new Subordinate CA for OV certificates. Removed references to EV Code Signing certificate, not currently offered.|AS|
+|27 Apr 2018|4.1|3.1.1, 3.2.2.5, 4.3.1, 7.1.2.3|Clarified that DV- and EV-class TLS Server certificates may not contain IP addresses. Added mandatory Certificate Transparency for all classes of TLS Server certificates|AS|
+|23 Mag 2018|5.0|1.4, 1.5, 1.7, 4.6, 7.1.2.3, 5, 6, 8, 9|Expanded chapter 4 for better clarity. Revised chapters 5, 6, 8, 9 for alignment with other Actalis’ CPSes. Added QWACs (Qualified Web Authentication Certificates). Updated normative references|AS|
+|28 Feb 2019|5.1|1.3.1|New Legal representative|AS|
+|23 May 2019|5.2|1.3.1.2, 3.2.2.5, 4.9.1.1, 7.1.2.3, 7.1.4.2.1|Aligned with current version of [BR] and [EVGL]. Updated list of Subordinate CAs. Clarifications on certificate profiles. Correction of typos|AS|
+|29 Aug 2019|5.3|7.1|Added paragraph on applicability of Determinazione AgID n.121/2019|AS|
+|26 Sep 2019|5.4|4.9.1.1, 7.1.2.3|Clarification on the revocation by the CA in case of any non-compliance of certificates to the BR and/or the EVGL. Added support for ECC keys (P256/P384) in Subscriber certificates.|AS|
+|08 Oct 2019|5.5|7.1.2.2|Clarifications on EKU in SubCA certificates for compliance with the Mozilla Root Store Policy|AS|
+|22 Jan 2020|5.6|1.3.1.2, 1.5.2, 3.2.2.4, 4.2.2, 4.10.3, 4.12.1, 4.12.2, 4.13, 5.6.2, 6.2.3, 7.1.4.2, 7.1.2.3|Updated table of SubCAs. Clarifications in §3.2.2.4. Moved text of former §4.13 to §1.5.2 for compliance with the BR, then removed §4.13. Repeated in §4.2.2 that internal names are not allowed. Added §4.10.3, §4.12.1, and §4.12.2 for compliance with RFC3647. Revisions and corrections in some certificate profiles. Clarified that key escrow is not provided|AS|
+|15 Jul 2020|5.7|4.1.2, 4.9.5, 6.1.5, 6.3.2, 9.11|Update and specification of how to request the certificate. Details on the time for revocation. Accuracy on algorithms and key length of the Holders. Maximum validity of TLS Server certificates reduced to 398 days. Clarifications on assistance.|AS|
+|5 Oct 2020|5.8|1.3.1.2, 1.4.2, 3.2.2.4|Updated list of intermediate CAs. Added warning about ICA embedding and certificate pinning. Updated list of supported DCV methods (added ACME http-01)|AS|
+|22 Apr 2021|5.9|1.1, 1.7, 6.1.2, 6.1.3, 6.1.5, 6.2.1, 9.6.1, 9.6.3, 3.2.2.1|Inserted reference to Code Signing Baseline Requirements. Updates for Code Signing certificates. Inserted reference to list of approved incorporating agencies.|AS|
+|14 Jun 2021|5.10|3.2.2.4, 3.2.2.8 4.9.12|Alignment with Mozilla Root Policy. Adaptation to CABF Ballot SC45. Adaptation to CABF Ballot SC46. Specified how to report a compromised private key to the CA.|AS|
+|29 Apr 2022|5.11|3.2.2.1; 3.2.2.3; 7.1.4.2.1; 7.1.4.2.2|Identity validation update Alignment in chapter numbering Update of SAN and FQDN policies|AS|
+|10 Oct 2022|5.12|4.1.2 4.9.1.1|Update of the procedures for signing the request for EV certificates. Update of the circumstances for the revocation of a Subscriber Certificate|AS|
+|17 May 2023|5.13|1.3.1.2, 3.1, 4.1.2, 5.5.2, 6.1, 6.2, 6.8, 7.1.2, 7.1.3, 7.1.4, 7.2, 9.6.1|Correction of small typos. Updated the Subordinate Certification Authorities table. Removed references to the “organizationalUnitName” (OU) attribute. Added clarifications for Code Signing certificates’ enrollment process. Corrected the QWAC certificate profile. Clarified that Subject may be empty in DV SSL certificates. Changed requirements for private key protection and verification in the case of Code Signing certificates. Added information about Actalis’ TSA. Clarified usage of CRLReason in CRL entries. Updated algorithm object identifiers. Changed retention period for records archival.|AS|
+|16 May 2024|5.14|1.3.1.2, 1.6, 3.2.2.9, 3.2.5, 4.2.1, 6.2.7.4, 7.1, 7.1.2.2|Annual revision of the document. Subordinate CA ‘Actalis DV Server ACME CA G1’ added. Adaptation to BR 2.0.4 and EVGL 2.0.1. Correction of typos. Clarification of Code Signing certificates|AS, EDF|
+|09 July 2024|5.15|1.1, 2.1, 4.2.1, 4.10.1, 6.7, 7|Correction of typos and some clarifications.|AS, EDF|
+|15 Jan 2025|5.16|3.2.2.1, 3.2.2.4, 3.2.2.8, 4.3.1, 4.9.1, 4.9.9, 4.9.10, 5, 6.1.1,6.1.5 6.6.1, 7.2, 8.7.|Correction of internal protocol number of the document and typos. Integrations regarding the updating of the list of authoritative sources consulted by the CA. Removal of the use of the WHOIS protocol when authenticating domains. Supplements on CA’s revocation case. Introduction of pre-issuance and postissuance verifications of certificate conformity (linting). Restyling of sections 4.9.9 and 4.9.10. Additions about key pair generations and key sizes. Formatting changes in section 7.2. Revised public information on the CA's security measures|AS, NP|
+|11 March 2025|5.17|1.4.2, 3.2.2.1, 3.2.2.9, 4.5, 4.7 4.8, 4.9.1.1, 7.2|Integration about applicable standards, integration of par 3.2.2.1, introduction of MPIC, restructured par. 4.5, 4.8, 4.9 and 7.2 for better accordance with RFC-3647, added details on revocation reasons|AS, NP|
+|18 June 2025|5.18|1.3.1.2, 3.2.2.4, 4.9.3, 6.1.5, 6.2.1, 6.2.7|Removal of SubCA Actalis Client Authentication CA G1, removal of domain validation method BR#3.2.2.4.2 (email to domain contact), provision for mass revocation scenarios, additions about key pair generations and key sizes, specification regarding cryptographic module certification, correction of typos.|AS, NP|
+|27 November 2025|5.19|4.2.2, 4.9.9, 4.10.1, 5.2, 5.4.1, 5.7.1, 6.7|Minor amendment to paragraph 4.2.2, Addi-tion regarding the OCSP protocol, Specifica-tion on CRL partitioning, Added detail con-cerning the asset inventory, Specification regarding firewall configuration tracking, Added requirements for the man-agement of mass revocation |AS, NP|
+|18 December 2025|5.20|1.3, 6.3.2, 7.1.2|Additions to the PKI infrastructure with the introduction of new RootCA and SubCA certificates |AS, BS, NP|
+|15 March 2026|5.21|3.2.2.5, 4.2.2, 4.3.1, 6.3.2|Removal of reverse‐IP address lookup validation method, pre-issuance checks update, content integration, certificate validity period change, |AS, FM, NP|
+|29 March 2026|6.0|All|Refocused the document exclusively on the TLS certificate issuance and management service.|AS, FM, NP|
+
+
 
 
 
