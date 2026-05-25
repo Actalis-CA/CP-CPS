@@ -1600,7 +1600,7 @@ All certificates conform to the [RFC 5280] public specification and to the CA/Br
 The profile of the Root CA certificate is as follows:
 
 |Field|Value  |
-|--|--|
+|:--|:--|
 | Version  | V3 (2) |
 | SerialNumber| 1  |
 |Signature   |  sha256WithRSAEncryption (1.2.840.113549.1.1.11)|
