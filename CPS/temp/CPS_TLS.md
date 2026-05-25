@@ -39,11 +39,11 @@ Distribution: PUBLIC
 |26 Aug 2015|2.5|various|New §1.3.5 (Resellers). Corrections in §1.4 (Use of certificates), in §4.1 (Certificate application), and in 4.9.6 (Procedure for suspension and revocation). Clarifications on the URLs of CRL and OCSP services. Clarifications on support and assistance. Additional ways to validate domain control. Some paragraphs moved or renamed for better clarity. Dedicated SubCA for EV-class certificates. Addedd CAB Forum Policy OIDs to some EE certificate profiles.|AS|
 |22 March 2016|2.6|1.3.1, 4.13|Modified coversheet after organizational changes. Changed company address and phone numbers.|AS|
 |05 August 2016|2.7|1.4, 3.4|Clarification on .onion domains. Clarification on CAA Records.|AS|
-|06 October 2016|2.8|1.3, 7|Clarifications on CAs. Inclusion of cAIssuers in the AIA certificate extension. Dedicated SubCA for DV-class SSL Server certificates.|AS|
+|06 October 2016|2.8|1.3, 7|Clarifications on CAs. Inclusion of cAIssuers in the AIA certificate extension. Dedicated SubCA for DV-class TLS Server certificates.|AS|
 |24 July 2017|2.9|1.7, 3.2, 4.3|Changed from ETSI 102 042 to 319 411-1 in References. CAA Records are now checked. For EV certs, handwritten signature allowed if authenticated by notary. Clarifications on validation of authority and on non-verified subscriber information.|AS|
 |28 Aug 2017|3.0|4.3, 7.3|Correction of typos. New paragraph 7.3 with OCSP profile.|AS|
 |22 Jan 2018|4.0|All|Restructuring and revision of the entire document for easier comparison with RFC 3647 and CABF Baseline Requirements. Clarified that certain types of certificates may be issued to individuals. Disclosure of a new Subordinate CA for OV certificates. Removed references to EV Code Signing certificate, not currently offered.|AS|
-|27 Apr 2018|4.1|3.1.1, 3.2.2.5, 4.3.1, 7.1.2.3|Clarified that DV- and EV-class SSL Server certificates may not contain IP addresses. Added mandatory Certificate Transparency for all classes of SSL Server certificates|AS|
+|27 Apr 2018|4.1|3.1.1, 3.2.2.5, 4.3.1, 7.1.2.3|Clarified that DV- and EV-class TLS Server certificates may not contain IP addresses. Added mandatory Certificate Transparency for all classes of TLS Server certificates|AS|
 |23 Mag 2018|5.0|1.4, 1.5, 1.7, 4.6, 7.1.2.3, 5, 6, 8, 9|Expanded chapter 4 for better clarity. Revised chapters 5, 6, 8, 9 for alignment with other Actalis’ CPSes. Added QWACs (Qualified Web Authentication Certificates). Updated normative references|AS|
 |28 Feb 2019|5.1|1.3.1|New Legal representative|AS|
 |23 May 2019|5.2|1.3.1.2, 3.2.2.5, 4.9.1.1, 7.1.2.3, 7.1.4.2.1|Aligned with current version of [BR] and [EVGL]. Updated list of Subordinate CAs. Clarifications on certificate profiles. Correction of typos|AS|
@@ -51,7 +51,7 @@ Distribution: PUBLIC
 |26 Sep 2019|5.4|4.9.1.1, 7.1.2.3|Clarification on the revocation by the CA in case of any non-compliance of certificates to the BR and/or the EVGL. Added support for ECC keys (P256/P384) in Subscriber certificates.|AS|
 |08 Oct 2019|5.5|7.1.2.2|Clarifications on EKU in SubCA certificates for compliance with the Mozilla Root Store Policy|AS|
 |22 Jan 2020|5.6|1.3.1.2, 1.5.2, 3.2.2.4, 4.2.2, 4.10.3, 4.12.1, 4.12.2, 4.13, 5.6.2, 6.2.3, 7.1.4.2, 7.1.2.3|Updated table of SubCAs. Clarifications in §3.2.2.4. Moved text of former §4.13 to §1.5.2 for compliance with the BR, then removed §4.13. Repeated in §4.2.2 that internal names are not allowed. Added §4.10.3, §4.12.1, and §4.12.2 for compliance with RFC3647. Revisions and corrections in some certificate profiles. Clarified that key escrow is not provided|AS|
-|15 Jul 2020|5.7|4.1.2, 4.9.5, 6.1.5, 6.3.2, 9.11|Update and specification of how to request the certificate. Details on the time for revocation. Accuracy on algorithms and key length of the Holders. Maximum validity of SSL Server certificates reduced to 398 days. Clarifications on assistance.|AS|
+|15 Jul 2020|5.7|4.1.2, 4.9.5, 6.1.5, 6.3.2, 9.11|Update and specification of how to request the certificate. Details on the time for revocation. Accuracy on algorithms and key length of the Holders. Maximum validity of TLS Server certificates reduced to 398 days. Clarifications on assistance.|AS|
 |5 Oct 2020|5.8|1.3.1.2, 1.4.2, 3.2.2.4|Updated list of intermediate CAs. Added warning about ICA embedding and certificate pinning. Updated list of supported DCV methods (added ACME http-01)|AS|
 |22 Apr 2021|5.9|1.1, 1.7, 6.1.2, 6.1.3, 6.1.5, 6.2.1, 9.6.1, 9.6.3, 3.2.2.1|Inserted reference to Code Signing Baseline Requirements. Updates for Code Signing certificates. Inserted reference to list of approved incorporating agencies.|AS|
 |14 Jun 2021|5.10|3.2.2.4, 3.2.2.8 4.9.12|Alignment with Mozilla Root Policy. Adaptation to CABF Ballot SC45. Adaptation to CABF Ballot SC46. Specified how to report a compromised private key to the CA.|AS|
@@ -77,9 +77,9 @@ Distribution: PUBLIC
 
 A certificate binds a public key to a set of information that identifies an entity (individual or organization). This entity, the certificate Subscriber, possesses and utilizes the corresponding private key. The certificate is generated and supplied to the Subscriber by a trusted third party known as **Certification Authority** (CA). The certificate is digitally signed by the CA.
 
-The reliability of a certificate, in particular the association - attested by the certificate - between a given public key and a given identity, also depends on the CA’s operating procedures, the obligations and responsibilities of the CA and the certificate Subscriber, and the CA’s physical and logical security controls. All these aspects are described in a public document called **Certification Practice Statement** (CPS) which may be inte¬grated by a separate Certificate Policy (CP) document, according to [RFC 3647].
+The reliability of a certificate, in particular the association - attested by the certificate - between a given public key and a given identity, also depends on the CA’s operating procedures, the obligations and responsibilities of the CA and the certificate Subscriber, and the CA’s physical and logical security controls. All these aspects are described in a public document called **Certification Practice Statement** (CPS) which may be integrated by a separate **Certificate Policy** (CP) document, according to [RFC 3647].
 
-This document is the Actalis’ combined CP/CPS (hereinafter referred to only as CPS) relevant to the issuance and management of TLS Server certificates. This CPS is structured according to the outline in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
+This document is the Actalis’ combined CP/CPS relevant to the issuance and management of **TLS Server certificates**. This CPS is structured according to the outline in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
 
 Actalis conforms to the latest published versions of:
 - CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org 
@@ -96,7 +96,7 @@ This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 I
 
 ### 1.2 DOCUMENT IDENTIFICATION
 
-This document is the **Certification Practice Statement** ( **CPS** ) applying to **SSL Server and Code Signing certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. This document is published on Actalis’ web site in two languages: Italian and English. In the event of any inconsistency between the two versions, the Italian version takes precedence.
+This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as **CPS** ) applying to **TLS Server and Code Signing certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. This document is published on Actalis’ web site in two languages: Italian and English. In the event of any inconsistency between the two versions, the Italian version takes precedence.
 
 Actalis also issues other types of certificates (e.g., SSL Client, S/MIME) in compliance with policies described in separate documents. Those policies may refer to this CPS for all common aspects (e.g., infrastructure, organization, physical and operational security, etc.).
 
@@ -109,7 +109,7 @@ This CPS is published as a signed PDF document in order to ensure its origin and
 
 The Certification Authority (CA) is the trusted third party who issues the certificates and signs them with its own private key (CA key). Furthermore, the CA manages the status of the certificates.
 
-The Actalis PKI (Public Key Infrastructure) that the SSL Server and Code Signing certificate issuance and management service is based hierarchically upon is a two-level hierarchy, as shown in the following diagram:
+The Actalis PKI (Public Key Infrastructure) that the TLS Server and Code Signing certificate issuance and management service is based hierarchically upon is a two-level hierarchy, as shown in the following diagram:
 
 <p align="center">
    &nbsp;
@@ -134,12 +134,13 @@ Company name: Actalis S.p.A.
 Registered Office: Via San Clemente 53 – 24036 Ponte S. Pietro (BG) – ITALY
 Legal representative: Massimiliano Carollo (Chief Executive Officer)
 VAT Reg. No. and Tax Code: 03358520967
-Telephone (switchboard): +39 0575 050.
-DUNS number: 440 - 489 - 735
+Telephone (switchboard): +39 0575 050.350
+DUNS number: 440-489-735
 ISO Object Identifier (OID): 1.3.159
 Company web site: http://www.actalis.it
 Company e-mail address: info@actalis.it
 ```
+
 ##### 1.3.1.1 Root Certification Authorities
 
 As anticipated, the role of Root CA is played by Actalis. As of the date of revision of this present CPS, Actalis’ RootCA keys are those identified in the following table; for further details, see chapter 7.
@@ -149,12 +150,6 @@ As anticipated, the role of Root CA is played by Actalis. As of the date of revi
 |CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L= Milan <br> C=IT|52 d8 88 3a c8 9f 78 66 ed 89 f3 7b 38 70 94 c9 02 02 36 d0|22 September 2011|22 September 2030||
 |CN = Actalis TLS Server ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|30 22 bd d5 9a b5 d2 87 2f ff a6 7c a3 b5 4c 16 57 f0 ae 0c|28 February 2025|22 February 2050||
 |CN = Actalis TLS Server RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|e8 d3 0e 4d b1 76 41 22 80 19 4d 50 48 84 f2 2f 35 90 9d 8e|28 February 2025|22 February 2050||
-|CN = Actalis Code Signing ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|bd 91 46 d6 2d 85 18 18 4c 62 2b 1a 60 1c 88 a9 2e 3c 1b c9|28 February 2025|22 February 2050||
-|CN = Actalis Code Signing RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|5d 55 ac 81 ca 47 c2 3a d6 61 6e fd 26 df 1d fe b1 52 98 d8|28 February 2025|22 February 2050||
-|CN = Actalis Time Stamping ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|18 8c 2a 60 7b 02 cb 4a 40 9b 03 86 79 77 6e 74 ad 50 81 ae|28 February 2025|22 February 2050||
-|CN = Actalis Time Stamping RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|e8 d3 0e 4d b1 76 41 22 80 19 4d 50 48 84 f2 2f 35 90 9d 8e|28 February 2025|22 February 2050||
-|CN = Actalis SMIME ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|8d 6f bc f6 76 d1 ca 7d 86 dd ab d0 2a 96 99 c8 f1 63 b2 29|28 February 2025|22 February 2050||
-|CN = Actalis SMIME RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|f3 ef a2 39 aa 77 3b c2 ad 6a 9f fc 2e 58 00 fe 5b bf 47 51|28 February 2025|22 February 2050||
 
 ##### 1.3.1.2 Subordinate Certification Authorities
 
@@ -166,16 +161,12 @@ As of the date of revision of this CPS, the **Subordinate CAs run by Actalis** a
 | CN = Actalis Organization Validated Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo  <br> C = IT |9F 8A B1 B5 F1 B1  DE 82 F4 27 7C BE 88 CD DE A9 43 81 A3 4B  |6 Jul 2020|   22 set 2030|  CN = Actalis Extended Validation Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | AB 41 73 F0 6F 50  D0 69 FD 73 17 AB  89 B3 6B 62 ED BD 7C 4B | 6 Jul 2020|  22 set 2030 |  
 | CN = Actalis Domain Validation Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 42 83 6D 80 7C 09  84 67 FD 80 57 AB F1 26 F5 77 C8 22 82 71 |6 Jul 2020| 22 set 2030 |  
 |CN = Actalis DV Server ACME CA G1 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br>  C = IT  |51 9A 91 1F D2 57  39 17 D9 B7 E2 26 83 BD 7B B4 B5 3F 38 8A  |6 Jun 2023| 22 Sep 2030  |  
-|CN = Actalis Code Signing CA G2 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br>  S = Bergamo <br>  C = IT| 78 07 05 52 0B A3  D8 C8 4B 41 3D 4F CF 38 63 06 78 F0  A7 F3 |6 Jul 2020|  22 set 2030 | 
-| CN = Actalis Client Authentication CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | BE 97 A9 AA 84 BF 80 BF 10 53 7D 09 32 F9 E1 2E 32 1B  CF 77 |6 Jul 2020|  22 set 2030 |  
-| CN = Actalis Time Stamping CA G1 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | D7 9C 73 39 2D 7D F0 D9 E4 16 4A 50 23 53 00 6D 4E FD 11 A3 |10 mar 23| 22 set 2030 |  
 | CN = Actalis Domain Validated TLS Server ECC CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 3f 2b ea 35 9c 76 59 0c cd 91 7a 3e 2f 74 e5 3a 90 73 97 e0 |07 jul 2025| 05 jul 2035 | 
 | CN = Actalis Extended Validation TLS Server ECC CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | E9 93 0A 29 44 61 D9 7E 66 65 81 47 D3 BF 30 63 4C 5F 71 74 |07 jul 2025| 05 jul 2035 | 
 | CN = Actalis Organization Validated TLS Server ECC CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 18 E0 1E 84 37 F4 EA BF 01 0A C9 10 00 A5 F8 54 DA FB 3E A5 |07 jul 2025| 05 jul 2035 | 
 | CN = Actalis Domain Validated TLS Server RSA CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | D8 BA CF A1 9E 80 0E 0A A6 32 7E 5E FB FB 75 D0 8E 62 B4 5E |07 jul 2025| 05 jul 2035 | 
 | CN = Actalis Extended Validation TLS Server RSA CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 1D 82 12 B8 87 44 67 FB 45 F8 3C 2D 59 C7 D2 FF F3 06 C9 22 |07 jul 2025| 05 jul 2035 | 
 | CN = Actalis Organization Validated TLS Server RSA CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | AF 2C A4 06 CB F0 8A 03 14 65 13 A8 8D 60 F9 C8 D3 1B 41 4C |07 jul 2025| 05 jul 2035 | 
-| CN = Actalis SMIME RSA CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 8D E8 AF D2 E4 FE 55 20 49 3F F2 83 22 F0 A0 39 89 22 84 45|07 jul 2025| 05 jul 2035 | 
 
 Subordinate CA certificates can be issued to **external CAs** (i.e. not run by Actalis), under an Actalis’ Root CA, provided that the entities running those external SubCAs commit in writing to fully comply with CAB Forum’s Baseline Requirements [BR], via a suitable **contract** with Actalis.
 
@@ -187,7 +178,6 @@ As of the review date of this CPS, the Actalis cross-certificates (cross-certifi
 |--|--|--|--|
 | CN = Actalis TLS Server ECC Root CA 2025 <br> O = Actalis S.p.A./03358520967 <br> L = Milan <br> C = IT |30 22 bd d5 9a b5 d2 87 2f ff a6 7c a3 b5 4c 16 57 f0 ae 0c|07 august 2025|   22 september 2030|  
 | CN = Actalis TLS Server RSA Root CA 2025 <br> O = Actalis S.p.A./03358520967 <br> L = Milan <br> C = IT |af 53 50 61 72 e9 72 04 31 41 db 0e 66 cf 75 3a f6 0e bf cf|07 august 2025|   22 september 2030| 
-| CN = Actalis SMIME RSA Root CA 2025 <br> O = Actalis S.p.A./03358520967 <br> L = Milan <br> C = IT |f3 ef a2 39 aa 77 3b c2 ad 6a 9f fc 2e 58 00 fe 5b bf 47 51|07 august 2025|   22 september 2030| 
 
 #### 1.3.2 Registration Authorities
 
@@ -207,10 +197,10 @@ Organizations meeting the requirements for “Enterprise RAs” set forth in the
 
 Subscribers are those legal entities or individuals to whom Certificates are issued according to this CPS and who hold the private keys corresponding to their certificates. In particular:
 
-- for OV and EV SSL Server certificates, the Subscriber may only be a legal entity (i.e., an organization);
-- for DV SSL Server and Code Signing certificates, the Subscriber may be either a legal entity or an individual.
+- for OV and EV TLS Server certificates, the Subscriber may only be a legal entity (i.e., an organization);
+- for DV TLS Server certificates, the Subscriber may be either a legal entity or an individual.
 
-Except for DV SSL Server certificates, which by definition do not include Subject identity information, the Subscriber is the party identified in the Subject field of the certificate.
+Except for DV TLS Server certificates, which by definition do not include Subject identity information, the Subscriber is the party identified in the Subject field of the certificate.
 
 Prior to verification of identity and issuance of a certificate, any requesting Subscriber is defined as an **Applicant**.
 Once the Certificate is issued, the Applicant is referred to as the **Subscriber**.
@@ -219,7 +209,7 @@ The Customer, namely the individual or organization that purchases the certifica
 
 #### 1.3.4 Relying parties
 
-Relying Parties are recipients of a certificate who act on reliance on the information contained in the certificate. In the case of an SSL Server certificate, these are (for instance) the users of the relevant web site. For Code Signing certificates, these are typically the users of the signed software.
+Relying Parties are recipients of a certificate who act on reliance on the information contained in the certificate. In the case of an TLS Server certificate, these are (for instance) the users of the relevant web site. For Code Signing certificates, these are typically the users of the signed software.
 
 #### 1.3.5 Resellers
 
@@ -231,7 +221,7 @@ Certificates may also be provided through Resellers (business partners), which i
 
 Certificates issued under this CPS may be used for the following purposes, depending on certificate type:
 
-- **SSL Server certificates** may be used to enable the TLS/SSL protocol on one or more servers.
+- **TLS Server certificates** may be used to enable the TLS/SSL protocol on one or more servers.
 - **Code Signing certificates** may be used for validating digital signatures of executable code.
 
 A list of major platforms and browsers where certificates issued according to this CPS are trusted can be found on Actalis’ web site at the following URL: https://www.actalis.it/products/ssl-certificate.aspx. Applicants are supposed to review that list before requesting certificates.
@@ -243,12 +233,12 @@ It is assumed that the Applicant possesses the competence and tools necessary to
 The following table shows the **classes** and **policies** of certificates issued under this CPS, and the applicable CAB Forum requirements. Each policy is identified by a specific **OID** (Object Identifier) under the Actalis arc **1.3.159** :
 |Class |Certificate policy | OID | CABF reqs.|
 |--|--|--|--|
-|EV| SSL Server EV (Extended Validation) | 1.3.159.1.17.1 |  [BR], [EVGL]  |
-|OV| SSL Server Wildcard OV (Organization Validated)  | 1.3.159.1.19.1|  [BR] |  |
-|OV| SSL Server OV (Organization Validated) | 1.3.159.1.20.1 | [BR] |  |
+|EV| TLS Server EV (Extended Validation) | 1.3.159.1.17.1 |  [BR], [EVGL]  |
+|OV| TLS Server Wildcard OV (Organization Validated)  | 1.3.159.1.19.1|  [BR] |  |
+|OV| TLS Server OV (Organization Validated) | 1.3.159.1.20.1 | [BR] |  |
 |OV| Code Signing (Organization Validated) |  1.3.159.1.21.1| [BR] | 
-|DV| SSL Server DV (Domain Validated) |  1.3.159.1.22.1|[BR]  |  
-|DV| SSL Server Wildcard DV (Domain Validated) | 1.3.159.1.23.1 | [BR] | 
+|DV| TLS Server DV (Domain Validated) |  1.3.159.1.22.1|[BR]  |  
+|DV| TLS Server Wildcard DV (Domain Validated) | 1.3.159.1.23.1 | [BR] | 
 
 The OID that identifies the certificate policy is contained in the _CertificatePolicies_ certificate extension, as detailed in chapter 7. The same extension also contains the applicable policy OID defined by CAB Forum.
 
@@ -290,7 +280,7 @@ Regardless of the communication channel used, the problem reporter must provide 
 - his/her full name;
 - description of the alleged problem;
 - enough information to identify the certificate in question, such as:
-    - for an SSL Server certificate: either the address of the web site where the certificate is installed,
+    - for an TLS Server certificate: either the address of the web site where the certificate is installed,
        or the certificate hostname, starting validity date, and serial number;
     - for a Code Signing certificate: commonName (CN), starting validity date, and serial number.
 
@@ -384,8 +374,6 @@ Throughout this document, certain terms shall be interpreted according to the de
 
 [BR] CA/Browser Forum, “Baseline Requirements for the Issuance and Management of Publicly-Trusted Certificates”. (https://cabforum.org/working-groups/server/baseline-requirements/documents/)
 
-[CSBR] CA/Browser Forum, “Baseline Requirements for the Issuance and Management of Publicly-Trusted Code Signing Certificates”. (https://cabforum.org/working-groups/code-signing/documents/)
-
 [EVGL] CA/Browser Forum, “Guidelines For The Issuance And Management Of Extended Validation Certificates”. (https://cabforum.org/working-groups/server/extended-validation/documents/)
 
 [GDPR] Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).
@@ -448,7 +436,7 @@ The Subject field may be _empty_ in DV (Domain Validated) certificates, e.g., wh
 
 Furthermore, all the requirements set forth in the [BR], [CSBR] and [EVGL] shall be met.
 
-In particular, all SSL Server certificates shall include entries in the Subject Alternative Name (SAN) extension, where each entry is either a Fully Qualified Domain Name (FQDN) or an IP address. However, IP addresses are not allowed in DV (Domain Validated) and EV (Extended Validation) SSL Server certificates.
+In particular, all TLS Server certificates shall include entries in the Subject Alternative Name (SAN) extension, where each entry is either a Fully Qualified Domain Name (FQDN) or an IP address. However, IP addresses are not allowed in DV (Domain Validated) and EV (Extended Validation) TLS Server certificates.
 
 ##### 3.1.1.1 Internal names and reserved IP addresses
 
@@ -464,7 +452,7 @@ Actalis inserts meaningful names in both the _subject_ and the _issuer_ fields o
 
 #### 3.1.3 Anonymity or pseudonymity of subscribers
 
-Except for SSL Server certificates of class DV (Domain Validated), which by definition do not contain Subscriber identification information, in all other cases the certificate contains either the official (i.e. registered) name of the Subscriber or a verified DBA (Doing Business As) name.
+Except for TLS Server certificates of class DV (Domain Validated), which by definition do not contain Subscriber identification information, in all other cases the certificate contains either the official (i.e. registered) name of the Subscriber or a verified DBA (Doing Business As) name.
 
 #### 3.1.4 Rules for interpreting various name forms
 
@@ -499,7 +487,7 @@ In the event that the consultation of the above sources is not possible, or retu
 
 Other information sources meeting the requirements of section 3.2.2.7 (see below) may also be used, at Actalis’sole discretion, depending on circumstances, to corroborate the information obtained from the above sources.
 
-For EV SSL Server certificates, the approved information sources used for validating the Applicant’s identity are  those published on the Actalis website at the following address:
+For EV TLS Server certificates, the approved information sources used for validating the Applicant’s identity are  those published on the Actalis website at the following address:
 https://www.actalis.it/documenti-en/actalis-approved-incorporation-agencies.aspx.
 This list of approved information sources is monitored and updated over time by the CA to ensure the highest standard of accuracy and reliability of the information provided.
 
@@ -530,15 +518,15 @@ Actalis reserves the right to reject a certificate request in the event that it 
 
 ##### 3.2.2.2 DBA/Tradename
 
-If the Subject the certificate is to include a DBA or trade name (not applicable to DV-class SSL Server certificate), the CA shall verify the Applicant’s right to use the DBA/trade name with at least one of the criteria provided for in [BR], [CSBR] or [EVGL] according to certificate type and class.
+If the Subject the certificate is to include a DBA or trade name (not applicable to DV-class TLS Server certificate), the CA shall verify the Applicant’s right to use the DBA/trade name with at least one of the criteria provided for in [BR], [CSBR] or [EVGL] according to certificate type and class.
 
 ##### 3.2.2.3 Verification of country
 
-When the certificate Subject is to include a country code (not applicable to DV-class SSL Server certificates), the CA shall verify the country using one of the methods provided for in section 3.2.2. 3 of the [BR].
+When the certificate Subject is to include a country code (not applicable to DV-class TLS Server certificates), the CA shall verify the country using one of the methods provided for in section 3.2.2. 3 of the [BR].
 
 ##### 3.2.2.4 Validation of Domain Authorization or Control
 
-Prior to issuing an **SSL Server** certificate, the CA shall verify that **each FQDN** to be included in the certificate **either is owned or controlled by the Applicant** or an affiliate thereof (e.g., parent or subsidiary). These checks (also referred to as Domain Control Validation or DCV) are done by one of the following methods:
+Prior to issuing an **TLS Server** certificate, the CA shall verify that **each FQDN** to be included in the certificate **either is owned or controlled by the Applicant** or an affiliate thereof (e.g., parent or subsidiary). These checks (also referred to as Domain Control Validation or DCV) are done by one of the following methods:
 
 - The CA confirms, by directly querying the Domain Name Registrar, that the Applicant is the Domain    Registrant. This method may only be used if the Base Domain Name is registered by Aruba S.p.A. (that    is the Actalis’ holding company). This method is implemented in compliance with §3.2.2.4.12 of [BR].
 - The CA sends a Random Value via e-mail to an address obtained by pre-pending “admin@”, or     “administrator@”, or “webmaster@”, or “hostmaster@”, or “postmaster@” to the Authorization     Domain Name, and receives a confirming response utilizing the Random Value. This method is     implemented in compliance with §3.2.2.4.4 of [BR].
@@ -555,7 +543,7 @@ The particular DCV method used for a given FQDN may depend on circumstances, on 
 
 ##### 3.2.2.5 Authentication for an IP Address
 
-Prior to issuing an **SSL Server** certificate, the CA shall verify that **all IP addresses** to be included in the certificate (excluding DV and EV certificates that may not contain IP addresses) **are controlled by the Applicant** or an affiliated thereof (e.g. holding or subsidiary). These checks are done by one of the following methods:
+Prior to issuing an **TLS Server** certificate, the CA shall verify that **all IP addresses** to be included in the certificate (excluding DV and EV certificates that may not contain IP addresses) **are controlled by the Applicant** or an affiliated thereof (e.g. holding or subsidiary). These checks are done by one of the following methods:
 
 - the Applicant demonstrate practical control over the IP Address by publishing a file on the HTTP server at the target IP, under the "/.well-known/pki‐validation" directory, containing a Random Value provided by the CA; the CA confirms the presence of such file, with the expected contents;
 - the CA sends a Random Value via e mail to an IP Address Contact, obtained by consulting the Internet Assigned Numbers Authority (IANA) or a Regional Internet Registry (RIPE, APNIC, ARIN, AfriNIC, LACNIC), and receives a confirming response utilizing the Random Value;
@@ -566,7 +554,7 @@ Prior to issuing an **SSL Server** certificate, the CA shall verify that **all I
 
 ##### 3.2.2.6 Wildcard Domain Validation
 
-Prior to issuing an **SSL Server** certificate, if the certificate is to include a **wildcard FQDN** in the Subject common-Name (CN) or in the Subject Alternative Name extension, the CA shall determine if the wildcard character would fall within the label immediately to the left of a registry‐controlled or public suffix; in such a case, the CA shall reject the certificate request unless the Applicant proves its rightful control of the entire Domain Namespace.
+Prior to issuing an **TLS Server** certificate, if the certificate is to include a **wildcard FQDN** in the Subject common-Name (CN) or in the Subject Alternative Name extension, the CA shall determine if the wildcard character would fall within the label immediately to the left of a registry‐controlled or public suffix; in such a case, the CA shall reject the certificate request unless the Applicant proves its rightful control of the entire Domain Namespace.
 
 For this verification, Actalis consults the Public Suffix List published at https://publicsuffix.org/.
 
@@ -667,12 +655,12 @@ In the case of Code Signing certificates, the generation of the Applicant’s ke
 
 The order and the exact way in which these steps are carried out may vary, depending on chosen request channel, but all the steps have to be completed (with the possible exception of the payment which can be deferred, depending on the customer and the amount due, subject to approval by Actalis’ sales department) _before_ the certificate request is taken charge of by the CA.
 
-For DV and OV SSL Server certificates and Code Signing certificates, the following Applicant roles are required, as,defined in the [BR], and enforced within the enrollment process:
+For DV and OV TLS Server certificates and Code Signing certificates, the following Applicant roles are required, as,defined in the [BR], and enforced within the enrollment process:
 
 - Applicant
 - Applicant Representative
 
-For EV SSL Server certificates, the following additional Applicant roles are required, as defined in the [EVGL], and enforced within the enrollment process:
+For EV TLS Server certificates, the following additional Applicant roles are required, as defined in the [EVGL], and enforced within the enrollment process:
 
 - Certificate Requester
 - Certificate Approver
@@ -687,8 +675,8 @@ Enterprise RAs can request certificates via a specific web-based application hos
 The certificate application always includes the following information:
 
 - type, class, and duration (validity) of the requested certificate;
-- for SSL Server certificates, FQDN(s) and/or IP address(es) to be included in the certificate;
-- (except for DV SSL Server certificates) value of the proposed Subject DN;
+- for TLS Server certificates, FQDN(s) and/or IP address(es) to be included in the certificate;
+- (except for DV TLS Server certificates) value of the proposed Subject DN;
 - name and contact details of one or more Technical Contacts.
 
 Only for OV and EV-class certificates, the following information must also be provided:
@@ -731,7 +719,7 @@ Depending of the age and applicability of the already available validation data,
 The CA also checks that the information contained in the CSR (e.g. Subject DN, FDQNs and/or IP addresses) are consistent with those supplied in the certificate application form and with the type of certificate requested, and rejects the request in case of conflicts or anomalies.
 
 The CA also checks the relevant CAA records (if any) according to paragraph 3.2.2.8 of the [BR]. The domain identifier to be used in the CAA records to authorize the Actalis CA is "actalis.it".
-For EV SSL Server certificates, Actalis enforces the principle of Separation of Duties to ensure that no one person can single-handedly validate and authorize the issuance of an EV Certificate, in compliance with section 14.1.3 of the [EVGL]. In particular, the “Final Cross-Correlation and Due Diligence” (see section 3.2.2.13 of EVGL) is carried out by a different validation specialist than the one(s) who performed the previous validation steps.
+For EV TLS Server certificates, Actalis enforces the principle of Separation of Duties to ensure that no one person can single-handedly validate and authorize the issuance of an EV Certificate, in compliance with section 14.1.3 of the [EVGL]. In particular, the “Final Cross-Correlation and Due Diligence” (see section 3.2.2.13 of EVGL) is carried out by a different validation specialist than the one(s) who performed the previous validation steps.
 
 Once the essential I&A steps are successfully completed, the CA will normally send to the Applicant Representative, via email, the authentication credentials needed to login to the CA portal, for the possible submission of revocation requests.
 
@@ -769,7 +757,7 @@ If all the above checks are successful, the CA generates the certificate, stores
 
 All of the above operations are performed automatically for Subscriber certificates, normally.
 
-All SSL Server certificates issued after 30 April 2018 MUST be compliant with the applicable Certificate Transparency requirements according to [CT]. When an SSL Server certificate is to be issued, a precertificate is first generated and registered in a number of CT Logs according to the applicable browser vendors’ CT Policies (Google, Mozilla and Apple). Each CT Log returns a signed certificate timestamp (SCT) as a proof of inclusion. Then, the final certificate is generated wherein the SCTs are embedded as an extension (OID 1.3.6.1.4.1.11129.2.4.2).
+All TLS Server certificates issued after 30 April 2018 MUST be compliant with the applicable Certificate Transparency requirements according to [CT]. When an TLS Server certificate is to be issued, a precertificate is first generated and registered in a number of CT Logs according to the applicable browser vendors’ CT Policies (Google, Mozilla and Apple). Each CT Log returns a signed certificate timestamp (SCT) as a proof of inclusion. Then, the final certificate is generated wherein the SCTs are embedded as an extension (OID 1.3.6.1.4.1.11129.2.4.2).
 
 In case of a Subordinate CA certificate, however, the certificate issuance requires a suitably authorized indi-vidual (i.e., the CA system operator, system officer, or PKI administrator) to deliberately issue a direct com-mand in order for the Root CA to perform the certificate signing operation.
 
@@ -794,7 +782,7 @@ No stipulation as regards end entity certificates.
 
 ### 4.4.3 Notification of certificate issuance by the CA to other entities
 
-For all new SSL Server certificates, the CA submits the pre-certificate to at least two different Certificate Transparency (CT) logs according to RFC6962.
+For all new TLS Server certificates, the CA submits the pre-certificate to at least two different Certificate Transparency (CT) logs according to RFC6962.
 
 ## 4.5 KEY PAIR AND CERTIFICATE USAGE
 
@@ -803,14 +791,14 @@ For all new SSL Server certificates, the CA submits the pre-certificate to at le
 The Subscriber shall use the private key:
 
 - (Code Signing certificates) to digitally sign their own executable code (e.g., PE files, Java applets, dynamic libraries, etc.) and/or code for which the Subscriber is responsible;
-- (SSL Server certificates) to activate the TLS/SSL protocol on their own servers, thereby allowing TLS server authentication and session encryption of the transactions with clients.
+- (TLS Server certificates) to activate the TLS/SSL protocol on their own servers, thereby allowing TLS server authentication and session encryption of the transactions with clients.
 
 ### 4.5.2 Relying party public key and certificate usage
 
 The relying parties shall use the certificate to:
 
 - (Code Signing certificates) verify the integrity and origin of the executable code;
-- (SSL Server certificates) verify the identity of a server and (depending on certificate class) the organization which controls the server, as well as to exchange the “session key” safely with the server.
+- (TLS Server certificates) verify the identity of a server and (depending on certificate class) the organization which controls the server, as well as to exchange the “session key” safely with the server.
 
 See also paragraph 1.4.
 
@@ -1406,8 +1394,6 @@ For SSL certificates, the Subscriber’s key pairs shall be generated by the Sub
 
 The CA shall reject a certificate request for a public key that does not meet the requirements set forth in sections 6.1.5 and 6.1.6 or if it is a known weak key (such as a “Debian weak key”, see [http://wiki.debian.org/SSLkeys)](http://wiki.debian.org/SSLkeys))
 
-For Code Signing certificates, the Subscriber’s Private Keys MUST be generated, stored, and used in compliance with the requirements in section 6.2.7.
-
 #### 6.1.2 Private Key delivery to subscriber
 
 See paragraph 6.1.1.3.
@@ -1436,8 +1422,6 @@ Subscriber keys shall be either:
 
 - RSA keys with a module size of at least 2048 bits (up to 4096),
 - or ECC keys of type NIST P- 256 or P- 384.
-
-Effective from June 1, 2021, RSA keys used for Code Signing shall have a module size of at least 3072 bits.
 
 #### 6.1.6 Public key parameters generation and quality checking
 
@@ -1478,17 +1462,7 @@ When CA private keys are transferred between HSMs (e.g., for redundancy or backu
 
 #### 6.2.7 Private Key storage on cryptographic module
 
-##### 6.2.7.1 Private key storage for CA keys
-
 Private Keys corresponding to CA Keys MUST be stored in accordance with [BR] section 6.2.7.
-
-##### 6.2.7.2 Private key storage for Timestamp Authorities
-
-Actalis’ Timestamp Authority protects its signing keys according to [CSBR] section 6.2.7.
-
-##### 6.2.7.3 Private key storage for Signing Services
-
-The Actalis’ Code Signing Service ensures that Subscribers’ Private Keys are generated, stored, and used in a secure environment that meets the requirements of [CSBR] section 6.2.7.
 
 ##### 6.2.7.4 Subscriber Private Key protection and verification
 
@@ -1536,10 +1510,9 @@ Certificates and private keys shall have a _maximum_ operational period accordin
 | Root CA emesse nel corso del 2025 |  15 years  |20 years|
 | Subordinate emesse nel corso del 2025 |  No stipulation  |10 years|
 | Cross certificates |  No stipulation  |5 years|
-| Subscriber – DV SSL Server |  No stipulation  |Max 200 days|
-| Subscriber – OV SSL Server |  No stipulation  |Max 200 days|
-| Subscriber - EV SSL Server |  No stipulation  |Max 200 days|
-| Subscriber – Code Signing |  No stipulation  |Max 460 days|
+| Subscriber – DV TLS Server |  No stipulation  |Max 200 days|
+| Subscriber – OV TLS Server |  No stipulation  |Max 200 days|
+| Subscriber - EV TLS Server |  No stipulation  |Max 200 days|
 
 See also section 7.1.
 
@@ -1912,91 +1885,6 @@ The certificates of the subordinate CAs have the following profile.
 
 Where < purpose > is, for example, 'TLS Server ECC', while < year > is the year the SubCA was created. For ex-ample, the full commonName could be 'Actalis Extended Validation TLS Server RSA CA 2025'.
 
-###### 7.1.2.2.5 Sub CAs for Code Signing certificates
-
-The certificates of the subordinate CAs have the following profile.
-
-###### 7.1.2.2.5.1 Legacy hierarchy
-
-Field|Value  |
-|--|--|
-| Version  | V3 (2) |
-| SerialNumber |  <includes at least 8 pseudo-random bytes> |
-|Signature   |  sha256WithRSAEncryption (1.2.840.113549.1.1.11)|
-| Issuer  | CN = Actalis Authentication Root CA <br>  O = Actalis S.p.A./03358520967 <br> L = Milano <br>  S = Bergamo <br> C = IT |
-| Validity  | <According to section 6.3.2> |
-| Subject | CN = Actalis Code Signing Server CA GN <br>  O = Actalis S.p.A. <br> L = Ponte San Pietro <br>  S = Bergamo <br> C = IT |
-| SubjectPublicKeyInfo |  <RSA public key of at least 2048 bits> |
-| SignatureValue |  < Root CA signature> |
-
-| Extension  | Value|
-|--|--|
-| Basic Constraints  |  critical: CA=true|
-| AuthorityKeyIdentifier (AKI)  | < Same value as the Root CA SKI extension>|
-| SubjectKeyIdentifier (SKI) | < public key SHA1-digest> |
-| KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | codeSigning |
-| CertificatePolicies  | PolicyOID = 2.5.29.32.0 (anyPolicy) <br> CPS-URI = < HTTP address of this CPS> |
-| SubjectAlternativeName (SAN) |  < not included> |
-| AuthorityInformationAccess (AIA)  |  < HTTP address of OCSP responder> |
-| CRLDistributionPoints (CDP) |  < HTTP address to access the ARL> |
-
-###### 7.1.2.2.6	Sub CA for S/MIME certificates
-
-The certificates of the subordinate CAs have the following profile.
-
-###### 7.1.2.2.6.1 Legacy hierarchy
-
-|Field|Value  |
-|--|--|
-| Version  | V3 (2) |
-| SerialNumber |  <includes at least 8 pseudo-random bytes> |
-|Signature   |  sha256WithRSAEncryption (1.2.840.113549.1.1.11)|
-| Issuer  | CN = Actalis Authentication Root CA <br>  O = Actalis S.p.A./03358520967 <br> L = Milano <br> C = IT   |
-| Validity  | <According to section 6.3.2> |
-| Subject | CN = Actalis Client Authentication CA GN <br>  O = Actalis S.p.A. <br> L = Ponte San Pietro <br>  S = Bergamo <br> C = IT |
-| SubjectPublicKeyInfo |  <RSA public key of 4096 bits> |
-| SignatureValue |  < Root CA signature> |
-
-| Extension  | Value|
-|--|--|
-| Basic Constraints  |  critical: CA=true,  <br> critical: pathLenConstraint=0|
-| AuthorityKeyIdentifier (AKI)  | < Same value as the Root CA SKI extension>|
-| SubjectKeyIdentifier (SKI) | < public key SHA1-digest> |
-| KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | clientAuth (1.3.6.1.5.5.7.3.2), <br> emailProtection (1.3.6.1.5.5.7.3.4) |
-| CertificatePolicies  | PolicyOID = 2.5.29.32.0 (anyPolicy) <br> CPS-URI = <HTTP link to Actalis’ legal repository>|
-| SubjectAlternativeName (SAN) |  < not included> |
-| AuthorityInformationAccess (AIA)  |  < HTTP address of OCSP responder> |
-| CRLDistributionPoints (CDP) |  < HTTP address to access the ARL>, <br> < LDAP address to access the ARL > |
-
-###### 7.1.2.2.6.2 New hierarchies
-
-|Field|Value  |
-|--|--|
-| Version  | V3 (2) |
-| SerialNumber |  <includes at least 8 pseudo-random bytes> |
-|Signature   |  < In accordance with paragraphs 6.1.5 and 7.1.3>|
-| Issuer  | < Subject of the issuing Root CA >|
-| Validity  | <In accordance with paragraph 6.3.2> |
-| Subject | CN = Actalis SMIME < purpose > CA < year > <br>  O = Actalis S.p.A. <br> L = Ponte San Pietro <br>  S = Bergamo <br> C = IT |
-| SubjectPublicKeyInfo |  < In accordance with paragraphs 6.1.5 and 7.1.3> |
-| SignatureValue |  < Root CA signature> |
-
-| Extension  | Value|
-|--|--|
-| Basic Constraints  |  critical: CA=true|
-| AuthorityKeyIdentifier (AKI)  | < value of the Root CA's SKI extension >|
-| SubjectKeyIdentifier (SKI) | < public key SHA1-digest> |
-| KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | serverAuth |
-| CertificatePolicies  | PolicyOID = 2.5.29.32.0 (anyPolicy) <br> CPS-URI = < HTTP address of this CPS> |
-| SubjectAlternativeName (SAN) |  < not included> |
-| AuthorityInformationAccess (AIA)  |  < HTTP address of OCSP responder> |
-| CRLDistributionPoints (CDP) |  < HTTP address to access the ARL> |
-
-Where < purpose > is, for example, “RSA”, while < year > is the year the SubCA was created. For example, the full commonName can be “Actalis SMIME RSA CA 2025”.
-
 ##### 7.1.2.3 Cross Certificates
 
 Actalis cross-certificates have the profiles described below.
@@ -2052,63 +1940,11 @@ Actalis cross-certificates have the profiles described below.
 | AuthorityInformationAccess (AIA)  |  < HTTP address of OCSP responder> |
 | CRLDistributionPoints (CDP) |  < HTTP address to access the ARL> |
 
-###### 7.1.2.3.2	Hierarchy for S/MIME Certificates
-
-**In the case of RSA keys**
-
-|Field|Value  |
-|--|--|
-| Version  | V3 (2) |
-| SerialNumber |  <includes at least 8 pseudo-random bytes> |
-|Signature   |  < According to the key type of the old Root CA and in accordance with paragraphs 6.1.5 and 7.1.3> |
-| Issuer  | < Subject of the old Root CA >|
-| Validity  | < NotAfter: expiration date of the old Root CA >|
-| Subject | < Subject of the new Root CA >|
-| SubjectPublicKeyInfo |  < 4096-bit RSA public key > |
-| SignatureValue | < Old Root CA signature> |
-
-| Extension  | Value|
-|--|--|
-| Basic Constraints  |  critical: CA=true|
-| AuthorityKeyIdentifier (AKI)  | < SHA1 - of the public key of the old Root CA >|
-| SubjectKeyIdentifier (SKI) | < SHA1 - of the public key of the old Root CA >
-| KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | TLS Web Server Authentication, E-mail Protection |
-| CertificatePolicies  | Any Policy |
-| SubjectAlternativeName (SAN) |  < not included> |
-| AuthorityInformationAccess (AIA)  |  < HTTP address of OCSP responder> |
-| CRLDistributionPoints (CDP) |  < HTTP address to access the ARL> |
-
-**In the case of ECC keys**
-
-|Field|Value  |
-|--|--|
-| Version  | V3 (2) |
-| SerialNumber |  <includes at least 8 pseudo-random bytes> |
-|Signature   |  < According to the key type of the old Root CA and in accordance with paragraphs 6.1.5 and 7.1.3> |
-| Issuer  | < Subject of the old Root CA >|
-| Validity  | < NotAfter: expiration date of the old Root CA >|
-| Subject | < Subject of the new Root CA >|
-| SubjectPublicKeyInfo | < ECDSA P-384 Public Key> |
-| SignatureValue |< Signature of the old/previous Root CA > |
-
-| Extension  | Value|
-|--|--|
-| Basic Constraints  |  critical: CA=true|
-| AuthorityKeyIdentifier (AKI)  | < SHA1 - of the public key of the old Root CA >|
-| SubjectKeyIdentifier (SKI) | < SHA1 - of the public key of the old Root CA >
-| KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | TLS Web Server Authentication, E-mail Protection |
-| CertificatePolicies  | Any Policy |
-| SubjectAlternativeName (SAN) |  < not included> |
-| AuthorityInformationAccess (AIA)  |  < HTTP address of OCSP responder> |
-| CRLDistributionPoints (CDP) |  < HTTP address to access the ARL> |
-
 ##### 7.1.2.4 Subscriber Certificates
 
-###### 7.1.2.4.1 SSL Server DV
+###### 7.1.2.4.1 TLS Server DV
 
-The SSL Server DV certificate is issued with the following profile:
+The TLS Server DV certificate is issued with the following profile:
 
 |Field|Value  |
 |--|--|
@@ -2139,9 +1975,9 @@ In case the certificate was requested for a FQDN like www.< domain >, the SAN ex
 Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 
-###### 7.1.2.4.2 SSL Server DV Wildcard
+###### 7.1.2.4.2 TLS Server DV Wildcard
 
-The Wildcard SSL Server DV certificate is issued with the following profile:
+The Wildcard TLS Server DV certificate is issued with the following profile:
 
 |Field|Value|
 |--|--|
@@ -2172,9 +2008,9 @@ Note: the SAN extension also contains the domain name obtained by removing the w
 Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 
-###### 7.1.2.4.3 SSL Server OV
+###### 7.1.2.4.3 TLS Server OV
 
-The SSL Server OV certificate is issued with the following profile:
+The TLS Server OV certificate is issued with the following profile:
 
 |Field|Value  |
 |--|--|
@@ -2205,9 +2041,9 @@ In case the certificate was requested for a FQDN like www.< domain >, the SAN ex
 Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 
-###### 7.1.2.4.4 SSL Server OV Wildcard
+###### 7.1.2.4.4 TLS Server OV Wildcard
 
-The Wildcard SSL Server OV certificate is issued with the following profile:
+The Wildcard TLS Server OV certificate is issued with the following profile:
 |Field|Value  |
 |--|--|
 | Version  | V3 (2) |
@@ -2238,9 +2074,9 @@ Note: the SAN extension also contains the domain name obtained by removing the w
 Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 
-###### 7.1.2.4.5 SSL Server EV
+###### 7.1.2.4.5 TLS Server EV
 
-The SSL Server EV certificate is issued with the following profile:
+The TLS Server EV certificate is issued with the following profile:
 
 |Field|Value  |
 |--|--|
@@ -2273,7 +2109,7 @@ Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will 
 
 ###### 7.1.2.4.6 Qualified Website Authentication Certificate
 
-The qualified SSL Server certificate ("Qualified Website Authentication Certificate"), variant of the SSL Server EV certificate, is issued with the following profile:
+The qualified TLS Server certificate ("Qualified Website Authentication Certificate"), variant of the TLS Server EV certificate, is issued with the following profile:
 
 |Field|Value  |
 |--|--|
@@ -2302,33 +2138,6 @@ The qualified SSL Server certificate ("Qualified Website Authentication Certific
 | EmbeddedSCTList <br> (1.3.6.1.4.1.11129.2.4.2) |   List of Signed Certificate Timestamps according to RFC 6962 [CT] |
 
 Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
-
-###### 7.1.2.4.7 Code Signing
-
-The Code Signing certificate is issued with the following profile:
-
-|Field|Value  |
-|--|--|
-| Version  | V3 (2) |
-| SerialNumber |  <includes at least 8 pseudo-random bytes> |
-|Signature   |  < In accordance with paragraphs 6.1.5 and 7.1.3>|
-| Issuer  | < DN of the CA that issued the certificate > |
-| Validity  | <According to section 6.3.2> |
-| Subject | C = < Two-letter code ofi0ountry where the Subscriber is based > <br> ST = < State or province where Subscriber is based > <br> L = < Locality where Subscriber is based > <br> O = < Registered name or DBA of Subscriber > <br> OU = < optional > <br> CN = < Same value as the O field > <br> |
-| SubjectPublicKeyInfo | < In accordance with paragraphs 6.1.5 and 7.1.3> |
-| SignatureValue |  < Sub CA signature> |
-
-| Extension  | Value|
-|--|--|
-| Basic Constraints  | <if included, is critical and contains CA=FALSE> |
-| AuthorityKeyIdentifier (AKI)| < Same value as the Sub CA SKI extension> |
-| SubjectKeyIdentifier (SKI)  | < public key SHA1-digest> |
-| KeyUsage  | critical: digitalSignature |
-| ExtendedKeyUsage (EKU) |  critical: codeSigning (1.3.6.1.5.5.7.3.3) |
-| CertificatePolicies | PolicyOID = 1.3.159.1. 21 .1 <br> PolicyOID = 2.23.140.1.4.1  <br> CPS-URI = < HTTP address of this CPS>  <br>|
-|SubjectAlternativeName (SAN)  |  < email address of the owner >  |
-|AuthorityInformationAccess (AIA)  | < HTTP address of OCSP responder> <br> < HTTP address of the issuing CA certificate> |
-| CRLDistributionPoints (CDP) |  < HTTP address to access the CRL> |
 
 ##### 7.1.2.5 All certificates
 
@@ -2370,7 +2179,7 @@ By issuing the Certificate, the CA represents that it followed the procedures se
 
 ###### 7.1.4.2.1 Subject Alternative Name Extension
 
-For all **SSL Server** certificates, the following rule applies:
+For all **TLS Server** certificates, the following rule applies:
 
 - The **_SubjectAlternativeNames_** ( **SAN** ) extension must contain at least one item. Each of the items in this extension must be an IP address or an FQDN that the Subscriber either owns or controls. Internal server names or reserved IP addresses are not allowed. See also section 3.1.1.
 
@@ -2380,25 +2189,24 @@ The underscore character (“_”) is not allowed in FQDNs.
 
 ###### 7.1.4.2.2 Subject Distinguished Name Fields
 
-For **DV SSL Server** certificates, the following rules apply:
+For **DV TLS Server** certificates, the following rules apply:
 
 - The **commonName** attribute (OID 2.5.4.3) of the Subject DN must contain a single IP address or Fully     Qualified Domain Name (FQDN) among those contained in the SAN extension (see previous section). If     a FQDN is too long to fit (> 64 chars), this attribute will be omitted resulting in an empty Subject DN.
 
 - No other Subject DN attributes shall be present.
-- The Subject field may be empty in DV SSL Server certificates, e.g., when it cannot accommodate a very     long FQDN (longer that 64 characters).
+- The Subject field may be empty in DV TLS Server certificates, e.g., when it cannot accommodate a very     long FQDN (longer that 64 characters).
 
-For **OV SSL Server and Code Signing certificates** , the following rules apply:
+For **OV TLS Server and Code Signing certificates** , the following rules apply:
 
 - The **_commonName_** (OID 2.5.4.3) attribute of the Subject DN:
-    - in an SSL Server certificate, must contain one single IP address or Fully Qualified Domain Name        (FQDN) among those contained in the SAN extension (see previous section);
-    - in a Code Signing certificate, must contain the same value as the **organizationName** attribute;
-- The **_organizationName_** attribute (OID 2.5.4.10) of the Subject DN must contain the name or DBA     (Doing Business As) of the Subscriber. For an SSL Server certificate, it must be the entity that either    owns or controls all the FQDNs and/or IP addresses included in the certificate.
+    - in an TLS Server certificate, must contain one single IP address or Fully Qualified Domain Name        (FQDN) among those contained in the SAN extension (see previous section);
+- The **_organizationName_** attribute (OID 2.5.4.10) of the Subject DN must contain the name or DBA     (Doing Business As) of the Subscriber. For an TLS Server certificate, it must be the entity that either    owns or controls all the FQDNs and/or IP addresses included in the certificate.
 
 - The **_localityName_** attribute (OID 2.5.4.7) of the Subject DN must contain the name of the locality (e.g.,    city) where the Subscriber is located (main place of business).
 - The **_stateOrProvinceName_** attribute (OID 2.5.4.8) of the Subject DN must contain the name of the     province (for Italian organizations) or Region/State (for foreign organizations) where the Subscriber’s     principal place of business is located.
 - The **_countryName_** attribute (OID 2.5.4.6) of the Subject DN must contain the ISO 3166 two-letter code (e.g., “IT”) of the country where the Subscriber’s principal place of business is located.
 
-For **EV SSL Server certificates,** the following additional rules also apply:
+For **EV TLS Server certificates,** the following additional rules also apply:
 
 - The **businessCategory** attribute (OID 2.5.4.15) of the Subject DN must contain the Subscriber’s organization type (either “Private Organization” or “Government Entity”).
 - The **_serialNumber_** attribute (OID 2.5.4.5) of the Subject DN must contain the VAT Number or other official registration number of the Subscriber.
@@ -2652,7 +2460,7 @@ In general, Actalis undertakes to operate, in all material aspects, in complianc
 
 More specifically, Actalis represents and warrants to the Certificate Beneficiaries that:
 
-- [for SSL Server certificates] at the time of issuance, the CA followed the procedure described in this CPS for verifying that the Applicant either had the right to use, or had control of, the Domain Name(s) and IP address(es) listed in the Certificate’s Subject field and subjectAltName extension (or, only in the case of Domain Names, was delegated such right or control by someone who had such right to use or control);
+- [for TLS Server certificates] at the time of issuance, the CA followed the procedure described in this CPS for verifying that the Applicant either had the right to use, or had control of, the Domain Name(s) and IP address(es) listed in the Certificate’s Subject field and subjectAltName extension (or, only in the case of Domain Names, was delegated such right or control by someone who had such right to use or control);
 
 - at the time of issuance, the CA followed the procedures described in this CPS for verifying that the Subject authorized the issuance of the Certificate and that the Applicant Representative was authorized to request the Certificate on behalf of the Applicant;
 - at the time of issuance, the CA followed the procedures described in this CPS for verifying the accuracy of all Subject information contained in the Certificate;
@@ -2696,13 +2504,13 @@ The Applicant represents and warrants to:
 - respond within 24 hours to requests by the CA related to possible improper use of certificates or     possible key compromises;
 - upon revocation of their certificate(s), immediately stop using the revoked certificates, and:
     - in the case of Code Signing certificates: immediately remove the signed software from the web sites on which it is published;
-    - in the case of SSL Server certificates: immediately remove the certificate from the servers on  which it is installed.
+    - in the case of TLS Server certificates: immediately remove the certificate from the servers on  which it is installed.
 - stop using certificates upon their expiration.
 
 Moreover, the Subscriber shall:
 
 - in case of Code Signing certificates: not sign malicious software (malware) and not describe the signed   software in a misleading way with respect to its real functionality and purpose;
-- in case of SSL Server certificates: install the certificate only on the servers that are accessible at the subjectAlternativeName(s) listed in the Certificate and operate those servers only in the ways allowed     by this CPS and for lawful purposes only.
+- in case of TLS Server certificates: install the certificate only on the servers that are accessible at the subjectAlternativeName(s) listed in the Certificate and operate those servers only in the ways allowed     by this CPS and for lawful purposes only.
 
 Subscribers acknowledge and accept that the CA, if made aware that a Subscriber’s certificate is being used for unlawful purposes (e.g. phishing, Man-In-The-Middle attacks, distribution of malware, etc.) or for issuing other certificates, will revoke that Certificate immediately and without any notice.
 
