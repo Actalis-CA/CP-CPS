@@ -45,11 +45,12 @@ The **Root CA** is used for issuing Sub CA certificates and related CRLs only, a
 The **Sub CA**s are the CAS that issue end-user certificates.
 
 In particular, to date there are:
+
 - A legacy hierarchy based on the single multi-purpose Root CA “Actalis Authentication Root CA”, included in the main root certificate stores, currently in use. Under this single Root CA, various Sub-CAs operate that issue different types of certificates (TLS Server, Code Signing, S/MIME, etc.);
+
 - New hierarchies based on single-purpose Root CAs detailed below, which are currently not included in the main root certificate stores. These hierarchies are intended to replace the legacy structure, forming the basis for the structured migration of certificates. The new hierarchies are specific to the type of certificate (TLS Server, Code Signing, S/MIME, etc.).
 
-Some of the Root CAs on which the new hierarchies are based have been cross-certified by the multi-purpose Root CA, thus allowing the issuance of certificates also using the subordinate CAs under these new Root CAs. 
-As of the review date of this CPS, however, the new SubCAs are not yet in use.
+Some of the Root CAs on which the new hierarchies are based have been cross-certified by the multi-purpose Root CA, thus allowing the issuance of certificates also using the subordinate CAs under these new Root CAs.
 
 Within the framework of the service described in this document, the role of Root CA is played by the Italian company Actalis S.p.A. (hereinafter referred to as “Actalis”), identified as follows:
 
@@ -71,9 +72,9 @@ As anticipated, the role of Root CA is played by Actalis. As of the date of revi
 
 | Subject DN |Subject Key ID  |notBefore |notAfter|
 |-----|-----|------|------|
-|CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L= Milan <br> C=IT|52 d8 88 3a c8 9f 78 66 ed 89 f3 7b 38 70 94 c9 02 02 36 d0|22 September 2011|22 September 2030||
-|CN = Actalis TLS Server ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|30 22 bd d5 9a b5 d2 87 2f ff a6 7c a3 b5 4c 16 57 f0 ae 0c|28 February 2025|22 February 2050||
-|CN = Actalis TLS Server RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|e8 d3 0e 4d b1 76 41 22 80 19 4d 50 48 84 f2 2f 35 90 9d 8e|28 February 2025|22 February 2050||
+|CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L= Milan <br> C=IT|52 d8 88 3a c8 9f 78 66 ed 89 f3 7b 38 70 94 c9 02 02 36 d0|22 September 2011|22 September 2030|
+|CN = Actalis TLS Server ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|30 22 bd d5 9a b5 d2 87 2f ff a6 7c a3 b5 4c 16 57 f0 ae 0c|28 February 2025|22 February 2050|
+|CN = Actalis TLS Server RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|e8 d3 0e 4d b1 76 41 22 80 19 4d 50 48 84 f2 2f 35 90 9d 8e|28 February 2025|22 February 2050|
 
 #### 1.3.1.2 Subordinate Certification Authorities
 
