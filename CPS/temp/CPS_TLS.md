@@ -1,5 +1,3 @@
-**Actalis TLS Certificate Policy and Certification Practice Statement**
-
 ---
 Version: 6.0
 Date: May 29, 2026
