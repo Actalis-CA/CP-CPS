@@ -47,14 +47,14 @@ jobs:
         run: |
           pandoc "${{ github.event.inputs.markdown_file }}" \
             -o "${{ github.event.inputs.output_name }}.pdf" \
-            --pdf-engine=pdflatex \
+            --pdf-engine=xelatex \
             --toc \
-            --toc-depth=2 \
+            --toc-depth=4 \
             -V geometry:margin=1in \
             -V fontsize=11pt \
-            -V mainfont="Liberation Serif" \
+            -V mainfont="Helvetica" \
             --standalone \
-            --metadata title="Actalis Certification Practice Statement"
+            --metadata title="Actalis TLS Certificate Policy and Certification Practice Statement"
           
           if [ -f "${{ github.event.inputs.output_name }}.pdf" ]; then
             echo "✅ PDF conversion successful!"
