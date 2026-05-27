@@ -493,7 +493,7 @@ As part of the issuance process, the CA shall check for a CAA record for each dN
 
 #### 3.2.2.9 Multi‑Perspective Issuance Corroboration
 
-In order to improve protection against Border Gateway Protocol (BGP) attacks or hijacks, Actalis implement Multi‐Perspective Issuance Corroboration (MPIC) for Domain Control Validation and for CAA Record checking, in compli-ance with §3.2.2.9 of the [BR]. The number of remote perspectives used, the quorum required, and the DCV meth-ods to which the MPIC applies, as well as other aspects of MPIC, comply with §3.2.2.9 of the [BR].
+In order to improve protection against Border Gateway Protocol (BGP) attacks or hijacks, Actalis implement Multi‐Perspective Issuance Corroboration (MPIC) for Domain Control Validation and for CAA Record checking, in compliance with §3.2.2.9 of the [BR]. The number of remote perspectives used, the quorum required, and the DCV methods to which the MPIC applies, as well as other aspects of MPIC, comply with §3.2.2.9 of the [BR].
 
 ### 3.2.3 Authentication of individual identity
 
