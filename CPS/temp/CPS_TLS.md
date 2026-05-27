@@ -17,7 +17,7 @@ The reliability of a certificate, in particular the association - attested by th
 
 This document is the Actalis’ combined CP/CPS relevant to the issuance and management of **TLS Server certificates**. This CPS is structured according to the outline set forth in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
 
-Actalis conforms to the latest published versions of CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org , the CCADB Policy published at https://www.ccadb.org/policy, and any of the Browsers´ root programs policies including, but not limited to, the Chrome Root Program, the Apple Root Pro-gram, the Mozilla Root Store Policy, and the Microsoft Root Program. In the event of any inconsistency between this CPS and those documents, those documents take precedence.
+Actalis conforms to the latest published versions of CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org , the CCADB Policy published at https://www.ccadb.org/policy, and any of the Browsers´ root programs policies including, but not limited to, the Chrome Root Program, the Apple Root Program, the Mozilla Root Store Policy, and the Microsoft Root Program. In the event of any inconsistency between this CPS and those documents, those documents take precedence.
 
 This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit  http://creativecommons.org/licenses/by-nd/4.0/](http://creativecommons.org/licenses/by-nd/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
@@ -147,7 +147,7 @@ Certificates issued under this CPS are meant to be used to enable the TLS protoc
 
 A list of major platforms and browsers where certificates issued according to this CPS are trusted can be found on Actalis’ web site at the following URL: https://www.actalis.it/products/ssl-certificate.aspx. Applicants are supposed to review that list before requesting certificates.
 
-The CA may also issue other types of certificates (e.g. SSL Client, S/MIME) that are not entirely regulated by this CPS, but in separate policy documents that refer to this CPS for the shared aspects (e.g. facility, management and operational controls, technical security controls, Root CAs, etc.).
+Actalis also issues other types of certificates (e.g. S/MIME and Code Signing) that are not regulated by this CPS, but by separate CPS’s which can be found on the Actalis’ web site.
 
 It is assumed that the Applicant possesses the competence and tools necessary to request, install and use the certificate. Actalis can provide consultancy on request, as a separate service.
 
