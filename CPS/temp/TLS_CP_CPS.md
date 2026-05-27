@@ -83,9 +83,10 @@ As of the date of revision of this CPS, the **Subordinate CAs run by Actalis** a
 
 | Subject DN |  Subject Key ID |  notBefore|  notAfter |  
 |--|--|--|--|
-| CN = Actalis Organization Validated Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo  <br> C = IT |9F 8A B1 B5 F1 B1  DE 82 F4 27 7C BE 88 CD DE A9 43 81 A3 4B  |6 Jul 2020|   22 set 2030|  CN = Actalis Extended Validation Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | AB 41 73 F0 6F 50  D0 69 FD 73 17 AB  89 B3 6B 62 ED BD 7C 4B | 6 Jul 2020|  22 set 2030 |  
+| CN = Actalis Organization Validated Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo  <br> C = IT |9F 8A B1 B5 F1 B1  DE 82 F4 27 7C BE 88 CD DE A9 43 81 A3 4B  |6 Jul 2020|   22 set 2030|  
+| CN = Actalis Extended Validation Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | AB 41 73 F0 6F 50  D0 69 FD 73 17 AB  89 B3 6B 62 ED BD 7C 4B | 6 Jul 2020|  22 set 2030 |  
 | CN = Actalis Domain Validation Server CA G3 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 42 83 6D 80 7C 09  84 67 FD 80 57 AB F1 26 F5 77 C8 22 82 71 |6 Jul 2020| 22 set 2030 |  
-|CN = Actalis DV Server ACME CA G1 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br>  C = IT  |51 9A 91 1F D2 57  39 17 D9 B7 E2 26 83 BD 7B B4 B5 3F 38 8A  |6 Jun 2023| 22 Sep 2030  |  
+| CN = Actalis DV Server ACME CA G1 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br>  C = IT  |51 9A 91 1F D2 57  39 17 D9 B7 E2 26 83 BD 7B B4 B5 3F 38 8A  |6 Jun 2023| 22 Sep 2030  |  
 | CN = Actalis Domain Validated TLS Server ECC CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 3f 2b ea 35 9c 76 59 0c cd 91 7a 3e 2f 74 e5 3a 90 73 97 e0 |07 jul 2025| 05 jul 2035 | 
 | CN = Actalis Extended Validation TLS Server ECC CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | E9 93 0A 29 44 61 D9 7E 66 65 81 47 D3 BF 30 63 4C 5F 71 74 |07 jul 2025| 05 jul 2035 | 
 | CN = Actalis Organization Validated TLS Server ECC CA 2025 <br> O = Actalis S.p.A. <br> L = Ponte San Pietro <br> S = Bergamo <br> C = IT | 18 E0 1E 84 37 F4 EA BF 01 0A C9 10 00 A5 F8 54 DA FB 3E A5 |07 jul 2025| 05 jul 2035 | 
@@ -95,10 +96,12 @@ As of the date of revision of this CPS, the **Subordinate CAs run by Actalis** a
 
 Subordinate CA certificates can be issued to **external CAs** (i.e. not run by Actalis), under an Actalis’ Root CA, provided that the entities running those external SubCAs commit in writing to fully comply with CAB Forum’s Baseline Requirements [BR], via a suitable **contract** with Actalis.
 
-SubCA certificates can be issued, under an Actalis Root CA, for **external CAs** (i.e., not managed by Actalis) upon signing a **contract** in which the operators of such SubCAs commit, among other things, to comply with the CAB Forum Baseline Requirements [BR]  and to undergo an **annual compliance audit** to the [BR] by an **independent and qualified auditor**, providing Actalis promptly with the annual compliance certificate issued by the auditor. In the absence of such certification, the SubCA certificate will be revoked. Actalis reserves the right to revoke the SubCA certificate even if the compliance certificate highlights serious issues, at Ac-talis' sole discretion.
+SubCA certificates can be issued, under an Actalis Root CA, for external CAs (i.e., not run by Actalis) upon signing a contract in which the operators of such SubCAs commit, among other things, to fully comply with the CAB Forum Baseline Requirements [BR], the CCADB policy, and Browser’s root programs, and to undergo an annual compliance audit by an independent and qualified auditor, providing Actalis promptly with the related annual audit reports. Actalis reserves the right to revoke external SubCA certificates, at its sole discretion, if such audits are not provided, or are provided with significant delay, or if they reveal serious issues.
 
 #### 1.3.1.3 Cross Certificates
+
 As of the review date of this CPS, the Actalis cross-certificates (cross-certification between the old and new Actalis Root CAs) are those identified below; for further details, see also Chapter 7.
+
 | Subject DN |  Subject Key ID |  notBefore|  notAfter |  
 |--|--|--|--|
 | CN = Actalis TLS Server ECC Root CA 2025 <br> O = Actalis S.p.A./03358520967 <br> L = Milan <br> C = IT |30 22 bd d5 9a b5 d2 87 2f ff a6 7c a3 b5 4c 16 57 f0 ae 0c|07 august 2025|   22 september 2030|  
@@ -144,7 +147,7 @@ Certificates may also be provided through Resellers (business partners), which i
 
 ### 1.4.1 Appropriate certificate uses
 
-Certificates issued under this CPS are meant to be used to enable the TLS protocol on one or more servers.
+Certificates issued under this CPS are meant to be used for enabling the TLS/SSL protocol on one or more servers.
 
 A list of major platforms and browsers where certificates issued according to this CPS are trusted can be found on Actalis’ web site at the following URL: https://www.actalis.it/products/ssl-certificate.aspx. Applicants are supposed to review that list before requesting certificates.
 
@@ -153,11 +156,12 @@ Actalis also issues other types of certificates (e.g. S/MIME and Code Signing) t
 It is assumed that the Applicant possesses the competence and tools necessary to request, install and use the certificate. Actalis can provide consultancy on request, as a separate service.
 
 The following table shows the **classes** and **policies** of certificates issued under this CPS, and the applicable CAB Forum requirements. Each policy is identified by a specific **OID** (Object Identifier) under the Actalis arc **1.3.159** :
+
 |Class |Certificate policy | OID | CABF reqs.|
 |--|--|--|--|
 |EV| TLS Server EV (Extended Validation) | 1.3.159.1.17.1 |  [BR], [EVGL]  |
-|OV| TLS Server Wildcard OV (Organization Validated)  | 1.3.159.1.19.1|  [BR] |  |
-|OV| TLS Server OV (Organization Validated) | 1.3.159.1.20.1 | [BR] |  |
+|OV| TLS Server Wildcard OV (Organization Validated)  | 1.3.159.1.19.1|  [BR] |
+|OV| TLS Server OV (Organization Validated) | 1.3.159.1.20.1 | [BR] |
 |DV| TLS Server DV (Domain Validated) |  1.3.159.1.22.1|[BR]  |  
 |DV| TLS Server Wildcard DV (Domain Validated) | 1.3.159.1.23.1 | [BR] | 
 
@@ -169,7 +173,7 @@ In the case of _qualified_ certificates according to the eIDAS regulation (see p
 
 Any use of the certificate other than provided for in section 1.4.1 is forbidden and may result, as soon as Actalis is made aware of it, in the revocation of the certificate (see also section 4.9.1).
 
-Actalis reserves the right to put in operation new subordinate CAs, i.e. intermediate CAs (ICAs), when needed ac-cording to its own determinations, also taking into account the requirements of Browsers’ root programs, and to stop issuing certificates from the old ones. In some circumstances, Actalis may also need to revoke certain ICAs before their natural expiration.
+Actalis reserves the right to put in operation new subordinate CAs, i.e. intermediate CAs (ICAs), when needed according to its own determinations, also taking into account the requirements of Browsers’ root programs, and to stop issuing certificates from the old ones. In some circumstances, Actalis may also need to revoke certain ICAs before their natural expiration.
 
 Actalis therefore strongly recommends that _ICA certificates not be embedded into applications and/or platforms_.
 
@@ -445,29 +449,31 @@ When the certificate Subject is to include a country code (not applicable to DV-
 
 Prior to issuing an **TLS Server** certificate, the CA shall verify that **each FQDN** to be included in the certificate **either is owned or controlled by the Applicant** or an affiliate thereof (e.g., parent or subsidiary). These checks (also referred to as Domain Control Validation or DCV) are done by one of the following methods:
 
-- The CA confirms, by directly querying the Domain Name Registrar, that the Applicant is the Domain    Registrant. This method may only be used if the Base Domain Name is registered by Aruba S.p.A. (that    is the Actalis’ holding company). This method is implemented in compliance with §3.2.2.4.12 of [BR].
-- The CA sends a Random Value via e-mail to an address obtained by pre-pending “admin@”, or     “administrator@”, or “webmaster@”, or “hostmaster@”, or “postmaster@” to the Authorization     Domain Name, and receives a confirming response utilizing the Random Value. This method is     implemented in compliance with §3.2.2.4.4 of [BR].
-- The CA asks the Applicant to publish a file on the HTTP server at the target FQDN, under the     "/.well-known/pki‐validation" directory, containing a Random Value provided by the CA, and then     confirms the presence of such file, with the expected contents. As of December 1, 2021, this method     cannot be used for wildcard FQDNs and does not cover subdomains of the validated domain. This     method is implemented in compliance with §3.2.2.4.18 of [BR].
-- The CA asks the Applicant to publish a file on the HTTP server at the target FQDN, under the     "/.well-known/acme-challenge" directory, according to section 8.3 of RFC8555 [ACME], containing the     value provided by the CA, and then confirms the presence of such file, with the expected contents. As     of December 1, 2021, this method cannot be used for wildcard FQDNs and does not cover subdomains     of the validated domain. This method is implemented in compliance with §3.2.2.4.19 of [BR].
-- The CA asks the Applicant to insert a TXT record, containing a Random Value provided by the CA,   into the DNS information of the Authorization Domain Name, and then confirms the presence of     such record with the expected contents. This method is implemented in compliance with §3.2.2.4.17 of     [BR].
-- The CA confirms that the Applicant controls an IP address returned from a DNS lookup for A or AAAA     records for the FQDN in line with section 3.2.2.5. This method may not be used for wildcard FQDNs.   This method is implemented in compliance with §3.2.2.4.8 of [BR].
+- The CA confirms, by directly querying the Domain Name Registrar, that the Applicant is the Domain Registrant. This method may only be used if the Base Domain Name is registered by Aruba S.p.A. (that    is the Actalis’ holding company). This method is implemented in compliance with §3.2.2.4.12 of [BR].
+
+- The CA sends a Random Value via e-mail to an address obtained by pre-pending “admin@”, or “administrator@”, or “webmaster@”, or “hostmaster@”, or “postmaster@” to the Authorization Domain Name, and receives a confirming response utilizing the Random Value. This method is implemented in compliance with §3.2.2.4.4 of [BR]. Effective March 15, 2028, at latest, Actalis shall stop using this method, and prior validations using this method and validation data gathered according to this method shall not be used to issue Subscriber Certificates.
+
+- The CA asks the Applicant to publish a file on the HTTP server at the target FQDN, under the "/.well-known/pki‐validation" directory, containing a Random Value provided by the CA, and then     confirms the presence of such file, with the expected contents. This method cannot be used for wildcard FQDNs and does not cover subdomains of the validated domain. This method is implemented in compliance with §3.2.2.4.18 of [BR].
+
+- The CA asks the Applicant to publish a file on the HTTP server at the target FQDN, under the "/.well-known/acme-challenge" directory, according to section 8.3 of RFC8555 [ACME], containing the     value provided by the CA, and then confirms the presence of such file, with the expected contents. As of December 1, 2021, this method cannot be used for wildcard FQDNs and does not cover subdomains     of the validated domain. This method is implemented in compliance with §3.2.2.4.19 of [BR].
+
+- The CA asks the Applicant to insert a TXT record, containing a Random Value provided by the CA, into the DNS information of the Authorization Domain Name, and then confirms the presence of such record with the expected contents. This method is implemented in compliance with §3.2.2.4.7 of [BR]. The expected DNS record must be named “actalis-dcv”.
 
 Note: in the above list of DCV methods, the “Authorization Domain Name” is obtained by pruning zero or more components from the requested FQDN, up to and excluding a public suffix or registry-controlled label.
 
-In all cases, the DCV is done in full compliance with section 3.2.2.4 of the [BR], and no DCV methods are employed by the CA other than those provided for in the [BR].
+In all cases, the DCV is done in full compliance with §3.2.2.4 of the [BR], and no DCV methods are employed by Ac-talis other than those allowed by the [BR]. As part of the DCV process, Actalis also performs DNSSEC validation back to the IANA DNSSEC root trust anchor, as required by §3.2.2.4 of the [BR].
 
-The particular DCV method used for a given FQDN may depend on circumstances, on the certificate requestor’s preferences. The range of supported DCV methods may vary depending on the certificate request channel.
+The particular DCV method used for any given FQDN depends on circumstances and the certificate requestor’s preferences. The range of supported DCV methods may vary depending on the certificate request channel.
 
 #### 3.2.2.5 Authentication for an IP Address
 
 Prior to issuing an **TLS Server** certificate, the CA shall verify that **all IP addresses** to be included in the certificate (excluding DV and EV certificates that may not contain IP addresses) **are controlled by the Applicant** or an affiliated thereof (e.g. holding or subsidiary). These checks are done by one of the following methods:
 
-- the Applicant demonstrate practical control over the IP Address by publishing a file on the HTTP server at the target IP, under the "/.well-known/pki‐validation" directory, containing a Random Value provided by the CA; the CA confirms the presence of such file, with the expected contents;
-- the CA sends a Random Value via e mail to an IP Address Contact, obtained by consulting the Internet Assigned Numbers Authority (IANA) or a Regional Internet Registry (RIPE, APNIC, ARIN, AfriNIC, LACNIC), and receives a confirming response utilizing the Random Value;
-- performing a reverse‐IP address lookup and then verifying control over the resulting Domain Name according to section 3.2.2.4. (§)
+- the Applicant demonstrate practical control over the IP Address by publishing a file on the HTTP server at the target IP, under the "/.well-known/pki‐validation" directory, containing a Random Value provided by the CA; the CA confirms the presence of such file, with the expected contents. This method is implemented in compliance with §3.2.2.5.1 of [BR].
 
-(§) Effective March 15, 2027, Actalis will not rely on this method anymore, and prior validations using this method and validation data gathered according to this method will not be used to issue Subscriber TLS Cer-tificates.
+- the CA sends a Random Value via e mail to an IP Address Contact, obtained by consulting the Internet Assigned Numbers Authority (IANA) or a Regional Internet Registry (RIPE, APNIC, ARIN, AfriNIC, LACNIC), and receives a confirming response utilizing the Random Value; This method is implemented in compliance with §3.2.2.5.2 of [BR]. Effective March 15, 2027, at latest, Actalis shall stop using this method, and prior validations using this method and validation data gathered according to this method shall not be used to issue Subscriber Certificates.
 
+- performing a reverse‐IP address lookup and then verifying control over the resulting Domain Name according to section 3.2.2.4. This method is implemented in compliance with §3.2.2.5.3 of [BR]. Effective March 15, 2027, at latest, Actalis shall stop using this method, and prior validations using this method and validation data gathered according to this method shall not be used to issue Subscriber Certificates.
 
 ### 3.2.2.6 Wildcard Domain Validation
 
@@ -485,14 +491,16 @@ As part of the issuance process, the CA shall check for a CAA record for each dN
 
 #### 3.2.2.9 Multi‑Perspective Issuance Corroboration
 
-Starting from March 15, 2025, in order to improve protection against Border Gateway Protocol (BGP) attacks or hijacks, Actalis implement Multi‐Perspective Issuance Corroboration – using at least two (2) remote Network Perspectives – in compliance with section 3.2.2.9 of the [BR].
+In order to improve protection against Border Gateway Protocol (BGP) attacks or hijacks, Actalis implement Multi‐Perspective Issuance Corroboration (MPIC) for Domain Control Validation and for CAA Record checking, in compli-ance with §3.2.2.9 of the [BR]. The number of remote perspectives used, the quorum required, and the DCV meth-ods to which the MPIC applies, as well as other aspects of MPIC, comply with §3.2.2.9 of the [BR].
 
 ### 3.2.3 Authentication of individual identity
 
 For certificates containing Subject Identity Information, if the Applicant is a natural person the CA shall verify theApplicant’s name, Applicant’s address, and the authenticity of the certificate request in compliance with section 3.2.2 of the [BR]. To that aim, Actalis will normally:
 
-- verify the Applicant’s name using a legible copy, which discernibly shows the Applicant’s face, of at   least one currently valid government‐issued photo ID (passport, driver's license, military ID, national ID,     or equivalent document type) and will inspect the copy for any indication of alteration or falsification;
-- verify the Applicant’s address using a form of identification that Actalis determines to be reliable, such     as a government ID, utility bill, or bank or credit card statement. Actalis may rely on the same government‐issued ID that was used to verify the Applicant’s name;
+- verify the Applicant’s name using a legible copy, which discernibly shows the Applicant’s face, of at   least one currently valid government‐issued photo ID (passport, driver's license, military ID, national ID, or equivalent document type) and will inspect the copy for any indication of alteration or falsification;
+
+- verify the Applicant’s address using a form of identification that Actalis determines to be reliable, such as a government ID, utility bill, or bank or credit card statement. Actalis may rely on the same government‐issued ID that was used to verify the Applicant’s name;
+
 - verify the certificate request with the Applicant using a reliable method of communication.
 
 ### 3.2.4 Non-verified subscriber information
@@ -514,10 +522,14 @@ The CA may use the sources listed in section 3.2.2.1 to verify the Reliable Meth
 Actalis will normally use one the following validation methods:
 
 - By telephone: a CA validation specialist contacts the Applicant by telephone, through the Applicant organization’s general phone number (previously found in a reliable source of information) and asks    confirmation that the certificate request received from Applicant Representative is authentic.
-- By on-line authentication: the Applicant Representative sends the certificate request to the CA via a     web site or web service that requires on-line authentication using personal credentials provided to the Applicant Representative after a suitable identification procedure by the CA.
-- By certified email: the Applicant specifies the name and contact details of its Representative(s) in an     email message sent to the CA via a certified email service^2 (or an equivalent service), from the Applicant’s certified email address (which must be found in a reliable information source);
-- By digital signature: the Applicant sends to the CA a certificate application form, including the name     and contact details of the Applicant Representative(s), as a digitally signed document; the signature     must be a _qualified electronic signature_ (according to EU legislation) and the signer’s certificate must     be valid (not expired nor revoked) and clearly ascribable to the Applicant.
-- By formal purchase order: the name and contact details of the Applicant Representative are provided     to the CA in attachment to a formal purchase order issued directly by the Applicant, written on the   Applicant’s headed paper, including complete identifying data of the Applicant and sent to the CA by     the Applicant’s purchasing department.
+
+- By on-line authentication: the Applicant Representative sends the certificate request to the CA via a web site or web service that requires on-line authentication using personal credentials provided to the Applicant Representative after a suitable identification procedure by the CA.
+
+- By certified email: the Applicant specifies the name and contact details of its Representative(s) in an email message sent to the CA via a certified email service^2 (or an equivalent service), from the Applicant’s certified email address (which must be found in a reliable information source);
+
+- By digital signature: the Applicant sends to the CA a certificate application form, including the name and contact details of the Applicant Representative(s), as a digitally signed document; the signature must be a _qualified electronic signature_ (according to EU legislation) and the signer’s certificate must be valid (not expired nor revoked) and clearly ascribable to the Applicant.
+
+- By formal purchase order: the name and contact details of the Applicant Representative are provided to the CA in attachment to a formal purchase order issued directly by the Applicant, written on the   Applicant’s headed paper, including complete identifying data of the Applicant and sent to the CA by the Applicant’s purchasing department.
 
 For EV certificates, the CA shall verify the Name, Title, and Authority (Agency) of Contract Signer and Certificate Approver according to section 11.8 of the [EVGL]. To the aim of this verification, Actalis will normally rely on a suitable representation from the Contract Signer, based on a template provided by Actalis, which must be signed according to section 4.1.2.
 
@@ -546,17 +558,17 @@ After a certificate has been revoked, the Subscriber wishing a new certificate m
 
 See section 4.9.3.
 
-## 4 CERTIFICATE MANAGEMENT OPERATIONAL REQUIREMENTS
+# 4 CERTIFICATE MANAGEMENT OPERATIONAL REQUIREMENTS
 
-### 4.1 CERTIFICATE APPLICATION
+## 4.1 CERTIFICATE APPLICATION
 
-#### 4.1.1 Who can submit a certificate application
+### 4.1.1 Who can submit a certificate application
 
 Either the Applicant (i.e., the future Subscriber) or a natural person authorized to request certificates on behalf of the Applicant (i.e., an Applicant Representative) may submit certificate requests, in compliance with the requirements described in par. 3.2.5
 
 Actalis maintains an internal database of all previously revoked certificates and previously rejected certificate requests due to suspected phishing or other fraudulent usage or concerns. Actalis uses this information to identify subsequent suspicious certificate requests.
 
-#### 4.1.2 Enrollment process and responsibilities
+### 4.1.2 Enrollment process and responsibilities
 
 The certificate enrollment process includes the following mandatory steps:
 
@@ -646,7 +658,7 @@ Approval of certificate applications requires the successful completion of all v
 - Certificates containing a new gTLD under consideration by ICANN will not be issued.
 - Certificates for domains with “.onion” in their right-most label will not be issued.
 - Certificates containing Domain Names that end in an IP Reverse Zone Suffix, as defined in the [BR], will not be issued.
-- Actalis maintains a list of high-profile domains and will block the issuance of certificates containing any    of those domains, in order to mitigate the associated risks. Before such requests can be approved, the     Applicant will be required to provide extra information to corroborate its right to use such domain(s).
+- Actalis maintains a list of high-risk domains and will block the issuance of certificates containing any of those domains, in order to mitigate the associated risks. Before such requests can be approved, the Applicant will be required to provide extra information to corroborate its right to use such domain(s).
 
 ### 4.2.3 Time to process certificate applications
 
@@ -749,7 +761,7 @@ Same as described in par. 4.1.7.
 
 Certificate re-keying implies the issuance of a new certificate, with a new public key and a new serial number, but with the same Subject information found in the current certificate, provided this latter is not expired or revoked (otherwise, the normal first-issuance procedures are followed).
 
-#### 4.7.1 Circumstance for certificate re-key
+### 4.7.1 Circumstance for certificate re-key
 
 Key regeneration is a mandatory step if certificate renewal is required, but may also be required following the compromise of the current key or for other reasons at the discretion of the CA.
 
@@ -822,27 +834,27 @@ Implementation of revocation consists in the generation and publication of a new
 
 ### 4.9.1 Circumstances for revocation
 
-##### 4.9.1.1 Reasons for Revoking a Subscriber Certificate
+#### 4.9.1.1 Reasons for Revoking a Subscriber Certificate
 
 The CA shall revoke a certificate **within 24 hours** if one or more of the following events occurs:
 
 - the Subscriber requests in writing that the CA revoke the certificate;
-- the Subscriber notifies the CA that the original certificate request was not authorized and does not     retroactively grant authorization;
-- the CA obtains evidence that the Subscriber’s private key (corresponding to the public key in the    certificate) has suffered a key compromise;
-- the CA is made aware that the domain control validation for any of the FQDNs and/or IPs contained in     the certificate should not be relied upon.
+- the Subscriber notifies the CA that the original certificate request was not authorized and does not retroactively grant authorization;
+- the CA obtains evidence that the Subscriber’s private key (corresponding to the public key in the certificate) has suffered a key compromise;
+- the CA is made aware that the domain control validation for any of the FQDNs and/or IPs contained in the certificate should not be relied upon.
 
 The CA shall revoke a certificate **within 5 days** if one or more of the following events occurs:
 
-- the certificate no longer complies with the requirements of Sections 6.1.5 and 6.1.6 of the [BR] or with   others applicable policies and/or standards;
+- the certificate no longer complies with the requirements of Sections 6.1.5 and 6.1.6 of the [BR] or with others applicable policies and/or standards;
 - the CA is made aware that the certificate was misused (e.g., for unlawful purposes);
-- the CA is made aware that the Subscriber has violated one or more of its material obligations under     the Terms & Conditions of the service and/or this CPS;
-- the CA is made aware that use of a FQDN or IP address in the certificate is no longer legally permitted   (e.g., national or international court or arbitrator has revoked a domain name registrant’s right to use     the domain name or applied specific sanctions to registrant, the domain name registrant has failed to     renew the domain name, etc.);
+- the CA is made aware that the Subscriber has violated one or more of its material obligations under the Terms & Conditions of the service and/or this CPS;
+- the CA is made aware that use of a FQDN or IP address in the certificate is no longer legally permitted (e.g., national or international court or arbitrator has revoked a domain name registrant’s right to use the domain name or applied specific sanctions to registrant, the domain name registrant has failed to renew the domain name, etc.);
 - the CA is made aware that a wildcard certificate has been used to authenticate a fraudulently misleading subordinate FQDN;
 - the CA is made aware of a material change in the information contained in the certificate;
 - the CA is made aware that the certificate has any non-compliance with this CPS and/or with the [BR] requirements and/or the [EVGL] guidelines (where applicable), regardless of the impact of such non-compliance on the security and/or the correct working of the certificate;
 - the CA determines that any of the information appearing in the certificate is inaccurate or misleading  (e.g., the Subscriber organization no longer exists, or is indicated ambiguously in the certificate);
-- the CA’s right to issue certificates under the [BR] expires or is revoked or terminated, unless the CA has     made arrangements to continue maintaining the CRL/OCSP repository;
-- the CA is made aware of a demonstrated or proven method that exposes the Subscriber's private key    to compromise, or methods have been developed that can easily calculate it based on the public key, or if there is clear evidence that the specific method used to generate the private key was flawed;
+- the CA’s right to issue certificates under the [BR] expires or is revoked or terminated, unless the CA has made arrangements to continue maintaining the CRL/OCSP repository;
+- the CA is made aware of a demonstrated or proven method that exposes the Subscriber's private key to compromise, or methods have been developed that can easily calculate it based on the public key, or if there is clear evidence that the specific method used to generate the private key was flawed;
 - compromise of the private key of the subordinate CA used for issuing the certificate;
 - breach of contract by the client (e.g., failure to pay for the certificate);
 - a court order to revoke the certificate.
@@ -857,7 +869,7 @@ Before revoking a certificate, the CA will make a reasonable effort to warn to t
 - the certificate is being used for any kind of criminal activity (e.g., "phishing" attacks, "man-in-the-middle" attacks, malware distribution, etc.);
 - the certificate was erroneously issued with CA = TRUE in its KeyUsage extension.
 
-##### 4.9.1.2 Reasons for Revoking a Subordinate CA Certificate
+#### 4.9.1.2 Reasons for Revoking a Subordinate CA Certificate
 
 Actalis shall meet the requirements set forth in section 4.9.1.2 of the [BR].
 
@@ -908,13 +920,15 @@ CRLs are published right after having been generated. The latency between genera
 
 ### 4.9.9 On-line revocation/status checking availability
 
-The CA shall support an OCSP capability using the GET method for all certificates and pre-certificates that have been allocated serial. The OCSP service is available from 15 minutes after the serial assignment.
+Actalis supports an OCSP service for all Certificates and Pre-certificates that have been allocated a serial number, in compliance with §4.9.9 of the [BR].
+
+Actalis’ OCSP responders support the HTTP GET method, as described in RFC 6960 and/or RFC 5019.
+
+The OCSP service is available from 15 minutes after the serial assignment.
 
 OCSP responses related to the responder’s certificates have a validity interval equal to or greater than eight hours and equal to or less than ten days.
 
-Except for CAs that are technically constrained in line with section 7.1.5, the CA’s OCSP responders shall not respond with a "good" status when queried about a certificate or pre-certificates that has not been assigned a serial.
-
-The CA shall update the information provided via OCSP in compliance with the [BR].
+In all other respects, Actalis’ OCSP Service fully complies with §4.9.9 of the [BR].
 
 ### 4.9.10 On-line revocation checking requirements
 
@@ -944,27 +958,27 @@ Actalis may, at its discretion, also allow other methods to demonstrate possessi
 Not applicable.
 
 
-#### 4.9.14 Who can request suspension
+### 4.9.14 Who can request suspension
 
 Not applicable.
 
-#### 4.9.15 Procedure for suspension request
+### 4.9.15 Procedure for suspension request
 
 Not applicable.
 
-#### 4.9.16 Limits on suspension period
+### 4.9.16 Limits on suspension period
 
 Not applicable.
 
 
-### 4.10 CERTIFICATE STATUS SERVICES
+## 4.10 CERTIFICATE STATUS SERVICES
 
 In general, the status of certificates (active or revoked) is made available to all interested parties via:
 
 - the publication of Certificate Revocation Lists (CRL);
 - the provision of an OCSP (On-line Certificate Status Protocol) service.
 
-#### 4.10.1 Operational characteristics
+### 4.10.1 Operational characteristics
 
 The CRL can be accessed:
 
@@ -988,41 +1002,41 @@ The ARL, namely the list of revoked SubCA certificates, is re-generated and re-p
 
 Revocation entries in CRLs and OCSP responses shall not be removed until after the expiry date of the revoked certificates.
 
-#### 4.10.2 Service availability
+### 4.10.2 Service availability
 
 Access to the CRL and OCSP service shall be continuously available (24 x 7), except in the case of system faults or other unexpected events. See also section 17.1.
 
 For both CRL and OCSP, the response time shall be ten seconds or less under normal operating conditions.
 
-#### 4.10.3 Optional features
+### 4.10.3 Optional features
 
 No stipulation.
 
-### 4.11 END OF SUBSCRIPTION
+## 4.11 END OF SUBSCRIPTION
 
 The contract between the CA and the Subscriber ends when the Subscriber’s certificate expires or is revoked, whichever comes first.
 
-### 4.12 KEY ESCROW AND RECOVERY
+## 4.12 KEY ESCROW AND RECOVERY
 
-#### 4.12.1 Key escrow and recovery policy and practices
-
-Not applicable.
-
-#### 4.12.2 Session key encapsulation and recovery policy and practices
+### 4.12.1 Key escrow and recovery policy and practices
 
 Not applicable.
 
-## 5 FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS
+### 4.12.2 Session key encapsulation and recovery policy and practices
+
+Not applicable.
+
+# 5 FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS
 
 For the management of its CA infrastructure, Actalis makes use of the data center services provided by its holding company, Aruba S.p.A., who takes responsibility for the housing, Internet connectivity, physical and network security of all Actalis’ systems. The data center service provided is ISO/IEC 27001 certified.
 
-### 5.1 PHYSICAL CONTROLS
+## 5.1 PHYSICAL CONTROLS
 
-#### 5.1.1 Site location and construction
+### 5.1.1 Site location and construction
 
 All computer systems used for the provision of Actalis’ CA services are housed in highly secure data centers owned and managed by the Actalis’ holding company, Aruba S.p.A. In particular, Actalis maintains at least two full PKI infrastructures at separate locations, for redundancy, plus a third one at a distant location (> 300 km), for disaster recovery purposes. All these data centers are located on the Italian territory.
 
-#### 5.1.2 Physical access
+### 5.1.2 Physical access
 
 At all the CA facilities, the following controls are in place:
 
@@ -1030,39 +1044,39 @@ At all the CA facilities, the following controls are in place:
 - **passive anti-intrusion systems** such as grids, bulletproof glass, armored doors, motorized gates;
 - **active anti-intrusion systems** such as CCTV and VMD.
 
-#### 5.1.3 Power and air conditioning
+### 5.1.3 Power and air conditioning
 
 All data centers hosting Actalis’ CA services are equipped with:
 
 - fully redundant power supply systems, to guarantee the continuity of electric power supply in every predictable condition;
 - ventilation and air conditioning systems (HVAC) to ensure optimal climatic conditions for the regular operation of servers hosted in the data center.
 
-#### 5.1.4 Water exposures
+### 5.1.4 Water exposures
 
 All data centers hosting Actalis’ CA services are equipped with flood detection and protection systems.
 
-#### 5.1.5 Fire prevention and protection
+### 5.1.5 Fire prevention and protection
 
 All the data centers hosting Actalis’ CA services are equipped with fire detection and suppression systems compliant with the applicable laws and standards; fire detectors are also present on all floors of the building. For the details of specific data centers, see par. 5.1.1.
 
-#### 5.1.6 Media storage
+### 5.1.6 Media storage
 
 On the topic of media storage, the procedures set by Actalis’ ISMS apply.
 
-#### 5.1.7 Waste disposal
+### 5.1.7 Waste disposal
 
 On the subject of waste disposal, the CA applies the provisions of current regulations.
 
-#### 5.1.8 Off-site backup
+### 5.1.8 Off-site backup
 
 Backups are stored at a different site than that of data origin, thus ensuring the possibility of restoration in any foreseeable condition.
 
-### 5.2 PROCEDURAL CONTROLS
+## 5.2 PROCEDURAL CONTROLS
 
 Actalis maintains a Security Plan, including a Risk Assessment, which analyses the CA assets, the threats they are exposed to, and describes the various technical, physical and procedural controls deployed so to adequately mitigate the risks. The risk assessment is reviewed at least yearly.
 Furthermore, Actalis has defined an inventory of assets (hardware and software) as required by the policy and the company procedure.
 
-#### 5.2.1 Trusted roles
+### 5.2.1 Trusted roles
 
 Actalis has defined and formally assigned the following trusted roles within the CA service regulated by this CPS:
 
@@ -1078,13 +1092,13 @@ Some persons may hold multiple roles provided that this does not prejudice the s
 
 Trusted roles are appointed by senior management. A list of personnel appointed to trusted roles is maintained and reviewed annually, and made available to auditors.
 
-#### 5.2.2 Number of persons required per task
+### 5.2.2 Number of persons required per task
 
 Management of the CA private keys (key generation, backup, restore, deletion, etc.) requires at least two persons in trusted roles ("dual control") and must take place in a physically protected environment.
 
 Issuance of EV certificates shall require the participation of at least two validation specialists.
 
-#### 5.2.3 Identification and authentication for each role
+### 5.2.3 Identification and authentication for each role
 
 All the trusted roles listed in par. 5.2.1 and, in general, all the Actalis staff use appropriate identification and authentication systems for accessing Actalis’ computer systems.
 
@@ -1092,53 +1106,53 @@ In particular, with regard to the physical access to data rooms and cabinets tha
 
 As regards the logical access to the CA systems, identification is based on the account name and relative password or through a two-factor authentication system where necessary. In particular, access to any account that allows direct issuance of certificates requires strong authentication (multi-factor).
 
-#### 5.2.4 Roles requiring separation of duties
+### 5.2.4 Roles requiring separation of duties
 
 Persons holding any of the trusted roles listed in par. 5.2.1 cannot have other roles within the CA services, except for Validation Specialists and Registration & Revocation Officers. See also section 5.2.2
 
-### 5.3 PERSONNEL CONTROLS
+## 5.3 PERSONNEL CONTROLS
 
-#### 5.3.1 Qualifications, experience, and clearance requirements
+### 5.3.1 Qualifications, experience, and clearance requirements
 
 Actalis ensures that the personnel assigned to its CA services are adequately competent for the tasks assigned to them, based on appropriate education, training, skills, and experience, and that they are free from conflicts of interest that may compromise the necessary impartiality and respect of the procedures. In particular, with reference to the trusted roles, the required characteristics and skills are described in the "job description" company document.
 
 In the case of new recruitments, Actalis always reserves the right to assess what type of training is necessary in relation to the tasks to be assigned, the existing qualifications and experience, and provides where necessary for the inclusion of the resource in a training plan.
 
-#### 5.3.2 Background check procedures
+### 5.3.2 Background check procedures
 
 For the definition of the shortlist of candidates, both for technical and administrative areas, Actalis uses both the curricula sent directly to it through the appropriate channels (e.g. website) and those provided by external recruiters. For each candidate, the accuracy of the information contained in the CV (e.g. education, masters, specific training courses, etc.) is verified. External recruiters contracted by Actalis also have the obligation to request references, for each potential candidate, before submitting their CVs to Actalis. Furthermore, all candidates, once the selection phase is completed, must provide their certificate of good conduct (extract from the judicial record) or an equivalent declaration to the Human Resources office.
 
-#### 5.3.3 Training requirements
+### 5.3.3 Training requirements
 
 The staff in charge of the CA services is adequately trained for the tasks that they perform. Actalis provides staff with initial training at the time of recruitment, including courses held by external teachers when deemed necessary, and training on the job.
 
 The staff involved in the verification of information (Validation Specialists) are trained on at least the following topics: Public Key Infrastructures (PKI), identification and authentication policies and procedures, common threats to information verification procedures, and CAB Forum Requirements [BR] and Guidelines [EVGL]. The records of this training, which is provided at least yearly, are kept and made available to the auditors on request.
 
-#### 5.3.4 Retraining frequency and requirements
+### 5.3.4 Retraining frequency and requirements
 
 For all personnel working in the CA service, the need for new training is assessed at least once per year (or in advance, in case new developments/services), so as to ensure that all personnel are always able to perform their tasks satisfactorily and competently. Furthermore, training on information security matters is held annually for all staff.
 
-#### 5.3.5 Job rotation frequency and sequence
+### 5.3.5 Job rotation frequency and sequence
 
 No stipulation.
 
-#### 5.3.6 Sanctions for unauthorized actions
+### 5.3.6 Sanctions for unauthorized actions
 
 In the case of unauthorized actions and/or violations of company (or Group) policy and/or procedures, Actalis reserves the right to activate the disciplinary procedure provided for in the employment contract, after having assessed the nature and the severity of the violation and its impact on company operations, whether it was the first occurrence, whether the employee had been adequately trained, etc.
 
-#### 5.3.7 Independent contractor requirements
+### 5.3.7 Independent contractor requirements
 
 Any independent contractor or Delegated Third Party’s personnel involved in the issuance of Certificates shall be fully subject to this CPS, including training and skills requirements (see section 5.3.3), sanctions (see section 5.3.6), document retention and event logging requirements (see section 5.4.1).
 
 Non-employees (e.g. consultants) are required to sign a confidentiality agreement (NDA) before starting collaboration with Actalis and possibly accessing confidential data.
 
-#### 5.3.8 Documentation supplied to personnel
+### 5.3.8 Documentation supplied to personnel
 
 Personnel in trusted roles are provided with the documentation necessary to perform their duties, depending on their role (see section 5.2.1). In particular, Validation Specialists are provided with this CPS, CAB Forum’s Baseline Requirements and EV Guidelines, and detailed instructions on how to properly perform the identification and authentication activities and issue certificates, plus the manuals of the CA/RA applications they use.
 
-### 5.4 AUDIT LOGGING PROCEDURES
+## 5.4 AUDIT LOGGING PROCEDURES
 
-#### 5.4.1 Types of events recorded
+### 5.4.1 Types of events recorded
 
 The CA and any Delegated Third Parties shall record all the details related to certificate requests, issuances, and subsequent management (e.g. revocation), and make these records available to the CA auditors. For each event, information shall be recorded about event type, date and time of occurrence, the associated data (depending on event type), the personnel involved (if applicable), and possibly other information depending on event type.
 
@@ -1148,32 +1162,31 @@ At least the following events shall be logged, in line with section 5.4.1 of the
 - CA and Subscriber certificate life cycle management events;
 - Security events (e.g. accesses to PKI systems, PKI and security system actions performed, security profile changes, entries to and exits from the CA facility, relevant activities on routers and firewalls, in particular with regard to its configurations etc.).
 
-#### 5.4.2 Frequency of processing log
+### 5.4.2 Frequency of processing log
 
 The relevant events are collected by the systems that generate them and are transmitted to the centralized log management system. On the log management system, events are automatically classified and stored locally in order to allow them to be consulted. On a daily basis, local data are copied to the long-term storage system (see Section 5.4.4).
 
-#### 5.4.3 Retention period for audit log
+### 5.4.3 Retention period for audit log
 
 The CA shall retain audit logs for at least 10 years.
 
-
-#### 5.4.4 Protection of audit log
+### 5.4.4 Protection of audit log
 
 Audit logs are periodically stored on a remote long-term archival system based on WORM-type (Write-Once, Read Many) or equivalent technology. The “live” copy of the audit log is protected from tampering by multiple security measures.
 
-#### 5.4.5 Audit log backup procedures
+### 5.4.5 Audit log backup procedures
 
 The storage where the audit log is archived (see section 5.4.4) is replicated on two data centers hosted in separate facilities.
 
-#### 5.4.6 Audit collection system (internal vs. external)
+### 5.4.6 Audit collection system (internal vs. external)
 
 No stipulation.
 
-#### 5.4.7 Notification to event-causing subject
+### 5.4.7 Notification to event-causing subject
 
 No stipulation.
 
-#### 5.4.8 Vulnerability assessments
+### 5.4.8 Vulnerability assessments
 
 Audit logs are periodically examined for anomalies by personnel in trusted roles. Anomalies indicating possible security breaches are reported and investigated. Security incidents are handled according to section 5.7.1.
 
@@ -1181,9 +1194,9 @@ Vulnerability assessments of the CA networks and systems are done at least annua
 
 A comprehensive a risk assessment is conducted at least annually (see also section 5.2).
 
-### 5.5 RECORDS ARCHIVAL
+## 5.5 RECORDS ARCHIVAL
 
-#### 5.5.1 Types of records archived
+### 5.5.1 Types of records archived
 
 The CA keeps at least the following information related to the request, issuance and revocation of certificates:
 
@@ -1193,43 +1206,43 @@ The CA keeps at least the following information related to the request, issuance
 - verifications performed by the CA and the results thereof;
 - certificate revocation requests.
 
-#### 5.5.2 Retention period for archive
+### 5.5.2 Retention period for archive
 
 Archived records are kept for at least 10 years past the certificates’ expiration or revocation dates.
 
-#### 5.5.3 Protection of archive
+### 5.5.3 Protection of archive
 
 Archives are protected from unauthorized modification or destruction by strong security controls. To this end, a document preservation service is used complying with the Italian regulations (Legislative Decree No. 82/2005: “Codice dell’Amministrazione Digitale” and subsequent amendments and additions) and accredited by AgID.
 
-#### 5.5.4 Archive backup procedures
+### 5.5.4 Archive backup procedures
 
 Archives are backed up by the preservation system referred to in paragraph 5.5.3.
 
-#### 5.5.5 Requirements for time-stamping of records
+### 5.5.5 Requirements for time-stamping of records
 
 All archived records are time-stamped at the date and time of creation or occurrence, with a date and time reference obtained from a trusted time source (see section 6.8).
 
-#### 5.5.6 Archive collection system (internal or external)
+### 5.5.6 Archive collection system (internal or external)
 
 No stipulation.
 
-#### 5.5.7 Procedures to obtain and verify archive information
+### 5.5.7 Procedures to obtain and verify archive information
 
 The retention system referred to in paragraph 5.5.3 allows searching for archived information on the basis of the associated metadata, as well as its recovery and the verification of its integrity.
 
-### 5.6 KEY CHANGEOVER
+## 5.6 KEY CHANGEOVER
 
-#### 5.6.1 Root CA
+### 5.6.1 Root CA
 
 No stipulation.
 
-#### 5.6.2 Subordinate CA
+### 5.6.2 Subordinate CA
 
 At least 2 years before the end of the validity of the current certification key (Subordinate CA key), a new keypair will be generated and the corresponding certificate will be made available to Subscribers and Relying Parties as described in section 6.1. 4. From that moment on, Subscriber certificates and related CRLs will be signed with the new Sub CA key.
 
-### 5.7 COMPROMISE AND DISASTER RECOVERY
+## 5.7 COMPROMISE AND DISASTER RECOVERY
 
-#### 5.7.1 Incident and compromise handling procedures
+### 5.7.1 Incident and compromise handling procedures
 
 The Actalis’ Information Security Management System (ISMS), compliant with ISO/IEC 27001, also includes incident and compromise handling procedures. The management of an information security incident is handled by following a multi-stage procedure coordinated by an internal committee (Committee for Security and Crisis Management, later on "Committee") composed of figures of various responsibilities and members of the senior management. The process is articulated into several phases described below:
 
@@ -1245,11 +1258,11 @@ Disaster management is regulated by the Actalis’ Business Continuity Plan (BCP
 
 Actalis also undertakes to maintain a complete and actionable plan for mass-revocation events, carrying out annual tests of the plan and incorporating the lessons learned in order to continually improve its prepar-edness for mass revocation over time, in compliance with paragraph 5.7.1.2 of the [BR].
 
-#### 5.7.2 Computing resources, software, and/or data are corrupted
+### 5.7.2 Computing resources, software, and/or data are corrupted
 
 Actalis implements a Business Continuity Plan for the CA service in order to ensure that the corruption or loss of one or more computers cannot cause any disruption to the CA platform. In particular, all the critical components of the system are redundant both locally, in the single data center, and between the primary and secondary data centers. Actalis also implements specific backup plans to guarantee that there is no loss of software and/or data.
 
-#### 5.7.3 Entity private key compromise procedures
+### 5.7.3 Entity private key compromise procedures
 
 The CA's private key is the single most critical resource of the CA; as such, it is protected by a set of multi-layered security measures, as other critical CA resources. In case of compromise (loss of confidentiality) of the CA key, after assessment of the incident, Actalis will execute the following plan (not necessarily in this order):
 
@@ -1262,11 +1275,11 @@ The CA's private key is the single most critical resource of the CA; as such, it
 
 Finally, unless the CA is to be terminated, a new CA key pair will be generated and the new CA public key will be disseminated as described in section 6.1.4.
 
-#### 5.7.4 Business continuity capabilities after a disaster
+### 5.7.4 Business continuity capabilities after a disaster
 
 Actalis are deployed in two geographically distant facilities (see section 5.1), each of which is capable of operatingthe CA systems independently. In the event that a disaster entirely disables one facility, Actalis’ CA operations will fail over to another facility. See also section 5.7.1.
 
-### 5.8 CA OR RA TERMINATION
+## 5.8 CA OR RA TERMINATION
 
 The activities that will be carried out if Actalis decides, for any reason, to cease its certification service are described below.
 
@@ -1283,7 +1296,7 @@ On the termination date:
 
 - the private certification keys as well as the annexed key restoration material (if any) will be destroyed (by logical deletion) and the transaction will be recorded.
 
-## 6 TECHNICAL SECURITY CONTROLS
+# 6 TECHNICAL SECURITY CONTROLS
 
 ### 6.1 KEY PAIR GENERATION AND INSTALLATION
 
