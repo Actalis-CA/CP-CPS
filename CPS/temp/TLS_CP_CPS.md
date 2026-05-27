@@ -1884,7 +1884,7 @@ The TLS Server DV certificate is issued with the following profile:
 
 In case the certificate was requested for a FQDN like www.< domain >, the SAN extension will also contain < domain > (without the “www” label) provided that Domain Control Validation is carried out on < domain > (and not on www.< domain >). For instance, in a certificate requested for www.example.com the SAN exten-sion could contain two items: www.example.com and example.com.
 
-Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
+Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serverAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 ##### 7.1.2.4.2 TLS Server DV Wildcard
 
@@ -1916,7 +1916,7 @@ The Wildcard TLS Server DV certificate is issued with the following profile:
 
 Note: the SAN extension also contains the domain name obtained by removing the wildcard character (‘*’) from the wildcard FQDN. For instance, in a certificate issued for *.example.com, the SAN extension contains both *.example.com and example.com.
 
-Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
+Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serverAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 ##### 7.1.2.4.3 TLS Server OV
 
@@ -1948,7 +1948,7 @@ The TLS Server OV certificate is issued with the following profile:
 
 In case the certificate was requested for a FQDN like www.< domain >, the SAN extension will also contain < domain > (without the “www” label) provided that Domain Control Validation is carried out on < domain > (and not on www.< domain >). For instance, in a certificate requested for www.example.com the SAN exten-sion could contain two items: www.example.com and example.com.
 
-Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
+Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serverAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 ##### 7.1.2.4.4 TLS Server OV Wildcard
 
@@ -1979,7 +1979,7 @@ The Wildcard TLS Server OV certificate is issued with the following profile:
 
 Note: the SAN extension also contains the domain name obtained by removing the wildcard character (‘*’) from the wildcard FQDN. For instance, in a certificate issued for *.example.com, the SAN extension contains both *.example.com and example.com.
 
-Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
+Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serverAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 ##### 7.1.2.4.5 TLS Server EV
 
@@ -2011,7 +2011,7 @@ The TLS Server EV certificate is issued with the following profile:
 
 In case the certificate was requested for a FQDN like http://www.< domain >, the SAN extension will also contain < domain> (without the “www” label) provided that Domain Control Validation is carried out on < domain > (and not on http://www.< domain >). For instance, in a certificate requested for http://www.example.com the SAN extension could contain two items: http://www.example.com and _example.com_.
 
-Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
+Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serverAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 ##### 7.1.2.4.6 Qualified Website Authentication Certificate
 
@@ -2043,7 +2043,7 @@ The qualified TLS Server certificate ("Qualified Website Authentication Certific
 | cabfOrganizationIdentifier  |  <according to [EVGL]>  |
 | EmbeddedSCTList <br> (1.3.6.1.4.1.11129.2.4.2) |   List of Signed Certificate Timestamps according to RFC 6962 [CT] |
 
-Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serv-erAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
+Note: starting no later than June 15, 2026, the ExtendedKeyUsage extension will contain only the serverAuth keyPurpose (1.3.6.1.5.5.7.3.1). Actalis reserves the right to remove the clientAuth keyPurpose before that date.
 
 #### 7.1.2.5 All certificates
 
