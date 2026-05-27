@@ -1,3 +1,5 @@
+<font size="7"><b>Il mio titolone</b></font>
+
 <div style="font-size: 2.5em; font-weight: bold; margin-bottom: 0.5em;">
   Il mio titolone
 </div>
