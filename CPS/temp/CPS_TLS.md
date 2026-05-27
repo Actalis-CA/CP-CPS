@@ -13,29 +13,11 @@ Distribution: PUBLIC
 
 Actalis S.p.A. , a company of the Aruba S.p.A. group, is a leading provider of certification services since 2002, accredited by AgID under the European Directive on Electronic Signatures, then under the European Regulation EU n.910/2014 (“eIDAS”). Actalis offers several types of certificates and related management services, as well as other trust services and solutions (www.actalis.it).
 
-A certificate binds a public key to a set of information that identifies an entity (individual or organization). This entity, the certificate Subscriber, possesses and utilizes the corresponding private key. The certificate is generated and supplied to the Subscriber by a trusted third party known as **Certification Authority** (CA). The certificate is digitally signed by the CA.
-
 The reliability of a certificate, in particular the association - attested by the certificate - between a given public key and a given identity, also depends on the CA’s operating procedures, the obligations and responsibilities of the CA and the certificate Subscriber, and the CA’s physical and logical security controls. All these aspects are described in a public document called Certification Practice Statement (CPS) and/or a Certificate Policy (CP) document, or a combined CP/CPS document, according to [RFC 3647].
 
-This document is the Actalis’ combined CP/CPS relevant to the issuance and management of **TLS Server certificates**. This CPS is structured according to the outline in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
+This document is the Actalis’ combined CP/CPS relevant to the issuance and management of **TLS Server certificates**. This CPS is structured according to the outline set forth in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
 
-Actalis conforms to the latest published versions of:
-
-- CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org 
-
-- web browsers´ root programs or policies, including (but not limited to)
-
-   - Chrome Root Program
-
-   - Apple Root Certificate Program
-
-   - Mozilla Root Store Policy
-
-   - Microsoft Root Program
-
-- the CCADB Policy published at https://www.ccadb.org/policy 
-
-In the event of any inconsistency between this CPS and those documents, those documents take precedence.
+Actalis conforms to the latest published versions of CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org , the CCADB Policy published at https://www.ccadb.org/policy, and any of the Browsers´ root programs policies including, but not limited to, the Chrome Root Program, the Apple Root Pro-gram, the Mozilla Root Store Policy, and the Microsoft Root Program. In the event of any inconsistency between this CPS and those documents, those documents take precedence.
 
 This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit  http://creativecommons.org/licenses/by-nd/4.0/](http://creativecommons.org/licenses/by-nd/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
