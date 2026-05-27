@@ -463,7 +463,7 @@ Prior to issuing an TLS Server certificate, Actalis shall verify that each FQDN 
 
 Note: in the above list of DCV methods, the “Authorization Domain Name” is obtained by pruning zero or more components from the requested FQDN, up to and excluding a public suffix or registry-controlled label.
 
-In all cases, the DCV is done in full compliance with §3.2.2.4 of the [BR], and no DCV methods are employed by Ac-talis other than those allowed by the [BR]. As part of the DCV process, Actalis also performs DNSSEC validation back to the IANA DNSSEC root trust anchor, as required by §3.2.2.4 of the [BR].
+In all cases, the DCV is done in full compliance with §3.2.2.4 of the [BR], and no DCV methods are employed by Actalis other than those allowed by the [BR]. As part of the DCV process, Actalis also performs DNSSEC validation back to the IANA DNSSEC root trust anchor, as required by §3.2.2.4 of the [BR].
 
 The particular DCV method used for any given FQDN depends on circumstances and the certificate requestor’s preferences. The range of supported DCV methods may vary depending on the certificate request channel.
 
