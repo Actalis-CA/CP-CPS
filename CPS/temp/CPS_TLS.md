@@ -1,12 +1,16 @@
-**Certification Practice Statement**
+<span style="font-family: Arial"; font-size: 24px>
+**Certificate Policy and Certification Practice Statement**
+</span>
 
 **TLS Server certificates**
 
+`
 Version: 6.0
 Date: May 29, 2026
 Approved by: Andrea Sassetti
 Document Code: MODAC_A_ 66
 Distribution: PUBLIC
+`
 
 ---
 
