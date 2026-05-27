@@ -353,9 +353,11 @@ The I&A procedures followed by Actalis comply with CAB Forum requirements. In pa
 
 ### 3.1.1 Types of names
 
-Certificates issued according to this CPS contain Distinguished Names (DN) compliant with the ITU-T X.500 standard (ISO/IEC 9594) and [RFC 5280] in their Subject field. However, the Subject field _may be empty_ in Domain Validated (DV) certificates, since in these certificates Actalis only inserts the `commonName` attribute in the Subject field, but only if this is requested by the Applicant; in this case, the Subject Alternative Name (SAN) extension is marked as critical as per [RFC 5280]. In Organization Validated (OV) and Extended Validation (EV) certificates, instead, the Subject DN is always non-empty.
+Certificates issued according to this CPS normally contain a non-null Distinguished Name (DN) compliant with the ITU-T X.500 standard (ISO/IEC 9594) in both the Subject and the Issuer fields.
 
-In any case, all the requirements set forth in the [BR] and [EVGL] shall be met.
+The Subject field may be empty in DV (Domain Validated) certificates, depending on how the certificate request was made; in such a case, the Subject Alternative Name (SAN) extension is flagged as critical.
+
+Furthermore, all the requirements set forth in the [BR] and [EVGL] shall be met.
 
 In particular, all TLS Server certificates shall include entries in the Subject Alternative Name (SAN) extension, where each entry is either a Fully Qualified Domain Name (FQDN) or an IP address. However, IP addresses are not allowed in DV (Domain Validated) and EV (Extended Validation) TLS Server certificates.
 
@@ -447,7 +449,7 @@ When the certificate Subject is to include a country code (not applicable to DV-
 
 #### 3.2.2.4 Validation of Domain Authorization or Control
 
-Prior to issuing an **TLS Server** certificate, the CA shall verify that **each FQDN** to be included in the certificate **either is owned or controlled by the Applicant** or an affiliate thereof (e.g., parent or subsidiary). These checks (also referred to as Domain Control Validation or DCV) are done by one of the following methods:
+Prior to issuing an TLS Server certificate, Actalis shall verify that each FQDN to be included in the certificate is controlled by the Applicant or – where applicable – by an affiliate thereof (that is, a parent, subsidiary, or sibling company). This verification (also referred to as Domain Control Validation or DCV) is done by one of the following methods:
 
 - The CA confirms, by directly querying the Domain Name Registrar, that the Applicant is the Domain Registrant. This method may only be used if the Base Domain Name is registered by Aruba S.p.A. (that    is the Actalis’ holding company). This method is implemented in compliance with §3.2.2.4.12 of [BR].
 
@@ -467,7 +469,7 @@ The particular DCV method used for any given FQDN depends on circumstances and t
 
 #### 3.2.2.5 Authentication for an IP Address
 
-Prior to issuing an **TLS Server** certificate, the CA shall verify that **all IP addresses** to be included in the certificate (excluding DV and EV certificates that may not contain IP addresses) **are controlled by the Applicant** or an affiliated thereof (e.g. holding or subsidiary). These checks are done by one of the following methods:
+Prior to issuing an TLS Server certificate, the CA shall verify that all IP addresses to be included in the certificate (excluding DV and EV certificates that may not contain IP addresses) are controlled by the Applicant or an affiliated thereof. This verification is done by one of the following methods:
 
 - the Applicant demonstrate practical control over the IP Address by publishing a file on the HTTP server at the target IP, under the "/.well-known/pki‐validation" directory, containing a Random Value provided by the CA; the CA confirms the presence of such file, with the expected contents. This method is implemented in compliance with §3.2.2.5.1 of [BR].
 
