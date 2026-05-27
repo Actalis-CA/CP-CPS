@@ -1,6 +1,6 @@
-<span style="font-family: Arial"; font-size: 24px>
-**Certificate Policy and Certification Practice Statement**
-</span>
+<p style="font-family: Arial; font-size: 24pt">
+Certificate Policy and Certification Practice Statement
+</p>
 
 **TLS Server certificates**
 
