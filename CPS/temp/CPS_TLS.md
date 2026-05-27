@@ -1,4 +1,4 @@
-<p style="font-family: Arial; font-size: 24pt">
+<p style="font-family: Arial; font-size: 48px; font-weight: bold">
 Certificate Policy and Certification Practice Statement
 </p>
 
