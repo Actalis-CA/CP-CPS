@@ -6,12 +6,12 @@ on:
       markdown_file:
         description: 'Path to the Markdown file to convert'
         required: true
-        default: 'CPS/temp/CPS_TLS.md'
+        default: 'CPS/temp/TLS_CP_CPS.md'
         type: string
       output_name:
         description: 'Output PDF filename (without .pdf extension)'
         required: true
-        default: 'CPS_TLS'
+        default: 'TLS_CP_CPS'
         type: string
       create_release:
         description: 'Create a GitHub Release with the PDF'
