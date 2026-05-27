@@ -1,14 +1,12 @@
-# Certificate Policy and Certification Practice Statement
+**Actalis TLS Certificate Policy and Certification Practice Statement**
 
-**TLS Server certificates**
-
-```
+---
 Version: 6.0
 Date: May 29, 2026
 Approved by: Andrea Sassetti
 Document Code: MODAC_A_ 66
 Distribution: PUBLIC
-```
+---
 
 ---
 
