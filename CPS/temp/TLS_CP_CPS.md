@@ -648,7 +648,7 @@ Depending of the age and applicability of the already available validation data,
 The CA also checks that the information contained in the CSR (e.g. Subject DN, FDQNs and/or IP addresses) are consistent with those supplied in the certificate application form and with the type of certificate requested, and rejects the request in case of conflicts or anomalies.
 
 The CA also checks the relevant CAA records (if any) according to paragraph 3.2.2.8 of the [BR]. The domain identifier to be used in the CAA records to authorize the Actalis CA is "actalis.it".
-For EV TLS Server certificates, Actalis enforces the principle of Separation of Duties to ensure that no one person can single-handedly validate and authorize the issuance of an EV Certificate, in compliance with section 14.1.3 of the [EVGL]. In particular, the “Final Cross-Correlation and Due Diligence” (see section 3.2.2.13 of EVGL) is carried out by a different validation specialist than the one(s) who performed the previous validation steps.
+For EV TLS Server certificates, Actalis enforces the principle of Separation of Duties to ensure that no one person can single-handedly validate and authorize the issuance of an EV Certificate, in compliance with section 5.2.4 of the [EVGL]. In particular, the “Final Cross-Correlation and Due Diligence” (see section 3.2.2.13 of EVGL) is carried out by a different validation specialist than the one(s) who performed the previous validation steps.
 
 Once the essential I&A steps are successfully completed, the CA will normally send to the Applicant Representative, via email, the authentication credentials needed to login to the CA portal, for the possible submission of revocation requests.
 
