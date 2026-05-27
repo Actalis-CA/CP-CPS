@@ -8,8 +8,6 @@ Document Code: MODAC_A_ 66
 Distribution: PUBLIC
 ---
 
----
-
 # 1 INTRODUCTION
 
 ## 1.1 Overview
