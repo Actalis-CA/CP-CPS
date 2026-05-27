@@ -168,7 +168,7 @@ In the case of _qualified_ certificates according to the eIDAS regulation (see p
 
 Any use of the certificate other than provided for in section 1.4.1 is forbidden and may result, as soon as Actalis is made aware of it, in the revocation of the certificate (see also section 4.9.1).
 
-Actalis reserves the right to put in operation new subordinate i.e., intermediate CAs (ICAs) when needed according to its own determinations, and to stop issuing certificates from the old ones. In some circumstances, Actalis may also need to revoke certain ICAs before their natural expiration.
+Actalis reserves the right to put in operation new subordinate CAs, i.e. intermediate CAs (ICAs), when needed ac-cording to its own determinations, also taking into account the requirements of Browsers’ root programs, and to stop issuing certificates from the old ones. In some circumstances, Actalis may also need to revoke certain ICAs before their natural expiration.
 
 Actalis therefore strongly recommends that _ICA certificates not be embedded into applications and/or platforms_.
 
@@ -176,7 +176,7 @@ Actalis strongly discourages “ _certificate pinning_ " and does not consider i
 
 Subscribers should not use certificates trusted for the web in contexts where there is no such need (e.g., on private networks), especially where a quick replacement of certificates is not viable.
 
-Subscribers and relying parties should keep in mind that any certificates _trusted_ by the browsers must comply with all requirements of all applicable browser _root policies_ , including the revocation periods recalled in section 4.9.1 of this CPS.
+Subscribers and relying parties should keep in mind that any certificates trusted by the browsers must comply with all requirements of all Browsers’ root programs and policies, including the revocation periods recalled in section 4.9.1 of this CPS.
 
 ## 1.5 POLICY ADMINISTRATION
 
