@@ -1,30 +1,15 @@
-# S/MIME Certificates
 
-## Certificate Policy
+---
+Title: S/MIME Certificate Policy and Certification Practice Statement
+Version: 1.0
+Date: May 29, 2026
+---
 
-### Version 3.1
-
-### Last revised: January 15, 2026
-
-## CHANGE HISTORY
-
-|Version|Date|Author|Changes| 
-|---|--------|---------|---------------|
-|**1.0**| 11/11/2015| AS |First version.|
-|**1.1**| 27/12/2016| AS |Changed company address; Added S/MIME certificates for organizations.|
-|**1.2**| 07/10/2019|AS |§1.3 Clarified that email can only be validated by the CA. <br>§1.7 Updated reference for OCSP protocol. <br>§3.1 Clarifications on the EE naming rules. <br>§3.2 Modified headings for better clarity.<br> §4.2 Clarifications on certificate revocation. §7.2 Updated profile of intermediate CA. <br>§7.3 Updated profile of EE certificate.|
-|**2.0**|07/11/2023| AS | Document restructuring for better alignment with RFC3647. <br>§1.3.2 and §4.1.2: Added provisions for Enterprise RAs. General document update for compliance with CABF Baseline Requirements for S/MIME Certificates. 
-|**2.1** |28/08/2024| AS |Correction of typos. <br>§ 1.6 Updated acronyms for CAA records. <br>§ 1.7 Updated references for CAA records. § 4.1 and § 4.2 Updated for compliance with CABF Requirements regarding CAA record processing. <br>§7.2 Updated with details on reasonCodes.
-|**2.2**| 07/03/2025| NP, AS | Restructured the CP in accordance with RFC 3647; <br>§2.3 pecification regarding the frequency of CP updating; <br>§4.2.2 Integration about CAA Record checks before issuance.
-|**3.0**| 10/07/2025| NP, AS| Merger of the two previous separate S/MIME CPs into a single S/MIME covering all types of Actalis S/MIME certs. <br>§7.1 Updating certs’ profile to multipurpose generation.
-|**3.1**| 15/01/2026| BS, NP, AS| §1.3, §7.1 Updates to the PKI infrastructure with the addition of new RootCA and SubCA certificates
-
-
-## 1 INTRODUCTION CONTENTS
+# 1 INTRODUCTION
 
 Actalis S.p.A. ([www.actalis.it](https://www.actalis.com/it/)) is a leading Italian Trust Service Provider (TSP) since 2002, offering all types of digital certificates and related management services, digital time stamping, certified electronic mail, digital signatures, and other solutions in the field of Public Key Infrastructures (PKI), as well as in other fields pertaining to information security.
 
-### 1.1 OVERVIEW
+## 1.1 OVERVIEW
 
 A **Certificate** binds a _public key_ (the public component of cryptographic key pair) to an identity, namely a set of information items that identifies an individual or an organization. Such entity, identified in the **Subject** field of the certificate, holds and uses the corresponding _private key_.
 
@@ -42,13 +27,13 @@ As regards the certificates governed by this CP, Actalis conforms to the current
 
 Actalis also conforms to the current version of the **Mozilla Root Store Policy** [MRSP], the **Microsoft Trusted Root Program** [MTRP], and the **Apple Root Certificate Program** [ARCP], to the extent that they are applicable.
 
-### 1.2 DOCUMENT NAME AND IDENTIFICATION
+## 1.2 DOCUMENT NAME AND IDENTIFICATION
 
 This document is the **Certificate Policy** for **S/MIME Certificates** issued by Actalis S.p.A.
 
-### 1.3 PKI PARTICIPANTS
+## 1.3 PKI PARTICIPANTS
 
-#### 1.3.1 Certification Authorities
+### 1.3.1 Certification Authorities
 
 The **Certification Authority** (CA) is **Actalis S.p.A.** , headquartered at Via S. Clemente 53, 24036 Ponte San Pietro (BG), Italy, enlisted in the Company Registry of Bergamo under #0335 8520967.
 
@@ -56,7 +41,7 @@ For certificates issued under this CP, Actalis acts as Root CA and as Issuing CA
 
 Actalis is currently issuing S/MIME certificates under a legacy, non-dedicated Root CA that will be phased out at a later date (for further details, see the [CPS]). In 2025, Actalis also created new Root CAs and SubCAs dedicated to S/MIME certificates; the inclusion of these new Root Cas in the relevant application root stores is currently underway.
 
-##### 1.3.1.1 Root Certification Authorities
+#### 1.3.1.1 Root Certification Authorities
 
 At the date of revision of this CP, the existing Actalis' Root CAs are those identified below; for further 
 details, see also chapter 7.
@@ -67,7 +52,7 @@ details, see also chapter 7.
 |CN = Actalis SMIME ECC Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|8d 6f bc f6 76 d1 ca 7d 86 dd ab d0 2a 96 99 c8 f1 63 b2 29|28 February 2025|22 February 2050||
 |CN = Actalis SMIME RSA Root CA 2025 <br> O = Actalis S.p.A.<br> C=IT|f3 ef a2 39 aa 77 3b c2 ad 6a 9f fc 2e 58 00 fe 5b bf 47 51|28 February 2025|22 February 2050||
 
-##### 1.3.1.2 Cross Certificates 
+#### 1.3.1.2 Cross Certificates 
 
 At the date of revision of this CP, the existing Actalis Cross Certificates are those identified below; for 
 further details, see also Chapter 7.
@@ -77,7 +62,7 @@ further details, see also Chapter 7.
 |CN = Actalis SMIME RSA Root CA 2025 <br> O = Actalis S.p.A./03358520967 <br> L= Milan <br> C=IT|f3 ef a2 39 aa 77 3b c2 ad 6a 9f fc 2e 58 00 
 fe 5b bf 47 51|07 august 2025|22 September 2030|
 
-##### 1.3.1.3 Subordinate Certification Authorities
+#### 1.3.1.3 Subordinate Certification Authorities
 
 At the date of revision of this CP, the SubCAs operated by Actalis for issuing S/MIME certificates are 
 those identified below; for further details, see also Chapter 7.
@@ -86,7 +71,7 @@ those identified below; for further details, see also Chapter 7.
 |-----|-----|------|------|
 |CN = Actalis Client Authentication CA G3 <br> O = Actalis S.p.A. <br> L= Ponte San Pietro <br> S= Bergamo <br> C=IT|BE 97 A9 AA 84 BF 80 BF 10 53 7D 09 32 F9 E1 2E 32 1B CF 77|6 Jul 2020|22 Set 2030|
 |CN = Actalis SMIME RSA CA 2025 <br> O = Actalis S.p.A. <br> L= Ponte San Pietro <br> S= Bergamo <br> C=IT|8d e8 af d2 e4 fe 55 20 49 3f f2 83 22 f0 a0 39 89 22 84 45|07 July 2025|05 July 2035|
-#### 1.3.2 Registration Authorities
+### 1.3.2 Registration Authorities
 
 **Registration Authorities** (RAs) are the entities performing Identification and Authentication (I&A) of Applicants, their registration into the CA database, and transmission of certificate requests to the CA.
 
@@ -98,21 +83,21 @@ Organizations meeting the requirements for “Enterprise RAs” set forth in the
 
 Depending on the quantity of certificates to be managed, specific customer needs and other factors, Actalis may enable Enterprise RAs to request certificates via a specific web-based application allowing greater autonomy and faster processes.
 
-#### 1.3.3 Subscribers
+### 1.3.3 Subscribers
 
 **Subscribers** may be either **organizations** or **individuals**. In the case of individuals, they may be identified in in the Subject field of certificates as private persons or affiliated with some organization.
 
-#### 1.3.4 Relying Parties
+### 1.3.4 Relying Parties
 
 **Relying Parties** (RPs) are all entities that rely on the accuracy of the binding between the Subject’s public key distributed via a certificate and the Subject’s identity contained in the same certificate.
 
-#### 1.3.5 Other Participants
+### 1.3.5 Other Participants
 
 Certificates may also be provided through Resellers (business partners), which in certain cases may also play the role of Registration Authorities, depending on the agreements in place with Actalis.
 
-### 1.4 CERTIFICATE USAGE
+## 1.4 CERTIFICATE USAGE
 
-#### 1.4.1 Appropriate certificate uses
+### 1.4.1 Appropriate certificate uses
 
 Four types of S/MIME certificates are covered by this CP according to the [SMBR] terminology:
 
@@ -134,34 +119,34 @@ Certificates issued under this CP can also be used for SSL/TLS client authentica
 
 <u>Note</u>: It is assumed that Applicants have the competence and the tools required to request, install, and use their Certificates. Otherwise, Actalis is available to offer the necessary consultancy.
 
-#### 1.4.2 Prohibited certificate uses
+### 1.4.2 Prohibited certificate uses
 
 Any use of the Certificate other than allowed in section 1.4.1 is discouraged and may result in the revocation of the Certificate by Actalis (see also section 4.9.1), depending on the security impact of the use being made of the Certificate.
 
 See also [CPS] for additional provisions.
 
-### 1.5 POLICY ADMINISTRATION
+## 1.5 POLICY ADMINISTRATION
 
-#### 1.5.1 Organization administering the document
+### 1.5.1 Organization administering the document
 
 This CP is drafted, revised, approved, published and maintained by Actalis S.p.A.
 
-#### 1.5.2 Contact person
+### 1.5.2 Contact person
 
 For any questions regarding this CP, please write to ca-admin@actalis.it.
 
 For instructions on how to submit a Certificate Problem Report or revocation request, please refer to section 1.5.2 of the reference [CPS].
 
-#### 1.5.3 Person determining CP suitability for the policy
+### 1.5.3 Person determining CP suitability for the policy
 
 This CP is approved by Actalis’ CA services direction, after review by all internal stakeholders, taking into account the Requirements [SMBR].
 
-#### 1.5.4 CP approval procedures
+### 1.5.4 CP approval procedures
 
 Approval of this CP follows the procedures defined in the company’s Quality Management System.
 This CP is reviewed and updated at least yearly.
 
-### 1.6 DEFINITIONS AND ACRONYMS
+## 1.6 DEFINITIONS AND ACRONYMS
 
 ARL Authority Revocation List
 
@@ -213,7 +198,7 @@ SV Sponsor-Validated
 
 TLS Transport Layer Security
 
-### 1.7 REFERENCES
+## 1.7 REFERENCES
 
 [BR] CA/Browser Forum: “Baseline Requirements for the Issuance and Management of
 Publicly-Trusted Certificates” (https://cabforum.org/baseline-requirements-documents/)
@@ -259,7 +244,7 @@ Publicly-Trusted S/MIME Certificates” (https://cabforum.org/smime-br/)
 [eIDAS] Regulation (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC and subsequent amendments (https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02014R0910-20241018)
 
 
-## 2 PUBLICATION AND REPOSITORY RESPONSIBILITIES
+# 2 PUBLICATION AND REPOSITORY RESPONSIBILITIES
 
 ### 2.1 REPOSITORIES
 
@@ -1632,4 +1617,17 @@ Please refer to [CPS].
 #### 9.16.1 Entire agreement
 
 Please refer to [CPS].
+
+# Appendix A - Change History
+
+|Version|Date|Author|Changes| 
+|---|--------|---------|---------------|
+|**1.0**| 11/11/2015| AS |First version.|
+|**1.1**| 27/12/2016| AS |Changed company address; Added S/MIME certificates for organizations.|
+|**1.2**| 07/10/2019|AS |§1.3 Clarified that email can only be validated by the CA. <br>§1.7 Updated reference for OCSP protocol. <br>§3.1 Clarifications on the EE naming rules. <br>§3.2 Modified headings for better clarity.<br> §4.2 Clarifications on certificate revocation. §7.2 Updated profile of intermediate CA. <br>§7.3 Updated profile of EE certificate.|
+|**2.0**|07/11/2023| AS | Document restructuring for better alignment with RFC3647. <br>§1.3.2 and §4.1.2: Added provisions for Enterprise RAs. General document update for compliance with CABF Baseline Requirements for S/MIME Certificates. 
+|**2.1** |28/08/2024| AS |Correction of typos. <br>§ 1.6 Updated acronyms for CAA records. <br>§ 1.7 Updated references for CAA records. § 4.1 and § 4.2 Updated for compliance with CABF Requirements regarding CAA record processing. <br>§7.2 Updated with details on reasonCodes.
+|**2.2**| 07/03/2025| NP, AS | Restructured the CP in accordance with RFC 3647; <br>§2.3 pecification regarding the frequency of CP updating; <br>§4.2.2 Integration about CAA Record checks before issuance.
+|**3.0**| 10/07/2025| NP, AS| Merger of the two previous separate S/MIME CPs into a single S/MIME covering all types of Actalis S/MIME certs. <br>§7.1 Updating certs’ profile to multipurpose generation.
+|**3.1**| 15/01/2026| BS, NP, AS| §1.3, §7.1 Updates to the PKI infrastructure with the addition of new RootCA and SubCA certificates
 
