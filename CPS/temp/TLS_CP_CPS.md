@@ -100,6 +100,8 @@ Subordinate CA certificates can be issued to **external CAs** (i.e. not run by A
 
 SubCA certificates can be issued, under an Actalis Root CA, for external CAs (i.e., not run by Actalis) upon signing a contract in which the operators of such SubCAs commit, among other things, to fully comply with the CAB Forum Baseline Requirements [BR], the CCADB policy, and Browser’s root programs, and to undergo an annual compliance audit by an independent and qualified auditor, providing Actalis promptly with the related annual audit reports. Actalis reserves the right to revoke external SubCA certificates, at its sole discretion, if such audits are not provided, or are provided with significant delay, or if they reveal serious issues.
 
+Actalis shall notify the Browser's Root Store programs - with the required advance notice - before issuing any CA certificate (be it Subordinate or Cross) that extends the trust limit of the Root Stores or replaces a non-revoked CA certificate whose subject CA owner is not included in Root Stores. Such certificates must not be issued without the explicit approval of the Root Programs, if required.
+
 #### 1.3.1.3 Cross Certificates
 
 As of the review date of this CPS, the Actalis cross-certificates (cross-certification between the old and new Actalis Root CAs) are those identified below; for further details, see also Chapter 7.
@@ -727,7 +729,7 @@ No stipulation as regards end entity certificates.
 
 ### 4.4.3 Notification of certificate issuance by the CA to other entities
 
-For all new TLS Server certificates, the CA submits the pre-certificate to at least two different Certificate Transparency (CT) logs according to RFC6962.
+Actalis publishes the issuance data of all TLS Certificates in the form of a Precertificate, to Certificate Transparency (CT) logs, in compliance with RFC 6962 and any applicable Browers’ root programs policies.
 
 ## 4.5 KEY PAIR AND CERTIFICATE USAGE
 
