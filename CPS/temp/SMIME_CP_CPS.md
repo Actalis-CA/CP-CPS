@@ -1048,15 +1048,15 @@ No stipulation.
 
 # 7 CERTIFICATE, CRL, AND OCSP PROFILES
 
-### 7.1 CERTIFICATE PROFILE
+## 7.1 CERTIFICATE PROFILE
 
-#### 7.1.1 Version number(s)
+### 7.1.1 Version number(s)
 
 Certificates are of type X.509 v3.
 
-#### 7.1.2 Certificate content and extensions
+### 7.1.2 Certificate content and extensions
 
-##### 7.1.2.1 Root CA certificates
+#### 7.1.2.1 Root CA certificates
 For the legacy Root CA profile, please refer to [CPS]. 
 The certificates of the new dedicated Root CAs have the following profile:
 
@@ -1107,7 +1107,7 @@ The certificates of the new dedicated Root CAs have the following profile:
 | AuthorityInformationAccess (AIA)  |- |< not included> |
 | CRLDistributionPoints (CDP) | - |< not included> |
 
-##### 7.1.2.2 Cross Certificate
+#### 7.1.2.2 Cross Certificate
 Actalis’ Cross Certificates have the following profile:
 
 |Field|Value  |
@@ -1133,7 +1133,8 @@ Actalis’ Cross Certificates have the following profile:
 | AuthorityInformationAccess (AIA)  | -|< HTTP address of OCSP responder >|
 | CRLDistributionPoints (CDP) | - |< HTTP address to access the ARL > |
 
-##### 7.1.2.3 Subordinate CA certificates
+#### 7.1.2.3 Subordinate CA certificates
+
 The certificate of the subordinate CAs, used to sign end-entity certificates, have the following profile:
 
 |Field|Value  |
@@ -1205,10 +1206,12 @@ The certificate of the subordinate CAs, used to sign end-entity certificates, ha
 | AuthorityInformationAccess (AIA)| -              | ocsp: < HTTP address of OCSP responder > <br> caIssuers: < HTTP address of the Root CA >|
 | CRLDistributionPoints  (CDP)   | -              | \<HTTP address to access the ARL>|
 
-##### 7.1.2.4 Subscriber certificates
+#### 7.1.2.4 Subscriber certificates
+
 All subscriber certificates comply with the [SMBR] provisions for “Multipurpose Generation”.
 
-###### 7.1.2.4.1 Mailbox Validated (MV)
+##### 7.1.2.4.1 Mailbox Validated (MV)
+
 The profile of MV subscriber certificates is as follows:
 
 | Base field                | Value                                                                 |
@@ -1234,7 +1237,8 @@ The profile of MV subscriber certificates is as follows:
 | AuthorityInformationAccess (AIA)| -              | id-ad-ocsp: \<URL of OCSP responder>, <br> id-ad-caIssuers: \<URL of Issuing CA> |
 | CRLDistributionPoints (CDP)    | -              | \<HTTP URL of the CRL>                              |
 
-###### 7.1.2.4.2 Organization Validated (OV)
+##### 7.1.2.4.2 Organization Validated (OV)
+
 The profile of OV subscriber certificates is as follows:
 
 | Base field                | Value                                                                 |
@@ -1260,7 +1264,7 @@ The profile of OV subscriber certificates is as follows:
 | AuthorityInformationAccess (AIA)| -              |  caIssuers: \<URL of the issuing CA><br>ocsp: \<URL of OCSP responder> |
 | CRLDistributionPoints  (CDP)   | -              | \<HTTP URL of the CRL>                              |
 
-###### 7.1.2.4.3 Sponsor Validated (SV)
+##### 7.1.2.4.3 Sponsor Validated (SV)
 The profile of SV subscriber certificates is as follows:
 
 | Base field                | Value                                                                 |
@@ -1286,7 +1290,7 @@ The profile of SV subscriber certificates is as follows:
 | AuthorityInformationAccess (AIA)| -              | caIssuers: \<URL of the issuing CA>, <br>ocsp: \<URL of OCSP responder> |
 | CRLDistributionPoints (CDP)     | -              | \<HTTP URL of the CRL>                              |
 
-###### 7.1.2.4.4 Individual Validated (IV)
+##### 7.1.2.4.4 Individual Validated (IV)
 
 The profile of IV subscriber certificates is as follows:
 
@@ -1313,57 +1317,57 @@ The profile of IV subscriber certificates is as follows:
 | AuthorityInformationAccess (AIA)| -              | caIssuers:\<URL of the issuing CA> <br>ocsp: \<URL of OCSP responder> |
 | CRLDistributionPoints  (CDP)   | -              | \<HTTP URL of the CRL>                              |
 
-##### 7.1.2.5 All certificates
+#### 7.1.2.5 All certificates
 
 Further Subject attributes and/or extensions may be present in Subscriber certificates, in compliance with RFC5280 and the [SMBR], subject to verification by the CA, depending on specific projects and customers. See also section 3.1.
 
-#### 7.1.3 Algorithm object identifiers
+### 7.1.3 Algorithm object identifiers
 
 The provisions of §7.1.3 of the [SMBR] apply.
 
-#### 7.1.4 Name forms
+### 7.1.4 Name forms
 
 Attribute values are encoded according to RFC 5280.
 
-##### 7.1.4.1 Name encoding
+#### 7.1.4.1 Name encoding
 
 The provisions of §7.1.4.1 of the [SMBR] apply.
 
-##### 7.1.4.2 Subject information ‑ subscriber certificates
+#### 7.1.4.2 Subject information ‑ subscriber certificates
 
 The provisions of §7.1.4.2 of the [SMBR] apply.
 
-##### 7.1.4.3 Subject information ‑ root certificates and subordinate CA certificates 
+#### 7.1.4.3 Subject information ‑ root certificates and subordinate CA certificates 
 
 The provisions of §7.1.4. 3 of the [SMBR] apply.
 
-#### 7.1.5 Name constraints
+### 7.1.5 Name constraints
 
 Actalis may issue, subject to a contractual agreement, Subordinate CA certificates to external entities, signed by an Actalis’ root CA key. In such a case, the Subordinate CA certificate will be technically constrained in compliance with section 7.1.5 of the [SMBR].
 
-#### 7.1.6 Certificate policy object identifier
+### 7.1.6 Certificate policy object identifier
 
 The provisions of §7.1. 6 of the [SMBR] apply.
 
-#### 7.1.7 Usage of Policy Constraints extension
+### 7.1.7 Usage of Policy Constraints extension
 
 No stipulation.
 
-#### 7.1.8 Policy qualifiers syntax and semantics
+### 7.1.8 Policy qualifiers syntax and semantics
 
 No stipulation.
 
-#### 7.1.9 Processing semantics for the critical Certificate Policies extension
+### 7.1.9 Processing semantics for the critical Certificate Policies extension
 
 No stipulation.
 
-### 7.2 CRL Profile
+## 7.2 CRL Profile
 
-#### 7.2.1 Version number(s)
+### 7.2.1 Version number(s)
 
 Actalis issues CRLs compliant with [PROF] and section 7.2.1 of the [SMBR].
 
-#### 7.2.2 CRL and CRL entry extensions
+### 7.2.2 CRL and CRL entry extensions
 
 Depending on the cause of revocation, CRL entries may contain one of the following reasonCodes in their CRLReason extension, according to section 7.2 of the [SMBR]:
 
@@ -1374,21 +1378,21 @@ Depending on the cause of revocation, CRL entries may contain one of the followi
 - certificateHold (6);
 - privilegeWithdrawn (9).
 
-### 7.3 OCSP profile 
+## 7.3 OCSP profile 
 
-#### 7.3.1 Version number(s)
+### 7.3.1 Version number(s)
 
 The provisions of §7. 3 .1 of the [SMBR] apply.
 
-#### 7.3.2 OCSP extensions
+### 7.3.2 OCSP extensions
 
 The provisions of §7. 3. 2 of the [SMBR] apply.
 
-## 8 COMPLIANCE AUDIT AND OTHER ASSESSMENTS
+# 8 COMPLIANCE AUDIT AND OTHER ASSESSMENTS
 
 Actalis shall issue certificates and operate its PKI in accordance with the applicable law, shall comply with the [SMBR], and shall comply with the audit requirements described hereafter.
 
-### 8.1 Frequency or circumstances of assessment
+## 8.1 Frequency or circumstances of assessment
 
 The compliance of the Actalis’ CA services to this CP, to Regulation (EU) No. 910/2014 ("eIDAS"), to the applicable ETSI standards and to the [SMBR] requirements is verified on an annual basis by an accredited Conformity Assessment Body (CAB). Moreover, always on an annual basis, an internal auditing activity is performed on the CA services that also takes into account aspects related to information security, applicable data protection rules and internal policies and procedures.
 
@@ -1396,120 +1400,120 @@ The compliance of the Actalis’ CA services to this CP, to Regulation (EU) No. 
 
 Audits on the CA are carried out by a Conformity Assessment Body (CAB) accredited in compliance with Regulation (EC) no. 765/2008, through personnel qualified and competent on the subject of conformity assessments, according to the ETSI EN 319 403 norm, of Trust Service Providers and the related trust services provided under the eIDAS Regulation. Any second part audits are also performed by accredited bodies in compliance with Regulation (EC) no. 765/200 8.
 
-### 8.3 Assessor's relationship to assessed entity
+## 8.3 Assessor's relationship to assessed entity
 
 The Assessment Bodies (CABs) that perform audits on the CA service, and possibly on the external RAs that collaborate with the CA, have no relationship with Actalis. The internal auditor does not belong to the organizational structure that deals with CA activities.
 
-### 8.4 Topics covered by assessment
+## 8.4 Topics covered by assessment
 
 The audits performed on the CA are based on “ETSI EN 319 411‐1 v1.3.1 or newer” or “ETSI EN 319 411‐2 v2.4. 1 or newer”, which includes normative references to ETSI EN 319 401, and the [SMBR].
 
 
-### 8.5 Actions taken as a result of deficiency
+## 8.5 Actions taken as a result of deficiency
 
 The actions resulting from any non-compliance detected during audits (failure to meet the requirements defined in the regulations, standards, and applicable procedures) depend on the nature and severity of the non-compliance detected, on the rules for the management of non-compliances defined by the Assessment Body (CAB) and/or the internal non-conformity management procedures.
 In general, if a substantive non-compliance results from an audit, Actalis will develop a remedy plan as quickly as possible. This plan could result in changes to CA certification policies and/or practices, and/or to the CA software. The plan will be presented to the Actalis direction for approval, and then to any third parties with whom Actalis has commitments in this regard.
 
-### 8.6 Communication of results
+## 8.6 Communication of results
 
 The provisions of §8.6 of the [SMBR] apply.
 
-### 8.7 Self-audits
+## 8.7 Self-audits
 
 The provisions of §8. 7 of the [SMBR] apply.
 
-## 9 OTHER BUSINESS AND LEGAL MATTERS
+# 9 OTHER BUSINESS AND LEGAL MATTERS
 
 For more details on legal matters related to certificates issued under this CP, the reader is referred to the Terms & Conditions [T&C] published on the CA web site.
 
-### 9.1 Fees
+## 9.1 Fees
 
-#### 9.1.1 Certificate issuance or renewal fees
+### 9.1.1 Certificate issuance or renewal fees
 
 The fees charged by Actalis for certificate issuance or renewal depend on several factors, such as the certificate type, the validity period, the total number of certificates purchased by the same client, whether the client is a private person or an organization, the certificate request channel, the involvement of a Reseller, etc. Quotes will be provided to interested parties on request.
 
-#### 9.1.2 Certificate access fees
+### 9.1.2 Certificate access fees
 
 Not applicable
 
-#### 9.1.3 Revocation or status information access fee
+### 9.1.3 Revocation or status information access fee
 
 Access to certificate status services (CRL, OCSP) is free and open to everybody.
 
-#### 9.1.4 Fees for other services
+### 9.1.4 Fees for other services
 
 No stipulation.
 
-#### 9.1.5 Refund policies
+### 9.1.5 Refund policies
 
 Please refer to the General Terms & Conditions published on the CA website.
 
-### 9.2 Financial responsibility
+## 9.2 Financial responsibility
 
-#### 9.2.1 Insurance coverage
+### 9.2.1 Insurance coverage
 
 Actalis is suitably insured against the risks related to its certification services.
 
-#### 9.2.2 Other assets
+### 9.2.2 Other assets
 
 No stipulation.
 
-#### 9.2.3 Insurance or warranty coverage for end-entities
+### 9.2.3 Insurance or warranty coverage for end-entities
 
 Please refer to [CPS].
 
-### 9.3 Confidentiality of business information
+## 9.3 Confidentiality of business information
 
-#### 9.3.1 Scope of confidential information
-
-Please refer to [CPS].
-
-#### 9.3.2 Information not within the scope of confidential information
+### 9.3.1 Scope of confidential information
 
 Please refer to [CPS].
 
-#### 9.3.3 Responsibility to protect confidential information
+### 9.3.2 Information not within the scope of confidential information
 
 Please refer to [CPS].
 
-### 9.4 Privacy of personal information
+### 9.3.3 Responsibility to protect confidential information
 
-#### 9.4.1 Privacy plan
+Please refer to [CPS].
+
+## 9.4 Privacy of personal information
+
+### 9.4.1 Privacy plan
 
 The Actalis’ privacy policy is published at the following address:
 https://www.actalis.it/documenti-en/sslclient_smime_privacy_information.aspx
 
-#### 9.4.2 Information treated as private
+### 9.4.2 Information treated as private
 
 The provisions of §9.4.2 of the [SMBR] apply.
 
-#### 9.4.3 Information not deemed private
+### 9.4.3 Information not deemed private
 
 No stipulation
 
-#### 9.4.4 Responsibility to protect private information
+### 9.4.4 Responsibility to protect private information
 
 The provisions of §9.4. 4 of the [SMBR] apply.
 
-#### 9.4.5 Notice and consent to use private information
+### 9.4.5 Notice and consent to use private information
 
 The provisions of §9.4. 5 of the [SMBR] apply.
 
-#### 9.4.6 Disclosure pursuant to judicial or administrative process
+### 9.4.6 Disclosure pursuant to judicial or administrative process
 
 No stipulation.
 
-#### 9.4.7 Other information disclosure circumstances
+### 9.4.7 Other information disclosure circumstances
 
 No stipulation.
 
-### 9.5 Intellectual property rights
+## 9.5 Intellectual property rights
 
 Actalis S.p.A. and Aruba S.p.A. own the intellectual property rights in Actalis’ services, including the certificates, trademarks used in providing the services, and this CP. Subscribers keep all the rights on their own trademarks, brand names, and their own domain names. Private Keys and Public Keys remain the property of the Subscribers who rightfully hold them.
 
-### 9.6 Representations and warranties
+## 9.6 Representations and warranties
 
-#### 9.6.1 CA representations and warranties
+### 9.6.1 CA representations and warranties
 
 By issuing a Certificate, Actalis makes the following warranties to all beneficiaries:
 
@@ -1521,7 +1525,7 @@ By issuing a Certificate, Actalis makes the following warranties to all benefici
 - **Status**: the CA maintains a 24 x 7 publicly‐accessible Repository with current information regarding the status (Valid or Revoked) of all unexpired Certificates;
 - **Revocation**: the CA will revoke the Certificate for any of the reasons specified in the [SMBR] and §4.9.1 of this CP.
 
-#### 9.6.2 RA representations and warranties
+### 9.6.2 RA representations and warranties
 
 Before allowing any entity to act as **Registration Authority** (RA), Actalis will stipulate with that entity a specific _agreement_ including at least the following obligations for the RA:
 
@@ -1529,7 +1533,7 @@ Before allowing any entity to act as **Registration Authority** (RA), Actalis wi
 - collect, verify, and archive suitable evidence corroborating the identity of Applicants, in compliance with the [SMBR], in particular the Applicants’ Personal Names (given names and surnames);
 - promptly request the revocation of certificates, issued at their request, which include inaccurate or no longer valid Subject identity data (e.g., personal names, email addresses, etc.).
 
-#### 9.6.3 Subscriber representations and warranties
+### 9.6.3 Subscriber representations and warranties
 
 Actalis shall require, as part of the Subscriber Agreement or Terms of Use, that the Applicant make the following commitments and warranties:
 
@@ -1544,7 +1548,7 @@ Actalis shall require, as part of the Subscriber Agreement or Terms of Use, that
 - **Responsiveness**: respond to the CA’s instructions concerning Key Compromise or Certificate misuse within a specified time period.
 - **Acknowledgment and Acceptance**: acknowledge and accept that the CA is entitled to revoke the Certificate immediately if the Applicant were to violate the terms of the Subscriber Agreement or Terms of Use, or if revocation is required by this CP and/or the related CPS, or by the [SMBR].
 
-#### 9.6.4 Relying party representations and warranties
+### 9.6.4 Relying party representations and warranties
 
 **Relying Parties** are supposed to:
 
@@ -1552,69 +1556,69 @@ Actalis shall require, as part of the Subscriber Agreement or Terms of Use, that
 - verify the status of certificates by accessing the information services described in §4. 10;
 - only rely on certificates that are not expired, suspended or revoked.
 
-#### 9.6.5 Representation and warranties of other participants
+### 9.6.5 Representation and warranties of other participants
 
 No stipulation.
 
-### 9.7 Discaimers of warranties 
+## 9.7 Discaimers of warranties 
 
 The CA has no further obligations and shall not be obliged to guarantee anything more than what is expressly described in this CP or prescribed by applicable law.
 
-### 9.8 Limitations of liability 
+## 9.8 Limitations of liability 
 
 Please refer to [CPS].
 
-### 9.9 Indemnities
+## 9.9 Indemnities
 
 Please refer to [CPS].
 
-### 9.10 Term and termination 
+## 9.10 Term and termination 
 
-#### 9.10.1 Term
-
-Please refer to [CPS].
-
-#### 9.10.2 Termination
+### 9.10.1 Term
 
 Please refer to [CPS].
 
-#### 9.10.3 Effect of termination and survival
+### 9.10.2 Termination
 
 Please refer to [CPS].
 
-### 9.11 Individual notices and communications with participants
+### 9.10.3 Effect of termination and survival
 
 Please refer to [CPS].
 
-### 9.12 Amendments
-
-#### 9.12.1 Procedure for amendment
+## 9.11 Individual notices and communications with participants
 
 Please refer to [CPS].
 
-#### 9.12.2 Notification mechanism and period
+## 9.12 Amendments
+
+### 9.12.1 Procedure for amendment
 
 Please refer to [CPS].
 
-#### 9.12.3 Circumstances under which OID must be changed
+### 9.12.2 Notification mechanism and period
 
 Please refer to [CPS].
 
-### 9.13 Dispute resolution provisions
+### 9.12.3 Circumstances under which OID must be changed
 
 Please refer to [CPS].
 
-### 9.14 Governing law
+## 9.13 Dispute resolution provisions
 
 Please refer to [CPS].
 
-### 9.15 Compliance with applicable law
+## 9.14 Governing law
 
 Please refer to [CPS].
 
-### 9.16 Miscellaneous provisions
+## 9.15 Compliance with applicable law
 
-#### 9.16.1 Entire agreement
+Please refer to [CPS].
+
+## 9.16 Miscellaneous provisions
+
+### 9.16.1 Entire agreement
 
 Please refer to [CPS].
 
