@@ -647,6 +647,8 @@ The certificate application form must be accompanied or followed by a suitable C
 
 Actalis also supports the ACME automation protocol, in compliance with [RFC 8555]. The Actalis ACME server is exposed at the following URL: https://acme-api.actalis.com/acme/directory.
 
+In general, it is possible to request any type of TLS certificate (DV, OV, EV) from Actalis via ACME, with possible limitations depending on the type of customer account (e.g. retail or corporate).
+
 Access to the Actalis’ ACME service requires EAB (External Account Binding) credentials, which are provided as part of customer onboarding.
 
 Currently, the HTTP-01 and DNS-01 challenges are supported for certificates requested via ACME.
