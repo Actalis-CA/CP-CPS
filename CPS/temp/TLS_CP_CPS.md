@@ -1257,6 +1257,8 @@ The Actalis’ Information Security Management System (ISMS), compliant with ISO
 
 - Incident closure and Notification: once the recovery phase is over, the incident is closed. In this phase, the incident closure is notified to the involved managers.
 
+Actalis shall publicly disclose and/or respond to incident reports in Bugzilla (https://bugzilla.mozilla.org/), regardless of perceived impact. Reports shall be submitted in accordance with the current version of the CCADB incident report format and timelines.
+
 Disaster management is regulated by the Actalis’ Business Continuity Plan (BCP) which covers all items listed in paragraph 5.7.1 of the [BR]. See also section 5.1.
 
 Actalis also undertakes to maintain a complete and actionable plan for mass-revocation events, carrying out annual tests of the plan and incorporating the lessons learned in order to continually improve its prepar-edness for mass revocation over time, in compliance with paragraph 5.7.1.2 of the [BR].
