@@ -195,6 +195,8 @@ This CPS is developed, reviewed, published and updated by Actalis S.p.A.
 
 For any enquiries about this CPS, please send e-mail to cps-admin@actalis.it.
 
+#### 1.5.2.1 Problem reporting
+
 Actalis makes available to all interested parties (Subscribers, Relying Parties, Application Software Suppliers, law enforcement, etc.) two communication channels through which certificate problems can be reported to the CA at any time (24x7):
 
 - the mailbox **cert-problem@actalis.it** , which the CA commits to timely read during working hours only (9 AM to 5 PM on Italian working days);
@@ -907,6 +909,8 @@ Under certain circumstances the Subscriber _must_ request revocation of its cert
 Requests for revocation can be submitted directly to the CA, through the CA portal. In the event that the certificate was provided through a reseller or through an RA, revocation of the certificate may also be requested through the reseller or RA. In any case, before revocation of a certificate can be requested, it is necessary to authenticate to the relevant web site / service with the credentials that were provided to the Subscriber for that purpose at the time of certificate issuance.
 
 As an alternative, it is possible to fill out a revocation request form (downloadable from the Actalis’ web site), signed by the Subscriber. The signed form must then be sent directly to the CA (e.g., via ordinary mail, or rather e-mail). Before carrying out the revocation, the CA will check that the request is authentic. Revocation requests submitted to the CA in this way are handled on working days only.
+
+To programmatically revoke one or more certificates issued by Actalis via ACME, for which you have the private key, you can use the ACME revokeCert method at this endpoint: https://acme-api.actalis.com/acme/revokecert.
 
 For revocation requests submitted on-line, certificates shall be revoked within 24 hours.
 
