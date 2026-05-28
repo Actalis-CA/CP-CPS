@@ -649,7 +649,7 @@ Actalis also supports the ACME automation protocol, in compliance with [RFC 8555
 
 In general, it is possible to request any type of TLS certificate (DV, OV, EV) from Actalis via ACME, with possible limitations depending on the type of customer account (e.g. retail or corporate).
 
-Access to the Actalis’ ACME service requires EAB (External Account Binding) credentials, which are provided as part of customer onboarding.
+Access to the Actalis’ ACME service requires External Account Binding (EAB) credentials, which are provided during customer onboarding or in self-service mode depending on the type of certificate management portal used by the Subscriber.
 
 Currently, the HTTP-01 and DNS-01 challenges are supported for certificates requested via ACME.
 
