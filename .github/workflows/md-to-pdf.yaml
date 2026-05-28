@@ -52,7 +52,7 @@ jobs:
             --toc-depth=4 \
             -V geometry:margin=1in \
             -V fontsize=11pt \
-            -V mainfont="Liberation Sans" \
+            -V mainfont="Noto Sans" \
             --standalone \
             --metadata title="Actalis TLS Certificate Policy and Certification Practice Statement"
           
