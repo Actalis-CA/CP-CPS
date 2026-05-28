@@ -2228,9 +2228,11 @@ In general, if a substantive non-compliance results from an audit, Actalis will 
 
 ## 8.6 COMMUNICATION OF RESULTS
 
-The result of the audit carried out by the CAB is communicated to the company management and to the heads of the organizational structure in charge of providing the CA service. The result of the audit is also communicated to the national Supervisory Body (AgID) by sending to them the audit report issued by the CAB.
+The result of the audit carried out by the CAB is communicated to the company management and to the heads of the organizational structure in charge of providing the CA service. The result of the audit (i.e. the Audit Report or Audit Statement) is also communicated to the national Supervisory Body (AgID).
 
-The CA publishes the result of the audit within three months of the end of the audit period.
+Actalis shall make the audit report publicly available as an authoritative, text-searchable English-language PDF doc-ument within 3 months of the end of the audit period.
+
+The Audit Report MUST contain at least the information required by the CCADB Policy.
 
 The result of internal audits or second-party audits is communicated to the company management, to the heads of the organizational structure responsible for providing the CA service and, where applicable, to the involved external entity/organization.
 
