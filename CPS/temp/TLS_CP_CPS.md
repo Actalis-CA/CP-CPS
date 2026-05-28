@@ -23,7 +23,9 @@ This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 I
 
 ## 1.2 DOCUMENT IDENTIFICATION
 
-This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as **CPS** ) applying to **TLS Server certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. This document is published on Actalis’ web site in two languages: Italian and English. In the event of any inconsistency between the two versions, the Italian version takes precedence.
+This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as **CPS** ) applying to **TLS Server certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. 
+
+This document is published on Actalis’ web site in two languages: Italian and English. In the event of any inconsistency between the two versions, the English version takes precedence.
 
 This CPS is published as a signed PDF document in order to ensure its origin and integrity.
 
