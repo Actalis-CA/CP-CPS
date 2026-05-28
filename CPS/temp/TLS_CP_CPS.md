@@ -639,6 +639,18 @@ The certificate application form and the Subscriber Agreement are available in I
 
 The certificate application form must be accompanied or followed by a suitable Certificate Signing Request file (CSR) conformant to section 3.2.1.
 
+#### 4.1.2.1 ACME Support
+
+Actalis also supports the ACME automation protocol, in compliance with [RFC 8555]. The Actalis ACME server is exposed at the following URL: https://acme-api.actalis.com/acme/directory.
+
+Access to the Actalis’ ACME service requires EAB (External Account Binding) credentials, which are provided as part of customer onboarding.
+
+Currently, the HTTP-01 and DNS-01 challenges are supported for certificates requested via ACME.
+
+The following additional ACME features are also supported:
++	CAA records with “accounturi” and “validationmethods” attributes, as per RFC 8657;
++	ACME Renewal Information (ARI), in compliance with RFC 9773.
+
 ## 4.2 CERTIFICATE APPLICATION PROCESSING
 
 ### 4.2.1 Performing identification and authentication functions
