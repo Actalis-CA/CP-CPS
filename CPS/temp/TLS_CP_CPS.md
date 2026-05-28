@@ -910,7 +910,7 @@ Requests for revocation can be submitted directly to the CA, through the CA port
 
 As an alternative, it is possible to fill out a revocation request form (downloadable from the Actalis’ web site), signed by the Subscriber. The signed form must then be sent directly to the CA (e.g., via ordinary mail, or rather e-mail). Before carrying out the revocation, the CA will check that the request is authentic. Revocation requests submitted to the CA in this way are handled on working days only.
 
-To programmatically revoke one or more certificates issued by Actalis via ACME, for which you have the private key, you can use the ACME revokeCert method at this endpoint: https://acme-api.actalis.com/acme/revokecert.
+To programmatically revoke one or more certificates issued by Actalis via ACME, for which you have the corresponding private key or the key of the associated ACME account, you can use the ACME revokeCert method at this endpoint: https://acme-api.actalis.com/acme/revokecert.
 
 For revocation requests submitted on-line, certificates shall be revoked within 24 hours.
 
