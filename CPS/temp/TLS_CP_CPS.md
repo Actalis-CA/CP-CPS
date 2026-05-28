@@ -17,7 +17,7 @@ The reliability of a certificate, in particular the association - attested by th
 
 This document is the Actalis’ combined CP/CPS relevant to the issuance and management of **TLS Server certificates**. This CPS is structured according to the outline set forth in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
 
-Actalis conforms to the latest published versions of CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org , the CCADB Policy published at https://www.ccadb.org/policy, and any of the Browsers´ root programs policies including, but not limited to, the Chrome Root Program, the Apple Root Program, the Mozilla Root Store Policy, and the Microsoft Root Program. In the event of any inconsistency between this CPS and those documents, those documents take precedence.
+Actalis conforms to the latest published versions of: CAB Forum’s TLS Baseline Requirements and EV Guidelines published at https://www.cabforum.org, the CCADB Policy published at https://www.ccadb.org/policy, and any of the Browsers´ root programs policies including, but not limited to, the Chrome Root Program, the Apple Root Program, the Mozilla Root Store Policy, and the Microsoft Root Program. In the event of any inconsistency between this CPS and those documents, those documents take precedence.
 
 This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit  http://creativecommons.org/licenses/by-nd/4.0/](http://creativecommons.org/licenses/by-nd/4.0/) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
