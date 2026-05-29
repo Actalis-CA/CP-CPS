@@ -901,20 +901,22 @@ On the termination date:
 
 # 6 TECHNICAL SECURITY CONTROLS
 
-All facility, management, and operations controls applying to this certificate policy are exactly the same as documented in [CPS], except where otherwise specified hereafter.
-
 ## 6.1 KEY PAIR GENERATION AND INSTALLATION
 
 ### 6.1.1 Key pair generation
 
 #### 6.1.1.1 CA key pair generation 
-The key pairs of the CA are generated and handled as documented in [CPS].
+Generation of all CA key pairs (Root CAs and subordinate CAs) takes place in a physically secured environment, following a documented procedure that requires the joint intervention of two different people in Trusted Roles under the principles of “_dual control_” and “_split-knowledge_”. All CA key pairs are generated inside HSMs (Hardware Security Modules) meeting the requirements of section 6.2.1. Execution of the procedure is witnessed by an internal auditor and by an independent qualified auditor; the activity is recorded in a report which is archived on the liability of the Director of Certification Services.
 
 #### 6.1.1.2 RA key pair generation
 No stipulation.
 
 #### 6.1.1.3 Subscriber key pair generation
-The provisions of §6.1.1.3 of the [SMBR] apply. See also § 6 .1.2 below.
+The CA or a Delegated Third-Party MAY generate the Private Key on behalf of the Subscriber.
+
+Actalis shall reject a certificate request for a Public Key that does not meet the requirements set forth in sections 6.1.5 and 6.1.6 or that corresponds to an industry‐demonstrated weak Private Key, such as  a “Debian weak key” (http://wiki.debian.org/SSLkeys) or one affected by the ROCA (https://github.com/crocs-muni/roca) or the Close Primes (https://fermatattack.secvuln.info/) vulnerabilities.
+
+See also §6.1.2 below.
 
 ### 6.1.2 Private key delivery to subscriber
 
@@ -948,51 +950,50 @@ The provisions of §6.1.7 of the [SMBR] apply.
 
 ## 6.2 PRIVATE KEY PROTECTION AND CRYPTOGRAPHIC MODULE ENGINEERING CONTROLS
 
-The CA private keys are generated and handled as documented in [CPS].
-
 ### 6.2.1 Cryptographic module standards and controls
 
-Same as documented in [CPS].
+All CA private keys (both Root CAs and issuing CAs) shall be generated, stored and used only in HSMs (Hardware Security Modules) pos¬sessing a security evaluation according to FIPS PUB 140-2 Level 3 (or higher), FIPS PUB 140-3 Level 3 (or higher) and/or Common Criteria (namely ISO/IEC 15408) at EAL 4 or higher.
 
 ### 6.2.2 Private key (n out of m) multi-person control
 
-Same as documented in [CPS].
+See section 5.2.2.
 
 ### 6.2.3 Private key escrow
 
-Same as documented in [CPS].
+Actalis does not escrow its CA private keys to any third parties nor does it provide such a service for Subscriber keys.
 
 ### 6.2.4 Private key backup
 
-Same as documented in [CPS].
+For guaranteeing continuity of service, Actalis keeps encrypted backup copies of its CA keys on removable media.
+The backup copy is kept in a safe place that is different from the location of the operational copy. Backup and restore procedures require the joint intervention of at least two people (“dual control”) in trusted roles.
 
 ### 6.2.5 Private key archival
 
-Same as documented in [CPS].
+No stipulation beyond what is provided for in the [SMBR].
 
 ### 6.2.6 Private key transfer into or form a cryptographic module
 
-Same as documented in [CPS].
+When CA private keys are transferred between HSMs (e.g., for redundancy or backup purposes) they are encrypted prior to leaving HSMs and unwrapped only inside destination HSMs. CA private keys never exist in plain text form outside of HSMs. Actalis does not generate CA keys for external subordinate CAs.
 
 ### 6.2.7 Private key storage on cryptographic module
 
-Same as documented in [CPS].
+Private Keys corresponding to CA Keys MUST be stored in accordance with [SMBR] section 6.2.7.
 
 ### 6.2.8 Method of activating private key
 
-Same as documented in [CPS].
+CA private keys are only activated by authorized persons, using the mechanisms provided by the HSM manufacturer. Activation data and devices are protected from loss or disclosure to unauthorized people.
 
 ### 6.2.9 Method of deactivating private key
 
-Same as documented in [CPS].
+CA private keys are de-activated by authorized persons, using the mechanisms provided by the HSM manufacturer.
 
 ### 6.2.10 Method of destroying private key
 
-Same as documented in [CPS].
+CA private keys shall be destroyed when they are no longer needed. CA keys are only destroyed by authorized persons in trusted roles, using the mechanisms provided by the HSM manufacturer.
 
 ### 6.2.11 Cryptographic module rating
 
-Same as documented in [CPS].
+See section 6.2.1.
 
 ## 6.3 Other aspects of key pair management
 
@@ -1002,7 +1003,7 @@ No stipulation.
 
 ### 6.3.2 Certificate operational periods and key pair usage periods
 
-The provisions of §6. 3 .2 of the [SMBR] apply.
+The provisions of §6.3.2 of the [SMBR] apply.
 
 ## 6.4 ACTIVATION DATA
 
