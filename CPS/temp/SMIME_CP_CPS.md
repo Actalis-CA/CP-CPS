@@ -711,23 +711,23 @@ No stipulation.
 
 # 5 FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS
 
-For the management of its CA infrastructure, Actalis makes use of the data center services provided by its holding company, Aruba S.p.A., who takes responsibility for the housing, Internet connectivity, physical and network secu-rity of all Actalis’ systems. The data center service provided is ISO/IEC 27001 certified.
+For the management of its CA infrastructure, Actalis makes use of the data center services provided by its holding company, Aruba S.p.A., who takes responsibility for the housing, Internet connectivity, physical and network security of all Actalis’ systems. The data center service provided is ISO/IEC 27001 certified.
 
 ## 5.1	Physical controls
 ### 5.1.1	Site location and construction
 
-All computer systems used for the provision of Actalis’ CA services are housed in highly secure data centers owned and managed by the Actalis’ holding company, Aruba S.p.A. In particular, Actalis maintains at least two full PKI in-frastructures at separate locations, for redundancy, plus a third one at a distant location (> 300 km), for disaster recovery purposes. All these data centers are located on the Italian territory.
+All computer systems used for the provision of Actalis’ CA services are housed in highly secure data centers owned and managed by the Actalis’ holding company, Aruba S.p.A. In particular, Actalis maintains at least two full PKI infrastructures at separate locations, for redundancy, plus a third one at a distant location (> 300 km), for disaster recovery purposes. All these data centers are located on the Italian territory.
 
 ### 5.1.2	Physical access
 At all the CA facilities, the following controls are in place:
-•	physical access control system, so that access to the facility is possible only to those who need, upon registration at the reception, and that access to the technical rooms is allowed only to authorized employees;
-•	passive anti-intrusion systems such as grids, bulletproof glass, armored doors, motorized gates;
-•	active anti-intrusion systems such as CCTV and VMD.
+- physical access control system, so that access to the facility is possible only to those who need, upon registration at the reception, and that access to the technical rooms is allowed only to authorized employees;
+- passive anti-intrusion systems such as grids, bulletproof glass, armored doors, motorized gates;
+- active anti-intrusion systems such as CCTV and VMD.
 
 ### 5.1.3	Power and air conditioning
 All data centers hosting Actalis’ CA services are equipped with:
-•	fully redundant power supply systems, to guarantee the continuity of electric power supply in every predictable condition;
-•	ventilation and air conditioning systems (HVAC) to ensure optimal climatic conditions for the regular operation of servers hosted in the data center.
+- fully redundant power supply systems, to guarantee the continuity of electric power supply in every predictable condition;
+- ventilation and air conditioning systems (HVAC) to ensure optimal climatic conditions for the regular operation of servers hosted in the data center.
 
 ### 5.1.4	Water exposures
 All data centers hosting Actalis’ CA services are equipped with flood detection and protection systems.
