@@ -560,7 +560,7 @@ Actalis shall revoke the certificate **within 5 days** if one or more of the fol
 - Actalis is made aware that the Subscriber has violated one or more of its material obligations under the Subscriber Agreement or Terms of Use;
 - Actalis is made aware of any circumstance indicating that use of an email address or Fully‐Qualified Domain Name in the Certificate is no longer legally permitted (e.g., a court or arbitrator has revoked the right to use an email address or Domain Name, a relevant licensing or services agreement between the Subscriber has terminated, or the account holder has failed to maintain the active status of the email address or Domain Name);
 - Actalis is made aware of a material change in the information contained in the Certificate;
-- Actalis is made aware that the Certificate was not issued in accordance with these CP and/or the referenced CPS (*);
+- Actalis is made aware that the Certificate was not issued in accordance with this CPS (*);
 - Actalis determines or is made aware that any of the information appearing in the Certificate is inaccurate (*);
 - Actalis’ right to issue Certificates under the [SMBR] expires or is revoked or terminated, unless the CA has made arrangements to continue maintaining the CRL/OCSP Repository;
 - revocation is required by this CP and/or the referenced CPS; or
