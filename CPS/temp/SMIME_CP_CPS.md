@@ -132,7 +132,7 @@ For any questions regarding this CPS, please write to ca-admin@actalis.it.
 Actalis makes available to all interested parties (Subscribers, Relying Parties, Application Software Suppliers, law enforcement, etc.) two communication channels through which certificate problems can be reported to the CA at any time (24x7):
 
 - the mailbox **cert-problem@actalis.it** , which the CA commits to timely read during working hours only (9 AM to 5 PM on Italian working days);
-- the telephone number **+39- 0575 - 050.376** , at which Actalis commits to answer at all times (24x7x 365 ).
+- the telephone number **+39-0575-050.376** , at which Actalis commits to answer at all times (24x7x 365 ).
 
 These channels cannot be used to request technical assistance of any kind, but only to report problems (such as misissuance, use of the certificate for unlawful purposes, etc.) that may warrant the revocation of the involved certificates.
 
