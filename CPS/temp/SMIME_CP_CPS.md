@@ -786,32 +786,32 @@ Persons holding any of the trusted roles listed in par. 5.2.1 cannot have other 
 ### 5.3.1	Qualifications, experience, and clearance requirements
 Actalis ensures that the personnel assigned to its CA services are adequately competent for the tasks assigned to them, based on appropriate education, training, skills, and experience, and that they are free from conflicts of in-terest that may compromise the necessary impartiality and respect of the procedures. In particular, with reference to the trusted roles, the required characteristics and skills are described in the "job description" company docu-ment.
 
-In the case of new recruitments, Actalis always reserves the right to assess what type of training is necessary in rela-tion to the tasks to be assigned, the existing qualifications and experience, and provides where necessary for the inclusion of the resource in a training plan.
+In the case of new recruitments, Actalis always reserves the right to assess what type of training is necessary in relation to the tasks to be assigned, the existing qualifications and experience, and provides where necessary for the inclusion of the resource in a training plan.
 
 ### 5.3.2	Background check procedures
-For the definition of the shortlist of candidates, both for technical and administrative areas, Actalis uses both the curricula sent directly to it through the appropriate channels (e.g. website) and those provided by external recruit-ers. For each candidate, the accuracy of the information contained in the CV (e.g. education, masters, specific train-ing courses, etc.) is verified. External recruiters contracted by Actalis also have the obligation to request references, for each potential candidate, before submitting their CVs to Actalis. Furthermore, all candidates, once the selection phase is completed, must provide their certificate of good conduct (extract from the judicial record) or an equiva-lent declaration to the Human Resources office.
+For the definition of the shortlist of candidates, both for technical and administrative areas, Actalis uses both the curricula sent directly to it through the appropriate channels (e.g. website) and those provided by external recruiters. For each candidate, the accuracy of the information contained in the CV (e.g. education, masters, specific training courses, etc.) is verified. External recruiters contracted by Actalis also have the obligation to request references, for each potential candidate, before submitting their CVs to Actalis. Furthermore, all candidates, once the selection phase is completed, must provide their certificate of good conduct (extract from the judicial record) or an equivalent declaration to the Human Resources office.
 
 ### 5.3.3	Training requirements
 The staff in charge of the CA services is adequately trained for the tasks that they perform. Actalis provides staff with initial training at the time of recruitment, including courses held by external teachers when deemed necessary, and training on the job.
 
-The staff involved in the verification of information (Validation Specialists) are trained on at least the following top-ics: Public Key Infrastructures (PKI), identification and authentication policies and procedures, common threats to information verification procedures, and CAB Forum Requirements [BR] and Guidelines [EVGL]. The records of this training, which is provided at least yearly, are kept and made available to the auditors on request.
+The staff involved in the verification of information (Validation Specialists) are trained on at least the following topics: Public Key Infrastructures (PKI), identification and authentication policies and procedures, common threats to information verification procedures, and CAB Forum Requirements [BR] and Guidelines [EVGL]. The records of this training, which is provided at least yearly, are kept and made available to the auditors on request.
 
 ### 5.3.4	Retraining frequency and requirements
-For all personnel working in the CA service, the need for new training is assessed at least once per year (or in ad-vance, in case new developments/services), so as to ensure that all personnel are always able to perform their tasks satisfactorily and competently. Furthermore, training on information security matters is held annually for all staff.
+For all personnel working in the CA service, the need for new training is assessed at least once per year (or in advance, in case new developments/services), so as to ensure that all personnel are always able to perform their tasks satisfactorily and competently. Furthermore, training on information security matters is held annually for all staff.
 
 ### 5.3.5	Job rotation frequency and sequence
 No stipulation.
 
 ### 5.3.6	Sanctions for unauthorized actions
-In the case of unauthorized actions and/or violations of company (or Group) policy and/or procedures, Actalis re-serves the right to activate the disciplinary procedure provided for in the employment contract, after having as-sessed the nature and the severity of the violation and its impact on company operations, whether it was the first occurrence, whether the employee had been adequately trained, etc.
+In the case of unauthorized actions and/or violations of company (or Group) policy and/or procedures, Actalis reserves the right to activate the disciplinary procedure provided for in the employment contract, after having as-sessed the nature and the severity of the violation and its impact on company operations, whether it was the first occurrence, whether the employee had been adequately trained, etc.
 
 ### 5.3.7	Independent contractor requirements
 Any independent contractor or Delegated Third Party’s personnel involved in the issuance of Certificates shall be fully subject to this CPS, including training and skills requirements (see section 5.3.3), sanctions (see section 5.3.6), document retention and event logging requirements (see section 5.4.1).
 
-Non-employees (e.g. consultants) are required to sign a confidentiality agreement (NDA) before starting collabora-tion with Actalis and possibly accessing confidential data.
+Non-employees (e.g. consultants) are required to sign a confidentiality agreement (NDA) before starting collaboration with Actalis and possibly accessing confidential data.
 
 ### 5.3.8	Documentation supplied to personnel
-Personnel in trusted roles are provided with the documentation necessary to perform their duties, depending on their role (see section 5.2.1). In particular, Validation Specialists are provided with this CPS, CAB Forum’s Baseline Requirements and EV Guidelines, and detailed instructions on how to properly perform the identification and au-thentication activities and issue certificates, plus the manuals of the CA/RA applications they use.
+Personnel in trusted roles are provided with the documentation necessary to perform their duties, depending on their role (see section 5.2.1). In particular, Validation Specialists are provided with this CPS, CAB Forum’s Baseline Requirements, and detailed instructions on how to properly perform the identification and authentication activities and issue certificates, plus the manuals of the CA/RA applications they use.
 
 ## 5.4	Audit logging procedures
 
@@ -819,9 +819,9 @@ Personnel in trusted roles are provided with the documentation necessary to perf
 The CA and any Delegated Third Parties shall record all the details related to certificate requests, issuances, and subsequent management (e.g. revocation), and make these records available to the CA auditors. For each event, information shall be recorded about event type, date and time of occurrence, the associated data (depending on event type), the personnel involved (if applicable), and possibly other information depending on event type.
 
 At least the following events shall be logged, in line with section 5.4.1 of the [BR]:
-•	CA key lifecycle management events;
-•	CA and Subscriber certificate life cycle management events;
-•	Security events (e.g. accesses to PKI systems, PKI and security system actions performed, security profile changes, entries to and exits from the CA facility, relevant activities on routers and firewalls, in particular with regard to its configurations etc.).
+-	CA key lifecycle management events;
+-	CA and Subscriber certificate life cycle management events;
+-	Security events (e.g. accesses to PKI systems, PKI and security system actions performed, security profile changes, entries to and exits from the CA facility, relevant activities on routers and firewalls, in particular with regard to its configurations etc.).
 
 ### 5.4.2	Frequency of processing log
 The relevant events are collected by the systems that generate them and are transmitted to the centralized log management system. On the log management system, events are automatically classified and stored locally in order to allow them to be consulted. On a daily basis, local data are copied to the long-term storage system (see Section 5.4.4).
@@ -852,23 +852,23 @@ A comprehensive a risk assessment is conducted at least annually (see also secti
 
 ### 5.5.1	Types of records archived
 The CA keeps at least the following information related to the request, issuance and revocation of certificates:
-•	certificate requests, including CSRs;
-•	details of applicants and applicant representatives;
-•	any further documentation supplied by applicants;
-•	verifications performed by the CA and the results thereof;
-•	certificate revocation requests.
+-	certificate requests, including CSRs;
+-	details of applicants and applicant representatives;
+-	any further documentation supplied by applicants;
+-	verifications performed by the CA and the results thereof;
+-	certificate revocation requests.
 
 ### 5.5.2	Retention period for archive
 Archived records are kept for at least 10 years past the certificates’ expiration or revocation dates.
 
 ### 5.5.3	Protection of archive
-Archives are protected from unauthorized modification or destruction by strong security controls. To this end, a document preservation service is used complying with the Italian regulations (Legislative Decree No. 82/2005: “Co-dice dell’Amministrazione Digitale” and subsequent amendments and additions) and accredited by AgID.
+Archives are protected from unauthorized modification or destruction by strong security controls. To this end, a document preservation service is used complying with the Italian regulations (Legislative Decree No. 82/2005: “Codice dell’Amministrazione Digitale” and subsequent amendments and additions) and accredited by AgID.
 
 ### 5.5.4	Archive backup procedures
 Archives are backed up by the preservation system referred to in paragraph 5.5.3.
 
 ### 5.5.5	Requirements for time-stamping of records
-All archived records are time-stamped at the date and time of creation or occurrence, with a date and time refer-ence obtained from a trusted time source (see section 6.8).
+All archived records are time-stamped at the date and time of creation or occurrence, with a date and time reference obtained from a trusted time source (see section 6.8).
 
 ### 5.5.6	Archive collection system (internal or external)
 No stipulation.
@@ -888,12 +888,12 @@ At least 2 years before the end of the validity of the current certification key
 
 ### 5.7.1	Incident and compromise handling procedures
 The Actalis’ Information Security Management System (ISMS), compliant with ISO/IEC 27001, also includes incident and compromise handling procedures. The management of an information security incident is handled by follow-ing a multi-stage procedure coordinated by an internal committee (Committee for Security and Crisis Management, later on "Committee") composed of figures of various responsibilities and members of the senior management. The process is articulated into several phases described below:
-•	Detection: phase in which any person (employee, collaborator or any interested party) who detects a possible incident communicates it to the Committee. The Committee ensures that the report is as detailed as possible and that those who have encountered the problem do not take any action autonomously.
-•	Identification and analysis: the Committee takes charge of the report and assesses whether it is actually a security incident. If so, it evaluates its severity and proceeds with the following phases. Otherwise, it just closes the incident.
-•	Containment: in this phase, the harmful effects caused by the incident are contained as much as possible, in order to prevent them from spreading to other areas of the organization.
-•	Collection of evidence: phase in which the evidence is sought for and collected in order to attach it to the documentation of the incident in case of possible legal consequences or for the need to proceed with more in-depth investigations. All the evidences are collected following guidelines which aim to guarantee a correct and reliable collection.
-•	Removal and Recovery: phase in which the cause of the damage is removed and the systems affected are reactivated, through the recovery procedures, allowing the systems and users to return to work.
-•	Incident closure and Notification: once the recovery phase is over, the incident is closed. In this phase, the incident closure is notified to the involved managers.
+-	Detection: phase in which any person (employee, collaborator or any interested party) who detects a possible incident communicates it to the Committee. The Committee ensures that the report is as detailed as possible and that those who have encountered the problem do not take any action autonomously.
+-	Identification and analysis: the Committee takes charge of the report and assesses whether it is actually a security incident. If so, it evaluates its severity and proceeds with the following phases. Otherwise, it just closes the incident.
+-	Containment: in this phase, the harmful effects caused by the incident are contained as much as possible, in order to prevent them from spreading to other areas of the organization.
+-	Collection of evidence: phase in which the evidence is sought for and collected in order to attach it to the documentation of the incident in case of possible legal consequences or for the need to proceed with more in-depth investigations. All the evidences are collected following guidelines which aim to guarantee a correct and reliable collection.
+-	Removal and Recovery: phase in which the cause of the damage is removed and the systems affected are reactivated, through the recovery procedures, allowing the systems and users to return to work.
+-	Incident closure and Notification: once the recovery phase is over, the incident is closed. In this phase, the incident closure is notified to the involved managers.
 
 Actalis shall publicly disclose and/or respond to incident reports in Bugzilla (https://bugzilla.mozilla.org/), regard-less of perceived impact. Reports shall be submitted in accordance with the current version of the CCADB incident report format and timelines.
 
@@ -906,13 +906,12 @@ Actalis implements a Business Continuity Plan for the CA service in order to ens
 
 ### 5.7.3	Entity private key compromise procedures
 The CA's private key is the single most critical resource of the CA; as such, it is protected by a set of multi-layered security measures, as other critical CA resources. In case of compromise (loss of confidentiality) of the CA key, after assessment of the incident, Actalis will execute the following plan (not necessarily in this order):
-•	notify the national supervisory body (AgID);
-•	notify the conformity assessment body (CAB);
-•	publish a well-visible information note on the CA website;
-•	notify the Application Software Suppliers with whom Actalis has a Root Certificate distribution 
-agreement in place;
-•	notify any Delegated Third Parties (DTPs) and other interested parties to the extent possible;
-•	revoke of all certificates that were issued with the compromised key.
+-	notify the national supervisory body (AgID);
+-	notify the conformity assessment body (CAB);
+-	publish a well-visible information note on the CA website;
+-	notify the Application Software Suppliers with whom Actalis has a Root Certificate distribution agreement in place;
+-	notify any Delegated Third Parties (DTPs) and other interested parties to the extent possible;
+-	revoke of all certificates that were issued with the compromised key.
 
 Finally, unless the CA is to be terminated, a new CA key pair will be generated and the new CA public key will be disseminated as described in section 6.1.4.
 
@@ -923,15 +922,14 @@ Actalis are deployed in two geographically distant facilities (see section 5.1),
 The activities that will be carried out if Actalis decides, for any reason, to cease its certification service are described below.
 
 Before the actual termination:
-•	at least 60 days before the scheduled termination date, an information note will be sent to all customers of the CA service (and other services that include the CA services), as well as to the supervisory body (AgID), the conformity assessment body (CAB), and other subjects with whom the CA has stipulated agreements in this regard;
-•	with a minimum notice of 60 days, an informative note will be published on the CA website, in order to make the information available also to Relying Parties;
-•	with a minimum notice of 60 days, the CA will send a notice to all possible sub-contractors and Delegated Third Parties (RAs), informing them that at the end of the deadline they will no longer be authorized to perform activities related to the certificate issuance service;
-•	the responsibility for the preservation of evidences (certificate requests, event log, etc.) will be transferred to another reliable subject that can guarantee preservation for an adequate time. The responsibility to publish on its website the public key of the ceased CA will also be transferred to such entity;
-•	the destruction of private certification keys as well as of the attached cryptographic material will be planned.
+-	at least 60 days before the scheduled termination date, an information note will be sent to all customers of the CA service (and other services that include the CA services), as well as to the supervisory body (AgID), the conformity assessment body (CAB), and other subjects with whom the CA has stipulated agreements in this regard;
+-	with a minimum notice of 60 days, an informative note will be published on the CA website, in order to make the information available also to Relying Parties;
+-	with a minimum notice of 60 days, the CA will send a notice to all possible sub-contractors and Delegated Third Parties (RAs), informing them that at the end of the deadline they will no longer be authorized to perform activities related to the certificate issuance service;
+-	the responsibility for the preservation of evidences (certificate requests, event log, etc.) will be transferred to another reliable subject that can guarantee preservation for an adequate time. The responsibility to publish on its website the public key of the ceased CA will also be transferred to such entity;
+-	the destruction of private certification keys as well as of the attached cryptographic material will be planned.
 
 On the termination date:
-•	the private certification keys as well as the annexed key restoration material (if any) will be destroyed (by logical deletion) and the transaction will be recorded.
-
+-	the private certification keys as well as the annexed key restoration material (if any) will be destroyed (by logical deletion) and the transaction will be recorded.
 
 # 6 TECHNICAL SECURITY CONTROLS
 
