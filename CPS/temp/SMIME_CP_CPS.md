@@ -1452,7 +1452,7 @@ The provisions of §8. 7 of the [SMBR] apply.
 
 # 9 OTHER BUSINESS AND LEGAL MATTERS
 
-For more details on legal matters related to certificates issued under this CP, the reader is referred to the Terms & Conditions [T&C] published on the CA web site.
+The general Terms & Conditions of the CA service herein described are provided to customers as a separate document, to be accepted at application time, published on the CA web site (see par. 2.2).
 
 ## 9.1 Fees
 
@@ -1480,7 +1480,7 @@ Please refer to the General Terms & Conditions published on the CA website.
 
 ### 9.2.1 Insurance coverage
 
-Actalis is suitably insured against the risks related to its certification services.
+Actalis maintains a special insurance with a major insurance company to cover the risks related to the provision of its certification services and other trust services. In particular, the insurance provides for a single limit per claim and per insurance period of EUR 15,000,000 (fifteen million Euros). The insurance company has at least an "A" rating in the [Best’s Insurance Guide](https://www.ambest.com/ratings/guide.pdf).
 
 ### 9.2.2 Other assets
 
