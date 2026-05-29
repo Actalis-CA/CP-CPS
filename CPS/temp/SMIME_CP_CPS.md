@@ -204,8 +204,6 @@ Publicly-Trusted S/MIME Certificates” (https://cabforum.org/smime-br/)
 
 [PROF] [RFC 5280](https://www.rfc-editor.org/rfc/rfc5280.txt): “Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile”, May 2008.
 
-[XUPD] [RFC 6818](https://datatracker.ietf.org/doc/html/rfc6818) , “Updates to the Internet X.5 0 9 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile”, January 2013.
-
 [SMIME] [RFC 5751](https://www.rfc-editor.org/rfc/rfc5751.txt): “Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.2 Message Specification”, January 2010.
 
 [T&C] S/MIME Certificates – Terms & Conditions
