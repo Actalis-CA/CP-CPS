@@ -865,9 +865,9 @@ The Actalis’ Information Security Management System (ISMS), compliant with ISO
 
 Actalis shall publicly disclose and/or respond to incident reports in Bugzilla (https://bugzilla.mozilla.org/), regard-less of perceived impact. Reports shall be submitted in accordance with the current version of the CCADB incident report format and timelines.
 
-Disaster management is regulated by the Actalis’ Business Continuity Plan (BCP) which covers all items listed in par-agraph 5.7.1 of the [BR]. See also section 5.1.
+Disaster management is regulated by the Actalis’ Business Continuity Plan (BCP) which covers all items listed in paragraph 5.7.1 of the [SMBR]. See also section 5.1.
 
-Actalis also undertakes to maintain a complete and actionable plan for mass-revocation events, carrying out annual tests of the plan and incorporating the lessons learned in order to continually improve its preparedness for mass revocation over time, in compliance with paragraph 5.7.1.2 of the [BR].
+Actalis also undertakes to maintain a complete and actionable plan for mass-revocation events, carrying out annual tests of the plan and incorporating the lessons learned in order to continually improve its preparedness for mass revocation over time.
 
 ### 5.7.2	Computing resources, software, and/or data are corrupted
 Actalis implements a Business Continuity Plan for the CA service in order to ensure that the corruption or loss of one or more computers cannot cause any disruption to the CA platform. In particular, all the critical components of the system are redundant both locally, in the single data center, and between the primary and secondary data cen-ters. Actalis also implements specific backup plans to guarantee that there is no loss of software and/or data.
