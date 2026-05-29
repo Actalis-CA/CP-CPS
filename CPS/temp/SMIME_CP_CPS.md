@@ -1488,56 +1488,79 @@ No stipulation.
 
 ### 9.2.3 Insurance or warranty coverage for end-entities
 
-Please refer to [CPS].
+Please refer to par. 9.2.1.
 
 ## 9.3 Confidentiality of business information
 
 ### 9.3.1 Scope of confidential information
 
-Please refer to [CPS].
+The following information is considered and treated as confidential:
+
+- all information supplied to the CA by Applicants, except that intended to be included in Certificates;
+- all communications between the CA and Applicants or Subscribers;
+- any confidential codes provided to Subscribers by the CA or RA (such as the credentials necessary to     login to the CA or RA websites);
+- all information collected by the CA within the vetting process (identification and authentication);
+- all contracts between the CA and other parties, including Subscribers, Application Software Suppliers,     Delegated Third Parties (e.g. Resellers and Registration Authorities), subcontractors, etc.;
+- all the private information of the CA (such as CA private keys, CA systems’ accounts, passwords and     other authentication credentials, business continuity and disaster recovery plans, internal procedures,     internal infrastructure documentation, risk assessment reports, financial transaction records, etc.);
+- the audit logs of the CA systems.
 
 ### 9.3.2 Information not within the scope of confidential information
 
-Please refer to [CPS].
+All information that must be public for compliance with applicable law (see section 9.15) and regulations (including CAB Forum’s Requirements and Guidelines), or on explicit request from the Subscriber, is considered nonconfidential. In particular, the following information is considered non-confidential:
 
+- all Certificates issued under this CPS;
+- all Certificate Revocation Lists (see section 4.10);
+- this CPS and other Actalis documents herein referred to;
+- the status of Certificates provided via the OCSP service (see section 4.10);
+- all information that the Applicant requested the CA to make public;
+- all information obtainable from public information sources;
+- any information that is already in the public domain.
+- 
 ### 9.3.3 Responsibility to protect confidential information
 
-Please refer to [CPS].
+Actalis ensures that all confidential information is adequately protected from unauthorized access and from the risk of loss due to disasters (see section 5.7).
+
+All confidential information is processed by the CA in compliance with applicable laws, in particular Legislative Decree no. 196/03 [DLGS196] and Regulation (EU) 2016/679 [GDPR].
 
 ## 9.4 Privacy of personal information
 
+Actalis is the processor of the personal information collected during the identification and registration phase of parties requesting certificates under this CPS, and shall process such information ensuring their confidentiality and in compliance with the Italian Legislative Decree n.196/2003 [DLGS196].
+
 ### 9.4.1 Privacy plan
 
-The Actalis’ privacy policy is published at the following address:
-https://www.actalis.it/documenti-en/sslclient_smime_privacy_information.aspx
+Regarding privacy, the CA complies with current laws, in particular Legislative Decree no. 196/03 [DLGS196] and Regulation (EU) 2016/679 [GDPR]. The protection of personal data is part of the Actalis’ Information Security Management System (ISMS), compliant with ISO/IEC 27001.
 
 ### 9.4.2 Information treated as private
 
-The provisions of §9.4.2 of the [SMBR] apply.
+Please refer to the definition of personal data pursuant to current laws, in particular Legislative Decree no. 196/03 [DLGS196].
 
 ### 9.4.3 Information not deemed private
 
-No stipulation
+Non-personal data are those that do not fall within the definition in par. 9.4.2. Please also refer to par. 9.3.2.
 
 ### 9.4.4 Responsibility to protect private information
 
-The provisions of §9.4. 4 of the [SMBR] apply.
+Actalis is the "data controller" for personal data pursuant to Legislative Decree no. 196/03 [DLGS196].
 
 ### 9.4.5 Notice and consent to use private information
 
-The provisions of §9.4. 5 of the [SMBR] apply.
+The notice on the processing of personal data, pursuant to Legislative Decree no. 196/03 [DLGS196], is published on the CA website. The certificate request implies the Applicant’s consent to the processing of personal data by the CA, in accordance with such notice.
 
 ### 9.4.6 Disclosure pursuant to judicial or administrative process
 
-No stipulation.
+The Subscriber’s personal data may be disclosed to the police, judicial authorities, information and security bodies or other public entities, pursuant to Legislative Decree no. 196/2003 [DLGS196], if that is required for the purposes of defense or security of the State or prevention, detection or repression of crimes.
 
 ### 9.4.7 Other information disclosure circumstances
 
-No stipulation.
+Not applicable.
 
 ## 9.5 Intellectual property rights
 
-Actalis S.p.A. and Aruba S.p.A. own the intellectual property rights in Actalis’ services, including the certificates, trademarks used in providing the services, and this CP. Subscribers keep all the rights on their own trademarks, brand names, and their own domain names. Private Keys and Public Keys remain the property of the Subscribers who rightfully hold them.
+This CPS is the property of Actalis who reserves all rights associated with the same.
+
+The Subscriber keeps all the rights on its own commercial marks (brand names) and its own domain names.
+
+Concerning the property rights of other data and information, the applicable law shall be applied.
 
 ## 9.6 Representations and warranties
 
@@ -1590,65 +1613,129 @@ No stipulation.
 
 ## 9.7 Discaimers of warranties 
 
-The CA has no further obligations and shall not be obliged to guarantee anything more than what is expressly described in this CP or prescribed by applicable law.
+Except as expressly stated in this CPS or in a separate agreement with a Subscriber, Actalis does not make any further representations or warranties regarding its CA services. See also the Terms & Conditions published on the Actalis website.
 
 ## 9.8 Limitations of liability 
 
-Please refer to [CPS].
+The obligations and responsibilities of Actalis are exclusively those defined in this document and the service supply Contract. In case of violation or non-performance attributable to Actalis, in the event that the same has shown that said violation or non-fulfillment have occurred without malice or negligence, the same will not respond for an amount higher than the amount paid by the Customer for the Service, ordered or renewed, affected by the
+harmful event referred to the month in which said event occurred, remaining in this case expressly excluded, now by then, any other indemnity or compensation to the Customer for direct or indirect damages of any nature and species.
+
+Subject to the foregoing, without prejudice to the assumptions provided for by law, in no other case, for any reason and/or reason, can Actalis be held liable towards the Customer, or to other parties, directly or indirectly, connected or connected to the Customer for damages, direct or indirect, data loss, violation of third party rights, delays, malfunctions, interruptions, total or partial, which must be verified against the provision of the Service, where directly or indirectly connected, or arising from:
+
+a) causes of force majeure, fortuitous events, catastrophic events (for example, but not limited to: fires, explosions, strikes, riots, etc.); and/or
+b) tampering or interventions on the Service or on the equipment carried out by the Customer and/or by third parties not authorized by Actalis.
+
+Actalis will not, in any case, be held liable for the use made of the Service in relation to critical situations involving, without limitation, specific risks for the safety of persons, environmental damage, specific risks in relation to mass transport services, the management of nuclear and chemical plants and medical devices; in such cases, Actalis is available to evaluate and negotiate with the Customer a specific "mission critical" agreement with the respective "SLA" (Service Level Agreements).
+
+Actalis makes no warranty on the validity and effectiveness, even probative, of the Service or any data, information, message, document or document associated with it or otherwise entered, communicated, transmitted, stored or in any way processed by the Service itself:
+
+a) when the Customer intends to use them or assert them in States or legal systems other than the Italian one, with the exception, with regard to European Union member States, for the Certificates issued on the basis of this document;
+
+b) for their secrecy and/or integrity (in the sense that any violations of the latter are, of course, detectable by the User or the recipient through the appropriate verification procedure).
+
+Actalis does not assume, in any case, any responsibility for the information, data, contents entered or transmitted and, in any case, processed by the Customer through the Service and in general for the use made by the same Service and reserves the right to adopt any initiative and action, to protect their rights and interests, including the communication, to the subjects involved, of the data useful for identifying the Customer.
 
 ## 9.9 Indemnities
 
-Please refer to [CPS].
+### 9.9.1 Indemnification by CAs
+
+The CA shall abide by section 9.9 of the [SMBR] towards Application Software Suppliers who have a Root Certificate distribution agreement in place with Actalis.
+
+### 9.9.2 Indemnification by Subscribers
+
+Subscribers shall pay compensation of any damages suffered by Actalis in the following cases:
+
+- false declarations in the certification request;
+- failure to provide information to the CA about essential matters and facts due to negligence or with
+    the objective of deceiving the CA;
+- use of names (for example, domain names, brand names) in violation of intellectual property rights;
+- use of certificates for unlawful purposes and/or for purposes not allowed by this CPS.
 
 ## 9.10 Term and termination 
 
 ### 9.10.1 Term
 
-Please refer to [CPS].
+The Contract begins on the date of acceptance by the Contracting Party and ends on the expiry date of the certificate issued by Actalis; in case of renewal of the certificate itself, the validity of the Contract is deferred until the expiry date of the renewed certificate. In any case, the validity of the Contract will cease as a consequence of the revocation, for whatever reason, of the certificate.
 
 ### 9.10.2 Termination
 
-Please refer to [CPS].
+Please refer to the General Terms & Conditions published on the CA website.
 
 ### 9.10.3 Effect of termination and survival
 
-Please refer to [CPS].
+In the case of contract termination, the certificate of the Subscriber is revoked by the CA.
 
 ## 9.11 Individual notices and communications with participants
 
-Please refer to [CPS].
+Actalis accepts correspondence related to this CPS, to be sent with the methods indicated in section 1.5.2. Senders are invited to digitally sign their communications, if possible, or use another reliable communication method.
+Valid communications will be reviewed and replied to as appropriate in a timely manner.
+
+Requests for assistance related to the CA service herein described (e.g. technical questions, problems installing the certificate, certificate not received, etc.) can be addressed to Actalis only when the involved certificates have been purchased directly from Actalis. When the involved certificates have instead been purchased from a reseller, assistance must be requested to that reseller. The terms for requesting assistance are published on the
+CA's website as well as on the certificate purchase and/or request portal.
+
+Problems related to already issued certificates must be reported to Actalis as described in section 1.5.2.
 
 ## 9.12 Amendments
 
 ### 9.12.1 Procedure for amendment
 
-Please refer to [CPS].
+The CA reserves the right to make changes to this CPS at any time, without notice, due to technical or organizational reasons or regulatory changes. Each new version of the CPS repeals and replaces the previous versions.
 
 ### 9.12.2 Notification mechanism and period
 
-Please refer to [CPS].
+This CPS is reviewed by the CA and, if necessary, updated at least once per year, even in the absence of regulatory changes.
+The new versions of the CPS are published on the CA website.
 
 ### 9.12.3 Circumstances under which OID must be changed
 
-Please refer to [CPS].
+This CPS applies to various certificate policies (see paragraph 1.4), each identified by a specific OID. Revision of the CPS does not in itself imply the modification of those OIDs.
 
-## 9.13 Dispute resolution provisions
+## 9.13 DISPUTE RESOLUTION PROVISIONS
 
-Please refer to [CPS].
+If the Subscriber or the Applicant of the certificate is a Professional pursuant to Legislative Decree no. n.206/ 2005 ("Consumer Code"), any dispute deriving from the Contract will be deferred to the judgment of an Arbitration Board composed of three members, one of whom is appointed by Actalis, one appointed by the Contractor, and the third, who will act as President, appointed by the first two. Should one of the Parties fail to appoint its Arbi-
+trator within 20 days of receiving the notice of appointment of Arbitrator sent by the other Party, that second Arbitrator shall be appointed, at the request of the latter Party, by the President of the Court of Arezzo. Similarly, if the two Arbitrators appointed by the Parties do not reach an agreement on the appointment of the third Arbitrator within 20 days from the appointment of the second Arbitrator, the third Arbitrator shall be appointed by the President of the Court of Arezzo upon request of the most diligent Party. The arbitration will be of a ritual nature and the Arbitrators will judge according to the law in accordance with the provisions of articles 806 and following of the Code of Civil Procedure.
+The Arbitration will be held in Arezzo.
 
-## 9.14 Governing law
+## 9.14 GOVERNING LAW
 
-Please refer to [CPS].
+This CPS is subject to Italian Law and as such it shall be interpreted and carried out. For that not expressly prescribed in this CPS, the applicable law shall prevail.
 
-## 9.15 Compliance with applicable law
+Other contracts in which this CPS is incorporated by means of reference, may contain distinct and separate clauses with respect to applicable law.
 
-Please refer to [CPS].
+## 9.15 COMPLIANCE WITH APPLICABLE LAW
 
-## 9.16 Miscellaneous provisions
+The main applicable laws are listed below:
+
+- Regulation (EU) 2014/910 of the European Parliament and of the Council of 23 July 2014 on electronic     identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93 / EC (also "eIDAS").
+- Legislative Decree March 7, 2005, No. 82: "Codice dell’Amministrazione Digitale", G.U. n.112 of 16 May 2005, and subsequent amendments and integrations (also "CAD").
+- Legislative Decree 30 June 2003, n. 196: " Codice in materia di protezione dei dati personali ", G.U. n.     174 of 29 July 2003, and subsequent amendments and integrations.
+- Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals with regard to the processing of personal data, as well as on the free movement of such data and repealing Directive 95/46/EC (also “General Data Protection Regulation” or GDPR).
+
+## 9.16 MISCELLANEOUS PROVISIONS
 
 ### 9.16.1 Entire agreement
 
-Please refer to [CPS].
+This CPS, which may or may not be supplemented by general or specific Terms and Conditions signed by the Applicant, constitutes the discipline that regulates the use of the certificate by the Subscriber and regulates the relationship between Subscriber and CA. The certificate application implies the full and unconditional acceptance of this CPS by the Applicant.
+
+### 9.16.2 Assignment
+
+Please refer to the general Terms and Conditions published on the CA website.
+
+### 9.16.3 Severability
+
+The CA will abide by section 9.6.13 of the [BR], if applicable, and to the general Terms and Conditions published on the CA website.
+
+### 9.16.4 Enforcement (attorneys' fees and waiver of rights)
+
+Please refer to the general Terms and Conditions published on the CA website.
+
+### 9.16.5 Force majeure
+
+Actalis shall not be responsible for the failure to carry out the obligations assumed herein in the case when such non-fulfilment is due to causes not attributable to Actalis, such as – for instance, but not limited to – act of providence, unforeseen technical problems completely out of any form of control, intervention by the authority, force majeure, natural disasters, industrial actions including company strikes – inclusive of those at the premises of parties which are used for the execution of the activities associated with the services described herein, and other causes attributable to third parties.
+
+## 9.17 OTHER PROVISIONS
+
+No stipulation.
 
 # Appendix A - Change History
 
