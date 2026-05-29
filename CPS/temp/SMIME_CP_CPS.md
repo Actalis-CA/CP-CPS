@@ -751,13 +751,13 @@ Furthermore, Actalis has defined an inventory of assets (hardware and software) 
 
 ### 5.2.1	Trusted roles
 Actalis has defined and formally assigned the following trusted roles within the CA service regulated by this CPS:
-•	Security Officer: responsible for implementation and management of security procedures;
-•	System Administrator: responsible for installation, configuration and maintenance of CA systems;
-•	System Operator: responsible for the day-to-day operation of CA systems;
-•	System Auditor: responsible for checking the reviewing record archives and audit logs;
-•	Internal Auditor: responsible for performing self-audits (see section 8.7) and other assessments;
-•	Validation Specialist: responsible for performing the information verification duties specified by this CPS (in particular, those described in section 3);
-•	Registration & Revocation Officer: responsible for verifying the information needed to issue certificates and approving certificate requests; also responsible for certificate status changes (e.g. revocations).
+-	Security Officer: responsible for implementation and management of security procedures;
+-	System Administrator: responsible for installation, configuration and maintenance of CA systems;
+-	System Operator: responsible for the day-to-day operation of CA systems;
+-	System Auditor: responsible for checking the reviewing record archives and audit logs;
+-	Internal Auditor: responsible for performing self-audits (see section 8.7) and other assessments;
+-	Validation Specialist: responsible for performing the information verification duties specified by this CPS (in particular, those described in section 3);
+-	Registration & Revocation Officer: responsible for verifying the information needed to issue certificates and approving certificate requests; also responsible for certificate status changes (e.g. revocations).
 
 Some persons may hold multiple roles provided that this does not prejudice the security and trustworthiness of the PKI and is not prohibited by applicable regulations and standards.
 
