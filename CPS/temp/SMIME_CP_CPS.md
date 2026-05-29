@@ -711,7 +711,7 @@ No stipulation.
 
 # 5 FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS
 
-For the management of its CA infrastructure, Actalis makes use of the data center servi¬ces provided by its holding company, Aruba S.p.A., who takes responsibility for the housing, Internet con¬nectivity, physical and network secu-rity of all Actalis’ systems. The data center service provided is ISO/IEC 27001 certified.
+For the management of its CA infrastructure, Actalis makes use of the data center services provided by its holding company, Aruba S.p.A., who takes responsibility for the housing, Internet connectivity, physical and network secu-rity of all Actalis’ systems. The data center service provided is ISO/IEC 27001 certified.
 
 ## 5.1	Physical controls
 ### 5.1.1	Site location and construction
@@ -729,7 +729,7 @@ All data centers hosting Actalis’ CA services are equipped with:
 •	fully redundant power supply systems, to guarantee the continuity of electric power supply in every predictable condition;
 •	ventilation and air conditioning systems (HVAC) to ensure optimal climatic conditions for the regular operation of servers hosted in the data center.
 
-###5.1.4	Water exposures
+### 5.1.4	Water exposures
 All data centers hosting Actalis’ CA services are equipped with flood detection and protection systems.
 
 ### 5.1.5	Fire prevention and protection
@@ -746,7 +746,7 @@ Backups are stored at a different site than that of data origin, thus ensuring t
 
 ## 5.2	Procedural controls
 
-Actalis maintains a Security Plan, including a Risk Assessment, which analyses the CA assets, the threats they are exposed to, and descri¬bes the various technical, physical and procedural controls deployed so to adequately miti-gate the risks. The risk assessment is reviewed at least yearly.
+Actalis maintains a Security Plan, including a Risk Assessment, which analyses the CA assets, the threats they are exposed to, and describes the various technical, physical and procedural controls deployed so to adequately miti-gate the risks. The risk assessment is reviewed at least yearly.
 Furthermore, Actalis has defined an inventory of assets (hardware and software) as required by the policy and the company procedure.
 
 ### 5.2.1	Trusted roles
@@ -830,7 +830,7 @@ The relevant events are collected by the systems that generate them and are tran
 The CA shall retain audit logs for at least 10 years.
 
 ### 5.4.4	Protection of audit log
-Audit logs are periodically stored on a remote long-term archival system based on WORM-type (Write-Once, Read Many) or equivalent tech¬nology. The “live” copy of the audit log is protected from tampering by multiple security measures.
+Audit logs are periodically stored on a remote long-term archival system based on WORM-type (Write-Once, Read Many) or equivalent technology. The “live” copy of the audit log is protected from tampering by multiple security measures.
 
 ### 5.4.5	Audit log backup procedures
 The storage where the audit log is archived (see section 5.4.4) is replicated on two data centers hosted in separate facilities.
@@ -888,9 +888,9 @@ At least 2 years before the end of the validity of the current certification key
 
 ### 5.7.1	Incident and compromise handling procedures
 The Actalis’ Information Security Management System (ISMS), compliant with ISO/IEC 27001, also includes incident and compromise handling procedures. The management of an information security incident is handled by follow-ing a multi-stage procedure coordinated by an internal committee (Committee for Security and Crisis Management, later on "Committee") composed of figures of various responsibilities and members of the senior management. The process is articulated into several phases described below:
-•	Detection: phase in which any person (employee, collaborator or any interested party) who detects a possible incident communicates it to the Committee. The Committee ensures that the report is as detailed as possible and that those who have encountered the problem do not take any action auto¬nomously.
+•	Detection: phase in which any person (employee, collaborator or any interested party) who detects a possible incident communicates it to the Committee. The Committee ensures that the report is as detailed as possible and that those who have encountered the problem do not take any action autonomously.
 •	Identification and analysis: the Committee takes charge of the report and assesses whether it is actually a security incident. If so, it evaluates its severity and proceeds with the following phases. Otherwise, it just closes the incident.
-•	Containment: in this phase, the harmful effects caused by the incident are contained as much as pos¬sible, in order to prevent them from spreading to other areas of the organization.
+•	Containment: in this phase, the harmful effects caused by the incident are contained as much as possible, in order to prevent them from spreading to other areas of the organization.
 •	Collection of evidence: phase in which the evidence is sought for and collected in order to attach it to the documentation of the incident in case of possible legal consequences or for the need to proceed with more in-depth investigations. All the evidences are collected following guidelines which aim to guarantee a correct and reliable collection.
 •	Removal and Recovery: phase in which the cause of the damage is removed and the systems affected are reactivated, through the recovery procedures, allowing the systems and users to return to work.
 •	Incident closure and Notification: once the recovery phase is over, the incident is closed. In this phase, the incident closure is notified to the involved managers.
@@ -910,7 +910,7 @@ The CA's private key is the single most critical resource of the CA; as such, it
 •	notify the conformity assessment body (CAB);
 •	publish a well-visible information note on the CA website;
 •	notify the Application Software Suppliers with whom Actalis has a Root Certificate distribution 
-agree¬ment in place;
+agreement in place;
 •	notify any Delegated Third Parties (DTPs) and other interested parties to the extent possible;
 •	revoke of all certificates that were issued with the compromised key.
 
@@ -923,10 +923,10 @@ Actalis are deployed in two geographically distant facilities (see section 5.1),
 The activities that will be carried out if Actalis decides, for any reason, to cease its certification service are described below.
 
 Before the actual termination:
-•	at least 60 days before the scheduled termination date, an information note will be sent to all custo¬mers of the CA service (and other services that include the CA services), as well as to the supervisory body (AgID), the conformity assessment body (CAB), and other subjects with whom the CA has stipu¬lated agreements in this regard;
+•	at least 60 days before the scheduled termination date, an information note will be sent to all customers of the CA service (and other services that include the CA services), as well as to the supervisory body (AgID), the conformity assessment body (CAB), and other subjects with whom the CA has stipulated agreements in this regard;
 •	with a minimum notice of 60 days, an informative note will be published on the CA website, in order to make the information available also to Relying Parties;
-•	with a minimum notice of 60 days, the CA will send a notice to all possible sub-contractors and Dele¬gated Third Parties (RAs), informing them that at the end of the deadline they will no longer be autho¬rized to perform activities related to the certificate issuance service;
-•	the responsibility for the preservation of evidences (certificate requests, event log, etc.) will be trans¬ferred to another reliable subject that can guarantee preservation for an adequate time. The respon¬sibility to publish on its website the public key of the ceased CA will also be transferred to such entity;
+•	with a minimum notice of 60 days, the CA will send a notice to all possible sub-contractors and Delegated Third Parties (RAs), informing them that at the end of the deadline they will no longer be authorized to perform activities related to the certificate issuance service;
+•	the responsibility for the preservation of evidences (certificate requests, event log, etc.) will be transferred to another reliable subject that can guarantee preservation for an adequate time. The responsibility to publish on its website the public key of the ceased CA will also be transferred to such entity;
 •	the destruction of private certification keys as well as of the attached cryptographic material will be planned.
 
 On the termination date:
