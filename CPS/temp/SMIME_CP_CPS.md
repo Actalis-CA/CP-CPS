@@ -762,7 +762,7 @@ For the definition of the shortlist of candidates, both for technical and admini
 ### 5.3.3	Training requirements
 The staff in charge of the CA services is adequately trained for the tasks that they perform. Actalis provides staff with initial training at the time of recruitment, including courses held by external teachers when deemed necessary, and training on the job.
 
-The staff involved in the verification of information (Validation Specialists) are trained on at least the following topics: Public Key Infrastructures (PKI), identification and authentication policies and procedures, common threats to information verification procedures, and CAB Forum Requirements [BR] and Guidelines [EVGL]. The records of this training, which is provided at least yearly, are kept and made available to the auditors on request.
+The staff involved in the verification of information (Validation Specialists) are trained on at least the following topics: Public Key Infrastructures (PKI), identification and authentication policies and procedures, common threats to information verification procedures, and CAB Forum Requirements. The records of this training, which is provided at least yearly, are kept and made available to the auditors on request.
 
 ### 5.3.4	Retraining frequency and requirements
 For all personnel working in the CA service, the need for new training is assessed at least once per year (or in advance, in case new developments/services), so as to ensure that all personnel are always able to perform their tasks satisfactorily and competently. Furthermore, training on information security matters is held annually for all staff.
@@ -786,7 +786,7 @@ Personnel in trusted roles are provided with the documentation necessary to perf
 ### 5.4.1	Types of events recorded
 The CA and any Delegated Third Parties shall record all the details related to certificate requests, issuances, and subsequent management (e.g. revocation), and make these records available to the CA auditors. For each event, information shall be recorded about event type, date and time of occurrence, the associated data (depending on event type), the personnel involved (if applicable), and possibly other information depending on event type.
 
-At least the following events shall be logged, in line with section 5.4.1 of the [BR]:
+At least the following events shall be logged, in line with section 5.4.1 of the [SMBR]:
 -	CA key lifecycle management events;
 -	CA and Subscriber certificate life cycle management events;
 -	Security events (e.g. accesses to PKI systems, PKI and security system actions performed, security profile changes, entries to and exits from the CA facility, relevant activities on routers and firewalls, in particular with regard to its configurations etc.).
@@ -1723,7 +1723,7 @@ Please refer to the general Terms and Conditions published on the CA website.
 
 ### 9.16.3 Severability
 
-The CA will abide by section 9.6.13 of the [BR], if applicable, and to the general Terms and Conditions published on the CA website.
+The CA will abide by section 9.16.3 of the [SMBR], if applicable, and to the general Terms and Conditions published on the CA website.
 
 ### 9.16.4 Enforcement (attorneys' fees and waiver of rights)
 
