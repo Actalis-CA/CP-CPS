@@ -1012,49 +1012,73 @@ The provisions of §6. 3 .2 of the [SMBR] apply.
 
 ## 6.4 ACTIVATION DATA
 
-### 6.4.1 Activation data generation and installation
+Activation data refers to data that are required to activate private keys within HSMs. Examples include, but are not limited to, PINs, passphrases, and fragments of private keys used in a split-knowledge scheme.
 
-Same as documented in [CPS].
+### 6.4.1 Activation Data Generation and Installation
 
-### 6.4.2 Activation data protection
+Activation data are generated and used following information security best practices and, where applicable, the procedures provided by the HSM manufacturers.
 
-Same as documented in [CPS].
+### 6.4.2 Activation Data Protection
 
-### 6.4.3 Other aspects of activation data
+#### 6.4.2.1 CA keys
 
-Same as documented in [CPS].
+Activation data are protected by physical (e.g. storage on removable media), logical (e.g. encryption), and procedural measures (e.g. assignment to persons in trusted roles), in compliance with the company’s information security policy and the “dual control” requirement (see par. 6.1.1.1).
+
+#### 6.4.2.2 Subscriber keys
+
+Activation data are protected by the Subscriber so to prevent their disclosure to any unauthorized parties. For further important details on this topic, see paragraph 9.6.3.
+
+### 6.4.3 Other Aspects of Activation Data
+
+Root CA keys are normally kept in a non-operational state, except when needed for issuing or revoking Subordinate CA certificates or generating CRLs.
 
 ## 6.5 COMPUTER SECURITY CONTROLS
 
 ### 6.5.1 Specific computer security technical requirements
 
-Same as documented in [CPS].
+The computers used in the CA services run operating systems of proven quality and reliability, configured in such a way as to prevent unauthorized and/or improper use of resources (data, applications, communication channels, etc.).
+
+Where possible and where such functionality is not provided by the operating system itself, anti-malware systems are installed in order to mitigate the risk of "infections" and security attacks. Furthermore, for the same reason, the recommended security patches are installed from time to time.
+
+Computers are subject to a "hardening" procedure aimed at removing or disabling unneeded functionalities, in a specific way on each computer according to the role it plays in the infrastructure.
+
+Privileged access to computers (i.e. as " Administrator") is limited to personnel who actually need it and who have been appointed "System Administrator" in compliance with current legislation.
 
 ### 6.5.2 Computer security rating
 
-Same as documented in [CPS].
+No stipulation.
 
 ## 6.6 LIFE CYCLE TECHNICAL CONTROLS
 
-### 6.6.1 Security development controls
+### 6.6.1 System Development Controls
 
-Same as documented in [CPS].
+The development of software systems used to support the trust services provided by Actalis, including the CA service, be it carried out by Actalis itself or on behalf of Actalis by contractors, respects the company's Quality Management System (QMS), compliant with the UNI EN ISO 9001 standard: 2015.
+For software provided by third parties for the execution of its CA activities, Actalis provides for continuous monitoring of software versioning and upgrades in order to guarantee the highest quality of the services offered.
 
-### 6.6.2 Security management controls
+### 6.6.2 Security Management Controls
 
-Same as documented in [CPS].
+Actalis has in place an Information Security Management System (ISMS), compliant with the ISO/IEC 27001 standard, covering all company areas, including those involved in the development and provision of the CA service. 
+Among the other provisions of the ISMS, all equipment and software used for Actalis’ trust services (including CA services) is deployed and updated following a documented change management process.
 
-### 6.6.3 Life cycle security controls
+### 6.6.3 Life Cycle Security Controls
 
-Same as documented in [CPS].
+No stipulation.
 
 ## 6.7 NETWORK SECURITY CONTROLS
 
-Same as documented in [CPS].
+Access to the CA on-line hosts is protected by high quality firewalls that guarantee an adequate filtering of the incoming connections and implement intrusion detection functionalities. Before the firewalls, a series of routers that implement suitable ACLs (Access Control List) constitute further protection. All the communication ports of the certification servers that are not used are disabled. Only those ports are active which support the protocols and functions required for the operation and functionality of the service.
+
+In order to strengthen the filter against unwanted communications, the entire certification system is split-up into an external zone, internal zone and a De-Militarized Zone (DMZ). Sensitive systems are deployed on the internal zone and cannot be directly accessed from the external zone.
+
+The Root CA systems are located on networks that are physically separated from all other CA infrastructures.
+
+Actalis performs at least an annual security assessment to verify the possible presence of network vulnera-bilities, making use of independent specialists.
+
+Actalis also complies with the requirements of the “Network and Certificate System Security Requirements” published on https://cabforum.org/working-groups/netsec/.
 
 ## 6.8 TIME-STAMPING
 
-No stipulation.
+The time reference used by Actalis, with which the CA processing systems are kept synchronized, is obtained from a high precision device that guarantees a difference of no more than one second with respect to UTC time.
 
 # 7 CERTIFICATE, CRL, AND OCSP PROFILES
 
