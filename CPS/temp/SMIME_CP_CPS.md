@@ -767,8 +767,6 @@ Trusted roles are appointed by senior management. A list of personnel appointed 
 
 Management of the CA private keys (key generation, backup, restore, deletion, etc.) requires at least two persons in trusted roles ("dual control") and must take place in a physically protected environment.
 
-Issuance of EV certificates shall require the participation of at least two validation specialists.
-
 ### 5.2.3	Identification and authentication for each role
 
 All the trusted roles listed in par. 5.2.1 and, in general, all the Actalis staff use appropriate identification and au-thentication systems for accessing Actalis’ computer systems.
