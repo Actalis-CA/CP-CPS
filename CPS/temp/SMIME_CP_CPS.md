@@ -125,18 +125,43 @@ This CP is drafted, revised, approved, published and maintained by Actalis S.p.A
 
 ### 1.5.2 Contact person
 
-For any questions regarding this CP, please write to ca-admin@actalis.it.
+For any questions regarding this CPS, please write to ca-admin@actalis.it.
 
-For instructions on how to submit a Certificate Problem Report or revocation request, please refer to section 1.5.2 of the reference [CPS].
+#### 1.5.2.1 Problem reporting
 
-### 1.5.3 Person determining CP suitability for the policy
+Actalis makes available to all interested parties (Subscribers, Relying Parties, Application Software Suppliers, law enforcement, etc.) two communication channels through which certificate problems can be reported to the CA at any time (24x7):
 
-This CP is approved by Actalis’ CA services direction, after review by all internal stakeholders, taking into account the Requirements [SMBR].
+- the mailbox **cert-problem@actalis.it** , which the CA commits to timely read during working hours only (9 AM to 5 PM on Italian working days);
+- the telephone number **+39- 0575 - 050.376** , at which Actalis commits to answer at all times (24x7x 365 ).
 
-### 1.5.4 CP approval procedures
+These channels cannot be used to request technical assistance of any kind, but only to report problems (such as misissuance, use of the certificate for unlawful purposes, etc.) that may warrant the revocation of the involved certificates.
+
+Regardless of the communication channel used, the problem reporter must provide at least the following information, or the communication will be ignored:
+
+- his/her full name;
+- description of the alleged problem;
+- enough information to identify the certificate in question, such as the certificate fingerprint, or the certificate issuer and serial number.
+
+Such communications may be made in Italian or English; other languages are not handled.
+
+The CA is committed to take charge of _proper communications_ within 24 hours, start investigating the reported problem, and take the necessary measures, depending on the problem severity. The priority assigned to the problem will depend on:
+
+- the nature of the alleged problem;
+- the identity of the reporter (reports received by a Court or law enforcement agents will be handled with higher priority than other messages);
+- the law and/or regulations relevant for the alleged problem (e.g., reports of illegal acts will be handled with higher priority than other messages).
+
+If the reported problem does exist, the CA will decide on a case-by-case basis the measures to be taken (e.g., revocation of the certificate) and will notify the reporter by e-mail.
+
+Note: those who send unwanted messages (spam) will be prosecuted according to applicable laws.
+
+### 1.5.3 Person determining CPS suitability for the policy
+
+This CPS is approved by Actalis’ CA services direction, after review by all internal stakeholders, taking into account the applicable CAB Forum's Requirements [SMBR].
+
+### 1.5.4 CPS approval procedures
 
 Approval of this CP follows the procedures defined in the company’s Quality Management System.
-This CP is reviewed and updated at least yearly.
+This CPS is reviewed and updated at least yearly.
 
 ## 1.6 DEFINITIONS AND ACRONYMS
 
