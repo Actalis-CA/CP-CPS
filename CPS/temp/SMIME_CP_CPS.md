@@ -20,7 +20,9 @@ This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 I
 
 ## 1.2 Document Name and Identification
 
-This document is the **Certificate Policy** for **S/MIME Certificates** issued by Actalis S.p.A.
+This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as CPS) applying to **S/MIME certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. 
+
+This CPS is published as a signed PDF document in order to ensure its origin and integrity.
 
 ## 1.3 PKI PARTICIPANTS
 
