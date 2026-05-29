@@ -1515,7 +1515,7 @@ All information that must be public for compliance with applicable law (see sect
 - all information that the Applicant requested the CA to make public;
 - all information obtainable from public information sources;
 - any information that is already in the public domain.
-- 
+
 ### 9.3.3 Responsibility to protect confidential information
 
 Actalis ensures that all confidential information is adequately protected from unauthorized access and from the risk of loss due to disasters (see section 5.7).
