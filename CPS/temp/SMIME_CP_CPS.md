@@ -117,8 +117,6 @@ Certificates issued under this CP can also be used for SSL/TLS client authentica
 
 Any use of the Certificate other than allowed in section 1.4.1 is discouraged and may result in the revocation of the Certificate by Actalis (see also section 4.9.1), depending on the security impact of the use being made of the Certificate.
 
-See also [CPS] for additional provisions.
-
 ## 1.5 POLICY ADMINISTRATION
 
 ### 1.5.1 Organization administering the document
@@ -179,8 +177,6 @@ Publicly-Trusted Certificates” (https://cabforum.org/baseline-requirements-doc
 Publicly-Trusted S/MIME Certificates” (https://cabforum.org/smime-br/)
 
 [CAA]  [RFC 9495](https://www.rfc-editor.org/rfc/rfc9495.html): “Certification Authority Authorization (CAA) Processing for Email Addresses”, October 2023.
-
-[CPS] Certification Practice Statement - SSL Server and Code Signing certificates (https://www.actalis.com/cps-for-ssl-server-and-code-signing)
 
 [CSR] [RFC 2314](https://www.ietf.org/rfc/rfc2314.txt): “PKCS #10: Certification Request Syntax Version 1.5”, March 1998.
 
@@ -338,8 +334,6 @@ For OV and SV certificates, before commencing to issue a Certificate regulated b
 - a suitable Attestation (e.g., a Lawyer’s letter) in line with §3.2.8 of the [SMBR].
 
 Other methods may also be used, depending on the circumstances.
-
-For further details, please refer to §3.2.5 of the [CPS].
 
 ### 3.2.7 Criteria for interoperation
 
