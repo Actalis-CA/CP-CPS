@@ -142,6 +142,7 @@ This CP is reviewed and updated at least yearly.
 
 ## 1.6 DEFINITIONS AND ACRONYMS
 
+|Acronym|Meaning|
 |---|---|
 |ARL| Authority Revocation List|
 |CA| Certification Authority (see CSP)|
