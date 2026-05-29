@@ -142,55 +142,32 @@ This CP is reviewed and updated at least yearly.
 
 ## 1.6 DEFINITIONS AND ACRONYMS
 
-ARL Authority Revocation List
-
-CA Certification Authority (see CSP)
-
-CAA Certification Authority Authorization
-
-CABF CA/Browser Forum
-
-CP Certificate Policy
-
-CPS Certification Practice Statement
-
-CRL Certificate Revocation List
-
-CSP Certification Service Provider (see CA)
-
-CSR Certificate Signing Request
-
-HSM Hardware Security Module
-
-HTTP Hyper-Text Transfer Protocol
-
-I&A Identification and Authentication
-
-ICA Intermediate CA
-
-IV Individual-Validated
-
-LDAP Lightweight Directory Access Protocol
-
-LEI Legal Entity Identifier
-
-MV Mailbox-Validated
-
-OID Object Identifier
-
-OV Organization-Validated
-
-PKI Public Key Infrastructure
-
-RA Registration Authority
-
-S/MIME Secure MIME
-
-SSL Secure Sockets Layer
-
-SV Sponsor-Validated
-
-TLS Transport Layer Security
+|---|---|
+|ARL Authority Revocation List|
+|CA Certification Authority (see CSP)|
+|CAA Certification Authority Authorization|
+|CABF CA/Browser Forum|
+|CP Certificate Policy|
+|CPS Certification Practice Statement|
+|CRL Certificate Revocation List|
+|CSP Certification Service Provider (see CA)|
+|CSR Certificate Signing Request|
+|HSM Hardware Security Module|
+|HTTP Hyper-Text Transfer Protocol|
+|I&A Identification and Authentication|
+|ICA Intermediate CA|
+|IV Individual-Validated|
+|LDAP Lightweight Directory Access Protocol|
+|LEI Legal Entity Identifier|
+|MV Mailbox-Validated|
+|OID Object Identifier|
+|OV Organization-Validated|
+|PKI Public Key Infrastructure|
+|RA Registration Authority|
+|S/MIME Secure MIME|
+|SSL Secure Sockets Layer|
+|SV Sponsor-Validated|
+|TLS Transport Layer Security|
 
 ## 1.7 REFERENCES
 
