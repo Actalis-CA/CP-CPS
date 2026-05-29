@@ -93,7 +93,7 @@ Certificates may also be provided through Resellers (business partners), which i
 
 ### 1.4.1 Appropriate certificate uses
 
-Four types of S/MIME certificates are covered by this CP according to the [SMBR] terminology:
+Four types of S/MIME certificates are covered by this CPS according to the [SMBR] terminology:
 
 - **Mailbox-Validated (OV)** – issued to natural or legal person, contains only an email address;
 - **Individual-Validated (IV)** - issued to a natural person, contains the subscriber’s individual identity (personal name) in addition to an email address;
@@ -109,7 +109,7 @@ A non-committal list of supported email clients can be found on the Actalis’ w
 
 Subscribers are allowed to use the Certificates to sign and/or encrypt data in different ways and for different purposes (i.e., not necessarily according to the S/MIME standard); however, Actalis declines all responsibility for any inconvenience that Subscribers may encounter in that case.
 
-Certificates issued under this CP can also be used for SSL/TLS client authentication [TLS], depending on the target environment; however, Actalis declines all responsibility for any inconvenience that Subscribers may encounter in that case.
+Certificates issued under this CPS can also be used for SSL/TLS client authentication [TLS], depending on the target environment; however, Actalis declines all responsibility for any inconvenience that Subscribers may encounter in that case.
 
 <u>Note</u>: It is assumed that Applicants have the competence and the tools required to request, install, and use their Certificates. Otherwise, Actalis is available to offer the necessary consultancy.
 
@@ -121,7 +121,7 @@ Any use of the Certificate other than allowed in section 1.4.1 is discouraged an
 
 ### 1.5.1 Organization administering the document
 
-This CP is drafted, revised, approved, published and maintained by Actalis S.p.A.
+This CPS is drafted, revised, approved, published and maintained by Actalis S.p.A.
 
 ### 1.5.2 Contact person
 
@@ -160,7 +160,7 @@ This CPS is approved by Actalis’ CA services direction, after review by all in
 
 ### 1.5.4 CPS approval procedures
 
-Approval of this CP follows the procedures defined in the company’s Quality Management System.
+Approval of this CPS follows the procedures defined in the company’s Quality Management System.
 This CPS is reviewed and updated at least yearly.
 
 ## 1.6 DEFINITIONS AND ACRONYMS
@@ -247,7 +247,7 @@ Actalis publishes this CP, the related CPS, Terms and Conditions, Subscriber Agr
 
 ## 2.3 TIME OR FREQUENCY OF PUBLICATION
 
-This CP is reviewed and updated at least once every 365 days, also to ensure that it conforms to the latest versions of applicable CAB Forum Requirements and other applicable standards and regulations.
+This CPS is reviewed and updated at least once every 365 days, also to ensure that it conforms to the latest versions of applicable CAB Forum Requirements and other applicable standards and regulations.
 
 As to the time and frequency of CRL publication, see §4.9. 7.
 
@@ -588,7 +588,7 @@ Actalis shall revoke the certificate **within 5 days** if one or more of the fol
 - Actalis is made aware that the Certificate was not issued in accordance with this CPS (*);
 - Actalis determines or is made aware that any of the information appearing in the Certificate is inaccurate (*);
 - Actalis’ right to issue Certificates under the [SMBR] expires or is revoked or terminated, unless the CA has made arrangements to continue maintaining the CRL/OCSP Repository;
-- revocation is required by this CP and/or the referenced CPS; or
+- revocation is required by this CPS; or
 - Actalis CA is made aware of a demonstrated or proven method that exposes the Subscriber’s Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed.
 
 In the cases marked with an asterisk (*), the Subscriber **must** promptly request revocation of their certificate as soon as they become aware of the circumstance.
@@ -1606,7 +1606,7 @@ By issuing a Certificate, Actalis makes the following warranties to all benefici
 
 Before allowing any entity to act as **Registration Authority** (RA), Actalis will stipulate with that entity a specific _agreement_ including at least the following obligations for the RA:
 
-- read and accept all the provisions of this CP and the related CPS;
+- read and accept all the provisions of this CPS;
 - collect, verify, and archive suitable evidence corroborating the identity of Applicants, in compliance with the [SMBR], in particular the Applicants’ Personal Names (given names and surnames);
 - promptly request the revocation of certificates, issued at their request, which include inaccurate or no longer valid Subject identity data (e.g., personal names, email addresses, etc.).
 
@@ -1617,13 +1617,13 @@ Actalis shall require, as part of the Subscriber Agreement or Terms of Use, that
 - **Accuracy of Information**: provide true and accurate information to the CA or RA;
 - **Protection of Private Key**: adopt suitable measures to avoid compromise of their own private keys, including the adoption of suitable measures to avoid unwanted disclosure of secret codes (e.g., the passwords) obtained from the CA or the RA;
 - **Acceptance of Certificate**: install and start using the certificate only after having checked that it contains correct information;
-- **Use of Certificate**: use the certificate only in the ways and for the purposes provided for in this CP and in compliance with all applicable laws;
+- **Use of Certificate**: use the certificate only in the ways and for the purposes provided for in this CPS and in compliance with all applicable laws;
 - **Reporting and Revocation** : promptly request revocation of the Certificate, and cease using it and its associated Private Key...
    - if there is any actual or suspected misuse or compromise of the Subscriber’s Private Key,
    - or if any information in the Certificate is or becomes incorrect or inaccurate;
 - **Termination of Use of Certificate**: promptly cease all use of the Private Key corresponding to the Public Key included in the Certificate upon revocation of that Certificate for reasons of Key Compromise;
 - **Responsiveness**: respond to the CA’s instructions concerning Key Compromise or Certificate misuse within a specified time period.
-- **Acknowledgment and Acceptance**: acknowledge and accept that the CA is entitled to revoke the Certificate immediately if the Applicant were to violate the terms of the Subscriber Agreement or Terms of Use, or if revocation is required by this CP and/or the related CPS, or by the [SMBR].
+- **Acknowledgment and Acceptance**: acknowledge and accept that the CA is entitled to revoke the Certificate immediately if the Applicant were to violate the terms of the Subscriber Agreement or Terms of Use, or if revocation is required by this CPS, or by the [SMBR].
 
 ### 9.6.4 Relying party representations and warranties
 
