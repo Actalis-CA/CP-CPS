@@ -6,27 +6,19 @@ Date: May 29, 2026
 
 # 1 INTRODUCTION
 
-Actalis S.p.A. ([www.actalis.it](https://www.actalis.com/it/)) is a leading Italian Trust Service Provider (TSP) since 2002, offering all types of digital certificates and related management services, digital time stamping, certified electronic mail, digital signatures, and other solutions in the field of Public Key Infrastructures (PKI), as well as in other fields pertaining to information security.
-
 ## 1.1 Overview
 
-A **Certificate** binds a _public key_ (the public component of cryptographic key pair) to an identity, namely a set of information items that identifies an individual or an organization. Such entity, identified in the **Subject** field of the certificate, holds and uses the corresponding _private key_.
+**Actalis S.p.A.**, a company of the Aruba S.p.A. group, is a leading provider of certification services since 2002, accredited by AgID under the European Directive on Electronic Signatures, then under the European Regulation EU n.910/2014 (“eIDAS”). Actalis offers several types of certificates and related management services, as well as other trust services and solutions (www.actalis.com).
 
-The certificate is generated and supplied to the Subject by a trusted third party known as **Certification Authority** (CA), and is _digitally signed_ by the CA. The Subject is also referred to as **Subscriber** , in that it subscribes an agreement with the CA for the issuance and management of the certificate.
-As long as the certificate has not yet been issued, the Subscriber is referred to as **Applicant**. The term **Applicant Representative** (or **Requestor** ) refers to the human agent that materially requests the certificate on behalf of the Applicant.
+The reliability of a certificate, in particular the association - attested by the certificate - between a given public key and a given identity, critically depends on the CA’s operating procedures, the obligations and responsibilities of the CA and the certificate Subscriber, and the CA’s physical, technical, and operational security controls. All these aspects are described in a public document called Certification Practice Statement (CPS) and/or a separate document called Certificate Policy (CP), according to [RFC 3647], or a combined document.
 
-The reliability of the certificate also depends on the CA’s identification and authentication procedures, the obligations and responsibilities between the CA and the Subscriber, and the CA’s physical, operational and technical security controls. All these aspects are described in a public document called **Certification Practice Statement** (CPS) or **Certificate Policy** (CP), depending on the level of detail and broadness of scope (see RFC 3647).
+This document is the Actalis’ combined CP/CPS relevant to the issuance and management of S/MIME certificates. This CPS is structured according to the outline set forth in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
 
-This document is the Actalis’ CP relevant to the issuance and management of Publicly-Trusted
-**S/MIME Certificates** according to the [SMBR], and is integrated by the related CPS for a number of aspects (e.g., physical, technical, and operational controls).
+Actalis conforms to the latest published versions of: CAB Forum’s Baseline Requirements for the Issuance and Management of Publicly‐Trusted S/MIME Certificates (https://www.cabforum.org), the CCADB Policy (https://www.ccadb.org/policy), the Mozilla Root Store Policy, the Apple Root Program, and the Microsoft Root Program. In the event of any inconsistency between this CPS and those documents, those documents take precedence.
 
-This CP is based on RFC 3647; however, some topics listed in RFC 3647 either are covered in the related CPS or Actalis makes no stipulation about them.
+This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nd/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-As regards the certificates governed by this CP, Actalis conforms to the current version of the **Baseline Requirements for the Issuance and Management of Publicly-Trusted S/MIME Certificates** published at [http://www.cabforum.org.](http://www.cabforum.org.) In the event of any inconsistency between this CP and those Requirements, those Requirements [SMBR] shall take precedence over this document.
-
-Actalis also conforms to the current version of the **Mozilla Root Store Policy** [MRSP], the **Microsoft Trusted Root Program** [MTRP], and the **Apple Root Certificate Program** [ARCP], to the extent that they are applicable.
-
-## 1.2 DOCUMENT NAME AND IDENTIFICATION
+## 1.2 Document Name and Identification
 
 This document is the **Certificate Policy** for **S/MIME Certificates** issued by Actalis S.p.A.
 
