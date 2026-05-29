@@ -28,11 +28,40 @@ This CPS is published as a signed PDF document in order to ensure its origin and
 
 ### 1.3.1 Certification Authorities
 
-The **Certification Authority** (CA) is **Actalis S.p.A.** , headquartered at Via S. Clemente 53, 24036 Ponte San Pietro (BG), Italy, enlisted in the Company Registry of Bergamo under #0335 8520967.
+The Certification Authority (CA) is the trusted third party who issues the certificates and signs them with its own private key (CA key). Furthermore, the CA manages the status of the certificates.
 
-For certificates issued under this CP, Actalis acts as Root CA and as Issuing CA (through its issuing Certification Authorities/SubCAs), depending on the certificate type and the applicable hierarchy.
+The Actalis PKI (Public Key Infrastructure), which the S/MIME certificate issuance and management service is based upon, is a two-level hierarchy, as shown in the following diagram:
 
-Actalis is currently issuing S/MIME certificates under a legacy, non-dedicated Root CA that will be phased out at a later date (for further details, see the [CPS]). In 2025, Actalis also created new Root CAs and SubCAs dedicated to S/MIME certificates; the inclusion of these new Root Cas in the relevant application root stores is currently underway.
+<p align="center">
+   &nbsp;
+<img width="362" height="175" alt="Immagine1" src="https://github.com/user-attachments/assets/247289e6-6aa4-478c-9b59-694808f178d4" />
+   &nbsp;
+</p>
+
+The **Root CA** is used for issuing Sub CA certificates and related CRLs only, and is kept off-line when not in use.
+The **Sub CA**s are the CAS that issue end-user certificates.
+
+In particular, to date there are:
+
+- A legacy hierarchy based on the single multi-purpose Root CA “Actalis Authentication Root CA”, included in the main root certificate stores, currently in use. Under this single Root CA, various Sub-CAs operate that issue different types of certificates (TLS Server, Code Signing, S/MIME, etc.);
+
+- New hierarchies based on single-purpose Root CAs detailed below, which are currently not included in the main root certificate stores. These hierarchies are intended to replace the legacy structure, forming the basis for the structured migration of certificates. The new hierarchies are specific to the type of certificate (TLS Server, Code Signing, S/MIME, etc.).
+
+Some of the Root CAs on which the new hierarchies are based have been cross-certified by the multi-purpose Root CA, thus allowing the issuance of certificates also using the subordinate CAs under these new Root CAs.
+
+Within the framework of the service described in this document, the role of Root CA is played by the Italian company Actalis S.p.A. (hereinafter referred to as “Actalis”), identified as follows:
+
+```
+Company name: Actalis S.p.A.
+Registered Office: Via San Clemente 53 – 24036 Ponte S. Pietro (BG) – ITALY
+Legal representative: Massimiliano Carollo (Chief Executive Officer)
+VAT Reg. No. and Tax Code: 03358520967
+Telephone (switchboard): +39 0575 050.350
+DUNS number: 440-489-735
+ISO Object Identifier (OID): 1.3.159
+Company web site: http://www.actalis.it
+Company e-mail address: info@actalis.it
+```
 
 #### 1.3.1.1 Root Certification Authorities
 
