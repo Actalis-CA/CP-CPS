@@ -421,7 +421,11 @@ I&A for revocation requests depends on how the request is made and by whom:
 
 ### 4.1.1 Who can submit a certificate application
 
-No stipulation.
+Either the Applicant (i.e., the future Subscriber) or a natural person authorized to request certificates on behalf of the Applicant (i.e., an Applicant Representative) may submit certificate requests, in compliance with the requirements described in par. 3.2.5.
+
+Resellers may submit certificate requests on behalf of Applicants, pursuant to Actalis’ reseller contract.
+
+Actalis maintains an internal database of all previously revoked certificates and previously rejected certificate requests due to suspected phishing or other fraudulent usage or concerns. Actalis uses this information to identify subsequent suspicious certificate requests.
 
 ### 4.1.2 Enrollment process and responsibilities
 
