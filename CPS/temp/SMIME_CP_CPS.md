@@ -647,7 +647,7 @@ The provisions of §4.9.1.2 of the [SMBR] apply.
 
 ### 4.9.2 Who can request revocation
 
-The Subscriber, an Enterprise RA, or Actalis can initiate revocation. Additionally, Subscribers, Relying Parties, Application Software Suppliers, and other third parties may submit Certificate Problem Reports (see section 1.5.2) informing Actalis of reasonable cause to revoke a Certificate.
+The Subscriber, an Enterprise RA, a Reseller, or Actalis can initiate revocation. Additionally, Subscribers, Relying Parties, Application Software Suppliers, and other third parties may submit Certificate Problem Reports (see section 1.5.2) informing Actalis of reasonable cause to revoke a Certificate.
 
 ### 4.9.3 Procedure for revocation request
 
