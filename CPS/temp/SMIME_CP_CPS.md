@@ -1172,7 +1172,7 @@ The profile of the multi-purpose Root CA certificate is as follows:
 | Issuer  | CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br>  L = Milano  <br> C = IT   |
 | Validity  | from September 22, 2011 to September 22, 2030 |
 | Subject | CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L = Milano <br> C = IT |
-| SubjectPublicKeyInfo |  < RSA public key of 4096 bits> |
+| SubjectPublicKeyInfo |  \<RSA public key of 4096 bits> |
 | SignatureValue |  \<Root CA signature> |
 | **Extension**  | **Value**|
 | Basic Constraints  | critical: CA=true |
@@ -1201,8 +1201,8 @@ The certificates of the new dedicated Root CAs have the following profile:
 | SignatureValue |  <Root CA signature> |
 | **Extension**  | **Value** |
 | Basic Constraints  | critical, CA=true| 
-| AuthorityKeyIdentifier (AKI)  | <SHA-1 of the public key > |
-| SubjectKeyIdentifier (SKI) | <SHA-1 of the public key > |
+| AuthorityKeyIdentifier (AKI)  | \<SHA-1 of the public key > |
+| SubjectKeyIdentifier (SKI) | \<SHA-1 of the public key > |
 | KeyUsage | critical: keyCertSign, cRLSign  |
 | ExtendedKeyUsage (EKU) | \<not included> |
 | CertificatePolicies  | \<not included> |
@@ -1224,8 +1224,8 @@ The certificates of the new dedicated Root CAs have the following profile:
 | SignatureValue |  \<Root CA signature> |
 | **Extension**  | **Value** |
 | Basic Constraints  | critical: CA=true| 
-| AuthorityKeyIdentifier (AKI)  | <SHA-1 of the public key > |
-| SubjectKeyIdentifier (SKI) | <SHA-1 of the public key > |
+| AuthorityKeyIdentifier (AKI)  | \<SHA-1 of the public key > |
+| SubjectKeyIdentifier (SKI) | \<SHA-1 of the public key > |
 | KeyUsage | critical: keyCertSign, cRLSign  |
 | ExtendedKeyUsage (EKU)  | \<not included> |
 | CertificatePolicies  | \<not included> |
@@ -1250,8 +1250,8 @@ Actalis’ Cross Certificates have the following profile:
 | Extension  | Critical?|  Value|
 |--|--|--|
 | Basic Constraints  | True | CA=true| 
-| AuthorityKeyIdentifier (AKI)  | - | <Same value as the Root CA SKI extension> |
-| SubjectKeyIdentifier (SKI) | - | <public key SHA1-digest> |
+| AuthorityKeyIdentifier (AKI)  | - | \<Same value as the Root CA SKI extension> |
+| SubjectKeyIdentifier (SKI) | - | \<public key SHA1-digest> |
 | KeyUsage | True | keyCertSign, cRLSign  |
 | ExtendedKeyUsage (EKU)  |- | clientAuth (1.3.6.1.5.5.7.3.2), <br> emailProtection (1.3.6.1.5.5.7.3.4) |
 | CertificatePolicies  | -| PolicyOID = 2.5.29.32.0 (anyPolicy) |
@@ -1271,7 +1271,7 @@ The certificate of the subordinate CAs, used to sign end-entity certificates, ha
 |Issuer  | CN = Actalis  Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L= Milano <br> C = IT  |
 | Validity  | <According to section 6.3.2> | 
 | Subject                   | CN = Actalis Client Authentication CA GN<br>O = Actalis S.p.A.<br>L = Ponte San Pietro<br>ST = Bergamo<br>C = IT |
-| SubjectPublicKeyInfo      | <RSA public key of 4096 bits>                                        |
+| SubjectPublicKeyInfo      | \<RSA public key of 4096 bits>                                        |
 | SignatureValue            | \<Root CA signature>   |                                           |
 
 | Extension  | Critical?|Value|
@@ -1285,6 +1285,8 @@ The certificate of the subordinate CAs, used to sign end-entity certificates, ha
 | SubjectAlternativeName  (SAN)  | -              | \<not included>                                    |
 | AuthorityInformationAccess (AIA)| -              | \<HTTP address of OCSP responder>                  |
 | CRLDistributionPoints  (CDP)   | -              | \<HTTP address to access the ARL>, <br>\<LDAP address to access the ARL> |
+
+&nbsp;
 
 |Field|Value  |
 |--|--|
@@ -1308,6 +1310,8 @@ The certificate of the subordinate CAs, used to sign end-entity certificates, ha
 | SubjectAlternativeName  (SAN)  | -              | \<not included>                                    |
 | AuthorityInformationAccess (AIA)| -              | ocsp: < HTTP address of OCSP responder > <br> caIssuers: < HTTP address of the Root CA >|
 | CRLDistributionPoints  (CDP)   | -              | \<HTTP address to access the ARL>|
+
+&nbsp;
 
 |Field|Value  |
 |--|--|
@@ -1391,6 +1395,7 @@ The profile of OV subscriber certificates is as follows:
 | CRLDistributionPoints  (CDP)   | -              | \<HTTP URL of the CRL>                              |
 
 ##### 7.1.2.4.3 Sponsor Validated (SV)
+
 The profile of SV subscriber certificates is as follows:
 
 | Base field                | Value                                                                 |
