@@ -1075,7 +1075,7 @@ No stipulation.
 
 ### 6.3.2 Certificate operational periods and key pair usage periods
 
-The provisions of §6.3.2 of the [SMBR] apply.
+Subscriber certificates have a maximum validity period of 825 days.
 
 ## 6.4 ACTIVATION DATA
 
