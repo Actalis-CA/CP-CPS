@@ -1010,6 +1010,8 @@ For RSA key pairs, Actalis SHALL ensure that:
 For ECDSA key pairs, Actalis SHALL ensure that:
 - the key represents a valid point on the NIST P‐256, P‐384, or P‐521 elliptic curve.
 
+Algorithms other than RSA and ECDSA are not currently supported.
+
 ### 6.1.6 Public key parameters generation and quality checking
 
 The provisions of §6.1. 6 of the [SMBR] apply.
