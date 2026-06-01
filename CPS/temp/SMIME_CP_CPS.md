@@ -1493,7 +1493,7 @@ Actalis may issue, subject to a contractual agreement, Subordinate CA certificat
 
 ### 7.1.6 Certificate policy object identifier
 
-The provisions of §7.1. 6 of the [SMBR] apply.
+Actalis includes the relevant CAB Forum reserved policy OID in Subscriber certificates, in the _CertificatePolicies_ extension, in conformance to §7.1.6 of the [SMBR].
 
 ### 7.1.7 Usage of Policy Constraints extension
 
