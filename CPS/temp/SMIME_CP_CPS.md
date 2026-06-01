@@ -1346,12 +1346,12 @@ The profile of MV subscriber certificates is as follows:
 | Base field                | Value                                                                 |
 |----------------------------|----------------------------------------------------------------------|
 | Version                   | V3 (2)                                                               |
-| SerialNumber (hex)        | <Includes at least 8 pseudo-random bytes>                            |
-| Signature                 | sha256WithRSAEncryption (1.2.840.113549.1.1.11)                      |
-| Issuer                    | <Subject of the Subordinate CA – see §7.2>                           |
+| SerialNumber (hex)        | \<Includes at least 8 pseudo-random bytes>                            |
+| Signature                 | \<Subordinate CA signature algorithm>                      |
+| Issuer                    | \<Subject of the Subordinate CA>                           |
 | Validity                  | <According to section 6.3.2>                                         |
 | Subject                   | CN = \<Email address of the Subscriber>                               |
-| SubjectPublicKeyInfo      | <Public RSA key of length 2048 bits>                                 |
+| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                 |
 | SignatureValue            | \<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1359,7 +1359,7 @@ The profile of MV subscriber certificates is as follows:
 | Basic Constraints         | True           | cA=FALSE                                            |
 | AuthorityKeyIdentifier (AKI)   | -              | KeyID=\<SHA1 hash of the CA public key>             |
 | SubjectKeyIdentifier   (SKI)   | -              | \<SHA1 hash of Subject public key>                  |
-| KeyUsage                  | True           | digitalSignature, keyEncipherment                  |
+| KeyUsage                  | True           | digitalSignature, keyEncipherment (for RSA keys only)                  |
 | ExtendedKeyUsage (EKU)    | -              | clientAuth (1.3.6.1.5.5.7.3.2), emailProtection (1.3.6.1.5.5.7.3.4) |
 | CertificatePolicies       | -              | CABF mailbox-validated multipurpose (2.23.140.1.5.1.2) |
 | SubjectAlternativeName (SAN)   | -              | rfc822Name=\<Email address of the Subscriber>       |
@@ -1373,12 +1373,12 @@ The profile of OV subscriber certificates is as follows:
 | Base field                | Value                                                                 |
 |----------------------------|----------------------------------------------------------------------|
 | Version                   | V3 (2)                                                               |
-| SerialNumber (hex)        | <Includes at least 8 pseudo-random bytes>                            |
-| Signature                 | sha256WithRSAEncryption (1.2.840.113549.1.1.11)                      |
-| Issuer                    | <Subject of the Subordinate CA – see §7.1.2.2>                           |
+| SerialNumber (hex)        | \<Includes at least 8 pseudo-random bytes>                            |
+| Signature                 | \<Subordinate CA signature algorithm>                      |
+| Issuer                    | \<Subject of the Subordinate CA>                           |
 | Validity                  | <According to section 6.3.2>                                         |
 | Subject  |CN = \<same as the O attribute><br>O = \<full registered name of Subscriber><br>organizationIdentifier = \<Subscriber’s registration reference according to a registration scheme allowed by [SMBR]><br>L = \<locality of the Subscriber><br>ST = \<state or province of the Subscriber><br>C = \<ISO 3166 country code of Subscriber>|
-| SubjectPublicKeyInfo      | <public RSA key of length 2048 bits>                                |
+| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                |
 | SignatureValue            |\<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1386,7 +1386,7 @@ The profile of OV subscriber certificates is as follows:
 | Basic Constraints         | True           | CA=FALSE                                            |
 | AuthorityKeyIdentifier  (AKI)  | -              | KeyID=\<SHA1 hash of the CA public key>             |
 | SubjectKeyIdentifier  (SKI)    | -              | \<SHA1 hash of Subject public key>                  |
-| KeyUsage                  | True           | digitalSignature, keyEncipherment                  |
+| KeyUsage                  | True           | digitalSignature, keyEncipherment (for RSA keys only)                  |
 | ExtendedKeyUsage (EKU)    | -              | clientAuth (1.3.6.1.5.5.7.3.2),<br> emailProtection (1.3.6.1.5.5.7.3.4) |
 | CertificatePolicies       | -              | CABF organization-validated multipurpose (2.23.140.1.5.2.2) |
 | SubjectAlternativeName (SAN)    | -              | rfc822Name=\<Email address of the Subscriber>       |
@@ -1400,12 +1400,12 @@ The profile of SV subscriber certificates is as follows:
 | Base field                | Value                                                                 |
 |----------------------------|----------------------------------------------------------------------|
 | Version                   | V3 (2)                                                               |
-| SerialNumber (hex)        | <Includes at least 8 pseudo-random bytes>                            |
-| Signature                 | sha256WithRSAEncryption (1.2.840.113549.1.1.11)                      |
-| Issuer                    | <Subject of the Subordinate CA – see §7.1.2.2>                       |
-| Validity                  | <According to section 6.3.2>                                         |
+| SerialNumber (hex)        | \<Includes at least 8 pseudo-random bytes>                            |
+| Signature                 | \<Subordinate CA signature algorithm>                      |
+| Issuer                    | \<Subject of the Subordinate CA>                       |
+| Validity                  | \<According to section 6.3.2>                                         |
 | Subject                   | CN = <Personal Name (e.g., Name and Surname)><br>givenName = <Subscriber’s forename><br>surname = <Subscriber’s surname><br>O = <full registered name of Subscriber’s organization><br>organizationIdentifier = <Subscriber’s registration reference according to a registration scheme allowed by [SMBR]><br>L = <locality of the Subscriber’s organization><br>ST = <state or province of the Subscriber’s organization><br>C = <ISO 3166 country code of Subscriber’s organization> |
-| SubjectPublicKeyInfo      | <Public RSA key of length 2048 bits>                                 |
+| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                 |
 | SignatureValue            | \<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1413,7 +1413,7 @@ The profile of SV subscriber certificates is as follows:
 | Basic Constraints         | True           | cA=FALSE                                            |
 | AuthorityKeyIdentifier (AKI)   | -              | KeyID=\<SHA1 hash of the CA public key>             |
 | SubjectKeyIdentifier (SKI)     | -              | \<SHA1 hash of Subject public key>                  |
-| KeyUsage                  | True           | digitalSignature, keyEncipherment                  |
+| KeyUsage                  | True           | digitalSignature, keyEncipherment (for RSA keys only)                  |
 | ExtendedKeyUsage (EKU)    | -              | clientAuth (1.3.6.1.5.5.7.3.2), <br>emailProtection (1.3.6.1.5.5.7.3.4) |
 | CertificatePolicies       | -              | CABF sponsor-validated multipurpose (2.23.140.1.5.3.2) |
 | SubjectAlternativeName  (SAN)  | -              | rfc822Name=\<email address of the subscriber>       |
@@ -1427,12 +1427,12 @@ The profile of IV subscriber certificates is as follows:
 | Base field                | Value                                                                 |
 |----------------------------|----------------------------------------------------------------------|
 | Version                   | V3 (2)                                                               |
-| SerialNumber (hex)        | <Includes at least 8 pseudo-random bytes>                            |
-| Signature                 | sha256WithRSAEncryption (1.2.840.113549.1.1.11)                      |
-| Issuer                    | <Subject of the Subordinate CA – see §7.1.2.2>                       |
-| Validity                  | <According to section 6.3.2>                                         |
+| SerialNumber (hex)        | \<Includes at least 8 pseudo-random bytes>                            |
+| Signature                 | \<Subordinate CA signature algorithm>                      |
+| Issuer                    | \<Subject of the Subordinate CA>                       |
+| Validity                  | \<According to section 6.3.2>                                         |
 | Subject                   | CN = <Personal Name (e.g., Name and Surname)><br>givenName = <Subscriber’s forename><br>surname = <Subscriber’s surname><br>L =\<Locality of the Subscriber> (optional)<br>ST = \<State or province of the Subscriber> (optional)<br>C = <ISO 3166 country code of Subscriber> |
-| SubjectPublicKeyInfo      | <public RSA key of length 2048 bits>                                 |
+| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                 |
 | SignatureValue            | \<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1440,7 +1440,7 @@ The profile of IV subscriber certificates is as follows:
 | Basic Constraints         | True           | cA=FALSE                                            |
 | AuthorityKeyIdentifier (AKI)   | -              | KeyID=\<SHA1 hash of the CA public key>             |
 | SubjectKeyIdentifier  (SKI)    | -              | \<SHA1 hash of Subject public key>                  |
-| KeyUsage                  | True           | digitalSignature, keyEncipherment                  |
+| KeyUsage                  | True           | digitalSignature, keyEncipherment (for RSA keys only)                  |
 | ExtendedKeyUsage (EKU)    | -              | clientAuth (1.3.6.1.5.5.7.3.2), <br>emailProtection (1.3.6.1.5.5.7.3.4) |
 | CertificatePolicies       | -              | CABF individual-validated multipurpose (2.23.140.1.5.4.2) |
 | SubjectAlternativeName  (SAN)  | -              | rfc822Name=\<email address of the subscriber>       |
