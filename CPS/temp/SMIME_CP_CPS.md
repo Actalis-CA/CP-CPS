@@ -1469,7 +1469,23 @@ The provisions of §7.1.4.2 of the [SMBR] apply.
 
 #### 7.1.4.3 Subject information ‑ root certificates and subordinate CA certificates 
 
-The provisions of §7.1.4. 3 of the [SMBR] apply.
+Certificates are normally signed using one of the following algorithms:
+
+| Algorithm name  | Object Identifier |
+|--|--|
+| sha256WithRSAEncryption |  1.2.840.113549.1.1.11 |
+| sha512WithRSAEncryption | 1.2.840.113549.1.1.13|
+|ecdsa-with-SHA256 |  1.2.840.10045.4.3.2 |
+| ecdsa-with-SHA384 |  1.2.840.10045.4.3.3|
+
+CRLs and OSCP responses are signed using one of the following algorithms, depending on the type of CA key:
+
+| Algorithm name | Object  Identifier |
+|--|--|
+|sha256WithRSAEncryption |  1.2.840.113549.1.1.11
+|sha512WithRSAEncryption| 1.2.840.113549.1.1.13
+|ecdsa-with-SHA256  |  1.2.840.10045.4.3.2 |
+| ecdsa-with-SHA384 |  1.2.840.10045.4.3.3 |
 
 ### 7.1.5 Name constraints
 
