@@ -1190,7 +1190,7 @@ The profile of the multi-purpose Root CA certificate is as follows:
 The certificates of the new dedicated Root CAs have the following profile:
 
 |Field|Value  |
-|--|--|
+|:--|:--|
 | Version  | V3 (2) |
 | SerialNumber| <includes at least 8 pseudo-random bytes>  |
 |Signature   |  ecdsa-with-SHA384 (1.2.840.10045.4.3.3)|
@@ -1199,22 +1199,20 @@ The certificates of the new dedicated Root CAs have the following profile:
 | Subject | CN = Actalis SMIME ECC Root CA 2025 <br> O = Actalis S.p.A. <br> C = IT |
 | SubjectPublicKeyInfo |  <ECC public key of 384 bits> |
 | SignatureValue |  < Root CA signature> |
-
-| Extension  | Critical?|  Value|
-|--|--|--|
-| Basic Constraints  | True | CA=true| 
-| AuthorityKeyIdentifier (AKI)  | -| < SHA1- of the public key > |
-| SubjectKeyIdentifier (SKI) | -| < SHA1- of the public key > |
-| KeyUsage | True| keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | -| < not included> |
-| CertificatePolicies  | -| < not included> |
-| SubjectAlternativeName (SAN) |- | < not included> |
-| AuthorityInformationAccess (AIA)  |- |< not included> |
-| CRLDistributionPoints (CDP) | - |< not included> |
+| **Extension**  | **Value** |
+| Basic Constraints  | critical, CA=true| 
+| AuthorityKeyIdentifier (AKI)  | < SHA1- of the public key > |
+| SubjectKeyIdentifier (SKI) | < SHA1- of the public key > |
+| KeyUsage | critical, keyCertSign + cRLSign  |
+| ExtendedKeyUsage (EKU) | < not included> |
+| CertificatePolicies  | < not included> |
+| SubjectAlternativeName (SAN) | < not included> |
+| AuthorityInformationAccess (AIA) |< not included> |
+| CRLDistributionPoints (CDP) |< not included> |
 
 
 |Field|Value  |
-|--|--|
+|:--|:--|
 | Version  | V3 (2) |
 | SerialNumber| <includes at least 8 pseudo-random bytes>  |
 |Signature   |  sha256WithRSAEncryption (1.2.840.113549.1.1.11)|
@@ -1223,18 +1221,16 @@ The certificates of the new dedicated Root CAs have the following profile:
 | Subject | CN = Actalis SMIME RSA Root CA 2025 <br> O = Actalis S.p.A. <br> L= Ponte San Pietro <br> ST= Bergamo <br> C = IT |
 | SubjectPublicKeyInfo |  <RSA public key of 4096 bits>|
 | SignatureValue |  < Root CA signature> |
-
-| Extension  | Critical?|  Value|
-|--|--|--|
-| Basic Constraints  | True | CA=true| 
-| AuthorityKeyIdentifier (AKI)  |- | < SHA1- of the public key > |
-| SubjectKeyIdentifier (SKI) |- | < SHA1- of the public key > |
-| KeyUsage | True| keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | -| < not included> |
-| CertificatePolicies  | -| < not included> |
-| SubjectAlternativeName (SAN) | -| < not included> |
-| AuthorityInformationAccess (AIA)  |- |< not included> |
-| CRLDistributionPoints (CDP) | - |< not included> |
+| **Extension**  | **Value** |
+| Basic Constraints  | critical, CA=true| 
+| AuthorityKeyIdentifier (AKI)  | < SHA1- of the public key > |
+| SubjectKeyIdentifier (SKI) | < SHA1- of the public key > |
+| KeyUsage | critical, keyCertSign + cRLSign  |
+| ExtendedKeyUsage (EKU)  | < not included> |
+| CertificatePolicies  | < not included> |
+| SubjectAlternativeName (SAN) | < not included> |
+| AuthorityInformationAccess (AIA) |< not included> |
+| CRLDistributionPoints (CDP) |< not included> |
 
 #### 7.1.2.2 Cross Certificate
 Actalis’ Cross Certificates have the following profile:
