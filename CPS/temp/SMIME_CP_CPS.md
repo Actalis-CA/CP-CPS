@@ -292,13 +292,9 @@ See section 7.1.4.
 
 Actalis issues Certificates with non‐null subject DNs complying with ITU X.500.
 
-Actalis does not issue pseudonymous Certificates.
-
-In any case, §3.1.1 of the [SMBR] applies.
-
 ### 3.1.2 Need for names to be meaningful
 
-As per §3.1. 2 of the [SMBR].
+Personal Names SHALL be a meaningful representation of the Subject’s name as verified in the identifying documentation or Enterprise RA records.
 
 ### 3.1.3 Anonymity or pseudonymity of subscribers
 
@@ -306,7 +302,9 @@ Pseudonyms are not supported.
 
 ### 3.1.4 Rules for interpreting various name forms
 
-As per §3.1.4 of the [SMBR].
+The name forms used in Certificate Subject DNs and Issuer DNs conform to a subset of those defined and documented in RFC 2253 and ITU-T X.520.
+
+As regards non-ASCII character substitution and geographic names, Actalis respects the provisions of section 3.1.4 of the [SMBR].
 
 ### 3.1.5 Uniqueness of names
 
@@ -352,9 +350,11 @@ For **OV** and **SV** certificates issued under this CP, Actalis shall collect, 
 - Jurisdiction of Incorporation or Registration of the Legal Entity;
 - unique identifier and type of identifier for the Legal Entity.
 
-The unique identifier shall be included in the Certificate _subject:organizationIdentifier_ attribute as specified in §7.1.4.2.2 in compliance with the [SMBR].
+Actalis also verifies that the status of the Organization is not designated by labels such as “ceased,” “inactive,” “invalid,” “not current,” or the equivalent.
 
 All these data shall be verified by Actalis by querying reliable independent information sources like e.g., the applicable jurisdiction’s company registry, or a governmental database of public agencies, or a LEI data reference, in compliance with §3.2.8 of the [SMBR]. Where such sources are not usable, Actalis may accept a suitable Attestation (e.g., a Lawyer’s letter) in line with §3.2.8 of the [SMBR].
+
+The unique identifier shall be included in the Certificate _subject:organizationIdentifier_ attribute as specified in §7.1.4.2.2 in compliance with the [SMBR].
 
 ### 3.2.4 Authentication of individual identity
 
