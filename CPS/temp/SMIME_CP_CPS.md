@@ -1003,7 +1003,12 @@ No stipulation.
 
 ### 6.1.5 Key sizes
 
-The provisions of §6.1. 5 of the [SMBR] apply.
+For RSA key pairs, Actalis SHALL ensure that:
+- the modulus size, when encoded, is at least 2048 bits; and
+- the modulus size, in bits, is evenly divisible by 8.
+
+For ECDSA key pairs, Actalis SHALL ensure that:
+- the key represents a valid point on the NIST P‐256, P‐384, or P‐521 elliptic curve.
 
 ### 6.1.6 Public key parameters generation and quality checking
 
