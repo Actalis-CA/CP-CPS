@@ -1509,8 +1509,7 @@ The Assessment Bodies (CABs) that perform audits on the CA service, and possibly
 
 ## 8.4 Topics covered by assessment
 
-The audits performed on the CA are based on “ETSI EN 319 411‐1 v1.3.1 or newer” or “ETSI EN 319 411‐2 v2.4. 1 or newer”, which includes normative references to ETSI EN 319 401, and the [SMBR].
-
+The audits performed on the CA services regulated by this CPS shall be based on the latest version of ETSI TS 119 411‐6, which includes normative references to ETSI EN 319 401, ETSI EN 319 411‐1 and ETSI EN 319 411-2.
 
 ## 8.5 Actions taken as a result of deficiency
 
