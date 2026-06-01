@@ -59,7 +59,7 @@ VAT Reg. No. and Tax Code: 03358520967
 Telephone (switchboard): +39 0575 050.350
 DUNS number: 440-489-735
 ISO Object Identifier (OID): 1.3.159
-Company web site: http://www.actalis.it
+Company web site: https://www.actalis.it
 Company e-mail address: info@actalis.it
 ```
 
