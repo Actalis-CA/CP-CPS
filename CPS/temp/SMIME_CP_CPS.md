@@ -1159,6 +1159,34 @@ Certificates are of type X.509 v3.
 
 #### 7.1.2.1 Root CA certificates
 For the legacy Root CA profile, please refer to [CPS]. 
+
+##### 7.1.2.1.1 Legacy hierarchy
+
+The profile of the multi-purpose Root CA certificate is as follows:
+
+|Field|Value  |
+|:--|:--|
+| Version  | V3 (2) |
+| SerialNumber| 1  |
+|Signature   |  sha256WithRSAEncryption (1.2.840.113549.1.1.11)|
+| Issuer  | CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br>  L = Milano  <br> C = IT   |
+| Validity  | from September 22, 2011 to September 22, 2030 |
+| Subject | CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L = Milano <br> C = IT |
+| SubjectPublicKeyInfo |  < RSA public key of 4096 bits> |
+| SignatureValue |  < Root CA signature> |
+| **Extension**  | **Value**|
+| Basic Constraints  | critical: CA=true |
+| AuthorityKeyIdentifier (AKI)  | <not included> |
+| SubjectKeyIdentifier (SKI) | 52:D8:88:3A:C8:9F:78:66:ED:89:F3:7B:38:70:94:C9:02:02:36:D0 |
+| KeyUsage | critical: keyCertSign, cRLSign  |
+| ExtendedKeyUsage (EKU)  | < not included> |
+| CertificatePolicies  | < not included> |
+| SubjectAlternativeName (SAN) |  < not included> |
+| AuthorityInformationAccess (AIA)  | < not included> |
+| CRLDistributionPoints (CDP) |  < not included> |
+
+##### 7.1.2.1.2 New hierarchy
+
 The certificates of the new dedicated Root CAs have the following profile:
 
 |Field|Value  |
