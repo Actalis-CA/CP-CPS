@@ -1529,7 +1529,9 @@ The result of internal audits or second-party audits is communicated to the comp
 
 ## 8.7 Self-audits
 
-The provisions of §8. 7 of the [SMBR] apply.
+Actalis monitors adherence to this CPS and to CABF Requirements [SMBR], and controls the quality of its services, by performing self-audits at least quarterly on a randomly selected sample that includes a minimum of the greater of thirty (30) Certificates or three percent (3%) of the Certificates issued by it during the period commencing immediately after the previous self‐audit sample was taken.
+
+Actalis also uses a linting process to verify the technical accuracy of Certificates within the selected sample set, independently of previous linting performed on the same Certificates.
 
 # 9 OTHER BUSINESS AND LEGAL MATTERS
 
