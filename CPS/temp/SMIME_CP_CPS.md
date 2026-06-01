@@ -93,6 +93,7 @@ those identified below; for further details, see also Chapter 7.
 |-----|-----|------|------|
 |CN = Actalis Client Authentication CA G3 <br> O = Actalis S.p.A. <br> L= Ponte San Pietro <br> S= Bergamo <br> C=IT|BE 97 A9 AA 84 BF 80 BF 10 53 7D 09 32 F9 E1 2E 32 1B CF 77|6 Jul 2020|22 Set 2030|
 |CN = Actalis SMIME RSA CA 2025 <br> O = Actalis S.p.A. <br> L= Ponte San Pietro <br> S= Bergamo <br> C=IT|8d e8 af d2 e4 fe 55 20 49 3f f2 83 22 f0 a0 39 89 22 84 45|07 July 2025|05 July 2035|
+|CN = Actalis SMIME ECC CA 2025 <br> O = Actalis S.p.A. <br> L= Ponte San Pietro <br> S= Bergamo <br> C=IT|49 2f 9b 45 15 a1 5c e6 79 9f c6 39 ff 6e f7 18 47 ec 5d 29|07 July 2025|05 July 2035|
 
 ### 1.3.2 Registration Authorities
 
