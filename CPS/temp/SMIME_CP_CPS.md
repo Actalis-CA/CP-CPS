@@ -1179,11 +1179,11 @@ The profile of the multi-purpose Root CA certificate is as follows:
 | AuthorityKeyIdentifier (AKI)  | 52:D8:88:3A:C8:9F:78:66:ED:89:F3:7B:38:70:94:C9:02:02:36:D0 |
 | SubjectKeyIdentifier (SKI) | 52:D8:88:3A:C8:9F:78:66:ED:89:F3:7B:38:70:94:C9:02:02:36:D0 |
 | KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | < not included> |
-| CertificatePolicies  | < not included> |
-| SubjectAlternativeName (SAN) |  < not included> |
-| AuthorityInformationAccess (AIA)  | < not included> |
-| CRLDistributionPoints (CDP) |  < not included> |
+| ExtendedKeyUsage (EKU)  | (absent) |
+| CertificatePolicies  | (absent) |
+| SubjectAlternativeName (SAN) |  (absent) |
+| AuthorityInformationAccess (AIA)  | (absent) |
+| CRLDistributionPoints (CDP) |  (absent) |
 
 ##### 7.1.2.1.2 New hierarchy
 
@@ -1204,11 +1204,11 @@ The certificates of the new dedicated Root CAs have the following profile:
 | AuthorityKeyIdentifier (AKI)  | <SHA-1 of the public key > |
 | SubjectKeyIdentifier (SKI) | <SHA-1 of the public key > |
 | KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU) | <not included> |
-| CertificatePolicies  | <not included> |
-| SubjectAlternativeName (SAN) | <not included> |
-| AuthorityInformationAccess (AIA) | <not included> |
-| CRLDistributionPoints (CDP) | <not included> |
+| ExtendedKeyUsage (EKU) | (absent) |
+| CertificatePolicies  | (absent) |
+| SubjectAlternativeName (SAN) | (absent) |
+| AuthorityInformationAccess (AIA) | (absent) |
+| CRLDistributionPoints (CDP) | (absent) |
 
 
 |Field|Value  |
@@ -1226,11 +1226,11 @@ The certificates of the new dedicated Root CAs have the following profile:
 | AuthorityKeyIdentifier (AKI)  | <SHA-1 of the public key > |
 | SubjectKeyIdentifier (SKI) | <SHA-1 of the public key > |
 | KeyUsage | critical: keyCertSign, cRLSign  |
-| ExtendedKeyUsage (EKU)  | <not included> |
-| CertificatePolicies  | <not included> |
-| SubjectAlternativeName (SAN) | <not included> |
-| AuthorityInformationAccess (AIA) |<not included> |
-| CRLDistributionPoints (CDP) | <not included> |
+| ExtendedKeyUsage (EKU)  | (absent) |
+| CertificatePolicies  | (absent) |
+| SubjectAlternativeName (SAN) | (absent) |
+| AuthorityInformationAccess (AIA) |(absent) |
+| CRLDistributionPoints (CDP) | (absent) |
 
 #### 7.1.2.2 Cross Certificate
 Actalis’ Cross Certificates have the following profile:
@@ -1254,7 +1254,7 @@ Actalis’ Cross Certificates have the following profile:
 | KeyUsage | True | keyCertSign, cRLSign  |
 | ExtendedKeyUsage (EKU)  |- | clientAuth (1.3.6.1.5.5.7.3.2), <br> emailProtection (1.3.6.1.5.5.7.3.4) |
 | CertificatePolicies  | -| PolicyOID = 2.5.29.32.0 (anyPolicy) |
-| SubjectAlternativeName (SAN) | -| < not included> |
+| SubjectAlternativeName (SAN) | -| (absent) |
 | AuthorityInformationAccess (AIA)  | -|< HTTP address of OCSP responder >|
 | CRLDistributionPoints (CDP) | - |< HTTP address to access the ARL > |
 
