@@ -471,8 +471,7 @@ If the previous steps (see section 4.2) are completed successfully, the CA syste
 -	checks that the CSR (*) is cryptographically valid according to section 3.2.1;
 -	checks that the algorithm and size of the key from CSR (*) meet the applicable constraints;
 -	checks that the key found in the CSR (*) is not a known “weak key” (see §6.1.1.3);
--	performs a linting of the tbsCertificate, using linters broadly adopted by the industry, in order to minimize the risk of incorrect issuance;
--	checks the relevant CAA Records (if any) according to section 4.2.4.
+-	performs a linting of the tbsCertificate, using linters broadly adopted by the industry, in order to minimize the risk of incorrect issuance.
 
 (*) If a CSR was sent by Applicant; otherwise, the CA generates a suitable Key Pair for the Applicant.
 
