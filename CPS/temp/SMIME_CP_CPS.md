@@ -256,9 +256,6 @@ Publicly-Trusted S/MIME Certificates” (https://cabforum.org/smime-br/)
 
 [SMIME] [RFC 5751](https://www.rfc-editor.org/rfc/rfc5751.txt): “Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.2 Message Specification”, January 2010.
 
-[T&C] S/MIME Certificates – Terms & Conditions
-(https://www.actalis.it/documenti-en/sslclient_smime_termsconditions.aspx)
-
 [TLS] [RFC 5246](https://www.rfc-editor.org/rfc/rfc5246.txt): “The Transport Layer Security (TLS) Protocol Version 1.2”, August 2008.
 
 [eIDAS] Regulation (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC and subsequent amendments (https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02014R0910-20241018)
@@ -434,7 +431,7 @@ The certificate request process details vary depending on whether it takes place
 
 The Certificate Request may include a CSR (PKCS#10 object) or not, depending on the certificate request channel and Applicant’s preferences. See section 6.1.2 for further details.
 
-The Terms of Use shall be executed by Applicants as part of the certificate request procedure, except for Enterprise RAs which must adhere to Actalis’ Terms of Conditions upon entering into the related agreement with Actalis.
+The Terms of Use shall be executed by Applicants as part of the certificate request procedure, except for Enterprise RAs which must adhere to Actalis’ Terms and Conditions upon entering into the related agreement with Actalis.
 
 In any cases, the provisions of §4.1.2 of [SMBR] apply.
 
@@ -1507,7 +1504,7 @@ The provisions of §8. 7 of the [SMBR] apply.
 
 # 9 OTHER BUSINESS AND LEGAL MATTERS
 
-The general Terms & Conditions of the CA service herein described are provided to customers as a separate document, to be accepted at application time, published on the CA web site (see par. 2.2).
+The general Terms and Conditions of the CA service herein described are provided to customers as a separate document, to be accepted at application time, published on the CA web site (see par. 2.2).
 
 ## 9.1 Fees
 
@@ -1529,7 +1526,7 @@ No stipulation.
 
 ### 9.1.5 Refund policies
 
-Please refer to the General Terms & Conditions published on the CA website.
+Please refer to the General Terms and Conditions published on the CA website.
 
 ## 9.2 Financial responsibility
 
@@ -1668,7 +1665,7 @@ No stipulation.
 
 ## 9.7 Discaimers of warranties 
 
-Except as expressly stated in this CPS or in a separate agreement with a Subscriber, Actalis does not make any further representations or warranties regarding its CA services. See also the Terms & Conditions published on the Actalis website.
+Except as expressly stated in this CPS or in a separate agreement with a Subscriber, Actalis does not make any further representations or warranties regarding its CA services. See also the Terms and Conditions published on the Actalis website.
 
 ## 9.8 Limitations of liability 
 
@@ -1714,7 +1711,7 @@ The Contract begins on the date of acceptance by the Contracting Party and ends 
 
 ### 9.10.2 Termination
 
-Please refer to the General Terms & Conditions published on the CA website.
+Please refer to the General Terms and Conditions published on the CA website.
 
 ### 9.10.3 Effect of termination and survival
 
