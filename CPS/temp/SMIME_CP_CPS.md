@@ -470,10 +470,15 @@ Actalis also implements MPIC as per §3.2.2.9 of the CABF TLS Baseline Requireme
 
 ### 4.3.1 CA actions during certificate issuance
 
-If all the previous steps (see §4.2) completed successfully, the CA system:
+If the previous steps (see section 4.2) are completed successfully, the CA system:
+-	checks that the CSR (*) is well-formed and does not contain unexpected data;
+-	checks that the CSR (*) is cryptographically valid according to section 3.2.1;
+-	checks that the algorithm and size of the key from CSR (*) meet the applicable constraints;
+-	checks that the key found in the CSR (*) is not a known “weak key” (see §6.1.1.3);
+-	performs a linting of the tbsCertificate, using linters broadly adopted by the industry, in order to minimize the risk of incorrect issuance;
+-	checks the relevant CAA Records (if any) according to section 4.2.4.
 
-- if the Applicant has sent a CSR, checks that the CSR is well-formed and does not contain unexpected data, the CSR signature is valid, the key algorithm and size meet the applicable constraints, and the Public Key in the CSR is not affected by known weaknesses;
-- otherwise, generates a suitable Key Pair for the Applicant;
+(*) If a CSR was sent by Applicant; otherwise, the CA generates a suitable Key Pair for the Applicant.
 
 Next, the CA system generates the Certificate, stores it into its database, and makes it available to the requester in ways that depends on how the certificate was requested (see §4.1).
 
