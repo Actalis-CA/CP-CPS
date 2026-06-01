@@ -1158,7 +1158,6 @@ Certificates are of type X.509 v3.
 ### 7.1.2 Certificate content and extensions
 
 #### 7.1.2.1 Root CA certificates
-For the legacy Root CA profile, please refer to [CPS]. 
 
 ##### 7.1.2.1.1 Legacy hierarchy
 
