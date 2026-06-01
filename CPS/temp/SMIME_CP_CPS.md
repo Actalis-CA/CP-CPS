@@ -444,7 +444,7 @@ In any cases, the provisions of §4.1.2 of [SMBR] apply.
 
 ### 4.2.1 Performing identification and authentication functions
 
-Upon receipt of a certificate application via any of the channels/methods described in §4.1, all the verifications described in § 3 .2 and not yet done are performed either automatically, where feasible and allowed, or manually by a Validation Specialist, in compliance with the [SMBR], according to the certificate type and the specific verification to be done.
+Upon receipt of a certificate application via any of the channels/methods described in §4.1, all the verifications described in §3.2 and not yet done are performed either automatically, where feasible and allowed, or manually by a Validation Specialist, in compliance with the [SMBR], according to the certificate type and the specific verification to be done.
 
 Actalis may reuse previous validations and/or supporting evidence for additional certificates to be issued to the same Applicant, to the extent that is permitted by §4.2.1 of the [SMBR].
 
