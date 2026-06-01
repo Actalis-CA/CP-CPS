@@ -989,7 +989,7 @@ Depending on the specific certificate request procedure or channel used, the Sub
 
 The private key within the PKCS#12 file is encrypted by a password-based encryption algorithm ensuring at least 128 bits of cipher strength, using a random password of suitable length and complexity, in accordance with the [SMBR].
 
-The password needed to decipher the PKCS#12 file is provided to the Subscriber in such a way as to prevent unauthorized parties to get hold of both the PKCS#12 file and the related password. If the password is provided on-line, a TLS channel is used; otherwise, it is delivered via a separate communication channel (e.g., SMS).
+The password required to decrypt the PKCS#12 file is provided to the subscriber in such a way as to prevent unauthorized third parties from getting hold of both the PKCS#12 file and the related password. If the password is provided on-line, a TLS channel is used; otherwise, it is delivered via a separate communication channel (e.g., SMS).
 
 <u>Actalis does not archive</u> the PKCS#12 files generated for Subscribers nor the related passwords.
 
