@@ -450,18 +450,6 @@ Actalis may reuse previous validations and/or supporting evidence for additional
 
 ### 4.2.2 Approval or rejection of certificate applications
 
-Starting from March 15, 2025, prior to issuing a certificate that includes a Mailbox Address, Actalis retrieves and processes CAA Resource Records [CAA] according to section 4.2.2.1 of the [SMBR]. In particular, Actalis SHALL process the “issuemail” property tag as specified in RFC 9495.
-
-The domain identifier to be used in CAA records to authorize the Actalis CA is “actalis.it”.
-
-Actalis also logs the results of all CAA records checking.
-
-### 4.2.3 Time to process certificate applications
-
-No stipulation.
-
-### 4.2.4 CAA Records processing
-
 Actalis examines the Certification Authority Authorization (CAA) DNS Resource Records as specified in RFC 9495. If such records are found and do not allow Actalis to issue S/MIME certificates, the certificate application SHALL be rejected.
 
 In particular, Actalis looks for the “issuemail” property tag as specified in RFC 9495. Where the Relevant RRSet contains any “issuemail” Property Tags, Actalis recognizes the issuer-domain-name “**actalis.it**”, in the related Property Values, as granting authorization for S/MIME certificates issuance by Actalis.
@@ -469,6 +457,10 @@ In particular, Actalis looks for the “issuemail” property tag as specified i
 Actalis also implements MPIC as per §3.2.2.9 of the CABF TLS Baseline Requirements, and performs DNSSEC validation on all DNS queries associated with CAA record lookups performed by the Primary Network Perspective in compliance with 4.2 of the [SMBR].
 
 Actalis logs the results of the CAA checks.
+
+### 4.2.3 Time to process certificate applications
+
+No stipulation.
 
 ## 4.3 CERTIFICATE ISSUANCE
 
