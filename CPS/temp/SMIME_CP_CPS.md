@@ -979,7 +979,7 @@ No stipulation.
 #### 6.1.1.3 Subscriber key pair generation
 The CA or a Delegated Third-Party MAY generate the Private Key on behalf of the Subscriber.
 
-Actalis shall reject a certificate request for a Public Key that does not meet the requirements set forth in sections 6.1.5 and 6.1.6 or that corresponds to an industry‐demonstrated weak Private Key, such as  a “Debian weak key” (http://wiki.debian.org/SSLkeys) or one affected by the ROCA (https://github.com/crocs-muni/roca) or the Close Primes (https://fermatattack.secvuln.info/) vulnerabilities.
+Actalis shall reject a certificate request for a Public Key that does not meet the requirements set forth in sections 6.1.5 and 6.1.6 or that corresponds to an industry‐demonstrated weak Private Key, such as  a “Debian weak key” (https://wiki.debian.org/SSLkeys) or one affected by the ROCA (https://github.com/crocs-muni/roca) or the Close Primes (https://fermatattack.secvuln.info/) vulnerabilities.
 
 See also §6.1.2 below.
 
