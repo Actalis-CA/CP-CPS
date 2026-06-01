@@ -456,6 +456,16 @@ Actalis also logs the results of all CAA records checking.
 
 No stipulation.
 
+### 4.2.4 CAA Records processing
+
+Actalis examines the Certification Authority Authorization (CAA) DNS Resource Records as specified in RFC 9495. If such records are found and do not allow Actalis to issue S/MIME certificates, the certificate application SHALL be rejected.
+
+In particular, Actalis looks for the “issuemail” property tag as specified in RFC 9495. Where the Relevant RRSet contains any “issuemail” Property Tags, Actalis recognizes the issuer-domain-name “actalis.it”, in the related Property Values, as granting authorization for S/MIME certificates issuance by Actalis.
+
+Actalis logs the results of the CAA checks.
+
+Actalis also implements MPIC as per §3.2.2.9 of the CABF TLS Baseline Requirements.
+
 ## 4.3 CERTIFICATE ISSUANCE
 
 ### 4.3.1 CA actions during certificate issuance
