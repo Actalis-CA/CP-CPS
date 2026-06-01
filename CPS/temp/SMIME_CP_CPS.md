@@ -8,7 +8,7 @@ Date: June 03, 2026
 
 ## 1.1 Overview
 
-**Actalis S.p.A.**, a company of the Aruba S.p.A. group, is a leading provider of certification services since 2002, accredited by AgID under the European Directive on Electronic Signatures, then under the European Regulation EU n.910/2014 (“eIDAS”). Actalis offers several types of certificates and related management services, as well as other trust services and solutions (www.actalis.com).
+**Actalis S.p.A.**, a company of the Aruba S.p.A. group, is a leading provider of certification services since 2002, accredited by AgID under the European Directive on Electronic Signatures, then under the European Regulation EU n.910/2014 (“eIDAS”). Actalis offers several types of certificates and related management services, as well as other trust services and solutions (https://www.actalis.it).
 
 The reliability of a certificate, in particular the association - attested by the certificate - between a given public key and a given identity, critically depends on the CA’s operating procedures, the obligations and responsibilities of the CA and the certificate Subscriber, and the CA’s physical, technical, and operational security controls. All these aspects are described in a public document called Certification Practice Statement (CPS) and/or a separate document called Certificate Policy (CP), according to [RFC 3647], or a combined document.
 
