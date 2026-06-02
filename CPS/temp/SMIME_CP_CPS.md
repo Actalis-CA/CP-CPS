@@ -253,7 +253,7 @@ Publicly-Trusted S/MIME Certificates” (https://cabforum.org/smime-br/)
 
 [PFX] [RFC 7292](rfc-editor.org/rfc/rfc7292.txt): “PKCS #12: Personal Information Exchange Syntax v1.1”, July 2014.
 
-[PROF] [RFC 5280](https://www.rfc-editor.org/rfc/rfc5280.txt): “Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile”, May 2008.
+[X509] [RFC 5280](https://www.rfc-editor.org/rfc/rfc5280.txt): “Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile”, May 2008.
 
 [SMIME] [RFC 5751](https://www.rfc-editor.org/rfc/rfc5751.txt): “Secure/Multipurpose Internet Mail Extensions (S/MIME) Version 3.2 Message Specification”, January 2010.
 
@@ -1509,9 +1509,11 @@ No stipulation.
 
 ## 7.2 CRL Profile
 
+Actalis issues CRLs in compliance with [X509] and section 7.2 of the [SMBR].
+
 ### 7.2.1 Version number(s)
 
-Actalis issues CRLs compliant with [PROF] and section 7.2.1 of the [SMBR].
+Actalis issues version 2 CRLs.
 
 ### 7.2.2 CRL and CRL entry extensions
 
@@ -1525,6 +1527,8 @@ Depending on the cause of revocation, CRL entries may contain one of the followi
 - privilegeWithdrawn (9).
 
 ## 7.3 OCSP profile 
+
+Actalis issues OCSP responses in compliance with [OCSP] and section 7.3 of the [SMBR].
 
 ### 7.3.1 Version number(s)
 
