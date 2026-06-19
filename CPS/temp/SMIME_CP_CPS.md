@@ -1,7 +1,7 @@
 ---
 Title: S/MIME Certificate Policy and Certification Practice Statement
 Version: 1.0
-Date: June 03, 2026
+Date: June 18, 2026
 ---
 
 # 1 INTRODUCTION
@@ -12,7 +12,7 @@ Date: June 03, 2026
 
 The reliability of a certificate, in particular the association - attested by the certificate - between a given public key and a given identity, critically depends on the CA’s operating procedures, the obligations and responsibilities of the CA and the certificate Subscriber, and the CA’s physical, technical, and operational security controls. All these aspects are described in a public document called Certification Practice Statement (CPS) and/or a separate document called Certificate Policy (CP), according to [RFC 3647], or a combined document.
 
-This document is the Actalis’ combined CP/CPS relevant to the issuance and management of S/MIME certificates. This CPS is structured according to the outline set forth in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's TLS BRs.
+This document is the Actalis’ combined CP/CPS relevant to the issuance and management of S/MIME certificates. This CPS is structured according to the outline set forth in section 6 of [RFC 3647], as may be amended by the CA/Browser Forum's S/MIME Baseline Requirements.
 
 Actalis conforms to the latest published versions of: CAB Forum’s Baseline Requirements for the Issuance and Management of Publicly‐Trusted S/MIME Certificates (https://www.cabforum.org), the CCADB Policy (https://www.ccadb.org/policy), the Mozilla Root Store Policy, the Apple Root Program, and the Microsoft Root Program. In the event of any inconsistency between this CPS and those documents, those documents take precedence.
 
@@ -23,6 +23,8 @@ This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 I
 This document is the **Certificate Policy and Certification Practice Statement** (hereinafter referred to only as CPS) applying to **S/MIME certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page. 
 
 This CPS is published as a signed PDF document in order to ensure its origin and integrity.
+
+Actalis also publishes this CPS in Markdown, to facilitate transparency, reviewability, version comparison, and change tracking. Where this CPS is published in multiple formats, Actalis ensures that the official text is consistent across formats and clearly identifies the authoritative version in the event of discrepancy. The authoritative version is the document in PDF format.
 
 ## 1.3 PKI PARTICIPANTS
 
@@ -125,7 +127,7 @@ Certificates may also be provided through Resellers (business partners), which i
 
 Four types of S/MIME certificates are covered by this CPS according to the [SMBR] terminology:
 
-- **Mailbox-Validated (OV)** – issued to natural or legal person, contains only an email address;
+- **Mailbox-Validated (MV)** – issued to natural or legal person, contains only an email address;
 - **Individual-Validated (IV)** - issued to a natural person, contains the subscriber’s individual identity (personal name) in addition to an email address;
 - **Organization-Validated (OV)** – issued to an organization (legal person), contains the
     subscriber’s organization identity in addition to an email address;
@@ -454,7 +456,7 @@ Actalis examines the Certification Authority Authorization (CAA) DNS Resource Re
 
 In particular, Actalis looks for the “issuemail” property tag as specified in RFC 9495. Where the Relevant RRSet contains any “issuemail” Property Tags, Actalis recognizes the issuer-domain-name “**actalis.it**”, in the related Property Values, as granting authorization for S/MIME certificates issuance by Actalis.
 
-Actalis also implements MPIC as per §3.2.2.9 of the CABF TLS Baseline Requirements, and performs DNSSEC validation on all DNS queries associated with CAA record lookups performed by the Primary Network Perspective in compliance with 4.2 of the [SMBR].
+Actalis also implements MPIC as per §4.2.2 of the CABF S/MIME Baseline Requirements, and performs DNSSEC validation on all DNS queries associated with CAA record lookups performed by the Primary Network Perspective in compliance with 4.2 of the [SMBR].
 
 Actalis logs the results of the CAA checks.
 
@@ -700,7 +702,9 @@ See §4.9.1.
 
 ### 4.9.13 Circumstances for suspension
 
-No Stipulation.
+Actalis does not support the suspension of S/MIME Subscriber Certificates.
+
+Where circumstances require that an S/MIME Subscriber Certificate no longer be trusted, Actalis SHALL revoke the Certificate in accordance with Section 4.9.1 of this CPS.
 
 ### 4.9.14 Who can request suspension
 
@@ -1351,7 +1355,7 @@ The profile of MV subscriber certificates is as follows:
 | Issuer                    | \<Subject of the Subordinate CA>                           |
 | Validity                  | <According to section 6.3.2>                                         |
 | Subject                   | CN = \<Email address of the Subscriber>                               |
-| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                 |
+| SubjectPublicKeyInfo      | \<According to sections 6.1.5 and 6.1.6>                                 |
 | SignatureValue            | \<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1378,7 +1382,7 @@ The profile of OV subscriber certificates is as follows:
 | Issuer                    | \<Subject of the Subordinate CA>                           |
 | Validity                  | <According to section 6.3.2>                                         |
 | Subject  |CN = \<same as the O attribute><br>O = \<full registered name of Subscriber><br>organizationIdentifier = \<Subscriber’s registration reference according to a registration scheme allowed by [SMBR]><br>L = \<locality of the Subscriber><br>ST = \<state or province of the Subscriber><br>C = \<ISO 3166 country code of Subscriber>|
-| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                |
+| SubjectPublicKeyInfo      | \<According to sections 6.1.5 and 6.1.6>                                |
 | SignatureValue            |\<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1405,7 +1409,7 @@ The profile of SV subscriber certificates is as follows:
 | Issuer                    | \<Subject of the Subordinate CA>                       |
 | Validity                  | \<According to section 6.3.2>                                         |
 | Subject                   | CN = <Personal Name (e.g., Name and Surname)><br>givenName = <Subscriber’s forename><br>surname = <Subscriber’s surname><br>O = <full registered name of Subscriber’s organization><br>organizationIdentifier = <Subscriber’s registration reference according to a registration scheme allowed by [SMBR]><br>L = <locality of the Subscriber’s organization><br>ST = <state or province of the Subscriber’s organization><br>C = <ISO 3166 country code of Subscriber’s organization> |
-| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                 |
+| SubjectPublicKeyInfo      | \<According to sections 6.1.5 and 6.1.6>                                 |
 | SignatureValue            | \<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1432,7 +1436,7 @@ The profile of IV subscriber certificates is as follows:
 | Issuer                    | \<Subject of the Subordinate CA>                       |
 | Validity                  | \<According to section 6.3.2>                                         |
 | Subject                   | CN = <Personal Name (e.g., Name and Surname)><br>givenName = <Subscriber’s forename><br>surname = <Subscriber’s surname><br>L =\<Locality of the Subscriber> (optional)<br>ST = \<State or province of the Subscriber> (optional)<br>C = <ISO 3166 country code of Subscriber> |
-| SubjectPublicKeyInfo      | \<According to sections 5.1.5 and 6.1.6>                                 |
+| SubjectPublicKeyInfo      | \<According to sections 6.1.5 and 6.1.6>                                 |
 | SignatureValue            | \<Subordinate CA signature value>                                     |
 
 | Extension  | Critical?|Value|
@@ -1525,6 +1529,8 @@ Depending on the cause of revocation, CRL entries may contain one of the followi
 - cessationOfOperation (5);
 - certificateHold (6);
 - privilegeWithdrawn (9).
+
+As described in §4.9.13 Actalis does not support the suspension of S/MIME Subscriber Certificates.
 
 ## 7.3 OCSP profile 
 
@@ -1653,7 +1659,7 @@ All confidential information is processed by the CA in compliance with applicabl
 
 ## 9.4 Privacy of personal information
 
-Actalis is the processor of the personal information collected during the identification and registration phase of parties requesting certificates under this CPS, and shall process such information ensuring their confidentiality and in compliance with the Italian Legislative Decree n.196/2003 [DLGS196].
+Actalis is the controller of the personal information collected during the identification and registration phase of parties requesting certificates under this CPS, and shall process such information ensuring their confidentiality and in compliance with the Italian Legislative Decree n.196/2003 [DLGS196].
 
 ### 9.4.1 Privacy plan
 
@@ -1868,8 +1874,8 @@ No stipulation.
 
 # Appendix A - Change History
 
-|Version|Date|Author|Changes| 
-|---|--------|---------|---------------|
-|**1.0**| 03-Jun-2026| AS |First version obtained by merging the previous S/MIME Certificate Policy v3.1 with the common parts of the general CPS (which covered all types of Actalis publicly trusted certificates) to obtain a combined CP-CPS, self-consistent and focused on S/MIME certificates only.|
+|Date|Version|Paragraphs|Changes|Author|
+|---|--------|---------|-------|--------|
+|18-Jun-2026|1.0|All |First version obtained by merging the previous S/MIME Certificate Policy v3.1 with the common parts of the general CPS (which covered all types of Actalis publicly trusted certificates) to obtain a combined CP-CPS, self-consistent and focused on S/MIME certificates only.|AS, FM, NP|
 
 
