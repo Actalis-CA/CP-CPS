@@ -43,9 +43,9 @@
 </tbody>
 </table>
 
-# Introduction
+# 1 Introduction
 
-## Overview
+## 1.1 Overview
 
 **Actalis S.p.A.**, a company of the Aruba S.p.A. group, is a leading provider of certification services since 2002, accredited by AgID under the European Directive on Electronic Signatures, then under the Euro­pean Regulation EU n.910/2014 (“eIDAS”). Actalis offers several types of cer­ti­fi­cates and related mana­gement services, as well as other trust services and solutions ([www.actalis.com](http://www.actalis.com)).
 
@@ -610,7 +610,7 @@ Approval of this CPS follows the procedures defined in the company’s Quality M
 
 \[CCADB\] CCADB Policy (<https://www.ccadb.org/policy>)
 
-# Publications and repository responsibilities
+# 2 Publications and repository responsibilities
 
 The term “repository” refers to a combination of on-line archives or registers containing information of public interest regarding the issuance and management of certificates described in this CPS.
 
@@ -658,7 +658,7 @@ Access to the repository in write-mode (e.g., for the publication of new or upda
 
 The I\&A procedures followed by Actalis comply with CAB Forum requirements. In particular, for all classes of certificates issued under this CPS, the CA performs at least the mandatory checks provided in \[CSBR\].
 
-## Naming
+## 3 Naming
 
 ### Types of names
 
@@ -816,7 +816,7 @@ After a certificate has been revoked, the Subscriber wishing a new certificate m
 
 See section 4.9.3.
 
-# Certificate management operational requirements
+# 4 Certificate management operational requirements
 
 ## Certificate application
 
@@ -1291,7 +1291,7 @@ Not applicable.
 
 Not applicable.
 
-# Facility, management, and operational controls
+# 5 Facility, management, and operational controls
 
 For the management of its CA infrastructure, Actalis makes use of the data center servi­ces provided by its holding company, Aruba S.p.A., who takes responsibility for the housing, Internet con­nectivity, physical and network security of all Actalis’ systems. The data center service provided is ISO/IEC 27001 certified.
 
@@ -1590,7 +1590,7 @@ On the termination date:
 
   - the private certification keys as well as the annexed key restoration material (if any) will be destroyed (by logical deletion) and the transaction will be recorded.
 
-# Technical security controls
+# 6 Technical security controls
 
 ## Key pair generation and installation
 
@@ -1810,7 +1810,7 @@ Actalis also operates a Time-Stamping Authority (TSA) intended for use in signin
 
 The Actalis TSA service, compliant with RFC3161 and with the applicable requirements in \[CSBR\], is available at the following URL: <http://timestamp.actalis.com>
 
-# Certificate, CRL and OCSP profiles
+# 7 Certificate, CRL and OCSP profiles
 
 ## Certificate profile
 
@@ -2796,7 +2796,7 @@ The version of OCSP responses is v1 (0).
 
 OCSP responses contain the Nonce extension (OID 1.3.6.1.5.5.7.48.1.2).
 
-# Compliance audits and other assessments
+# 8 Compliance audits and other assessments
 
 Actalis shall issue certificates and operate its PKI in accordance with applicable law and comply with CAB Forum’s requirements \[CSBR\].
 
@@ -2842,7 +2842,7 @@ The result of internal audits or second-party audits is communicated to the comp
 
 During the period in which the CA issues certificates, the CA shall monitor adherence to this CPS (and linked documents if any) and to the \[CSBR\] requirements, and strictly control its service quality, by performing self-audits on at least a quarterly basis. Self-audits shall be carried out against a randomly selected sample of at least three percent of the certificates issued in the period beginning immediately after the last sample was taken, also using linting techniques and tools.
 
-# Other business and legal matters
+# 9 Other business and legal matters
 
 The general Terms & Conditions of the CA service herein described are provided to customers as a sepa­rate document, to be accepted at application time, published on the CA web site (see par. 2.2).
 
