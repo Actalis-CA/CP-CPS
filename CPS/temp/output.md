@@ -2762,35 +2762,35 @@ OCSP responses contain the Nonce extension (OID 1.3.6.1.5.5.7.48.1.2).
 
 Actalis shall issue certificates and operate its PKI in accordance with applicable law and comply with CAB Forum’s requirements \[CSBR\].
 
-## Frequency or circumstances of assessment
+## 8.1 Frequency or circumstances of assessment
 
 The compliance of the Actalis’ CA services to this CPS, to Regulation (EU) No. 910/2014 ("eIDAS"), to the applicable ETSI standards and to the \[CSBR\] requirements is verified on an annual basis by an accredited Conformity Assessment Body (CAB).
 
 Moreover, always on an annual basis, an internal auditing activity is performed on the CA services that also takes into account aspects related to information security, applicable data protection rules and internal policies and procedures.
 
-## Identity and qualification of assessor
+## 8.2 Identity and qualification of assessor
 
 Compliance audits on the CA are carried out by a Conformity Assessment Body (CAB) accredited in compliance with Regulation (EC) no. 765/2008, through personnel that is qualified and competent on the subject of conformity assessments, according to the ETSI EN 319 403 norm, of Trust Service Providers and the related trust services provided under the eIDAS Regulation. Any second part audits are also performed by accredited bodies in compliance with Regulation (EC) no. 765/2008.
 
-## Assessor’s relationship to assessed entity
+## 8.3 Assessor’s relationship to assessed entity
 
 The Assessment Bodies (CABs) that perform audits on the CA service, and possibly on the external RAs that collaborate with the CA, have no relation with Actalis.
 
 The internal auditor does not belong to the organizational structure that deals with CA activities.
 
-## Topics covered by assessment
+## 8.4 Topics covered by assessment
 
 External audits shall evaluate, based on the ETSI EN 319 411-1 and ETSI EN 319 411-2 norms, the compliance with the \[CSBR\], and the proper operation of the CA as described in this CPS, including any Delegates Third Parties (DTPs) that are not "Enterprise RA", with the exception of any "technically constrained" subordinated CAs (see par. 1.3.1).
 
 Non-compliant DTPs cannot continue to perform the functions delegated to them until the non-conformities have been completely remediated.
 
-## Actions taken as a result of deficiency
+## 8.5 Actions taken as a result of deficiency
 
 The actions resulting from any non-compliance detected during audits (failure to meet the requirements defined in the regulations, standards, and applicable procedures) depend on the nature and severity of the non-compliance detected, on the rules for the management of non-compliances defined by the Assessment Body (CAB) and/or the internal non-conformity management procedures.
 
 In general, if a substantive non-compliance results from an audit, Actalis will develop a plan to remedy this non-compliance as quickly as possible. This plan could result in changes to CA certification policies and/or practices, and/or to the CA software. The plan will be presented to the Actalis direction for approval, and then to any third parties with whom Actalis has commitments in this regard.
 
-## Communication of results
+## 8.5 Communication of results
 
 The result of the audit carried out by the CAB is communicated to the company management and to the heads of the organizational structure in charge of providing the CA service. The result of the audit (i.e. the Audit Report or Audit Statement) is also communicated to the national Supervisory Body (AgID).
 
@@ -2800,7 +2800,7 @@ The Audit Report MUST contain at least the information required by the CCADB Pol
 
 The result of internal audits or second-party audits is communicated to the company management, to the heads of the organizational structure responsible for providing the CA service and, where applicable, to the involved external entity/organization.
 
-## Self-audits
+## 8.6 Self-audits
 
 During the period in which the CA issues certificates, the CA shall monitor adherence to this CPS (and linked documents if any) and to the \[CSBR\] requirements, and strictly control its service quality, by performing self-audits on at least a quarterly basis. Self-audits shall be carried out against a randomly selected sample of at least three percent of the certificates issued in the period beginning immediately after the last sample was taken, also using linting techniques and tools.
 
@@ -2808,9 +2808,9 @@ During the period in which the CA issues certificates, the CA shall monitor adhe
 
 The general Terms & Conditions of the CA service herein described are provided to customers as a sepa­rate document, to be accepted at application time, published on the CA web site (see par. 2.2).
 
-## Service fees
+## 9.1 Service fees
 
-### Certificate issuance or renewal fees
+### 9.1.1 Certificate issuance or renewal fees
 
 The maximum service fees are published on the CA web site.
 
@@ -2818,39 +2818,39 @@ Different conditions may be negotiated case by case, depending on volumes reques
 
 Service fees are subject to change without notice.
 
-### Certificate access fees
+### 9.1.2 Certificate access fees
 
 Not applicable.
 
-### Revocation or status information access fees
+### 9.1.3 Revocation or status information access fees
 
 Access to certificate status services (CRL, OCSP) is free and open to everybody.
 
-### Fees for other services
+### 9.1.4 Fees for other services
 
 No stipulation.
 
-### Refund policy
+### 9.1.5 Refund policy
 
 Please refer to the General Terms & Conditions published on the CA website.
 
-## Financial responsibility
+## 9.2 Financial responsibility
 
-### Insurance coverage
+### 9.2.1 Insurance coverage
 
 Actalis maintains a special insurance with a major insurance company to cover the risks related to the provision of its certification services and other trust services. In particular, the insurance provides for a single limit per claim and per insurance period of EUR 15,000,000 (fifteen million Euros). The insurance company has at least an "A" rating in the [Best’s Insurance Guide](http://www.ambest.com/ratings/guide.asp).
 
-### Other assets
+### 9.2.2 Other assets
 
 No stipulation.
 
-### Insurance or warranty coverage for end-entities
+### 9.2.3 Insurance or warranty coverage for end-entities
 
 Please refer to par. 9.2.1.
 
-## Confidentiality of business information
+## 9.3 Confidentiality of business information
 
-### Scope of confidential information
+### 9.3.1 Scope of confidential information
 
 The following information is considered and treated as confidential:
 
@@ -2868,7 +2868,7 @@ The following information is considered and treated as confidential:
 
   - the audit logs of the CA systems.
 
-### Information not within the scope of confidential information
+### 9.3.2 Information not within the scope of confidential information
 
 All information that must be public for compliance with applicable law (see section 9.15) and regulations (including CAB Forum’s Requirements), or on explicit request from the Subscriber, is considered non-confidential. In particular, the following information is considered non-confidential:
 
@@ -2886,45 +2886,45 @@ All information that must be public for compliance with applicable law (see sect
 
   - any information that is already in the public domain.
 
-### Responsibility to protect confidential information
+### 9.3.3 Responsibility to protect confidential information
 
 Actalis ensures that all confidential information is adequately protected from unauthorized access and from the risk of loss due to disasters (see section 5.7).
 
 All confidential information is processed by the CA in compliance with applicable laws, in particular Legislative Decree no. 196/03 \[DLGS196\] and Regulation (EU) 2016/679 \[GDPR\].
 
-## Privacy of personal information
+## 9.4 Privacy of personal information
 
 Actalis is the data controller of the personal information collected during the identification and registration phase of parties requesting certificates under this CPS, and shall process such information ensuring their con­fidentiality and in compliance with the Italian Legislative Decree n.196/2003 \[DLGS196\].
 
-### Privacy plan
+### 9.4.1 Privacy plan
 
 Regarding privacy, the CA complies with current laws, in particular Legislative Decree no. 196/03 \[DLGS196\] and Regulation (EU) 2016/679 \[GDPR\]. The protection of personal data is part of the Actalis’ Information Security Management System (ISMS), compliant with ISO/IEC 27001.
 
-### Information treated as private
+### 9.4.2 Information treated as private
 
 Please refer to the definition of personal data pursuant to current laws, in particular Legislative Decree no. 196/03 \[DLGS196\].
 
-### Information not deemed private
+### 9.4.3 Information not deemed private
 
 Non-personal data are those that do not fall within the definition in par. 9.4.2. Please also refer to par. 9.3.2.
 
-### Responsibility to protect private information
+### 9.4.4 Responsibility to protect private information
 
 Actalis is the "data controller" for personal data pursuant to Legislative Decree no. 196/03 \[DLGS196\].
 
-### Notice and consent to use private information
+### 9.4.5 Notice and consent to use private information
 
 The notice on the processing of personal data, pursuant to Legislative Decree no. 196/03 \[DLGS196\], is published on the CA website. The certificate request implies the Applicant’s consent to the processing of personal data by the CA, in accordance with such notice.
 
-### Disclosure pursuant to judicial or administrative process
+### 9.4.6 Disclosure pursuant to judicial or administrative process
 
 The Subscriber’s personal data may be disclosed to the police, judicial authorities, information and security bo­dies or other public entities, pursuant to Legislative Decree no. 196/2003 \[DLGS196\], if that is required for the purposes of defense or security of the State or prevention, detection or repression of crimes.
 
-### Other information disclosure circumstances
+### 9.4.7 Other information disclosure circumstances
 
 Not applicable.
 
-## Intellectual property rights
+## 9.5 Intellectual property rights
 
 This CPS is the property of Actalis who reserves all rights associated with the same.
 
@@ -2932,9 +2932,9 @@ The Subscriber keeps all the rights on its own commercial marks (brand names).
 
 Concerning the property rights of other data and information, the applicable law shall be applied.
 
-## Representations and warranties
+## 9.6 Representations and warranties
 
-### CA Representations and Warranties
+### 9.6.1 CA Representations and Warranties
 
 By issuing a Certificate, the CA makes certain warranties to the following Certificate Beneficiaries:
 
@@ -2964,7 +2964,7 @@ More specifically, Actalis represents and warrants to the Certificate Beneficiar
 
   - at the time of issuance, the CA provided the Subscriber with documenta­tion on how to securely store and prevent the misuse of private keys associated with the certificates.
 
-### RA Representations and Warranties
+### 9.6.2 RA Representations and Warranties
 
 RAs must ensure their full compliance with the contract signed with the CA, in particular (but not only) to:
 
@@ -2974,7 +2974,7 @@ RAs must ensure their full compliance with the contract signed with the CA, in p
 
   - proper use of the tools and transmission channels that the CA makes available to them.
 
-### Subscriber Representations and Warranties
+### 9.6.3 Subscriber Representations and Warranties
 
 Prior to the issuance of a Certificate, the CA shall obtain either the Applicant’s agreement to a Subscriber Agreement with the CA, or the Applicant’s acknowledgement of the Terms of Use. As part of the Subscriber Agree­ment or Terms of Use, the Applicant shall make the commitments and warranties listed below.
 
@@ -3022,7 +3022,7 @@ Moreover, the Subscriber shall not sign malicious software (malware) and not des
 
 Subscribers acknowledge and accept that the CA, if made aware that a Subscriber’s certificate is being used for unlawful purposes (e.g. phishing, Man-In-The-Middle attacks, distribution of malware, etc.) or for issuing other certificates, will revoke that Certificate immediately and without any notice.
 
-### Relying Party Representations and Warranties
+### 9.6.4 Relying Party Representations and Warranties
 
 The term “Relying Parties” refers to all those entities (other than Subscribers) that rely on certificates for taking decisions (such as making information or resources available to the Subscriber, use the infor­ma­­tion or resources obtained from the Subscriber, etc.).
 
@@ -3036,15 +3036,15 @@ Each Relying Party, prior to relying on an Actalis certificate, represents and w
 
   - will NOT rely on a certificate that is expired or revoked.
 
-### Representations and warranties of other participants
+### 9.6.5 Representations and warranties of other participants
 
 No stipulation.
 
-## Disclaimers of warranties
+## 9.7 Disclaimers of warranties
 
 Except as expressly stated in this CPS or in a separate agreement with a Subscriber, Actalis does not make any further representations or warranties regarding its CA services. See also the Terms & Conditions published on the Actalis website.
 
-## Limitations of liability
+## 9.8 Limitations of liability
 
 The obligations and responsibilities of Actalis are exclusively those defined in this document and the service supply Contract. In case of violation or non-performance attributable to Actalis, in the event that the same has shown that said violation or non-fulfillment have occurred without malice or negligence, the same will not respond for an amount higher than the amount paid by the Customer for the Service, ordered or renewed, affected by the harmful event referred to the month in which said event occurred, remaining in this case expressly excluded, now by then, any other indemnity or compensation to the Customer for direct or indirect damages of any nature and species.
 
@@ -3064,13 +3064,13 @@ Actalis makes no warranty on the validity and effectiveness, even probative, of 
 
 Actalis does not assume, in any case, any responsibility for the information, data, contents entered or transmitted and, in any case, processed by the Customer through the Service and in general for the use made by the same Service and reserves the right to adopt any initiative and action, to protect their rights and interests, including the communication, to the subjects involved, of the data useful for identifying the Customer.
 
-## Indemnities
+## 9.9 Indemnities
 
-### Indemnification by CAs
+### 9.9.1 Indemnification by CAs
 
 The CA shall abide by section 9.9.1 of the \[CSBR\] towards Application Software Suppliers who have a Root Certificate distribution agreement in place with Actalis.
 
-### Indemnification by Subscribers
+### 9.9.2 Indemnification by Subscribers
 
 Subscribers shall pay compensation of any damages suffered by Actalis in the following cases:
 
@@ -3082,21 +3082,21 @@ Subscribers shall pay compensation of any damages suffered by Actalis in the fol
 
   - use of certificates for unlawful purposes and/or for purposes not allowed by this CPS.
 
-## Term and termination
+## 9.10 Term and termination
 
-### Term
+### 9.10.1 Term
 
 The Contract begins on the date of acceptance by the Contracting Party and ends on the expiry date of the certificate issued by Actalis; in case of renewal of the certificate itself, the validity of the Contract is deferred until the expiry date of the renewed certificate. In any case, the validity of the Contract will cease as a consequence of the revocation, for whatever reason, of the certificate.
 
-### Termination
+### 9.10.2 Termination
 
 Please refer to the General Terms & Conditions published on the CA website.
 
-### Effect of termination and survival
+### 9.10.3 Effect of termination and survival
 
 In the case of contract termination, the certificate of the Subscriber is revoked by the CA.
 
-## Individual notices and communications with participants
+## 9.11 Individual notices and communications with participants
 
 Actalis accepts correspondence related to this CPS, to be sent with the methods indicated in section 1.5.2. Senders are invited to digitally sign their communications, if possible, or use another reliable communication method. Valid communications will be reviewed and replied to as appropriate in a timely manner.
 
@@ -3104,33 +3104,33 @@ Requests for assistance related to the CA service herein described (e.g. technic
 
 Problems related to already issued certificates must be reported to Actalis as described in section 1.5.2.
 
-## Amendments
+## 9.12 Amendments
 
-### Procedure for amendment
+### 9.12.1 Procedure for amendment
 
 The CA reserves the right to make changes to this CPS at any time, without notice, due to technical or organizational reasons or regulatory changes. Each new version of the CPS repeals and replaces the previous versions.
 
-### Notification mechanism and period
+### 9.12.2 Notification mechanism and period
 
 This CPS is reviewed by the CA and, if necessary, updated at least once per year, even in the absence of regulatory changes. The new versions of the CPS are published on the CA website.
 
-### Circumstances under which OID must be changed
+### 9.12.3 Circumstances under which OID must be changed
 
 This CPS applies to various certificate policies (see paragraph 1.4), each identified by a specific OID. Revision of the CPS does not in itself imply the modification of those OIDs.
 
-## Dispute resolution provisions
+## 9.13 Dispute resolution provisions
 
 If the Subscriber or the Applicant of the certificate is a Professional pursuant to Legislative Decree no. n.206/2005 ("Consumer Code"), any dispute deriving from the Contract will be deferred to the judgment of an Arbitration Board composed of three members, one of whom is appointed by Actalis, one appointed by the Contractor, and the third, who will act as President, appointed by the first two. Should one of the Parties fail to appoint its Arbitrator within 20 days of receiving the notice of appointment of Arbitrator sent by the other Party, that second Arbitrator shall be appointed, at the request of the latter Party, by the President of the Court of Arezzo. Similarly, if the two Arbitrators appointed by the Parties do not reach an agreement on the appointment of the third Arbitrator within 20 days from the appointment of the second Arbitrator, the third Arbitrator shall be appointed by the President of the Court of Arezzo upon request of the most diligent Party. The arbitration will be of a ritual nature and the Arbitrators will judge according to the law in accordance with the provisions of articles 806 and following of the Code of Civil Procedure.
 
 The Arbitration will be held in Arezzo.
 
-## Governing law
+## 9.14 Governing law
 
 This CPS is subject to Italian Law and as such it shall be interpreted and carried out. For that not expressly prescribed in this CPS, the applicable law shall prevail.
 
 Other contracts in which this CPS is incorporated by means of reference, may contain distinct and separate clauses with respect to applicable law.
 
-## Compliance with applicable law
+## 9.15 Compliance with applicable law
 
 The main applicable laws are listed below:
 
@@ -3142,31 +3142,31 @@ The main applicable laws are listed below:
 
   - Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the pro­tection of individuals with regard to the processing of personal data, as well as on the free move­ment of such data and repealing Directive 95/46/EC (also “General Data Protection Regulation” or GDPR).
 
-## Miscellaneous provisions
+## 9.16 Miscellaneous provisions
 
-### Entire agreement
+### 9.16.1 Entire agreement
 
 This CPS, which may or may not be supplemented by general or specific Terms and Conditions signed by the Applicant, constitutes the discipline that regulates the use of the certificate by the Subscriber and regulates the relationship between Subscriber and CA. The certificate application implies the full and unconditional acceptance of this CPS by the Applicant.
 
-### Assignment
+### 9.16.2 Assignment
 
 Please refer to the general Terms and Conditions published on the CA website.
 
-### Severability
+### 9.16.3 Severability
 
 The CA will abide by section 9.6.13 of the \[CSBR\], if applicable, and to the general Terms and Conditions published on the CA website.
 
-### Enforcement (attorneys' fees and waiver of rights)
+### 9.16.4 Enforcement (attorneys' fees and waiver of rights)
 
 Please refer to the general Terms and Conditions published on the CA website.
 
-### Force majeure
+### 9.16.5 Force majeure
 
 Actalis shall not be responsible for the failure to carry out the obligations assumed herein in the case when such non-fulfilment is due to causes not attributable to Actalis, such as – for instance, but not limited to – act of providence, unforeseen technical problems completely out of any form of control, intervention by the authority, force majeure, natural disasters, industrial actions including company strikes – inclusive of those at the premises of parties which are used for the execution of the activities associated with the services described herein, and other causes attributable to third parties.
 
-## Other provisions
+## 9.17 Other provisions
 
-### Service levels
+### 9.17.1 Service levels
 
 The CA guarantees the following minimum service levels:
 
@@ -3287,6 +3287,5 @@ in 95% of all cases</p>
 </tbody>
 </table>
 
-1.  Those who send unwanted messages (spam) will be prosecuted according to applicable laws.
 
 2.  One such service is the Italian “Posta Elettronica Certificata” (PEC).
