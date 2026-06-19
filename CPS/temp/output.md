@@ -882,9 +882,7 @@ If the previous steps (see section 4.2) are completed successfully, the CA syste
 
   - checks that the key found in the CSR is not a known “weak key” (see CVE-2008-0166);
 
-  - performs a linting of *tbsCertificate,* using linters broadly adopted by the industry, in order to minimize the risk of incorrect issuance;
-
-  - checks the relevant CAA Records (if any) according to section 3.2.2.8 of the \[CSBR\].
+  - performs a linting of *tbsCertificate,* using linters broadly adopted by the industry, in order to minimize the risk of incorrect issuance.
 
 If all the above checks are successful, the CA generates the certificate, stores it into its database, and eventually:
 
@@ -1259,13 +1257,13 @@ Not applicable.
 
 For the management of its CA infrastructure, Actalis makes use of the data center servi­ces provided by its holding company, Aruba S.p.A., who takes responsibility for the housing, Internet con­nectivity, physical and network security of all Actalis’ systems. The data center service provided is ISO/IEC 27001 certified.
 
-## Physical controls
+## 5.1 Physical controls
 
-### Site location and construction
+### 5.1.1 Site location and construction
 
 All computer systems used for the provision of Actalis’ CA services are housed in highly secure data centers owned and managed by the Actalis’ holding company, Aruba S.p.A. In particular, Actalis maintains at least two full PKI infrastructures at separate locations, for redundancy, plus a third one at a distant location (\> 300 km), for disaster recovery purposes. All these data centers are located on the Italian territory.
 
-### Physical access
+### 5.1.2 Physical access
 
 At all the CA facilities, the following controls are in place:
 
@@ -1275,7 +1273,7 @@ At all the CA facilities, the following controls are in place:
 
   - **active anti-intrusion systems** such as CCTV and VMD.
 
-### Power and air conditioning
+### 5.1.3 Power and air conditioning
 
 All data centers hosting Actalis’ CA services are equipped with:
 
@@ -1283,33 +1281,33 @@ All data centers hosting Actalis’ CA services are equipped with:
 
   - ventilation and air conditioning systems (HVAC) to ensure optimal climatic conditions for the regular operation of servers hosted in the data center.
 
-### Water exposures
+### 5.1.4 Water exposures
 
 All data centers hosting Actalis’ CA services are equipped with flood detection and protection systems.
 
-### Fire prevention and protection
+### 5.1.5 Fire prevention and protection
 
 All the data centers hosting Actalis’ CA services are equipped with fire detection and suppression systems compliant with the applicable laws and standards; fire detectors are also present on all floors of the building. For the details of specific data centers, see par. 5.1.1.
 
-### Media storage
+### 5.1.6 Media storage
 
 On the topic of media storage, the procedures set by Actalis’ ISMS apply.
 
-### Waste disposal
+### 5.1.7 Waste disposal
 
 On the subject of waste disposal, the CA applies the provisions of current regulations.
 
-### Off-site backup
+### 5.1.8 Off-site backup
 
 Backups are stored at a different site than that of data origin, thus ensuring the possibility of restoration in any foreseeable condition.
 
-## Procedural controls
+## 5.2 Procedural controls
 
 Actalis maintains a Security Plan, including a Risk Assessment, which analyses the CA assets, the threats they are exposed to, and descri­bes the various technical, physical and procedural controls deployed so to adequately mitigate the risks. The risk assessment is reviewed at least yearly.
 
 Furthermore, Actalis has defined an inventory of assets (hardware and software) as required by the policy and the company procedure.
 
-### Trusted roles
+### 5.2.1 Trusted roles
 
 Actalis has defined and formally assigned the following trusted roles within the CA service regulated by this CPS:
 
@@ -1331,11 +1329,11 @@ Some persons may hold multiple roles provided that this does not prejudice the s
 
 Trusted roles are appointed by senior management. A list of personnel appointed to trusted roles is maintained and reviewed annually, and made available to auditors.
 
-### Number of persons required per task
+### 5.2.2 Number of persons required per task
 
 Management of the CA private keys (key generation, backup, restore, deletion, etc.) requires at least two persons in trusted roles ("dual control") and must take place in a physically protected environment.
 
-### Identification and authentication for each role
+### 5.2.3 Identification and authentication for each role
 
 All the trusted roles listed in par. 5.2.1 and, in general, all the Actalis staff use appropriate identification and authentication systems for accessing Actalis’ computer systems.
 
@@ -1343,53 +1341,53 @@ In particular, with regard to the physical access to data rooms and cabinets tha
 
 As regards the logical access to the CA systems, identification is based on the account name and relative password or through a two-factor authentication system where necessary. In particular, access to any account that allows direct issuance of certificates requires strong authentication (multi-factor).
 
-### Roles requiring separation of duties
+### 5.2.4 Roles requiring separation of duties
 
 Persons holding any of the trusted roles listed in par. 5.2.1 cannot have other roles within the CA services, except for Validation Specialists and Registration & Revocation Officers. See also section 5.2.2
 
-## Personnel controls
+## 5.3 Personnel controls
 
-### Qualifications, experience, and clearance requirements
+### 5.3.1 Qualifications, experience, and clearance requirements
 
 Actalis ensures that the personnel assigned to its CA services are adequately competent for the tasks assigned to them, based on appropriate education, training, skills, and experience, and that they are free from conflicts of interest that may compromise the necessary impartiality and respect of the procedures. In particular, with reference to the trusted roles, the required characteristics and skills are described in the "job description" company document.
 
 In the case of new recruitments, Actalis always reserves the right to assess what type of training is necessary in relation to the tasks to be assigned, the existing qualifications and experience, and provides where necessary for the inclusion of the resource in a training plan.
 
-### Background check procedures
+### 5.3.2 Background check procedures
 
 For the definition of the shortlist of candidates, both for technical and administrative areas, Actalis uses both the curricula sent directly to it through the appropriate channels (e.g. website) and those provided by external recruiters. For each candidate, the accuracy of the information contained in the CV (e.g. education, masters, specific training courses, etc.) is verified. External recruiters contracted by Actalis also have the obligation to request references, for each potential candidate, before submitting their CVs to Actalis. Furthermore, all candidates, once the selection phase is completed, must provide their certificate of good conduct (extract from the judicial record) or an equivalent declaration to the Human Resources office.
 
-### Training requirements
+### 5.3.3 Training requirements
 
 The staff in charge of the CA services is adequately trained for the tasks that they perform. Actalis provides staff with initial training at the time of recruitment, including courses held by external teachers when deemed necessary, and training on the job.
 
 The staff involved in the verification of information (Validation Specialists) are trained on at least the following topics: Public Key Infrastructures (PKI), identification and authentication policies and procedures, common threats to information verification procedures, and CAB Forum Requirements \[CSBR\]. The records of this training, which is provided at least yearly, are kept and made available to the auditors on request.
 
-### Retraining frequency and requirements
+### 5.3.4 Retraining frequency and requirements
 
 For all personnel working in the CA service, the need for new training is assessed at least once per year (or in advance, in case new developments/services), so as to ensure that all personnel are always able to perform their tasks satisfactorily and competently. Furthermore, training on information security matters is held annually for all staff.
 
-### Job rotation frequency and sequence
+### 5.3.5 Job rotation frequency and sequence
 
 No stipulation.
 
-### Sanctions for unauthorized actions
+### 5.3.6 Sanctions for unauthorized actions
 
 In the case of unauthorized actions and/or violations of company (or Group) policy and/or procedures, Actalis reserves the right to activate the disciplinary procedure provided for in the employment contract, after having assessed the nature and the severity of the violation and its impact on company operations, whether it was the first occurrence, whether the employee had been adequately trained, etc.
 
-### Independent contractor requirements
+### 5.3.7 Independent contractor requirements
 
 Any independent contractor or Delegated Third Party’s personnel involved in the issuance of Certificates shall be fully subject to this CPS, including training and skills requirements (see section 5.3.3), sanctions (see section 5.3.6), document retention and event logging requirements (see section 5.4.1).
 
 Non-employees (e.g. consultants) are required to sign a confidentiality agreement (NDA) before starting collaboration with Actalis and possibly accessing confidential data.
 
-### Documentation supplied to personnel
+### 5.3.8 Documentation supplied to personnel
 
 Personnel in trusted roles are provided with the documentation necessary to perform their duties, depending on their role (see section 5.2.1). In particular, Validation Specialists are provided with this CPS, CAB Forum’s Baseline Requirements \[CSBR\], and detailed instructions on how to properly perform the identification and authentication activities and issue certificates, plus the manuals of the CA/RA applications they use.
 
-## Audit logging procedures
+## 5.4 Audit logging procedures
 
-### Types of events recorded
+### 5.4.1 Types of events recorded
 
 The CA and any Delegated Third Parties shall record all the details related to certificate requests, issuances, and subsequent management (e.g. revocation), and make these records available to the CA auditors. For each event, information shall be recorded about event type, date and time of occurrence, the associated data (depending on event type), the personnel involved (if applicable), and possibly other information depending on event type.
 
@@ -1401,31 +1399,31 @@ At least the following events shall be logged, in line with section 5.4.1 of the
 
   - Security events (e.g. accesses to PKI systems, PKI and security system actions performed, security profile changes, entries to and exits from the CA facility, relevant activities on routers and firewalls, in particular with regard to its configurations etc.).
 
-### Frequency of processing log
+### 5.4.2 Frequency of processing log
 
 The relevant events are collected by the systems that generate them and are transmitted to the centralized log management system. On the log management system, events are automatically classified and stored locally in order to allow them to be consulted. On a daily basis, local data are copied to the long-term storage system (see Section 5.4.4).
 
-### Retention period for audit log
+### 5.4.3 Retention period for audit log
 
 The CA shall retain audit logs for at least 10 years.
 
-### Protection of audit log
+### 5.4.4 Protection of audit log
 
 Audit logs are periodically stored on a remote long-term archival system based on WORM-type (Write-Once, Read Many) or equivalent tech­nology. The “live” copy of the audit log is protected from tampering by multiple security measures.
 
-### Audit log backup procedures
+### 5.4.5 Audit log backup procedures
 
 The storage where the audit log is archived (see section 5.4.4) is replicated on two data centers hosted in separate facilities.
 
-### Audit collection system (internal vs. external)
+### 5.4.6 Audit collection system (internal vs. external)
 
 No stipulation.
 
-### Notification to event-causing subject
+### 5.4.7 Notification to event-causing subject
 
 No stipulation.
 
-### Vulnerability assessments
+### 5.4.8 Vulnerability assessments
 
 Audit logs are periodically examined for anomalies by personnel in trusted roles. Anomalies indicating possible security breaches are reported and investigated. Security incidents are handled according to section 5.7.1.
 
@@ -1433,9 +1431,9 @@ Vulnerability assessments of the CA networks and systems are done at least annua
 
 A comprehensive a risk assessment is conducted at least annually (see also section 5.2).
 
-## Records archival
+## 5.5 Records archival
 
-### Types of records archived
+### 5.5.1 Types of records archived
 
 The CA keeps at least the following information related to the request, issuance and revocation of certificates:
 
@@ -1449,43 +1447,43 @@ The CA keeps at least the following information related to the request, issuance
 
   - certificate revocation requests.
 
-### Retention period for archive
+### 5.5.2 Retention period for archive
 
 Archived records are kept for at least 10 years past the certificates’ expiration or revocation dates.
 
-### Protection of archive
+### 5.5.3 Protection of archive
 
 Archives are protected from unauthorized modification or destruction by strong security controls. To this end, a document preservation service is used complying with the Italian regulations (Legislative Decree No. 82/2005: “*Codice dell’Amministrazione Digitale*” and subsequent amendments and additions) and accredited by AgID.
 
-### Archive backup procedures
+### 5.5.4 Archive backup procedures
 
 Archives are backed up by the preservation system referred to in paragraph 5.5.3.
 
-### Requirements for time-stamping of records
+### 5.5.5 Requirements for time-stamping of records
 
 All archived records are time-stamped at the date and time of creation or occurrence, with a date and time reference obtained from a trusted time source (see section 6.8).
 
-### Archive collection system (internal or external)
+### 5.5.6 Archive collection system (internal or external)
 
 No stipulation.
 
-### Procedures to obtain and verify archive information
+### 5.5.7 Procedures to obtain and verify archive information
 
 The retention system referred to in paragraph 5.5.3 allows searching for archived information on the basis of the associated metadata, as well as its recovery and the verification of its integrity.
 
-## Key changeover
+## 5.6 Key changeover
 
-### Root CA
+### 5.6.1 Root CA
 
 No stipulation.
 
-### Subordinate CA
+### 5.6.2 Subordinate CA
 
 At least 2 years before the end of the validity of the current certification key (Subordinate CA key), a new key pair will be generated and the corresponding certificate will be made available to Subscribers and Relying Parties as described in section 6.1.4. From that moment on, Subscriber certificates and related CRLs will be signed with the new Sub CA key.
 
-## Compromise and disaster recovery
+## 5.7 Compromise and disaster recovery
 
-### Incident and compromise handling procedures
+### 5.7.1 Incident and compromise handling procedures
 
 The Actalis’ Information Security Management System (ISMS), compliant with ISO/IEC 27001, also includes incident and compromise handling procedures. The management of an information security incident is handled by following a multi-stage procedure coordinated by an internal committee (Committee for Security and Crisis Management, later on "Committee") composed of figures of various responsibilities and members of the senior management. The process is articulated into several phases described below:
 
@@ -1507,11 +1505,11 @@ Disaster management is regulated by the Actalis’ Business Continuity Plan (BCP
 
 Actalis also undertakes to maintain a complete and actionable plan for mass-revocation events, carrying out annual tests of the plan and incorporating the lessons learned in order to continually improve its preparedness for mass revocation over time, in compliance with paragraph 5.7.1.2 of the \[CSBR\].
 
-### Computing resources, software, and/or data are corrupted
+### 5.7.2 Computing resources, software, and/or data are corrupted
 
 Actalis implements a Business Continuity Plan for the CA service in order to ensure that the corruption or loss of one or more computers cannot cause any disruption to the CA platform. In particular, all the critical components of the system are redundant both locally, in the single data center, and between the primary and secondary data centers. Actalis also implements specific backup plans to guarantee that there is no loss of software and/or data.
 
-### Entity private key compromise procedures
+### 5.7.3 Entity private key compromise procedures
 
 The CA's private key is the single most critical resource of the CA; as such, it is protected by a set of multi-layered security measures, as other critical CA resources. In case of compromise (loss of confidentiality) of the CA key, after assessment of the incident, Actalis will execute the following plan (not necessarily in this order):
 
@@ -1530,11 +1528,11 @@ The CA's private key is the single most critical resource of the CA; as such, it
 
 Finally, unless the CA is to be terminated, a new CA key pair will be generated and the new CA public key will be disseminated as described in section 6.1.4.
 
-### Business continuity capabilities after a disaster
+### 5.7.4 Business continuity capabilities after a disaster
 
 Actalis are deployed in two geographically distant facilities (see section 5.1), each of which is capable of operating the CA systems independently. In the event that a disaster entirely disables one facility, Actalis’ CA operations will fail over to another facility. See also section 5.7.1.
 
-## CA or RA termination
+## 5.8 CA or RA termination
 
 The activities that will be carried out if Actalis decides, for any reason, to cease its certification service are described below.
 
