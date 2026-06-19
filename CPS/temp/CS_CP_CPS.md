@@ -61,9 +61,9 @@ Within the framework of the service described in this document, the role of Root
 </tr>
 <tr class="even">
 <td>Company name:</td>
-<td><blockquote>
+<td>
 <p><strong>Actalis S.p.A.</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
 <td>Registered Office:</td>
