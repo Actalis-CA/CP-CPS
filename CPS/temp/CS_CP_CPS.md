@@ -35,7 +35,11 @@ The Certification Authority (CA) is the trusted third party who issues the certi
 
 The Actalis PKI (Public Key Infrastructure), on which the Code Signing certificate issuance and management service is based, is a two-level hierarchy, as shown in the following diagram:
 
-![](media/image2.emf)
+<p align="center">
+   &nbsp;
+<img width="362" height="175" alt="Immagine1" src="https://github.com/user-attachments/assets/247289e6-6aa4-478c-9b59-694808f178d4" />
+   &nbsp;
+</p>
 
 The **Root CA** is used for issuing Sub CA certificates and related CRLs only, and is kept off-line when not in use. The **Sub CAs** are the CAs that issue end-user certificates.
 
