@@ -1,47 +1,11 @@
-<table>
-<thead>
-<tr class="header">
-<th><strong>Version:</strong></th>
-<th><blockquote>
-<p><strong>1.0</strong></p>
-</blockquote></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Date:</strong></td>
-<td><blockquote>
-<p><strong>Jun 18, 2026</strong></p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Approved by:</td>
-<td><blockquote>
-<p>Andrea Sassetti</p>
-</blockquote></td>
-</tr>
-<tr class="odd">
-<td>Document code:</td>
-<td><blockquote>
-<p>MODAC_A_65</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td>Distribution:</td>
-<td><blockquote>
-<p>PUBLIC</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
+---
+Title: Actalis Code Signing Certificate Policy and Certification Practice Statement
+Version: 1.0
+Date: June 18, 2026
+Approved by: Andrea Sassetti
+Document Code: MODAC_A_ 65
+Distribution: PUBLIC
+---
 
 # 1 Introduction
 
