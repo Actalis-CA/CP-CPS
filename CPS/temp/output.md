@@ -762,7 +762,7 @@ Before using an Incorporation Agency or Registration Agency to satisfy these ver
 
 ## 3.3 Identification and authentication for re-key requests
 
-### Identification and authentication for routine re-key
+### 3.3.1 Identification and authentication for routine re-key
 
 Re-keying a certificate may routinely occur in two cases:
 
@@ -772,25 +772,25 @@ Re-keying a certificate may routinely occur in two cases:
 
 In both cases, the CA may request the Subscriber to pass the same identification and authentication proce­dures used for the initial certificate issuance, depending on the age of the validation data used for the initial certificate issuance (in view of the requirements set forth in \[CSBR\]) and on the request channel.
 
-### Identification and authentication for re-key after revocation
+### 3.3.2 Identification and authentication for re-key after revocation
 
 After a certificate has been revoked, the Subscriber wishing a new certificate must generate a new key pair and follow all the normal identification and authentication procedures as in the initial certificate issuance.
 
-## Identification and authentication for revocation requests
+## 3.4 Identification and authentication for revocation requests
 
 See section 4.9.3.
 
 # 4 Certificate management operational requirements
 
-## Certificate application
+## 4.1 Certificate application
 
-### Who can submit a certificate application
+### 4.1.1 Who can submit a certificate application
 
 Either the Applicant (i.e., the future Subscriber) or a natural person authorized to request certificates on behalf of the Applicant (i.e., an Applicant Representative) may submit certificate requests, in compliance with the requirements described in par. 3.2.5
 
 Actalis maintains an internal database of all previously revoked cer­ti­ficates and previously rejected certificate requests due to suspected phishing or other fraudulent usage or con­cerns. Actalis uses this information to identify subsequent suspicious certificate requests.
 
-### Enrollment process and responsibilities
+### 4.1.2 Enrollment process and responsibilities
 
 The certificate enrollment process includes the following mandatory steps:
 
@@ -846,9 +846,9 @@ Before accepting the Subscriber Agreement, the Applicant or Applicant Representa
 
 Certificate application forms and Subscriber Agreements are available in Italian and English language. Actalis does not commit to support other languages.
 
-## Certificate application processing
+## 4.2 Certificate application processing
 
-### Performing identification and authentication functions
+### 4.2.1 Performing identification and authentication functions
 
 Upon receipt of a certificate application, all the verifications previously described (see chapter 3 and the previous sections of chapter 4) are performed either automatically, to the extent that is possible and allowed, and/or by a Validation Specialist when necessary or mandatory, in compliance with the \[CSBR\] according to certificate type and class.
 
@@ -858,7 +858,7 @@ Actalis also checks that the information contained in the CSR are consistent wit
 
 Once the essential I\&A steps are successfully completed, the CA will normally send to the Applicant Representative, via email, the authentication credentials needed to login to the CA portal, for the possible submission of revocation requests.
 
-### Approval or rejection of certificate applications
+### 4.2.2 Approval or rejection of certificate applications
 
 Approval of certificate applications requires the successful completion of all validation steps described so far, in full compliance with all the applicable requirements.
 
@@ -866,13 +866,13 @@ Actalis does not issue Code Signing certificates to entities that Actalis determ
 
 In any case, Actalis complies with section 4.2.2 of the \[CSBR\].
 
-### Time to process certificate applications
+### 4.2.3 Time to process certificate applications
 
 No stipulation.
 
-## Certificate issuance
+## 4.3 Certificate issuance
 
-### CA actions during certificate issuance
+### 4.3.1 CA actions during certificate issuance
 
 If the previous steps (see section 4.2) are completed successfully, the CA system:
 
@@ -899,13 +899,13 @@ All of the above operations are performed automatically for Subscriber certifica
 
 In case of a Subordinate CA certificate, however, the certificate issuance requires a suitably authorized individual (i.e., the CA system operator, system officer, or PKI administrator) to deliberately issue a direct command in order for the Root CA to perform the certificate signing operation.
 
-### Notification to subscriber by the CA of issuance of certificate
+### 4.3.2 Notification to subscriber by the CA of issuance of certificate
 
 The Subscriber will normally be notified via email of the successful issuance of the certificate, either by the CA directly or by an RA and/or Reseller where applicable, provided that the email address supplied to the CA for that purpose by the Applicant Representative or Certificate Requester is valid.
 
-## Certificate acceptance
+## 4.4 Certificate acceptance
 
-### Conduct constituting certificate acceptance
+### 4.4.1 Conduct constituting certificate acceptance
 
 The CA intends the certificate as accepted after 30 days from the date of delivery, as attested by the date of the electronic mail message sent to the Subscriber, barring any notice to the contrary from the Subscriber.
 
@@ -913,87 +913,87 @@ Public use of the certificate (e.g., publication of execu­table code verifiable
 
 In the event that the certificate is issued with incorrect information in it due to incorrect completion of the application form by the requestor, the certificate must nonetheless be paid for.
 
-### Publication of the certificate by the CA
+### 4.4.2 Publication of the certificate by the CA
 
 As regards Root CA and Subordinate CA certificates, see paragraph 2.2
 
 No stipulation as regards Subscriber certificates.
 
-### Notification of certificate issuance by the CA to other entities
+### 4.4.3 Notification of certificate issuance by the CA to other entities
 
 No stipulation.
 
-## Key pair and certificate usage
+## 4.5 Key pair and certificate usage
 
-### Subscriber private key and certificate usage
+### 4.5.1 Subscriber private key and certificate usage
 
 The Subscriber shall use the private key to digitally sign their own executable code (e.g., PE files, Java applets, dynamic libraries, etc.) and/or executable code for which they are responsible.
 
-### Relying party public key and certificate usage
+### 4.5.2 Relying party public key and certificate usage
 
 The relying parties shall use the certificate to verify the integrity and origin of the executable code.
 
 See also section 1.4.
 
-## Certificate renewal
+## 4.6 Certificate renewal
 
 Renewal of a certificate means the issuing of a new certificate containing the same Subject identifying informa­tion that are found in a certificate already issued and not yet expired or revoked.
 
 The CA makes a reasonable effort to inform the Subscriber about the forthcoming expiration of their certificates, by periodically sending emails to the Technical Contact. The warning emails are sent, normally, starting from 30 days before the expiry of the certificate.
 
-### Circumstance for certificate renewal
+### 4.6.1 Circumstance for certificate renewal
 
 Same as described in par. 4.1.1.
 
-### Who may request renewal
+### 4.6.2 Who may request renewal
 
 Same as described in par. 4.1.2.
 
-### Processing certificate renewal requests
+### 4.6.3 Processing certificate renewal requests
 
 Same as described in par. 4.1.3.
 
-### Notification of new certificate issuance to subscriber
+### 4.6.4 Notification of new certificate issuance to subscriber
 
 Same as described in par. 4.1.4.
 
-### Conduct constituting acceptance of a renewal certificate
+### 4.6.5 Conduct constituting acceptance of a renewal certificate
 
 Same as described in par. 4.1.5.
 
-### Publication of the renewal certificate by the CA
+### 4.6.6 Publication of the renewal certificate by the CA
 
 Same as described in par. 4.1.6.
 
-### Notification of certificate issuance by the CA to other entities
+### 4.6.7 Notification of certificate issuance by the CA to other entities
 
 Same as described in par. 4.1.7.
 
-## Certificate re-key
+## 4.7 Certificate re-key
 
 Certificate re-keying implies the issuance of a new certificate, with a new public key and a new serial number, but with the same Subject information found in the current certificate, provided this latter is not expired or revoked (otherwise, the normal first-issuance procedures are followed).
 
-### Circumstance for certificate re-key
+### 4.7.1 Circumstance for certificate re-key
 
 Key regeneration is a mandatory step if certificate renewal is required, but may also be required following the compromise of the current key or for other reasons at the discretion of the CA.
 
-### Who may request certification of a new public key
+### 4.7.2 Who may request certification of a new public key
 
 Certificate re-keying may be requested by the Subscriber, or by an RA, or by the CA, depending on circumstances.
 
-### Processing certificate re-key requests
+### 4.7.3 Processing certificate re-key requests
 
 Normally, the procedure for processing a key regeneration request is the same as in the new certificate issuance case. If the evidences previously collected during the I\&A phase (see section 3.2) are still valid, the CA can process the request without necessarily redoing I\&A; in this case, an authenticated request by the Subscriber is sufficient.
 
-### Notification of new certificate issuance to subscriber
+### 4.7.4 Notification of new certificate issuance to subscriber
 
 Same as described in par. 4.3.2.
 
-### Conduct constituting acceptance of a re-keyed certificate
+### 4.7.5 Conduct constituting acceptance of a re-keyed certificate
 
 Same as described in par. 4.4.1.
 
-### Publication of the re-keyed certificate by the CA
+### 4.7.6 Publication of the re-keyed certificate by the CA
 
 Same as described in par. 4.4.2.
 
@@ -1001,41 +1001,41 @@ Same as described in par. 4.4.2.
 
 Same as described in par. 4.4.3.
 
-## Certificate modification
+## 4.8 Certificate modification
 
 Certificate modification implies issuing a new certificate to the same Subscriber, with the same or a different public key, but with different identification information (e.g. parts of Subject) than are found in the old certificate.
 
-### Circumstance for certificate modification
+### 4.8.1 Circumstance for certificate modification
 
 When the old certificate contains incorrect information due to errors committed by the CA or RA, that incorrect certificate will be revoked and a correct one will be issued without additional charges for the customer.
 
 When the old certificate contains incorrect information due to errors committed by the Applicant (e.g. incorrect inputs in one or more fields of the request form), that incorrect certificate will be revoked and the Subscriber may request a new certificate.
 
-### Who may request certificate modification
+### 4.8.2 Who may request certificate modification
 
 Certificate modification may be requested by the Subscriber, or by an RA, or by the CA, depending on the case.
 
-### Processing certificate modification requests
+### 4.8.3 Processing certificate modification requests
 
 Normally, the procedure for modifying a certificate is the same as for issuing a new certificate. Depending on the case, a new I\&A (see Section 3.2) may be necessary, either complete or partial.
 
-### Notification of new certificate issuance to subscriber
+### 4.8.4 Notification of new certificate issuance to subscriber
 
 Same as described in par. 4.3.2.
 
-### Conduct constituting acceptance of modified certificate
+### 4.8.5 Conduct constituting acceptance of modified certificate
 
 Same as described in par. 4.4.1.
 
-### Publication of the modified certificate by the CA
+### 4.8.6 Publication of the modified certificate by the CA
 
 Same as described in par. 4.4.2.
 
-### Notification of certificate issuance by the CA to other entities
+### 4.8.7 Notification of certificate issuance by the CA to other entities
 
 Same as described in par. 4.4.3.
 
-## Certificate suspension and revocation
+## 4.9 Certificate suspension and revocation
 
 The suspension of the certificate determines a temporary suspension of the validity of a certificate, starting from a given moment in time (date/time). Once a certificate has been suspended, it can be re-activated at any time. Suspension is not supported for certificates issued under this CPS.
 
@@ -1043,9 +1043,9 @@ Revocation determines the premature termination of the validity of a certificate
 
 Implementation of revocation consists in the generation and publication of a new CRL (Certificate Revocation List) that includes the serial number of the revoked certificate, and update of the OCSP responder database (see section 4.10 for more details on certificate status services).
 
-### Circumstances for revocation
+### 4.9.1 Circumstances for revocation
 
-#### Reasons for Revoking a Subscriber Certificate
+#### 4.9.1.1 Reasons for Revoking a Subscriber Certificate
 
 The CA shall revoke a certificate **within 24 hours** if one or more of the following events occurs:
 
@@ -1089,11 +1089,11 @@ Before revoking a certificate, the CA will make a reasonable effort to warn to t
 
   - the certificate was erroneously issued with CA = TRUE in its KeyUsage extension.
 
-#### Reasons for Revoking a Subordinate CA Certificate
+#### 4.9.1.2 Reasons for Revoking a Subordinate CA Certificate
 
 Actalis shall meet the requirements set forth in section 4.9.1.2 of the \[CSBR\].
 
-### Who can request revocation
+### 4.9.2 Who can request revocation
 
 Revocation can be requested by (depending on circumstances):
 
@@ -1109,7 +1109,7 @@ Additionally, Subscribers, Relying Parties, Application Software Suppliers, and 
 
 Under certain circumstances the Subscriber *must* request revocation of its certificate (see §9.6.3).
 
-### Procedure for revocation request
+### 4.9.3 Procedure for revocation request
 
 Requests for revocation can be submitted directly to the CA, through the CA portal. In the event that the cer­ti­ficate was provided through a reseller or through an RA, revocation of the certificate may also be requested through the reseller or RA. In any case, before revocation of a certificate can be requested, it is necessary to authenticate to the relevant web site / service with the credentials that were provided to the Subscriber for that purpose at the time of certificate issuance.
 
@@ -1121,29 +1121,29 @@ For revocation requests submitted on-line, certificates shall be revoked within 
 
 Regardless of whom requested the certificate revocation, the CA shall normally inform the Subscriber about the effec­ted revocation via an e-mail message sent to the “technical contact” specified in the application form.
 
-### Revocation request grace period
+### 4.9.4 Revocation request grace period
 
 There is no grace period associated with certificate revocation requests. The Subscriber is expected to request revo­cation of its certificate as soon as circumstances requiring revocation (see §4.9.1) are confirmed.
 
-### Time within which CA must process the revocation request
+### 4.9.5 Time within which CA must process the revocation request
 
 Properly authenticated revocation requests received from Subscribers are processed within 24 hours provided that the request is made with the expected on-line procedure (see section 4.9.3).
 
 In case of certificate problem reports that may require revocation (as described at 1.5.2), investigation on the alleged problem will begin within 24 hours of receiving the problem report. Once decided that certificate revocation is war­ranted, it will be carried out within 24 hours.
 
-### Revocation checking requirement for relying parties
+### 4.9.6 Revocation checking requirement for relying parties
 
 See section 9.6.4.
 
-### CRL issuance frequency
+### 4.9.7 CRL issuance frequency
 
 See paragraph 4.10.1.
 
-### Maximum latency for CRLs
+### 4.9.8 Maximum latency for CRLs
 
 CRLs are published right after having been generated. The latency between generation time and publication time may depend on the load of the CA’s processing systems; it is typically a few minutes and does not exceed 60 minutes.
 
-### On-line revocation/status checking availability
+### 4.9.9 On-line revocation/status checking availability
 
 Actalis supports an OCSP service for all Certificates and Pre-certificates that have been allocated a serial number, in compliance with §4.9.9 of the \[CSBR\].
 
@@ -1155,15 +1155,15 @@ OCSP responses related to Subscriber certificates have a validity interval equal
 
 In all other respects, Actalis’ OCSP Service fully complies with §4.9.9 of the \[CSBR\].
 
-### On-line revocation checking requirements
+### 4.9.10 On-line revocation checking requirements
 
 See sections 4.10 and 7.3.
 
-### Other forms of revocation advertisements available
+### 4.9.11 Other forms of revocation advertisements available
 
 Actalis allows for OCSP stapling.
 
-### Special requirements related to key compromise
+### 4.9.12 Special requirements related to key compromise
 
 No particular requirement in case of key compromise detected by the Subscriber. In this case, the Subscriber is supposed to promptly request Actalis to revoke their certificate (see section 9.6.3).
 
@@ -1181,23 +1181,23 @@ Subjects *other* than the Subscriber can report the compromise of the key of an 
 
 Actalis may, at its discretion, also allow other methods to demonstrate possession or control of a private key.
 
-### Circumstances for suspension
+### 4.9.13 Circumstances for suspension
 
 Not applicable.
 
-### Who can request suspension
+### 4.9.14 Who can request suspension
 
 Not applicable.
 
-### Procedure for suspension request
+### 4.9.15 Procedure for suspension request
 
 Not applicable.
 
-### Limits on suspension period
+### 4.9.16 Limits on suspension period
 
 Not applicable.
 
-## Certificate status services
+## 4.10 Certificate status services
 
 In general, the status of certificates (active or revoked) is made available to all interested parties via:
 
@@ -1205,7 +1205,7 @@ In general, the status of certificates (active or revoked) is made available to 
 
   - the provision of an OCSP (On-line Certificate Status Protocol) service.
 
-### Operational characteristics
+### 4.10.1 Operational characteristics
 
 The CRL can be accessed:
 
@@ -1231,27 +1231,27 @@ The ARL, namely the list of revoked SubCA certificates, is re-generated and re-p
 
 Revocation entries in CRLs and OCSP responses shall not be removed until after the expiry date of the revo­ked certificates.
 
-### Service availability
+### 4.10.2 Service availability
 
 Access to the CRL and OCSP service shall be continuously available (24 x 7), except in the case of system faults or other unexpected events. See also section 17.1.
 
 For both CRL and OCSP, the response time shall be ten seconds or less under normal operating conditions.
 
-### Optional features
+### 4.10.3 Optional features
 
 No stipulation.
 
-## End of subscription
+## 4.11 End of subscription
 
 The contract between the CA and the Subscriber ends when the Subscriber’s certificate expires or is revoked, whichever comes first.
 
-## Key escrow and recovery
+## 4.12 Key escrow and recovery
 
-### Key escrow and recovery policy and practices
+### 4.12.1 Key escrow and recovery policy and practices
 
 Not applicable.
 
-### Session key encapsulation and recovery policy and practices
+### 4.12.2 Session key encapsulation and recovery policy and practices
 
 Not applicable.
 
