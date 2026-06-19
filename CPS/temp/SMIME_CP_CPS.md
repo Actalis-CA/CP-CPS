@@ -2,6 +2,9 @@
 Title: S/MIME Certificate Policy and Certification Practice Statement
 Version: 1.0
 Date: June 18, 2026
+Approved by: Andrea Sassetti
+Document Code: MODAC_A_ 67
+Distribution: PUBLIC
 ---
 
 # 1 INTRODUCTION
