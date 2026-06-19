@@ -1554,33 +1554,33 @@ On the termination date:
 
 # 6 Technical security controls
 
-## Key pair generation and installation
+## 6.1 Key pair generation and installation
 
-### Key pair generation
+### 6.1.1 Key pair generation
 
-#### CA key pair generation
+#### 6.1.1.1 CA key pair generation
 
 Generation of all CA key pairs (Root CAs and subordinate CAs) takes place in a physically secured environ­ment, following a documented procedure that requires the joint intervention of two different people in Trusted Roles under the principles of “*dual control*” and “*split-knowledge*”. All CA key pairs are generated inside HSMs (Hardware Security Modules) meeting the requi­rements of section 6.2.1. Execution of the procedure is witnessed by an internal auditor and by an independent qualified auditor; the activity is recorded in a report which is archived on the liability of the Director of Certification Services.
 
-#### RA key pair generation
+#### 6.1.1.2 RA key pair generation
 
 No stipulation.
 
-#### Subscriber key pair generation
+#### 6.1.1.3 Subscriber key pair generation
 
 Subscriber’s Private Keys MUST be generated, stored, and used in compliance with the requirements in section 6.2.7.
 
 Actalis shall reject a certificate request for a Public Key that does not meet the requirements set forth in sections 6.1.5 and 6.1.6 or that corresponds to an industry‐demonstrated weak Private Key, such as a “Debian weak key” (<https://wiki.debian.org/SSLkeys>) or one affected by the ROCA (<https://github.com/crocs-muni/roca>) or the Close Primes (<https://fermatattack.secvuln.info/>) vulnerabilities.
 
-### Private Key delivery to subscriber
+### 6.1.2 Private Key delivery to subscriber
 
 See paragraph 6.1.1.3.
 
-### Public key delivery to certificate issuer
+### 6.1.3 Public key delivery to certificate issuer
 
 The Applicant must submit its public key to the issuing CA in the form of a Certificate Signing Request (CSR) conforming to the PKCS\#10 standard \[RFC2314\].
 
-### CA public key delivery to relying parties
+### 6.1.4 CA public key delivery to relying parties
 
 Root CA public keys are distributed at least in these ways:
 
@@ -1592,7 +1592,7 @@ Root CA public keys are distributed at least in these ways:
 
 Subordinate CA (i.e. issuing CA) public keys, in the form of certificates signed by the Root CA, are provided to Subscribers, together with the Subscriber certificate, and are published in the CA repository.
 
-### Key sizes
+### 6.1.5 Key sizes
 
 Root CAs shall use an RSA key pair with a module size of 4096 bits or an ECDSA key pair with a size of 384 bits.
 
@@ -1604,91 +1604,91 @@ Subscriber keys shall be either:
 
   - or ECC keys of type NIST P-256 or P-384.
 
-### Public key parameters generation and quality checking
+### 6.1.6 Public key parameters generation and quality checking
 
 The CA shall confirm that public keys meet the requirements set forth in section 6.1.6 of the \[CSBR\].
 
-### Key usage purposes (as per X.509 v3 key usage field)
+### 6.1.7 Key usage purposes (as per X.509 v3 key usage field)
 
 Root CA private keys MUST NOT be used to sign Certificates except in the cases listed in §6.1.7 of the \[CSBR\]
 
 See also section 7.
 
-## Private Key Protection and Cryptographic Module Engineering Controls
+## 6.2 Private Key Protection and Cryptographic Module Engineering Controls
 
-### Cryptographic module standards and controls
+### 6.2.1 Cryptographic module standards and controls
 
 All CA private keys (both Root CAs and issuing CAs) shall be generated, stored and used only in HSMs (Hardware Security Modules) pos­sessing a security evaluation according to FIPS PUB 140-2 Level 3 (or higher), FIPS PUB 140-3 Level 3 (or higher) and/or Common Criteria (namely ISO/IEC 15408) at EAL 4 or higher.
 
-### Private Key (n out of m) multi-person control
+### 6.2.2 Private Key (n out of m) multi-person control
 
 See section 5.2.2.
 
-### Private Key escrow
+### 6.2.3 Private Key escrow
 
 Actalis does not escrow its CA private keys to any third parties nor does it provide such a service for Subscriber keys.
 
-### Private Key backup
+### 6.2.4 Private Key backup
 
 For guaranteeing continuity of service, Actalis keeps encrypted backup copies of its CA keys on re­movable media. The backup copy is kept in a safe place that is different from the location of the opera­tional copy. Backup and restore procedures require the joint intervention of at least two people (“dual control”) in tru­sted roles.
 
-### Private Key archival
+### 6.2.5 Private Key archival
 
 No stipulation beyond what is provided for in the \[CSBR\].
 
-### Private Key transfer into or from a cryptographic module
+### 6.2.6 Private Key transfer into or from a cryptographic module
 
 When CA private keys are transferred between HSMs (e.g., for redundancy or backup purposes) they are encrypted prior to leaving HSMs and unwrapped only inside destination HSMs. CA private keys never exist in plain text form outside of HSMs. Actalis does not generate CA keys for external subordinate CAs.
 
-### Private Key storage on cryptographic module
+### 6.2.7 Private Key storage on cryptographic module
 
 Private Keys corresponding to CA Keys MUST be stored in accordance with \[CSBR\] section 6.2.7.
 
-#### Private key storage for CA keys
+#### 6.2.7.1 Private key storage for CA keys
 
 Private Keys corresponding to CA Keys MUST be stored in accordance with \[CSBR\] section 6.2.7.
 
-#### Private key storage for Timestamp Authorities
+#### 6.2.7.2 Private key storage for Timestamp Authorities
 
 Actalis’ Timestamp Authority protects its signing keys according to \[CSBR\] section 6.2.7.
 
-#### Private key storage for Signing Services
+#### 6.2.7.3 Private key storage for Signing Services
 
 The Actalis’ Code Signing Service ensures that Subscribers’ Private Keys are generated, stored, and used in a secure environment that meets the requirements of \[CSBR\] section 6.2.7.
 
-#### Subscriber Private Key protection and verification
+#### 6.2.7.4 Subscriber Private Key protection and verification
 
 Actalis normally issues Code Signing certificates only for private keys generated, stored and used through the Actalis’ Code Signing Service (see also section 6.2.7.3).
 
 At its own discretion, Actalis may in some circumstances issue Code Signing certificates on personal cryptographic devices (e.g., smartcards or similar) that comply at least with FIPS PUB 140 Level 3 (or higher), FIPS PUB 140-3 Level 3 (or higher), and/or Common Criteria EAL 4 or higher, or equivalent security criteria.
 
-### Method of activating private key
+### 6.2.8 Method of activating private key
 
 CA private keys are only activated by authorized persons, using the mechanisms provided by the HSM ma­nu­facturer. Activation data and devices are protected from loss or disclosure to unauthorized people.
 
 Subscribers are responsible for protecting their private keys. Subscribers are supposed to use a strong pass­word or an equivalent authentication method to prevent unauthorized access or use of their private keys.
 
-### Method of deactivating private key
+### 6.2.9 Method of deactivating private key
 
 CA private keys are de-activated by authorized persons, using the mechanisms provided by the HSM ma­nu­fac­tu­rer.
 
-### Method of destroying private key
+### 6.2.10 Method of destroying private key
 
 CA private keys shall be destroyed when they are no longer needed. CA keys are only destroyed by autho­rized persons in trusted roles, using the mechanisms provided by the HSM ma­nu­facturer.
 
 Subscribers shall securely destroy their private keys when they are no longer needed (e.g. when the corre­sponding certificates expire or are revoked) by suitable methods depending on the type of media where the private keys are stored (e.g. storage media or HSMs).
 
-### Cryptographic Module Rating
+### 6.2.11 Cryptographic Module Rating
 
 See section 6.2.1.
 
-## Other aspects of key pair management
+## 6.3 Other aspects of key pair management
 
-### Public key archival
+### 6.3.1 Public key archival
 
 See section 5.5
 
-### Operational Lifetime of Certificates and Keys
+### 6.3.2 Operational Lifetime of Certificates and Keys
 
 Code Signing Certificate issued to a Subscriber MUST NOT exceed 460 days.
 
@@ -1700,31 +1700,31 @@ For further details, the provisions of §6.3.2 of the \[CSBR\] apply.
 
 See also section 7.1.
 
-## Activation data
+## 6.4 Activation data
 
 Activation data refers to data that are required to activate private keys within HSMs. Examples include, but are not limited to, PINs, passphrases, and fragments of private keys used in a split-know­ledge scheme.
 
-### Activation Data Generation and Installation
+### 6.4.1 Activation Data Generation and Installation
 
 Activation data are generated and used following information security best practices and, where applicable, the procedures provided by the HSM manufacturers.
 
-### Activation Data Protection
+### 6.4.2 Activation Data Protection
 
-#### CA keys
+#### 6.4.2.1 CA keys
 
 Activation data are protected by physical (e.g. storage on removable media), logical (e.g. encryption), and procedural measures (e.g. assignment to persons in trusted roles), in compliance with the company’s information security policy and the “dual control” requirement (see par. 6.1.1.1).
 
-#### Subscriber keys
+#### 6.4.2.2 Subscriber keys
 
 Activation data are protected by the Subscriber so to prevent their disclosure to any unauthorized parties. For further important details on this topic, see paragraph 9.6.3.
 
-### Other Aspects of Activation Data
+### 6.4.3 Other Aspects of Activation Data
 
 Root CA keys are normally kept in a non-operational state, except when needed for issuing or revoking Sub­ordinate CA certificates or generating CRLs.
 
-## Computer security controls
+## 6.5 Computer security controls
 
-### Specific computer security technical requirements
+### 6.5.1 Specific computer security technical requirements
 
 The computers used in the CA services run operating systems of proven quality and reliability, configured in such a way as to prevent unauthorized and/or improper use of resources (data, applications, communication channels, etc.).
 
@@ -1734,27 +1734,27 @@ Computers are subject to a "hardening" procedure aimed at removing or disabling 
 
 Privileged access to computers (i.e. as " Administrator") is limited to personnel who actually need it and who have been appointed "System Administrator" in compliance with current legislation.
 
-### Computer security rating
+### 6.5.2 Computer security rating
 
 No stipulation.
 
-## Life cycle technical controls
+## 6.6 Life cycle technical controls
 
-### System Development Controls
+### 6.6.1 System Development Controls
 
 The development of software systems used to support the trust services provided by Actalis, including the CA service, be it carried out by Actalis itself or on behalf of Actalis by contractors, respects the company's Quality Management System (QMS), compliant with the UNI EN ISO 9001 standard: 2015.
 
 For software provided by third parties for the execution of its CA activities, Actalis provides for continuous monitoring of software versioning and upgrades in order to guarantee the highest quality of the services offered.
 
-### Security Management Controls
+### 6.6.2 Security Management Controls
 
 Actalis has in place an Information Security Management System (ISMS), compliant with the ISO/IEC 27001 standard, covering all company areas, including those involved in the development and provision of the CA service. Among the other provisions of the ISMS, all equip­ment and software used for Actalis’ trust services (including CA services) is deployed and updated following a docu­mented change management process.
 
-### Life Cycle Security Controls
+### 6.6.3 Life Cycle Security Controls
 
 No stipulation.
 
-## Network security controls
+## 6.7 Network security controls
 
 Access to the CA on-line hosts is protected by high quality firewalls that guarantee an adequate filtering of the incoming connections and implement intrusion detection functionalities. Before the firewalls, a series of routers that implement suitable ACLs (Access Control List) constitute further protection. All the communication ports of the certification servers that are not used are disabled. Only those ports are active which support the protocols and functions required for the operation and functionality of the service.
 
@@ -1766,7 +1766,7 @@ Actalis performs at least an annual security assessment to verify the possible p
 
 Actalis also complies with the requirements of the “Network and Certificate System Security Requirements” published on <https://cabforum.org/working-groups/netsec/> .
 
-## Time Stamping
+## 6.8 Time Stamping
 
 Actalis also operates a Time-Stamping Authority (TSA) intended for use in signing software when used in conjunction with Actalis Code Signing certificates. No guarantee is offered, and no liability will be accepted for any use of the Actalis TSA other than for signing software in combination with Code Signing certificates.
 
