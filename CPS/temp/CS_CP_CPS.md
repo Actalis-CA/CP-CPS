@@ -67,51 +67,51 @@ Within the framework of the service described in this document, the role of Root
 </tr>
 <tr class="odd">
 <td>Registered Office:</td>
-<td><blockquote>
+<td>
 <p><strong>Via San Clemente 53 – 24036 Ponte S. Pietro (BG) – ITALY</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
 <td>Legal representative:</td>
-<td><blockquote>
+<td>
 <p><strong>Massimiliano Carollo</strong> (Chief Executive Officer)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
 <td>VAT Reg. No. and Tax Code:</td>
-<td><blockquote>
+<td>
 <p><strong>03358520967</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
 <td>Telephone (switchboard):</td>
-<td><blockquote>
+<td>
 <p><strong>+39 0575 050.350</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
 <td>DUNS number:</td>
-<td><blockquote>
+<td>
 <p><strong>440-489-735</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
 <td>ISO Object Identifier (OID):</td>
-<td><blockquote>
+<td>
 <p><strong>1.3.159</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
 <td>Company web site:</td>
-<td><blockquote>
+<td>
 <p><a href="http://www.actalis.it">http://www.actalis.it</a></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
 <td>Company e-mail address:</td>
-<td><blockquote>
+<td>
 <p><a href="mailto:info@actalis.it">info@actalis.it</a></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -304,254 +304,254 @@ Approval of this CPS follows the procedures defined in the company’s Quality M
 <table>
 <thead>
 <tr class="header">
-<th><blockquote>
+<th>
 <p>AgID</p>
-</blockquote></th>
-<th><blockquote>
+</th>
+<th>
 <p>Agenzia per l’Italia Digitale (Agency for a Digital Italy)</p>
-</blockquote></th>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>ARL</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Authority Revocation List</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CA</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Certification Authority</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CAB</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Conformity Assessment Body</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CP</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Certificate Policy</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CPS</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Certification Practice Statement</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CRL</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Certificate Revocation List</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CSR</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Certificate Signing Request</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>DBA</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Doing Business As (trade name)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>DN</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Distinguished Name</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>ECC</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Elliptic Curve Cryptography</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>eIDAS</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Electronic Identification and Trust Services (Regulation EU n.910/2014)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>EV</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Extended Validation</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>FIPS</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Federal Information Processing Standard</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>HSM</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Hardware Security Module</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>HTTP</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Hyper-Text Transfer Protocol</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>I&amp;A</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Identification and Authentication</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>ISMS</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Information Security Managament System</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>ISO</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>International Standards Organization</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>OCSP</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>On-line Certificate Status Protocol</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>OID</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Object Identifier</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>OV</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Organization Validated</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>PDF</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Portable Document Format</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>PKI</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Public Key Infrastructure</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>RA</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Registration Authority</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>SAN</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Subject Alternative Names</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>TLS</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Transport Layer Security</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>TSL</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Trust-services Status List</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>TSP</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Trust Service Provider</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>UPS</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Uninterruptible Power Supply</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>VMD</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>Video Motion Detection</p>
-</blockquote></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1801,164 +1801,164 @@ Below is the profile of the *multi-purpose* Root CA certificate:
 <table>
 <thead>
 <tr class="header">
-<th><blockquote>
+<th>
 <p><strong>Field</strong></p>
-</blockquote></th>
-<th><blockquote>
+</th>
+<th>
 <p><strong>Value</strong></p>
-</blockquote></th>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Version</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>V3 (2)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SerialNumber</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>1</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Signature</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>sha256WithRSAEncryption (1.2.840.113549.1.1.11)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Issuer</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>CN = Actalis Authentication Root CA</p>
 <p>O = Actalis S.p.A./03358520967</p>
 <p>L = Milano</p>
 <p>C = IT</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Validity</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>from September 22, 2011 to September 22, 2030</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Subject</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>CN = Actalis Authentication Root CA</p>
 <p>O = Actalis S.p.A./03358520967</p>
 <p>L = Milano</p>
 <p>C = IT</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>SubjectPublicKeyInfo</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;RSA public key of 4096 bits&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SignatureValue</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Root CA signature&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p><strong>Extension</strong></p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p><strong>Value</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Basic Constraints</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: CA=true</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityKeyIdentifier (AKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>52:D8:88:3A:C8:9F:78:66:ED:89:F3:7B:38:70:94:C9:02:02:36:D0</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectKeyIdentifier (SKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>52:D8:88:3A:C8:9F:78:66:ED:89:F3:7B:38:70:94:C9:02:02:36:D0</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>KeyUsage</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: keyCertSign, cRLSign</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>ExtendedKeyUsage (EKU)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CertificatePolicies</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectAlternativeName (SAN)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityInformationAccess (AIA)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CRLDistributionPoints (CDP)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1972,160 +1972,160 @@ Below are the profiles of the *single-purpose* Root CA certificates:
 <table>
 <thead>
 <tr class="header">
-<th><blockquote>
+<th>
 <p><strong>Field</strong></p>
-</blockquote></th>
-<th><blockquote>
+</th>
+<th>
 <p><strong>Value</strong></p>
-</blockquote></th>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Version</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>V3 (2)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SerialNumber</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;includes at least 8 pseudo-random bytes&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Signature</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>sha512WithRSAEncryption (1.2.840.113549.1.1.13)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Issuer</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Same value as the Subject &gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Validity</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;25 years&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Subject</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>CN = Actalis Code Signing RSA Root CA &lt;year&gt;</p>
 <p>O = Actalis S.p.A.</p>
 <p>C = IT</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>SubjectPublicKeyInfo</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;RSA public key of 4096 bits&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SignatureValue</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Root CA signature&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p><strong>Extension</strong></p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p><strong>Value</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Basic Constraints</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: CA=true</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityKeyIdentifier (AKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;SHA1- of the public key&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectKeyIdentifier (SKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;SHA1- of the public key&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>KeyUsage</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: keyCertSign, cRLSign</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>ExtendedKeyUsage (EKU)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CertificatePolicies</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectAlternativeName (SAN)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityInformationAccess (AIA)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CRLDistributionPoints (CDP)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -2137,160 +2137,160 @@ Where \<year\> is the year of creation of the Root CA.
 <table>
 <thead>
 <tr class="header">
-<th><blockquote>
+<th>
 <p><strong>Field</strong></p>
-</blockquote></th>
-<th><blockquote>
+</th>
+<th>
 <p><strong>Value</strong></p>
-</blockquote></th>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Version</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>V3 (2)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SerialNumber</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;includes at least 8 pseudo-random bytes&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Signature</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>ecdsa-with-SHA384 (1.2.840.10045.4.3.3)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Issuer</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Same value as the Subject &gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Validity</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;25 years&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Subject</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>CN = Actalis CN=Actalis Code Signing ECC Root CA &lt;year&gt;</p>
 <p>O = Actalis S.p.A.</p>
 <p>C = IT</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>SubjectPublicKeyInfo</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;ECDSA P-384 public key&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SignatureValue</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Root CA signature&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p><strong>Extension</strong></p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p><strong>Value</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Basic Constraints</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: CA=true</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityKeyIdentifier (AKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;SHA1- of the public key&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectKeyIdentifier (SKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;SHA1- of the public key&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>KeyUsage</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: keyCertSign, cRLSign</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>ExtendedKeyUsage (EKU)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CertificatePolicies</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectAlternativeName (SAN)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityInformationAccess (AIA)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CRLDistributionPoints (CDP)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -2304,167 +2304,167 @@ Where \<year\> is the year of creation of the Root CA.
 <table>
 <thead>
 <tr class="header">
-<th><blockquote>
+<th>
 <p><strong>Field</strong></p>
-</blockquote></th>
-<th><blockquote>
+</th>
+<th>
 <p><strong>Value</strong></p>
-</blockquote></th>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Version</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>V3 (2)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SerialNumber</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;includes at least 8 pseudo-random bytes&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Signature</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>sha256WithRSAEncryption (1.2.840.113549.1.1.11)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Issuer</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>CN = Actalis Authentication Root CA</p>
 <p>O = Actalis S.p.A./03358520967</p>
 <p>L = Milan</p>
 <p>C = IT</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Validity</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;According to section 6.3.2&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Subject</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>CN = Actalis Code Signing CA G<em><strong>N</strong></em></p>
 <p>O = Actalis S.p.A.</p>
 <p>L = Ponte San Pietro</p>
 <p>ST = Bergamo</p>
 <p>C = IT</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>SubjectPublicKeyInfo</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;RSA public key of 4096 bits&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SignatureValue</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Root CA signature&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p><strong>Extension</strong></p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p><strong>Value</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Basic Constraints</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: CA=true</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityKeyIdentifier (AKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Same value as the Root CA SKI extension&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectKeyIdentifier (SKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;public key SHA1-digest&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>KeyUsage</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: keyCertSign, cRLSign</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>ExtendedKeyUsage (EKU)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>codeSigning</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CertificatePolicies</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>PolicyOID = 2.5.29.32.0 (anyPolicy)</p>
 <p>CPS-URI = &lt;HTTP address of this CPS&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectAlternativeName (SAN)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityInformationAccess (AIA)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;HTTP address of OCSP responder&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CRLDistributionPoints (CDP)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;HTTP address to access the ARL&gt;</p>
 <p>&lt;LDAP address to access the ARL&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 </tbody>
 </table>
@@ -2482,166 +2482,166 @@ The Code Signing OV certificate is issued with the following profile:
 <table>
 <thead>
 <tr class="header">
-<th><blockquote>
+<th>
 <p><strong>Field</strong></p>
-</blockquote></th>
-<th><blockquote>
+</th>
+<th>
 <p><strong>Value</strong></p>
-</blockquote></th>
+</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Version</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>V3 (2)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SerialNumber</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Includes at least 8 pseudo-random bytes&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Signature</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;In accordance with paragraphs 6.1.5 and 7.1.3&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Issuer</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;DN of the CA that issued the certificate&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>Validity</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;According to section 6.3.2&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Subject</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>C = &lt;Two-letter code of country where the Subscriber is based&gt;</p>
 <p>ST = &lt;State or province where Subscriber is based&gt;<br />
 L = &lt;Locality where Subscriber is based &gt;</p>
 <p>O = &lt;Registered name or DBA of Subscriber&gt;</p>
 <p>OU = &lt;optional&gt;</p>
 <p>CN = &lt;Same value as the O field&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>SubjectPublicKeyInfo</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;In accordance with paragraphs 6.1.5 and 7.1.3&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SignatureValue</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Sub CA signature&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p><strong>Extension</strong></p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p><strong>Value</strong></p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>Basic Constraints</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;If included, is critical and contains CA=FALSE&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityKeyIdentifier (AKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Same value as the Sub CA SKI extension&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectKeyIdentifier (SKI)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;public key SHA1-digest&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>KeyUsage</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>critical: digitalSignature</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>ExtendedKeyUsage (EKU)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>codeSigning (1.3.6.1.5.5.7.3.3)</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>CertificatePolicies</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>PolicyOID = 2.23.140.1.4.1</p>
 <p>PolicyOID = 1.3.159.1.<strong>21</strong>.1<br />
 CPS-URI = &lt;HTTP address of this CPS&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>SubjectAlternativeName (SAN)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;Not included&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="odd">
-<td><blockquote>
+<td>
 <p>AuthorityInformationAccess (AIA)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;HTTP address of OCSP responder&gt;<br />
 &lt;HTTP address of the issuing CA certificate&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 <tr class="even">
-<td><blockquote>
+<td>
 <p>CRLDistributionPoints (CDP)</p>
-</blockquote></td>
-<td><blockquote>
+</td>
+<td>
 <p>&lt;HTTP address to access the CRL&gt;</p>
-</blockquote></td>
+</td>
 </tr>
 </tbody>
 </table>
