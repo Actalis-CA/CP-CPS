@@ -1,5 +1,5 @@
 ---
-Title: Actalis Code Signing Certificate Policy and Certification Practice Statement
+Title: Code Signing Certificate Policy and Certification Practice Statement
 Version: 1.0
 Date: June 18, 2026
 Approved by: Andrea Sassetti
