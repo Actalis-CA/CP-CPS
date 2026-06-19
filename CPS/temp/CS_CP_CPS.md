@@ -3170,83 +3170,13 @@ Actalis shall not be responsible for the failure to carry out the obligations as
 
 The CA guarantees the following minimum service levels:
 
-<table>
-<thead>
-<tr class="header">
-<th><blockquote>
-<p><strong>Metric</strong></p>
-</blockquote></th>
-<th><blockquote>
-<p><strong>Objective</strong></p>
-</blockquote></th>
-<th><blockquote>
-<p><strong>Measurement basis</strong></p>
-</blockquote></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p>CRL and OCSP availability (24 x 7)</p>
-</blockquote></td>
-<td><blockquote>
-<p>99.8 %</p>
-</blockquote></td>
-<td><blockquote>
-<p>annual</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>CA website availability (24 x 7)</p>
-</blockquote></td>
-<td><blockquote>
-<p>99.8 %</p>
-</blockquote></td>
-<td><blockquote>
-<p>annual</p>
-</blockquote></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Certificate issuing time</p>
-</blockquote></td>
-<td><blockquote>
-<p>max 5 working days<br />
-in 95% of all cases</p>
-</blockquote></td>
-<td><blockquote>
-<p>annual</p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>Time for certificate revocation<br />
-(when requested on-line)</p>
-</blockquote></td>
-<td><blockquote>
-<p>max 2 minutes<br />
-in 95% of all cases</p>
-</blockquote></td>
-<td><blockquote>
-<p>annual</p>
-</blockquote></td>
-</tr>
-<tr class="odd">
-<td><blockquote>
-<p>Time for certificate revocation<br />
-(when requested by e-mail, ordinary mail or fax)</p>
-</blockquote></td>
-<td><blockquote>
-<p>max 6 hours<br />
-in 95% of all cases</p>
-</blockquote></td>
-<td><blockquote>
-<p>annual</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
+| Metric  | Objective  |Measurement basis|
+|--|--|--|
+| CRL and OCSP availability (24 x 7)|  99.8 % |annual|
+|CA website availability (24 x 7)| 99.8 %|annual|
+|Certificate issuing time|max 5 working days in 95% of all cases|annual|
+|Time for certificate revocation (when requested on-line)|max 2 minutes in 95% of all cases|annual|
+|Time for certificate revocation (when requested by e-mail, ordinary mail or fax)|max 6 hours in 95% of all cases|annual|
 
 # Appendix A – Change History
 
@@ -3288,4 +3218,3 @@ in 95% of all cases</p>
 </table>
 
 
-2.  One such service is the Italian “Posta Elettronica Certificata” (PEC).
