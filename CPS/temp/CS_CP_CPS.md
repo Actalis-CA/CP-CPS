@@ -3180,41 +3180,7 @@ The CA guarantees the following minimum service levels:
 
 # Appendix A – Change History
 
-<table>
-<tbody>
-<tr class="odd">
-<td><blockquote>
-<p><strong><span class="smallcaps">Date</span></strong></p>
-</blockquote></td>
-<td><blockquote>
-<p><strong><span class="smallcaps">Vers.</span></strong></p>
-</blockquote></td>
-<td><blockquote>
-<p><strong><span class="smallcaps">Paragraphs</span></strong></p>
-</blockquote></td>
-<td><blockquote>
-<p><strong><span class="smallcaps">changes</span></strong></p>
-</blockquote></td>
-<td><blockquote>
-<p><strong><span class="smallcaps">Author</span></strong></p>
-</blockquote></td>
-</tr>
-<tr class="even">
-<td><blockquote>
-<p>18-Jun-2026</p>
-</blockquote></td>
-<td><blockquote>
-<p>1.0</p>
-</blockquote></td>
-<td><blockquote>
-<p>All</p>
-</blockquote></td>
-<td>First version obtained by removing from the previous general CPS (which covered all types of Actalis publicly trusted certificates) all non-relevant material to obtain a combined CP-CPS, self-consistent and focused on Code Signing certificates only.</td>
-<td><blockquote>
-<p>AS, FM, NP</p>
-</blockquote></td>
-</tr>
-</tbody>
-</table>
-
+|Date|Version|Paragraphs|Changes|Author|
+|---|--------|---------|-------|--------|
+|18-Jun-2026|1.0|All |First version obtained by removing from the previous general CPS (which covered all types of Actalis publicly trusted certificates) all non-relevant material to obtain a combined CP-CPS, self-consistent and focused on Code Signing certificates only.|AS, FM, NP|
 
