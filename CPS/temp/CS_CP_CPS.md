@@ -302,17 +302,15 @@ Approval of this CPS follows the procedures defined in the company’s Quality M
 ## 1.6  Definitions and acronyms
 
 <table>
-<thead>
-<tr class="header">
-<th>
-<p>AgID</p>
-</th>
-<th>
-<p>Agenzia per l’Italia Digitale (Agency for a Digital Italy)</p>
-</th>
-</tr>
-</thead>
 <tbody>
+<tr class="even">
+<td>
+<p>AgID</p>
+</td>
+<td>
+<p>Agenzia per l’Italia Digitale (Agency for a Digital Italy)</p>
+</td>
+</tr>
 <tr class="odd">
 <td>
 <p>ARL</p>
