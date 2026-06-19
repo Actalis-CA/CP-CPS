@@ -1774,23 +1774,23 @@ The Actalis TSA service, compliant with RFC3161 and with the applicable requirem
 
 # 7 Certificate, CRL and OCSP profiles
 
-## Certificate profile
+## 7.1 Certificate profile
 
 All certificates issued under this CPS conforms to the public specification \[RFC5280\], which is based on the ITU-T x.509v3 standard (equivalent to ISO/IEC 9594-8:2005) and to the European norms ETSI EN 319-411 and ETSI EN 319 412 (applicable parts).
 
-### Version number(s)
+### 7.1.1 Version number(s)
 
 All certificates shall be of type X.509 v3.
 
-### Certificate content and extensions
+### 7.1.2 Certificate content and extensions
 
 All certificates conform to the \[RFC 5280\] public specification and to the CAB Forum Requirements \[CSBR\].
 
-#### Root CA Certificates
+#### 7.1.2.1 Root CA Certificates
 
 The profile of the Root CA certificate is as follows:
 
-##### Legacy hierarchy
+##### 7.1.2.1.1 Legacy hierarchy
 
 Below is the profile of the *multi-purpose* Root CA certificate:
 
@@ -1959,7 +1959,7 @@ Below is the profile of the *multi-purpose* Root CA certificate:
 </tbody>
 </table>
 
-##### New hierarchies
+##### 7.1.2.1.2 New hierarchies
 
 Below are the profiles of the *single-purpose* Root CA certificates:
 
@@ -2293,9 +2293,9 @@ Where \<year\> is the year of creation of the Root CA.
 
 Where \<year\> is the year of creation of the Root CA.
 
-#### Subordinate CA Certificates
+#### 7.1.2.2 Subordinate CA Certificates
 
-##### Legacy hierarchy
+##### 7.1.2.2.1 Legacy hierarchy
 
 <table>
 <thead>
@@ -2465,13 +2465,13 @@ Where \<year\> is the year of creation of the Root CA.
 </tbody>
 </table>
 
-#### Cross Certificates
+#### 7.1.2.3 Cross Certificates
 
 No cross-certificates (from the old Root CA to new Root CAs) have yet been issued to date.
 
-#### Subscriber Certificates
+#### 7.1.2.4 Subscriber Certificates
 
-##### Code Signing OV
+##### 7.1.2.4.1 Code Signing OV
 
 The Code Signing OV certificate is issued with the following profile:
 
@@ -2642,7 +2642,7 @@ CPS-URI = &lt;HTTP address of this CPS&gt;</p>
 </tbody>
 </table>
 
-#### All certificates
+#### 7.1.2.5 All certificates
 
 The CA may include in the certificate further information (e.g. additional extensions and/or additional extension fields or values), provided that such additional information:
 
@@ -2650,7 +2650,7 @@ The CA may include in the certificate further information (e.g. additional exten
 
 2)  cannot mislead Relying Parties about the certificate information verified by the CA.
 
-### Algorithm object identifiers
+### 7.1.3 Algorithm object identifiers
 
 Certificates are normally signed using one of the following algorithms, depending on the type of CA key:
 
@@ -2670,23 +2670,23 @@ CRLs and OSCP responses are signed using one of the following algorithms, depend
 | ecdsa-with-SHA256       | 1.2.840.10045.4.3.2   |
 | ecdsa-with-SHA384       | 1.2.840.10045.4.3.3   |
 
-### Name forms
+### 7.1.4 Name forms
 
 Name forms are as stipulated in section 3.1.1.
 
-#### Name encoding
+#### 7.1.4.1 Name encoding
 
 The provisions of section 7.1.4.1 of the \[CSBR\] apply.
 
-#### Subject Information – Subscriber certificates
+#### 7.1.4.2 Subject Information – Subscriber certificates
 
 By issuing the Certificate, the CA represents that it followed the procedures set forth in this CPS to verify that, as of the Certificate’s issuance date, all of the Subject Information was accurate.
 
-##### Subject Alternative Name Extension
+##### 7.1.4.2.1 Subject Alternative Name Extension
 
 No stipulation.
 
-##### Subject Distinguished Name Fields
+##### 7.1.4.2.2 Subject Distinguished Name Fields
 
 The following rules apply:
 
@@ -2700,27 +2700,27 @@ The following rules apply:
 
   - The ***countryName*** attribute (OID 2.5.4.6) of the Subject DN must contain the ISO 3166 two-letter code (e.g., “IT”) of the country where the Subscriber’s principal place of business is located.
 
-### Name constraints
+### 7.1.5 Name constraints
 
 Actalis may issue, subject to a contractual agreement, Subordinate CA certificates to external entities, signed by an Actalis’ root CA key. In such a case, the Subordinate CA certificate will be technically constrained in compliance with section 7.1.5 of the \[CSBR\].
 
-### Certificate policy object identifier
+### 7.1.6 Certificate policy object identifier
 
 See section 1.4.
 
-### Usage of Policy Constraints extension
+### 7.1.7 Usage of Policy Constraints extension
 
 Not applicable.
 
-### Policy qualifiers syntax and semantics
+### 7.1.8 Policy qualifiers syntax and semantics
 
 Actalis includes in Subscriber Certificates a non-critical *CertificatePolicies* extension. This includes the CAB Forum’s Reserved Policy OID for OV Code Signing certificates, without qualifiers, and the Actalis’ proprietary Code Signing Policy OID that includes a single Policy Qualifier referring to the CPS URI but not including a userNotice.
 
-### Processing semantics for the critical Certificate Policies extension
+### 7.1.9 Processing semantics for the critical Certificate Policies extension
 
 Not applicable.
 
-## CRL profile
+## 7.2 CRL profile
 
 The CRLs shall conform to public specification \[RFC 5280\] and to CAB Forum’s Requirements \[CSBR\].
 
@@ -2732,17 +2732,17 @@ Besides the mandatory information, the CRLs also contain:
 
   - *cRLNumber* (sequential number of CRL)
 
-### Version Number(s)
+### 7.2.1 Version Number(s)
 
 The version of CRL is v2 (1).
 
-### CRL and CRL entry extensions
+### 7.2.2 CRL and CRL entry extensions
 
 Associated with each CRL entry, the *reasonCode* extension is used to indicate the reason of revocation.
 
 The CRLReason indicated MUST NOT be unspecified (0).
 
-## OCSP profile
+## 7.3 OCSP profile
 
 The OSCP service shall conform to public specification \[RFC6960\] and to CAB Forum’s Requirements \[CSBR\].
 
@@ -2750,11 +2750,11 @@ OCSP responses are not signed with the private key of the issuing CA, but rather
 
 OCSP responses conforms to the “pkix-ocsp-basic” profile (OID 1.3.6.1.5.5.7.48.1.1).
 
-### Version number(s)
+### 7.3.1 Version number(s)
 
 The version of OCSP responses is v1 (0).
 
-### OCSP extensions
+### 7.3.2 OCSP extensions
 
 OCSP responses contain the Nonce extension (OID 1.3.6.1.5.5.7.48.1.2).
 
