@@ -21,15 +21,15 @@ Actalis conforms to the latest published versions of CAB Forum’s Code Signing 
 
 This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nd/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
-## Document Identification
+## 1.2 Document Identification
 
 This document is the **Certificate Policy and** **Certification Practice Statement** (hereinafter referred to only as CPS) applying to **Code Signing** **certificates** issued by **Actalis S.p.A.** Version and time of last revision are indicated on the first page.
 
 Actalis also publishes this CPS in Markdown, to facilitate transparency, reviewability, version comparison, and change tracking. Where this CPS is published in multiple formats, Actalis ensures that the official text is consistent across formats and clearly identifies the authoritative version in the event of discrepancy.The authoritative version is the document in pdf format.
 
-## PKI participants
+## 1.3 PKI participants
 
-### Certification Authorities
+### 1.3.1 Certification Authorities
 
 The Certification Authority (CA) is the trusted third party who issues the certificates and signs them with its own private key (CA key). Furthermore, the CA manages the status of the certificates.
 
@@ -116,7 +116,7 @@ Within the framework of the service described in this document, the role of Root
 </tbody>
 </table>
 
-#### Root Certification Authorities
+#### 1.3.1.1 Root Certification Authorities
 
 As anticipated, the role of Root CA is played by Actalis. As of the date of revision of this present CPS, Actalis’ Root CA keys are those identified in the following table; for further details, see chapter 7.
 
@@ -158,7 +158,7 @@ As anticipated, the role of Root CA is played by Actalis. As of the date of revi
 </tbody>
 </table>
 
-#### Subordinate Certification Authorities
+#### 1.3.1.2 Subordinate Certification Authorities
 
 As of the date of revision of this CPS, the **Subordinate CAs run by Actalis** are those identified in the following table. For further details, see chapter 7.
 
@@ -189,11 +189,11 @@ SubCA certificates can be issued, under an Actalis Root CA, for external CAs (i.
 
 Actalis shall notify the applicable Root Store programs - with the required advance notice - before issuing any CA certificate (be it Subordinate or Cross) that extends the trust limit of the Root Stores or replaces a non-revoked CA certificate whose subject CA owner is not included in Root Stores. Such certificates must not be issued without the explicit approval of the Root Programs, if required.
 
-#### Cross Certificates
+#### 1.3.1.3 Cross Certificates
 
 No cross-certificates (between the old and new Actalis Root CAs) have yet been issued to date.
 
-### Registration Authorities
+### 1.3.2 Registration Authorities
 
 The Registration Authority (RA) is a person or an organization that is responsible for:
 
@@ -207,7 +207,7 @@ Actalis may delegate some RA tasks to Delegated Third Parties (DTP), on a contra
 
 Organizations meeting the requirements for “Enterprise RAs” set forth in the \[CSBR\] may be enabled to operate as their own RA.
 
-### Subscribers
+### 1.3.3 Subscribers
 
 Subscribers are those legal entities or individuals to whom Certificates are issued according to this CPS and who hold the private keys corresponding to their certificates.
 
@@ -217,17 +217,17 @@ Prior to verification of identity and issuance of a certificate, any requesting 
 
 The Customer, namely the individual or organization that purchases the certificate, is normally the Subscriber itself, but this is not a requirement (another entity may purchase the certificate on behalf of the Subscriber).
 
-### Relying parties
+### 1.3.4 Relying parties
 
 Relying Parties are recipients of a certificate who act on reliance on the information contained in the certi­fi­cate. These are typically the users of the signed software.
 
-### Resellers
+### 1.3.5 Resellers
 
 Certificates may also be provided through Resellers (business partners), which in certain cases may also play the role of Registration Authorities, depending on the agreements with the CA.
 
-## Certificate usage
+## 1.4 Certificate usage
 
-### Appropriate certificate uses
+### 1.4.1 Appropriate certificate uses
 
 Certificates issued under this CPS are meant to be used for validating digital signatures of executable code.
 
@@ -235,7 +235,7 @@ It is assumed that the Applicant possesses the competence and tools necessary to
 
 Actalis issues Organization Validated (OV) Code Signing certificates, in compliance with CAB Forum’s requirements \[CSBR\], and includes the applicable CAB Reserved Policy OID 1.3.159.1.21.1 into the in the *CertificatePolicies* certificate extension, as detailed in chapter 7.
 
-### Prohibited certificate uses
+### 1.4.2 Prohibited certificate uses
 
 Any use of the certificate other than provided for in section 1.4.1 is forbidden and may result, as soon as Actalis is made aware of it, in the revocation of the certificate (see also section 4.9.1).
 
@@ -245,17 +245,17 @@ Actalis therefore strongly recommends that *ICA certificates not be embedded int
 
 *Actalis strongly discourages “certificate pinning" and does not consider it a sufficient reason to delay revocation.*
 
-## Policy administration
+## 1.5 Policy administration
 
-### Organization administering the document
+### 1.5.1 Organization administering the document
 
 This CPS is developed, reviewed, published and updated by Actalis S.p.A.
 
-### Contact person
+### 1.5.2 Contact person
 
 For any enquiries about this CPS, please send e-mail to <cps-admin@actalis.it>.
 
-#### Problem reporting
+#### 1.5.2.1  Problem reporting
 
 Actalis makes available to all interested parties (Subscribers, Relying Parties, Application Software Suppliers, law enforcement, etc.) two communication channels through which certificate problems can be reported to the CA at any time (24x7):
 
@@ -287,15 +287,15 @@ If the reported problem does exist, the CA will decide on a case-by-case basis t
 
 Note: those who send unwanted messages (spam) will be prosecuted according to applicable laws.
 
-### Person determining CPS suitability for the policy
+### 1.5.3 Person determining CPS suitability for the policy
 
 This CPS is approved by Actalis’ CA services direction, after review by all internal stakeholders, taking into account the Requirements \[CSBR\], and the results and recommendations received from qualified auditors (see also section 8).
 
-### CPS approval procedures
+### 1.5.4 CPS approval procedures
 
 Approval of this CPS follows the procedures defined in the company’s Quality Management System. This CPS is reviewed and updated at least yearly, i.e., within 365 days since the last update.
 
-## Definitions and acronyms
+## 1.6  Definitions and acronyms
 
 <table>
 <thead>
@@ -552,7 +552,7 @@ Approval of this CPS follows the procedures defined in the company’s Quality M
 </tbody>
 </table>
 
-## Normative references
+## 1.7 Normative references
 
 \[DLGS196\] Legislative Decree n.196 of 30 June 2003 “Personal data protection code”, published in the Supplemento Ordinario n.123 of the Gazzetta Ufficiale n.174 of 29 July 2003.
 
