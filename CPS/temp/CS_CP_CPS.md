@@ -41,9 +41,9 @@ The **Root CA** is used for issuing Sub CA certificates and related CRLs only, a
 
 In particular, to date there are:
 
-  - > A *legacy* hierarchy based on the single multi-purpose Root CA *“Actalis Authentication Root CA”,* included in the main root certificate stores, currently in use. Under this single Root CA, various SubCAs operate that issue different types of certificates (TLS Server, Code Signing, S/MIME, etc.);
+  - A *legacy* hierarchy based on the single multi-purpose Root CA *“Actalis Authentication Root CA”,* included in the main root certificate stores, currently in use. Under this single Root CA, various SubCAs operate that issue different types of certificates (TLS Server, Code Signing, S/MIME, etc.);
 
-  - > New hierarchies based on *single-purpose* Root CAs detailed below, which are currently not included in the main root certificate stores. These hierarchies are intended to replace the legacy structure, forming the basis for the structured migration of certificates. The new hierarchies are specific to the type of certificate (TLS Server, Code Signing, S/MIME, etc.).
+  - New hierarchies based on *single-purpose* Root CAs detailed below, which are currently not included in the main root certificate stores. These hierarchies are intended to replace the legacy structure, forming the basis for the structured migration of certificates. The new hierarchies are specific to the type of certificate (TLS Server, Code Signing, S/MIME, etc.).
 
 Some of the Root CAs on which the new hierarchies are based have been cross-certified by the *multi-purpose* Root CA, thus allowing the issuance of certificates also using the subordinate CAs under these new Root CAs.
 
