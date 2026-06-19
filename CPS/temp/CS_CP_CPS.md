@@ -2467,6 +2467,174 @@ Where \<year\> is the year of creation of the Root CA.
 </tbody>
 </table>
 
+##### 7.1.2.2.2 New hierarchies
+
+In the table below, \<keytype\> is the type of key (algorithm) such as “RSA” or “ECC”, while \< year \> is the year when the SubCA was created.
+
+<table>
+<thead>
+<tr class="header">
+<th><blockquote>
+<p><strong>Field</strong></p>
+</blockquote></th>
+<th><blockquote>
+<p><strong>Value</strong></p>
+</blockquote></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><blockquote>
+<p>Version</p>
+</blockquote></td>
+<td><blockquote>
+<p>V3 (2)</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>SerialNumber</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;includes at least 8 pseudo-random bytes&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>Signature</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt; In accordance with paragraphs 6.1.5 and 7.1.3 &gt;</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>Issuer</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt; Subject of the issuing Root CA &gt;</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>Validity</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;According to section 6.3.2&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>Subject</p>
+</blockquote></td>
+<td><blockquote>
+<p>CN = Actalis Code Signing &lt;keytype&gt; CA &lt;year&gt;</p>
+<p>O = Actalis S.p.A.</p>
+<p>L = Ponte San Pietro</p>
+<p>ST = Bergamo</p>
+<p>C = IT</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>SubjectPublicKeyInfo</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt; In accordance with paragraphs 6.1.5 and 7.1.3 &gt;</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>SignatureValue</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;Root CA signature&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p><strong>Extension</strong></p>
+</blockquote></td>
+<td><blockquote>
+<p><strong>Value</strong></p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>Basic Constraints</p>
+</blockquote></td>
+<td><blockquote>
+<p>critical: CA=true</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>AuthorityKeyIdentifier (AKI)</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;Same value as the Root CA SKI extension&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>SubjectKeyIdentifier (SKI)</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;public key SHA1-digest&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>KeyUsage</p>
+</blockquote></td>
+<td><blockquote>
+<p>critical: keyCertSign, cRLSign</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>ExtendedKeyUsage (EKU)</p>
+</blockquote></td>
+<td><blockquote>
+<p>codeSigning</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>CertificatePolicies</p>
+</blockquote></td>
+<td><blockquote>
+<p>PolicyOID = 2.5.29.32.0 (anyPolicy)</p>
+<p>CPS-URI = &lt;HTTP address of this CPS&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>SubjectAlternativeName (SAN)</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;not included&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="odd">
+<td><blockquote>
+<p>AuthorityInformationAccess (AIA)</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;HTTP address of OCSP responder&gt;</p>
+</blockquote></td>
+</tr>
+<tr class="even">
+<td><blockquote>
+<p>CRLDistributionPoints (CDP)</p>
+</blockquote></td>
+<td><blockquote>
+<p>&lt;HTTP address to access the ARL&gt;</p>
+</blockquote></td>
+</tr>
+</tbody>
+</table>
+
 #### 7.1.2.3 Cross Certificates
 
 No cross-certificates (from the old Root CA to new Root CAs) have yet been issued to date.
