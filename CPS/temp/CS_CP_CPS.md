@@ -139,6 +139,8 @@ As of the date of revision of this CPS, the **Subordinate CAs run by Actalis** a
 | Subject DN | Subject Key ID | notBefore | notAfter |
 | :--- | :--- | :--- | :--- |
 | CN = Actalis Code Signing CA G2, O = Actalis S.p.A., L = Ponte San Pietro, S = Bergamo, C = IT | 78 07 05 52 0B A3 D8 C8 4B 41 3D 4F CF 38 63 06 78 F0 A7 F3 | 6 Jul 2020 | 22 set 2030 |
+| CN = Actalis Code Signing RSA CA 2025, O = Actalis S.p.A., L = Ponte San Pietro, S = Bergamo, C = IT |45 59 b5 fc 43 69 25 60 3d b5 37 36 b4 1a aa 5d cb fa 31 f4|7 Jul 2025|5 Jul 2035|
+| CN = Actalis Code Signing ECC CA 2025, O = Actalis S.p.A., L = Ponte San Pietro, S = Bergamo, C = IT |c4 60 04 7e 1a 86 78 74 ae bb 48 8e 2b c5 b2 b7 46 8f d9 3a|7 Jul 2025|5 Jul 2035|
 
 SubCA certificates can be issued, under an Actalis Root CA, for external CAs (i.e., not run by Actalis) upon signing a contract in which the operators of such SubCAs commit, among other things, to fully comply with the CAB Forum’s Requirements \[CSBR\] and the CCADB policy, and to undergo an annual compliance audit by an independent and qualified auditor, providing Actalis promptly with the related annual audit reports. Actalis reserves the right to revoke external SubCA certificates, at its sole discretion, if such audits are not provided, or are provided with significant delay, or if they reveal serious issues.
 
