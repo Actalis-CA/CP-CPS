@@ -1126,6 +1126,8 @@ Personnel in trusted roles are provided with the documentation necessary to perf
 
 ### 5.4.1 Types of events recorded
 
+### 5.4.1.1 Types of events recorded for CAs
+
 The CA and any Delegated Third Parties shall record all the details related to certificate requests, issuances, and subsequent management (e.g. revocation), and make these records available to the CA auditors. For each event, information shall be recorded about event type, date and time of occurrence, the associated data (depending on event type), the personnel involved (if applicable), and possibly other information depending on event type.
 
 At least the following events shall be logged, in line with section 5.4.1 of the \[CSBR\]:
@@ -1135,6 +1137,17 @@ At least the following events shall be logged, in line with section 5.4.1 of the
   - CA and Subscriber certificate life cycle management events;
 
   - Security events (e.g. accesses to PKI systems, PKI and security system actions performed, security profile changes, entries to and exits from the CA facility, relevant activities on routers and firewalls, in particular with regard to its configurations etc.).
+
+### 5.4.1.2 Types of events recorded for TSAs
+
+The TSA shall log the following information and make these records available to its Qualified Auditor as proof of the TSA’s compliance with these Requirements:
+*	Physical or remote access to a timestamp server, including the time of the access and the identity of the individual accessing the server,
+*	History of the timestamp server configuration,
+*	Any attempt to delete or modify timestamp logs,
+*	Security events, including: Successful and unsuccessful Timestamp Authority access attempts; Timestamp Authority server actions performed; Security profile changes; System crashes and other anomalies; and Firewall and router activities;
+*	Revocation of a timestamp certificate,
+*	 Major changes to the timestamp server’s time, and
+*	System startup and shutdown.
 
 ### 5.4.2 Frequency of processing log
 
