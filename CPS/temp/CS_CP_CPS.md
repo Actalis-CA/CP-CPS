@@ -124,43 +124,11 @@ Within the framework of the service described in this document, the role of Root
 
 As anticipated, the role of Root CA is played by Actalis. As of the date of revision of this present CPS, Actalis’ Root CA keys are those identified in the following table; for further details, see chapter 7.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Subject DN</strong></th>
-<th><strong>Subject Key ID</strong></th>
-<th><strong>notBefore</strong></th>
-<th><strong>notAfter</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>CN = Actalis Authentication Root CA</strong></p>
-<p><strong>O = Actalis S.p.A./03358520967</strong></p>
-<p><strong>L = Milan</strong></p>
-<p><strong>C = IT</strong></p></td>
-<td>52 d8 88 3a c8 9f 78 66 ed 89 f3 7b 38 70 94 c9 02 02 36 d0</td>
-<td>22 ‎September ‎2011</td>
-<td>‎22 ‎September ‎2030</td>
-</tr>
-<tr class="even">
-<td><p><strong>CN = Actalis Code Signing ECC Root CA 2025</strong></p>
-<p><strong>O = Actalis S.p.A.</strong></p>
-<p><strong>C = IT</strong></p></td>
-<td>bd 91 46 d6 2d 85 18 18 4c 62 2b 1a 60 1c 88 a9 2e 3c 1b c9</td>
-<td>28 February 2025</td>
-<td>‎22 February 2050</td>
-</tr>
-<tr class="odd">
-<td><p><strong>CN = Actalis Code Signing RSA Root CA 2025</strong></p>
-<p><strong>O = Actalis S.p.A.</strong></p>
-<p><strong>C = IT</strong></p></td>
-<td>5d 55 ac 81 ca 47 c2 3a d6 61 6e fd 26 df 1d fe b1 52 98 d8</td>
-<td>28 February 2025</td>
-<td>‎22 February 2050</td>
-</tr>
-</tbody>
-</table>
+| Subject DN | Subject Key ID | notBefore | notAfter |
+| :--- | :--- | :--- | :--- |
+| CN = Actalis Authentication Root CA <br> O = Actalis S.p.A./03358520967 <br> L = Milan <br> C = IT | 52 d8 88 3a c8 9f 78 66 ed 89 f3 7b 38 70 94 c9 02 02 36 d0 | 22 September 2011 | 22 September 2030|
+| CN = Actalis Code Signing ECC Root CA 2025 <br> O = Actalis S.p.A. <br> C = IT | bd 91 46 d6 2d 85 18 18 4c 62 2b 1a 60 1c 88 a9 2e 3c 1b c9 | 28 February 2025 | 22 February 2050 |
+| CN = Actalis Code Signing RSA Root CA 2025 <br> O = Actalis S.p.A. <br> C = IT | 5d 55 ac 81 ca 47 c2 3a d6 61 6e fd 26 df 1d fe b1 52 98 d8 | 28 February 2025 | 22 February 2050 |
 
 #### 1.3.1.2 Subordinate Certification Authorities
 
