@@ -301,258 +301,40 @@ Approval of this CPS follows the procedures defined in the company’s Quality M
 
 ## 1.6  Definitions and acronyms
 
-<table>
-<tbody>
-<tr class="even">
-<td>
-<p>AgID</p>
-</td>
-<td>
-<p>Agenzia per l’Italia Digitale (Agency for a Digital Italy)</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>ARL</p>
-</td>
-<td>
-<p>Authority Revocation List</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>CA</p>
-</td>
-<td>
-<p>Certification Authority</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>CAB</p>
-</td>
-<td>
-<p>Conformity Assessment Body</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>CP</p>
-</td>
-<td>
-<p>Certificate Policy</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>CPS</p>
-</td>
-<td>
-<p>Certification Practice Statement</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>CRL</p>
-</td>
-<td>
-<p>Certificate Revocation List</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>CSR</p>
-</td>
-<td>
-<p>Certificate Signing Request</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>DBA</p>
-</td>
-<td>
-<p>Doing Business As (trade name)</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>DN</p>
-</td>
-<td>
-<p>Distinguished Name</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>ECC</p>
-</td>
-<td>
-<p>Elliptic Curve Cryptography</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>eIDAS</p>
-</td>
-<td>
-<p>Electronic Identification and Trust Services (Regulation EU n.910/2014)</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>EV</p>
-</td>
-<td>
-<p>Extended Validation</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>FIPS</p>
-</td>
-<td>
-<p>Federal Information Processing Standard</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>HSM</p>
-</td>
-<td>
-<p>Hardware Security Module</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>HTTP</p>
-</td>
-<td>
-<p>Hyper-Text Transfer Protocol</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>I&amp;A</p>
-</td>
-<td>
-<p>Identification and Authentication</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>ISMS</p>
-</td>
-<td>
-<p>Information Security Managament System</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>ISO</p>
-</td>
-<td>
-<p>International Standards Organization</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>OCSP</p>
-</td>
-<td>
-<p>On-line Certificate Status Protocol</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>OID</p>
-</td>
-<td>
-<p>Object Identifier</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>OV</p>
-</td>
-<td>
-<p>Organization Validated</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>PDF</p>
-</td>
-<td>
-<p>Portable Document Format</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>PKI</p>
-</td>
-<td>
-<p>Public Key Infrastructure</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>RA</p>
-</td>
-<td>
-<p>Registration Authority</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>SAN</p>
-</td>
-<td>
-<p>Subject Alternative Names</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>TLS</p>
-</td>
-<td>
-<p>Transport Layer Security</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>TSL</p>
-</td>
-<td>
-<p>Trust-services Status List</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>TSP</p>
-</td>
-<td>
-<p>Trust Service Provider</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>UPS</p>
-</td>
-<td>
-<p>Uninterruptible Power Supply</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>VMD</p>
-</td>
-<td>
-<p>Video Motion Detection</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Acronym | Description |
+| :--- | :--- |
+| AgID | Agenzia per l’Italia Digitale (Agency for a Digital Italy) |
+| ARL | Authority Revocation List |
+| CA | Certification Authority |
+| CAB | Conformity Assessment Body |
+| CP | Certificate Policy |
+| CPS | Certification Practice Statement |
+| CRL | Certificate Revocation List |
+| CSR | Certificate Signing Request |
+| DBA | Doing Business As (trade name) |
+| DN | Distinguished Name |
+| ECC | Elliptic Curve Cryptography |
+| eIDAS | Electronic Identification and Trust Services (Regulation EU n.910/2014) |
+| EV | Extended Validation |
+| FIPS | Federal Information Processing Standard |
+| HSM | Hardware Security Module |
+| HTTP | Hyper-Text Transfer Protocol |
+| I&A | Identification and Authentication |
+| ISMS | Information Security Managament System |
+| ISO | International Standards Organization |
+| OCSP | On-line Certificate Status Protocol |
+| OID | Object Identifier |
+| OV | Organization Validated |
+| PDF | Portable Document Format |
+| PKI | Public Key Infrastructure |
+| RA | Registration Authority |
+| SAN | Subject Alternative Names |
+| TLS | Transport Layer Security |
+| TSA | Time-Stamp Authority |
+| TSL | Trust-services Status List |
+| TSP | Trust Service Provider |
+| UPS | Uninterruptible Power Supply |
+| VMD | Video Motion Detection |
 
 ## 1.7 Normative references
 
