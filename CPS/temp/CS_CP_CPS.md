@@ -2571,23 +2571,23 @@ The Timestamp certificate is issued with the following profile:
 | Field | Value |
 | :--- | :--- |
 | Version | V3 (2) |
-| SerialNumber | <Includes at least 8 pseudo-random bytes> |
-| Signature | <In accordance with paragraphs 6.1.5 and 7.1.3> |
-| Issuer | <DN of the CA that issued the certificate> |
-| Validity | <According to section 6.3.2> |
-| Subject | C = <Two-letter code of country where the TSA is based><br>ST = <State or province where TSA is based><br>L = <Locality where TSA is based ><br>O = <Registered name of TSA><brCN = <Common Name of TSA> |
-| SubjectPublicKeyInfo | <In accordance with paragraphs 6.1.5 and 7.1.3> |
-| SignatureValue | <Sub CA signature> |
+| SerialNumber | \<Includes at least 8 pseudo-random bytes> |
+| Signature | \<In accordance with paragraphs 6.1.5 and 7.1.3> |
+| Issuer | \<DN of the CA that issued the certificate> |
+| Validity | \<According to section 6.3.2> |
+| Subject | C = \<Two-letter code of country where the TSA is based><br>ST = \<State or province where TSA is based><br>L = \<Locality where TSA is based ><br>\O = <Registered name of TSA><br>CN = \<Common Name of TSA> |
+| SubjectPublicKeyInfo | \<In accordance with paragraphs 6.1.5 and 7.1.3> |
+| SignatureValue | \<Sub CA signature> |
 | **Extension** | **Value** |
-| Basic Constraints | <If included, is critical and contains CA=FALSE> |
-| AuthorityKeyIdentifier (AKI) | <Same value as the Sub CA SKI extension> |
-| SubjectKeyIdentifier (SKI) | <public key SHA1-digest> |
+| Basic Constraints | \<If included, is critical and contains CA=FALSE> |
+| AuthorityKeyIdentifier (AKI) | \<Same value as the Sub CA SKI extension> |
+| SubjectKeyIdentifier (SKI) | \<Public key SHA1-digest> |
 | KeyUsage | critical: digitalSignature |
 | ExtendedKeyUsage (EKU) | critical: timeStamping (1.3.6.1.5.5.7.3.8) |
 | CertificatePolicies | PolicyOID = 2.23.140.1.4.2 (CABF timestamping) |
-| SubjectAlternativeName (SAN) | <Not included> |
-| AuthorityInformationAccess (AIA) | <HTTP address of OCSP responder><br><HTTP address of the issuing CA certificate> |
-| CRLDistributionPoints (CDP) | <HTTP address to access the CRL> |
+| SubjectAlternativeName (SAN) | \<Not included> |
+| AuthorityInformationAccess (AIA) | \<HTTP address of OCSP responder><br>\<HTTP address of the issuing CA certificate> |
+| CRLDistributionPoints (CDP) | \<HTTP address to access the CRL> |
 
 #### 7.1.2.5 All certificates
 
