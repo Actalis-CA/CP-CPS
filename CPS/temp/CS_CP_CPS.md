@@ -1157,6 +1157,8 @@ The relevant events are collected by the systems that generate them and are tran
 
 The CA shall retain audit logs for at least 10 years.
 
+TSA data records shall be retained for a minimum of tew years after the revocation or renewal of the Timestamp Certificate Private Key.
+
 ### 5.4.4 Protection of audit log
 
 Audit logs are periodically stored on a remote long-term archival system based on WORM-type (Write-Once, Read Many) or equivalent tech­nology. The “live” copy of the audit log is protected from tampering by multiple security measures.
@@ -1519,6 +1521,8 @@ Actalis also complies with the requirements of the “Network and Certificate Sy
 ## 6.8 Time Stamping
 
 Actalis also operates a Time-Stamping Authority (TSA) intended for use in signing software when used in conjunction with Actalis Code Signing certificates. No guarantee is offered, and no liability will be accepted for any use of the Actalis TSA other than for signing software in combination with Code Signing certificates.
+
+The TSA MUST ensure that clock synchronization is maintained when a leap second occurs. A Timestamp Authority MUST synchronize its timestamp server at least every 24 hours with a UTC(k) time source. The timestamp server MUST automatically detect and report on clock drifts or jumps out of synchronization with UTC. Clock adjustments of one second or greater MUST be auditable events. Any changes to its signing process MUST be an auditable event.
 
 The Actalis TSA service, compliant with RFC3161 and with the applicable requirements in \[CSBR\], is available at the following URL: <http://timestamp.actalis.com>
 
@@ -2559,6 +2563,31 @@ CPS-URI = &lt;HTTP address of this CPS&gt;</p>
 </tr>
 </tbody>
 </table>
+
+##### 7.1.2.4.2 Timestamp
+
+The Timestamp certificate is issued with the following profile:
+
+| Field | Value |
+| :--- | :--- |
+| Version | V3 (2) |
+| SerialNumber | <Includes at least 8 pseudo-random bytes> |
+| Signature | <In accordance with paragraphs 6.1.5 and 7.1.3> |
+| Issuer | <DN of the CA that issued the certificate> |
+| Validity | <According to section 6.3.2> |
+| Subject | C = <Two-letter code of country where the TSA is based><br>ST = <State or province where TSA is based><br>L = <Locality where TSA is based ><br>O = <Registered name of TSA><brCN = <Common Name of TSA> |
+| SubjectPublicKeyInfo | <In accordance with paragraphs 6.1.5 and 7.1.3> |
+| SignatureValue | <Sub CA signature> |
+| **Extension** | **Value** |
+| Basic Constraints | <If included, is critical and contains CA=FALSE> |
+| AuthorityKeyIdentifier (AKI) | <Same value as the Sub CA SKI extension> |
+| SubjectKeyIdentifier (SKI) | <public key SHA1-digest> |
+| KeyUsage | critical: digitalSignature |
+| ExtendedKeyUsage (EKU) | critical: timeStamping (1.3.6.1.5.5.7.3.8) |
+| CertificatePolicies | PolicyOID = 2.23.140.1.4.2 (CABF timestamping) |
+| SubjectAlternativeName (SAN) | <Not included> |
+| AuthorityInformationAccess (AIA) | <HTTP address of OCSP responder><br><HTTP address of the issuing CA certificate> |
+| CRLDistributionPoints (CDP) | <HTTP address to access the CRL> |
 
 #### 7.1.2.5 All certificates
 
