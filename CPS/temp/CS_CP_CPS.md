@@ -2397,172 +2397,26 @@ No cross-certificates (from the old Root CA to new Root CAs) have yet been issue
 
 The Code Signing OV certificate is issued with the following profile:
 
-<table>
-<thead>
-<tr class="header">
-<th>
-<p><strong>Field</strong></p>
-</th>
-<th>
-<p><strong>Value</strong></p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>
-<p>Version</p>
-</td>
-<td>
-<p>V3 (2)</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>SerialNumber</p>
-</td>
-<td>
-<p>&lt;Includes at least 8 pseudo-random bytes&gt;</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>Signature</p>
-</td>
-<td>
-<p>&lt;In accordance with paragraphs 6.1.5 and 7.1.3&gt;</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>Issuer</p>
-</td>
-<td>
-<p>&lt;DN of the CA that issued the certificate&gt;</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>Validity</p>
-</td>
-<td>
-<p>&lt;According to section 6.3.2&gt;</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>Subject</p>
-</td>
-<td>
-<p>C = &lt;Two-letter code of country where the Subscriber is based&gt;</p>
-<p>ST = &lt;State or province where Subscriber is based&gt;<br />
-L = &lt;Locality where Subscriber is based &gt;</p>
-<p>O = &lt;Registered name or DBA of Subscriber&gt;</p>
-<p>OU = &lt;optional&gt;</p>
-<p>CN = &lt;Same value as the O field&gt;</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>SubjectPublicKeyInfo</p>
-</td>
-<td>
-<p>&lt;In accordance with paragraphs 6.1.5 and 7.1.3&gt;</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>SignatureValue</p>
-</td>
-<td>
-<p>&lt;Sub CA signature&gt;</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p><strong>Extension</strong></p>
-</td>
-<td>
-<p><strong>Value</strong></p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>Basic Constraints</p>
-</td>
-<td>
-<p>&lt;If included, is critical and contains CA=FALSE&gt;</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>AuthorityKeyIdentifier (AKI)</p>
-</td>
-<td>
-<p>&lt;Same value as the Sub CA SKI extension&gt;</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>SubjectKeyIdentifier (SKI)</p>
-</td>
-<td>
-<p>&lt;public key SHA1-digest&gt;</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>KeyUsage</p>
-</td>
-<td>
-<p>critical: digitalSignature</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>ExtendedKeyUsage (EKU)</p>
-</td>
-<td>
-<p>codeSigning (1.3.6.1.5.5.7.3.3)</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>CertificatePolicies</p>
-</td>
-<td>
-<p>PolicyOID = 2.23.140.1.4.1</p>
-<p>PolicyOID = 1.3.159.1.<strong>21</strong>.1<br />
-CPS-URI = &lt;HTTP address of this CPS&gt;</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>SubjectAlternativeName (SAN)</p>
-</td>
-<td>
-<p>&lt;Not included&gt;</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>AuthorityInformationAccess (AIA)</p>
-</td>
-<td>
-<p>&lt;HTTP address of OCSP responder&gt;<br />
-&lt;HTTP address of the issuing CA certificate&gt;</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>CRLDistributionPoints (CDP)</p>
-</td>
-<td>
-<p>&lt;HTTP address to access the CRL&gt;</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Field | Value |
+| :--- | :--- |
+| Version | V3 (2) |
+| SerialNumber | \<Includes at least 8 pseudo-random bytes> |
+| Signature | \<In accordance with paragraphs 6.1.5 and 7.1.3> |
+| Issuer | \<DN of the CA that issued the certificate> |
+| Validity | \<According to section 6.3.2> |
+| Subject | C = \<Two-letter code of country where the Subscriber is based><br>ST = \<State or province where Subscriber is based><br>L = \<Locality where Subscriber is based ><br>O = \<Registered name or DBA of Subscriber><br>OU = \<optional><br>CN = \<Same value as the O field> |
+| SubjectPublicKeyInfo | \<In accordance with paragraphs 6.1.5 and 7.1.3> |
+| SignatureValue | \<Sub CA signature> |
+| **Extension** | **Value** |
+| Basic Constraints | \<If included, is critical and contains CA=FALSE> |
+| AuthorityKeyIdentifier (AKI) | \<Same value as the Sub CA SKI extension> |
+| SubjectKeyIdentifier (SKI) | \<Public key SHA1-digest> |
+| KeyUsage | critical: digitalSignature |
+| ExtendedKeyUsage (EKU) | codeSigning (1.3.6.1.5.5.7.3.3) |
+| CertificatePolicies | PolicyOID = 2.23.140.1.4.1<br>PolicyOID = 1.3.159.1.21.1<br>CPS-URI = \<HTTP address of this CPS> |
+| SubjectAlternativeName (SAN) | \<Not included> |
+| AuthorityInformationAccess (AIA) | \<HTTP address of OCSP responder><br>\<HTTP address of the issuing CA certificate> |
+| CRLDistributionPoints (CDP) | \<HTTP address to access the CRL> |
 
 ##### 7.1.2.4.2 Timestamp
 
@@ -2575,7 +2429,7 @@ The Timestamp certificate is issued with the following profile:
 | Signature | \<In accordance with paragraphs 6.1.5 and 7.1.3> |
 | Issuer | \<DN of the CA that issued the certificate> |
 | Validity | \<According to section 6.3.2> |
-| Subject | C = \<Two-letter code of country where the TSA is based><br>ST = \<State or province where TSA is based><br>L = \<Locality where TSA is based ><br>\O = <Registered name of TSA><br>CN = \<Common Name of TSA> |
+| Subject | C = \<Two-letter code of country where the TSA is based><br>ST = \<State or province where TSA is based><br>L = \<Locality where TSA is based><br>O = \<Registered name of TSA><br>CN = \<Common Name of TSA> |
 | SubjectPublicKeyInfo | \<In accordance with paragraphs 6.1.5 and 7.1.3> |
 | SignatureValue | \<Sub CA signature> |
 | **Extension** | **Value** |
