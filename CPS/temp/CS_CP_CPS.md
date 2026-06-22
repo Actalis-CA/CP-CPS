@@ -136,28 +136,9 @@ As anticipated, the role of Root CA is played by Actalis. As of the date of revi
 
 As of the date of revision of this CPS, the **Subordinate CAs run by Actalis** are those identified in the following table. For further details, see chapter 7.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Subject DN</strong></th>
-<th><strong>Subject Key ID</strong></th>
-<th><strong>notBefore</strong></th>
-<th><strong>notAfter</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>CN = Actalis Code Signing CA G2</strong></p>
-<p><strong>O = Actalis S.p.A.</strong></p>
-<p><strong>L = Ponte San Pietro</strong></p>
-<p><strong>S = Bergamo</strong></p>
-<p><strong>C = IT</strong></p></td>
-<td>78 07 05 52 0B A3 D8 C8 4B 41 3D 4F CF 38 63 06 78 F0 A7 F3</td>
-<td>6 Jul 2020</td>
-<td>22 set 2030</td>
-</tr>
-</tbody>
-</table>
+| Subject DN | Subject Key ID | notBefore | notAfter |
+| :--- | :--- | :--- | :--- |
+| CN = Actalis Code Signing CA G2, O = Actalis S.p.A., L = Ponte San Pietro, S = Bergamo, C = IT | 78 07 05 52 0B A3 D8 C8 4B 41 3D 4F CF 38 63 06 78 F0 A7 F3 | 6 Jul 2020 | 22 set 2030 |
 
 SubCA certificates can be issued, under an Actalis Root CA, for external CAs (i.e., not run by Actalis) upon signing a contract in which the operators of such SubCAs commit, among other things, to fully comply with the CAB Forum’s Requirements \[CSBR\] and the CCADB policy, and to undergo an annual compliance audit by an independent and qualified auditor, providing Actalis promptly with the related annual audit reports. Actalis reserves the right to revoke external SubCA certificates, at its sole discretion, if such audits are not provided, or are provided with significant delay, or if they reveal serious issues.
 
