@@ -129,8 +129,8 @@ As anticipated, the role of Root CA is played by Actalis. As of the date of revi
 | CN = Actalis Authentication Root CA, O = Actalis S.p.A./03358520967, L = Milan, C = IT | 52 d8 88 3a c8 9f 78 66 ed 89 f3 7b 38 70 94 c9 02 02 36 d0 | 22 September 2011 | 22 September 2030|
 | CN = Actalis Code Signing RSA Root CA 2025, O = Actalis S.p.A., C = IT | 5d 55 ac 81 ca 47 c2 3a d6 61 6e fd 26 df 1d fe b1 52 98 d8 | 28 February 2025 | 22 February 2050 |
 | CN = Actalis Code Signing ECC Root CA 2025, O = Actalis S.p.A., C = IT | bd 91 46 d6 2d 85 18 18 4c 62 2b 1a 60 1c 88 a9 2e 3c 1b c9 | 28 February 2025 | 22 February 2050 |
-| CN = Actalis Time Stamping RSA Root CA 2025, O = Actalis S.p.A., C = IT| e8 d3 0e 4d b1 76 41 22 80 19 4d 50 48 84 f2 2f 35 90 9d 8e | 28 February 2025| ‎22 February 2050 | 
-| CN = Actalis Time Stamping ECC Root CA 2025, O = Actalis S.p.A., C = IT| 18 8c 2a 60 7b 02 cb 4a 40 9b 03 86 79 77 6e 74 ad 50 81 ae | 28 February 2025| ‎22 February 2050 | 
+| CN = Actalis Time Stamping RSA Root CA 2025, O = Actalis S.p.A., C = IT | e8 d3 0e 4d b1 76 41 22 80 19 4d 50 48 84 f2 2f 35 90 9d 8e | 28 February 2025| ‎22 February 2050 | 
+| CN = Actalis Time Stamping ECC Root CA 2025, O = Actalis S.p.A., C = IT | 18 8c 2a 60 7b 02 cb 4a 40 9b 03 86 79 77 6e 74 ad 50 81 ae | 28 February 2025| ‎22 February 2050 | 
 
 #### 1.3.1.2 Subordinate Certification Authorities
 
