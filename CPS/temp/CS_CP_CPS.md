@@ -2507,7 +2507,13 @@ Actalis may issue, subject to a contractual agreement, Subordinate CA certificat
 
 ### 7.1.6 Certificate policy object identifier
 
-See section 1.4.
+Actalis inserts in Certificates the following Policy Identifiers:
+
+|Certificate type|Policy OID|Notes|
+|Code Signing|	2.23.140.1.4.1|CAB Forum’s Reserved Policy identifier|
+|Timestamp|2.23.140.1.4.2|CAB Forum’s Reserved Policy identifier|
+
+Actalis MAY also inserts proprietary Policy OIDs (under the Actalis’ arc 1.3.159) in certificates.
 
 ### 7.1.7 Usage of Policy Constraints extension
 
