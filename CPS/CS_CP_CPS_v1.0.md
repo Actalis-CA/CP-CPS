@@ -2990,5 +2990,5 @@ The CA guarantees the following minimum service levels:
 
 |Date|Version|Paragraphs|Changes|Author|
 |---|--------|---------|-------|--------|
-|18-Jun-2026|1.0|All |First version obtained by removing from the previous general CPS (which covered all types of Actalis publicly trusted certificates) all non-relevant material to obtain a combined CP-CPS, self-consistent and focused on Code Signing certificates only.|AS, FM, NP|
+|22-Jun-2026|1.0|All |First version obtained by removing from the previous general CPS (which covered all types of Actalis publicly trusted certificates) all non-relevant material to obtain a combined CP-CPS, self-consistent and focused on Code Signing certificates only.|AS, FM, NP|
 
