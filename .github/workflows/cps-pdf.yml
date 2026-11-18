@@ -1,0 +1,52 @@
+name: CP/CPS – PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "CPS/*.md"
+      - "tools/cps-pdf/**"
+      - ".github/workflows/cps-pdf.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cps-pdf-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: System packages (pandoc, fonts)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q pandoc fonts-crosextra-carlito fonts-liberation fonts-dejavu-core
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/cps-pdf/requirements.txt
+
+      - run: pip install -r tools/cps-pdf/requirements.txt
+
+      - name: Build PDFs (English)
+        run: |
+          mkdir -p out
+          # Every Markdown file directly under CPS/ (archive/ and temp/ are excluded)
+          for f in CPS/*.md; do
+            name=$(basename "$f" .md)
+            python tools/cps-pdf/build_pdf.py "$f" --lang en -o "out/${name}_EN.pdf"
+          done
+          ls -l out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cps-pdf
+          path: out/*.pdf
+          retention-days: 90
