@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+<meta name="author" content="Actalis S.p.A.">
+<meta name="description" content="{{doc_code}} – {{L.version}} {{version}}">
+</head>
+<body>
+
+<!-- ===== Cover page ===== -->
+<section class="cover">
+<!-- Strings reused by the running header/footer (see style.css) -->
+<div class="strings" aria-hidden="true">
+  <span class="s-title">{{cover_title}}</span>
+  <span class="s-code">{{doc_code}}</span>
+  <span class="s-version">{{L.version}} {{version}}</span>
+  <span class="s-date">{{date}}</span>
+  <span class="s-page">{{L.page}}</span>
+  <span class="s-of">{{L.of}}</span>
+</div>
+
+<div class="running-header">
+  <div class="rh-logo">{{logo}}</div>
+  <div class="rh-title">{{cover_title}}</div>
+</div>
+
+  <div class="cover-logo">{{logo}}</div>
+  <h1 class="cover-title">{{cover_title}}</h1>
+  <p class="cover-subtitle">{{cover_subtitle}}</p>
+  <table class="cover-main">
+    <tr><th>{{L.version}}:</th><td>{{version}}</td></tr>
+    <tr><th>{{L.date}}:</th><td>{{date}}</td></tr>
+  </table>
+  <table class="cover-meta">
+    <tr><th>{{L.approved_by}}:</th><td>{{approved_by}}</td></tr>
+    <tr><th>{{L.doc_code}}:</th><td>{{doc_code}}</td></tr>
+    <tr><th>{{L.distribution}}:</th><td>{{distribution}}</td></tr>
+  </table>
+  <p class="cover-note">{{L.authoritative}}</p>
+  <div class="cover-sigbox"></div>
+</section>
+
+<!-- ===== Table of contents ===== -->
+<section class="toc">
+  <h1 class="toc-title">{{L.toc}}</h1>
+  {{toc}}
+</section>
+
+<!-- ===== Document body ===== -->
+<main class="content">
+{{body}}
+</main>
+
+</body>
+</html>

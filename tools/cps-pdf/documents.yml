@@ -1,0 +1,14 @@
+# Per-document settings, keyed by the "Document Code" in the Markdown front matter.
+# cover title/subtitle are also used in the running header (as in the Word version).
+MODAC_A_66:
+  en:
+    title: Certificate Policy and Certification Practice Statement
+    subtitle: TLS Server certificates
+  it:
+    title: Certificate Policy e Certification Practice Statement
+    subtitle: Certificati TLS Server
+
+# Remote images referenced in the Markdown -> local copies in the repository
+# (paths relative to this file). Avoids depending on github.com/user-attachments links.
+images:
+  "https://github.com/user-attachments/assets/247289e6-6aa4-478c-9b59-694808f178d4": assets/pki_hierarchy.png

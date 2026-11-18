@@ -1,0 +1,169 @@
+/* Actalis CP/CPS – print stylesheet for WeasyPrint.
+   Measurements taken from the Word-generated MODAC_A_66 v6.1 PDF:
+   body Calibri 10pt, headings Arial, A4, margins L 30mm / R 20mm.
+   Calibri -> Carlito and Arial -> Liberation Sans are metric-compatible substitutes. */
+
+:root {
+  --brand: #11436a;        /* Actalis dark blue (table headers, rules) */
+  --text: #000;
+  --sans: Calibri, Carlito, "Liberation Sans", Arial, sans-serif;
+  --head: Arial, "Liberation Sans", Helvetica, sans-serif;
+  --mono: "Courier New", "Liberation Mono", "DejaVu Sans Mono", monospace;
+}
+
+@page {
+  size: A4;
+  margin: 30mm 20mm 27mm 30mm;
+
+  @top-left   { content: element(header); width: 100%; vertical-align: bottom; padding-bottom: 3mm; }
+  @bottom-left {
+    content: "Copyright \00A9  Actalis S.p.A.";
+    width: 33%; font: 9pt var(--sans); vertical-align: top; padding-top: 1.2mm;
+    border-top: 1pt solid #000;
+  }
+  @bottom-center {
+    content: string(lblpage) " " counter(page) " " string(lblof) " " counter(pages);
+    width: 34%; font: 9pt var(--sans); vertical-align: top; padding-top: 1.2mm;
+    border-top: 1pt solid #000;
+  }
+  @bottom-right {
+    content: string(date);
+    width: 33%; text-align: right; font: 9pt var(--sans); vertical-align: top; padding-top: 1.2mm;
+    border-top: 1pt solid #000;
+  }
+}
+@page cover {
+  margin: 25mm 20mm 20mm 30mm;
+  @top-left { content: none; }
+  @bottom-left { content: none; border: none; }
+  @bottom-center { content: none; border: none; }
+  @bottom-right { content: none; border: none; }
+}
+
+/* ---------- strings for header/footer ---------- */
+.strings { height: 0; overflow: hidden; }
+.s-title   { string-set: title content(); }
+.s-code    { string-set: code content(); }
+.s-version { string-set: version content(); }
+.s-date    { string-set: date content(); }
+.s-page    { string-set: lblpage content(); }
+.s-of      { string-set: lblof content(); }
+
+.running-header {
+  position: running(header);
+  display: flex; align-items: flex-end; justify-content: space-between;
+  border-bottom: 1pt solid #000; padding-bottom: 0.6mm;
+  font: 9pt var(--sans); color: #000;
+}
+.running-header .logo { height: 9.5mm; display: block; margin-bottom: 0.3mm; }
+.running-header .logo-text { font: bold italic 12pt var(--head); color: var(--brand); }
+
+/* ---------- base typography ---------- */
+html { font-family: var(--sans); font-size: 10pt; line-height: 1.5; color: var(--text); }
+body { margin: 0; }
+p { margin: 0 0 7pt 0; text-align: justify; hyphens: auto; orphans: 3; widows: 3; }
+a { color: #0000ff; text-decoration: underline; overflow-wrap: break-word; }
+ul, ol { margin: 0 0 8pt 0; padding-left: 11mm; }
+ul { list-style-type: disc; }
+li { margin-bottom: 4pt; padding-left: 2mm; text-align: justify; }
+li > p { margin-bottom: 3pt; }
+strong { font-weight: bold; }
+
+/* ---------- cover ---------- */
+.cover { page: cover; break-after: page; height: 250mm; position: relative; }
+.cover-logo .logo { width: 92mm; display: block; margin-top: 2mm; }
+.cover-logo .logo-text { font: bold italic 34pt var(--head); color: var(--brand); }
+.cover-title { margin: 58mm 0 0 0; font: bold 28pt/1.25 var(--head); color: #000;
+               border: none; text-transform: none; }
+.cover-subtitle { margin: 9mm 0 0 0; font: bold 18pt var(--head); }
+.cover-main { margin-top: 37mm; border-collapse: collapse; width: auto; font: bold 11pt var(--head); }
+.cover-main th, .cover-main td { border: none; background: none; color: #000; padding: 0 0 6pt 0;
+                                 text-align: left; font: inherit; vertical-align: top; }
+.cover-main th { width: 30mm; }
+.cover-meta { margin-top: 18mm; border-collapse: collapse; width: auto; font: 10pt var(--sans); }
+.cover-meta th, .cover-meta td { border: none; background: none; color: #000; padding: 0 0 8pt 0;
+                                 text-align: left; font: inherit; vertical-align: top; }
+.cover-meta th { width: 30mm; }
+.cover-note { margin-top: 10mm; font-style: italic; font-size: 9pt; text-align: left; }
+/* Free area at the bottom left where the signing tool places the visible signature. */
+.cover-sigbox { position: absolute; bottom: 0; left: 0; width: 70mm; height: 30mm; }
+
+/* ---------- table of contents ---------- */
+.toc { break-after: page; }
+.toc-title { font: bold 14pt var(--head); text-align: center; margin: 0 0 4mm 0;
+             text-transform: none; border: none; }
+.toc ul { list-style: none; padding: 0; margin: 0; }
+.toc li { margin: 0; padding: 0; text-align: left; line-height: 1.22; }
+.toc a { color: #000; text-decoration: none; display: block; position: relative; }
+.toc a::after { content: leader('.') target-counter(attr(href), page); }
+.toc .tn { display: inline-block; }
+/* level 1: bold, number at 0, title at 7mm */
+.toc > ul > li { margin-top: 5pt; }
+.toc > ul > li > a { font-weight: bold; }
+.toc > ul > li > a .tn { width: 7mm; }
+/* level 2: small caps, number indented 3.5mm, title at 14mm */
+.toc ul ul > li > a { padding-left: 3.5mm; font-variant: small-caps; }
+.toc ul ul > li > a .tn { width: 10.5mm; font-variant: normal; }
+/* level 3: italic, number at 7mm, title at 21mm */
+.toc ul ul ul > li > a { padding-left: 7mm; font-variant: normal; font-style: italic; }
+.toc ul ul ul > li > a .tn { width: 14mm; font-style: italic; }
+.toc > ul > li:first-child { margin-top: 0; }
+
+/* ---------- headings ---------- */
+h1, h2, h3, h4, h5, h6 { color: #000; font-family: var(--head); break-after: avoid; line-height: 1.2; }
+.content h1 { font: bold 16pt var(--head); break-before: page; margin: 0 0 10pt 0; }
+.content h2 { font: bold italic 14pt var(--head); margin: 16pt 0 8pt 0; }
+.content h3 { font: bold italic 12pt var(--head); margin: 14pt 0 6pt 0; }
+.content h4 { font: bold 11pt var(--head); margin: 14pt 0 6pt 0; }
+.content h5, .content h6 { font: bold italic 10pt var(--head); margin: 10pt 0 5pt 0; }
+/* heading number set in its own column, as in Word's numbered heading styles */
+.content .hn { display: inline-block; }
+.content h1 .hn { width: 10mm; }
+.content h2 .hn { width: 12.5mm; }
+.content h3 .hn { width: 15mm; }
+.content h4 .hn { width: 16.5mm; }
+.content h5 .hn, .content h6 .hn { width: 20mm; }
+
+/* PDF bookmarks (outline) */
+.content h1 { bookmark-level: 1; }
+.content h2 { bookmark-level: 2; }
+.content h3 { bookmark-level: 3; }
+.content h4 { bookmark-level: 4; }
+.content h5, .content h6 { bookmark-level: none; }
+.cover-title, .cover-subtitle, .toc-title { bookmark-level: none; }
+
+/* ---------- tables ---------- */
+table { border-collapse: collapse; width: 100%; margin: 8pt 0 14pt 0; font-size: 9pt;
+        line-height: 1.35; break-inside: auto; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th, td { border: 0.75pt solid var(--brand); padding: 1.5pt 4pt; vertical-align: middle;
+         text-align: left; overflow-wrap: break-word; }
+th { background: var(--brand); color: #fff; font-weight: bold; text-align: center; }
+th strong { font-weight: bold; }
+td.c { text-align: center; }
+td p, th p { text-align: inherit; margin: 0; }
+td .long { font-family: var(--mono); font-size: 9pt; word-break: break-all; display: inline-block; width: 36mm; text-align: left; }
+
+/* "Label: value" blocks (e.g. Actalis company data) rendered as in the Word version */
+table.kv { width: 100%; border: 1.2pt solid #000; margin: 10pt 0 14pt 0; font-size: 9.5pt; }
+table.kv td { border: none; padding: 1.5pt 4pt; vertical-align: top; }
+table.kv tr:first-child td { padding-top: 8pt; }
+table.kv tr:last-child td { padding-bottom: 8pt; }
+table.kv td.k { text-align: right; width: 40%; }
+table.kv td.v { font-weight: bold; text-align: left; }
+
+/* ---------- code / pre ---------- */
+pre { font: 9pt var(--mono); border: 0.75pt solid #999; padding: 4pt 6pt; white-space: pre-wrap;
+      overflow-wrap: anywhere; break-inside: avoid; margin: 6pt 0 10pt 0; line-height: 1.3; }
+code { font-family: var(--mono); font-size: 95%; }
+
+/* ---------- figures ---------- */
+p.figure, p[align="center"] { text-align: center; break-inside: avoid; margin: 14pt 0; }
+img { max-width: 100%; height: auto; }
+
+/* ---------- footnotes ---------- */
+.footnote-ref { font-size: 70%; vertical-align: super; line-height: 0; text-decoration: none; }
+section.footnotes { font-size: 8.5pt; margin-top: 14pt; }
+section.footnotes hr { border: none; border-top: 0.5pt solid #000; width: 30%; margin-left: 0; }
+section.footnotes p { text-align: left; margin-bottom: 2pt; }
