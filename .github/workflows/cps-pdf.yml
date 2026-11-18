@@ -1,12 +1,7 @@
 name: CP/CPS – PDF
 
+# Runs only when started manually (Actions → "CP/CPS – PDF" → Run workflow).
 on:
-  push:
-    branches: [main]
-    paths:
-      - "CPS/*.md"
-      - "tools/cps-pdf/**"
-      - ".github/workflows/cps-pdf.yml"
   workflow_dispatch:
 
 permissions:
